@@ -1,0 +1,2 @@
+# SANCION
+Aprobado el Proyecto de Ley por la Honorable Cámara de Senadores el cinco de diciembre del año dos mil, quedando sancionado el mismo por la Honorable Cámara de Diputados, el veintiocho de diciembre del año dos mil, de conformidad al artículo 207, numeral 3) de la Constitución Nacional. Objetada parcialmente por Decreto del Poder Ejecutivo N° 12086 del 6 de febrero de 2001, aceptada la objeción parcial confirmándose la sanción de la Ley en la parte no objetada por la H. Cámara de Senadores el tres de mayo de 2001 y por la H. Cámara de Diputados el 8 de mayo de 2001.
