@@ -1,0 +1,2 @@
+# Artículo 353
+Los padrones confeccionados por los partidos políticos para ser utilizados en sus elecciones internas deberán ser remitidos al Tribunal Superior de Justicia Electoral, para su consideración y certificación a los efectos de cumplir con lo establecido en el Artículo 352 de la presente ley y ser entregados a los Tribunales Electorales con por lo menos treinta días de anticipación a la fecha de los comicios.
