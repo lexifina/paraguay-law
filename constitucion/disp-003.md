@@ -1,0 +1,3 @@
+# ARTÍCULO 3
+El Presidente de la República, los senadores y los diputados continuarán en sus funciones respectivas hasta que asuman las nuevas autoridades nacionales que serán elegidas en las elecciones generales a realizarse en 1993. Sus deberes y atribuciones serán los establecidos por esta Constitución, tanto para el Presidente de la República como para el Congreso, el cual no podrá ser disuelto.
+Hasta tanto asuman los senadores y diputados que sean electos en las elecciones generales de 1993, el proceso de formación y sanción de las leyes se regirá por lo que disponen los artículos 154 al 167 de la Constitución de 1967.
