@@ -1,0 +1,2 @@
+# ARTÍCULO 4
+La próxima elección para designar Presidente de la República, Vicepresidente, senadores y diputados, gobernadores y miembros de las juntas departamentales se realizará simultáneamente en la fecha que determine el Tribunal Electoral de la Capital, la que deberá ser fijada para el lapso comprendido entre el 15 de abril y el 15 de mayo de 1993. Estas autoridades asumirán sus funciones el 15 de agosto de 1993, a excepción de los miembros del Congreso que lo harán el 1 de julio del mismo año.

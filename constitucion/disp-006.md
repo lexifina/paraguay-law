@@ -1,0 +1,2 @@
+# ARTÍCULO 6
+Hasta tanto se realicen los comicios generales de 1993, para elegir Presidente de la República, Vicepresidente, senadores, diputados, gobernadores y miembros de las juntas departamentales, seguirán, en función los mismos organismos electorales; Junta Electoral Central, Junta Electoral Seccional y tribunales electorales, los que se regirán por el Código Electoral en todo aquello que no contradiga a esta Constitución.

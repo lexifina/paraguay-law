@@ -1,0 +1,2 @@
+# ARTÍCULO 7
+La designación de funcionarios y magistrados que requieran la intervención del Congreso o de cualquiera de sus Cámaras o para cargos de instituciones creadas por esta Constitución o con integración diferente a la que establecía la de 1967, no podrá efectuarse sino después que asuman las autoridades nacionales que serán elegidas en el año 1993, con excepción de lo preceptuado en el Artículo 9, de este título.

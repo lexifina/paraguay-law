@@ -1,0 +1,4 @@
+# ARTÍCULO 5
+Los demás magistrados y funcionarios seguirán en sus cargos hasta completar el periodo que hubiese determinado para cada uno de ellos la Constitución de 1967, y si, llegado ese momento, todavía no fueran nombrados sus sucesores, continuarán en funciones interinamente hasta que se produzca su substitución.
+Ellos podrán ser reemplazados por otros funcionarios y magistrados que serán designados interinamente y de acuerdo con los mecanismos establecidos por la Constitución de 1967. Los funcionarios y magistrados así designados durarán en sus cargos hasta el momento en que sean designados sus sustitutos, de acuerdo con los mecanismos que determina esta Constitución.
+También continuarán en funciones el Contralor General y el Subcontralor, hasta tanto se designen los funcionarios que determina el artículo 281 de esta Constitución.
