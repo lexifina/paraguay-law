@@ -1,0 +1,22 @@
+LEY N° 2679
+QUE AMPLIA EL PRESUPUESTO GENERAL DE LA NACION PARA EL EJERCICIO FISCAL 2005, APROBADO POR LEY N° 2530, DE FECHA 30 DE DICIEMBRE DE 2004, TRIBUNAL SUPERIOR DE JUSTICIA ELECTORAL
+EL CONGRESO DE LA NACION PARAGUAYA SANCIONA CON FUERZA DE
+LEY
+Artículo 1°.-	Amplíase la estimación de los ingresos de la Administración Central, Poder Judicial – Justicia Electoral, por la suma de G. 28.860.000.000 (Guaraníes veintiocho mil ochocientos sesenta millones), conforme al Anexo que se adjunta y forma parte de la presente Ley.
+Artículo 2°.-	Apruébase la ampliación del crédito presupuestario para la Administración Central, Poder Judicial – Justicia Electoral, por la suma de G. 28.860.000.000 (Guaraníes veintiocho mil ochocientos sesenta millones), conforme al Anexo que se adjunta y forma parte de la presente Ley.
+Artículo 3°.-	Comuníquese al Poder Ejecutivo.
+Aprobado el Proyecto de Ley por la Honorable Cámara de Senadores, a los once días del mes de agosto del año dos mil cinco, quedando sancionado el mismo, por la Honorable Cámara de Diputados, a los veinticinco días del mes de agosto del año dos mil cinco, de conformidad a lo dispuesto en el Artículo 204 de la Constitución Nacional.
+
+                                                                        Archivos adjuntos Antecedente
+
+                                                                                        Antecedente de la Ley Nº 00000002679
+
+                                                    Acápite: Que amplía el presupuesto general de la nación para el ejercicio fiscal 2005, aprobado por la ley N° 2530 del 31 de diciembre de 2004 (Tribunal Superior de Justicia Electoral)
+
+                                                    Fecha de sanción: 25/08/05
+
+                                                    Camara: Diputados
+
+                                                    Presentado por: Senadores Amado Enrique Yambay, Mirta Vergara de Franco, Lilian Samaniego, Jorge Oviedo Matto, Herminio Chena
+
+                                                    Codigo de Expediente: Pp126-05
