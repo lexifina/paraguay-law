@@ -1,0 +1,8 @@
+LEY N° 4.055
+QUE MODIFICA LA DENOMINACIÓN DE LA RUTA N° 9 PRESIDENTE CARLOS ANTONIO LÓPEZ.
+EL CONGRESO DE LA NACIÓN PARAGUAYA SANCIONA CON FUERZA DE
+LEY:
+Artículo 1°.- Modifícase el Decreto-Ley Nº 320 del 30 de marzo de 1962, aprobado por Ley N° 799  “QUE APRUEBA EL DECRETO-LEY N° 320, DE FECHA 30 DE MARZO DE 1.962, POR EL CUAL SE FIJA NÚMEROS Y NOMBRES A LAS RUTAS TRONCALES DE LA REPÚBLICA”, en cuanto al trayecto de la Ruta N° 9 Presidente Carlos Antonio López - Transchaco, (Asunción / Botánico - Limpio - Piquete Cué - Villa Hayes - Benjamín Aceval - Filadelfia - Mariscal José Félix Estigarribia - Nueva Asunción  - General Eugenio A. Garay), que a partir de la presente Ley será la siguiente Asunción  (Jardín Botánico) - Acceso a Puente Remanso - Puente Remanso - Villa Hayes - Benjamín Aceval - Filadelfia - Mariscal José Félix Estigarribia - Nueva Asunción - General Eugenio A. Garay.
+Artículo 2°.- A partir de la presente Ley, y a efectos de la denominación, la Ruta N° 9 tendrá dos secciones: desde Asunción (Jardín Botánico) hasta el Puente Remanso, que se denominará Presidente Carlos Antonio López - Troperos del Chaco; y desde el Puente Remanso hasta General Eugenio A. Garay, que se denominará Presidente Carlos Antonio López - Transchaco.
+Artículo 3°.- Comuníquese al Poder Ejecutivo.
+Aprobado el Proyecto de Ley por la Honorable Cámara de Diputados, a los ocho días del mes de abril del año dos mil diez, y por la Honorable Cámara de Senadores, a los quince días del mes de julio del año dos mil diez, quedando sancionado el mismo, de conformidad con lo dispuesto en el Artículo 211 de la Constitución Nacional.
