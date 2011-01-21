@@ -1,0 +1,8 @@
+LEY Nº 4268
+QUE MODIFICA EL ARTÍCULO 4° DE LA LEY N° 3.495/08 “QUE CREA LA COMISIÓN NACIONAL DE CONMEMORACIÓN DEL BICENTENARIO DE LA INDEPENDENCIA DE LA REPÚBLICA DEL PARAGUAY”, MODIFICADA POR LA LEY N° 4.174/10.
+EL CONGRESO DE LA NACION PARAGUAYA SANCIONA CON FUERZA DE
+LEY:
+Artículo 1°.- Modifícase el Artículo 4° de la Ley N° 3.495/08 “QUE CREA LA COMISIÓN NACIONAL DE CONMEMORACIÓN DEL BICENTENARIO DE LA INDEPENDENCIA DE LA REPÚBLICA DEL PARAGUAY”, modificada por la Ley N° 4.174/10, cuyo texto queda redactado como sigue:
+“Art. 4°.- El Consejo Directivo será el órgano encargado de la dirección y coordinación de la Comisión Nacional Bicentenario, creado por el Artículo 1° de la presente Ley y estará integrado por el Presidente de la República, quien ejercerá la presidencia de la Comisión Nacional Bicentenario; el Presidente de la Honorable Cámara de Senadores, como Vicepresidente 1°, el Presidente de la Honorable Cámara de Diputados, como Vicepresidente 2°, el Presidente de la Corte Suprema de Justicia, como Vicepresidente 3°, el Intendente Municipal de la Ciudad de Asunción, como Vicepresidente 4°, el Viceministro de Cultura, como Vicepresidente 5° y el Secretario Ejecutivo, una vez que éste sea nombrado por el Consejo.”
+Artículo 2°.-	Comuníquese al Poder Ejecutivo.
+Aprobado el Proyecto de Ley por la Honorable Cámara de Diputados, a los nueve días del mes de diciembre del año dos mil diez, y por la Honorable Cámara de Senadores, a los dieciséis días del mes de diciembre del año dos mil diez, quedando sancionado el mismo, de conformidad con lo dispuesto en el Artículo 204 de la Constitución Nacional.
