@@ -1,0 +1,19 @@
+LEY N° 5225
+
+
+QUE DEROGA LA LEY N° 3850/09 "QUE CREA EL SISTEMA NACIONAL DE INSPECCION TECNICA VEHICULAR Y ESTABLECE LA OBLIGATORIEDAD DE LA REALlZACION DE LA INSPECCION TECNICA COMO REQUISITO PREVIO PARA LA OBTENCION O RENOVACION DE LA PATENTE MUNICIPAL DE RODADOS EN TODO EL TERRITORIO NACIONAL" Y SU MODIFICATORIA LA LEY N° 4856/12
+
+
+EL CONGRESO DE LA NACION PARAGUAYA SANCIONA CON FUERZA DE
+
+
+LEY
+
+
+Artículo 1°.- Deróganse la Ley N° 3850/09 "QUE CREA EL SISTEMA NACIONAL DE INSPECCION TECNICA VEHICULAR y ESTABLECE LA OBLIGATORIEDAD DE LA REALlZACION DE LA INSPECCION TECNICA COMO REQUISITO PREVIO PARA LA OBTENCION O RENOVACION DE LA PATENTE MUNICIPAL DE RODADOS EN TODO EL TERRITORIO NACIONAL", y su modificatoria la Ley N° 4856/12.
+
+
+Artículo 2°.- Comuníquese al Poder Ejecutivo.
+
+
+Aprobado el Proyecto de Ley por la Honorable Cámara de Senadores, a diecinueve días del mes de junio del año dos mil trece, quedando sancionado el mismo, por la Honorable Cámara de Diputados, a veinticinco días del mes de junio del año dos mil catorce, de conformidad a lo dispuesto en el Artículo 204 de la Constitución Nacional.
