@@ -1,0 +1,8 @@
+LEY N° 5.329
+QUE MODIFICA EL ARTÍCULO 54 DE LA LEY N° 1/92 “DE REFORMA PARCIAL DEL CÓDIGO CIVIL.
+EL CONGRESO DE LA NACION PARAGUAYA SANCIONA CON FUERZA DE
+LEY
+Artículo 1.º Modifícase el artículo 54 de la Ley N° 1/92 “DE REFORMA PARCIAL DEL CÓDIGO CIVIL”, cuyo texto queda redactado de la siguiente manera:
+“Art 54. Uno solo de los cónyugues o ambos de conformidad, en cualquier tiempo y sin expresión de causa, podrá pedir la disolución y liquidación de la comunidad conyugal”.
+Artículo 2.° Comuníquese al Poder Ejecutivo.
+Aprobado el Proyecto de Ley por la Honorable Cámara de Diputados, a los dos días del mes de julio del año dos mil catorce, y por la Honorable Cámara de Senadores, a los dos días del mes de octubre del año dos mil catorce, queda sancionado, de conformidad con lo dispuesto en el artículo 207, numeral 2 de la Constitución Nacional.
