@@ -1,0 +1,28 @@
+LEY N° 5360
+
+
+QUE CREA LA COMISIÓN NACIONAL PARA EL ESTUDIO DE LA REFORMA DE LAS LEYES QUE REGULAN EL FUNCIONAMIENTO DEL PODER JUDICIAL
+
+
+EL CONGRESO DE LA NACIÓN PARAGUAYA SANCIONA CON FUERZA DE
+
+
+LEY
+
+
+Artículo 1°.- Crear la Comisión Nacional para el Estudio de la Reforma de las leyes que regulan el funcionamiento del Poder Judicial, a fin de elaborar propuestas de modificación al régimen establecido para el funcionamiento y organización del Poder Judicial.
+
+
+Artículo 2°.- La Comisión estará compuesta por 7 (siete) senadores, 7 (siete) Diputados, (1) un representante de la Corte Suprema de Justicia y 1 (un) representante del Poder Ejecutivo.
+
+
+Artículo 3°.- Una vez instalada la Comisión, que funcionará en la sede del Congreso Nacional, elevará a consideración del Poder Legislativo, en el plazo de 6 (seis) meses, sus conclusiones.
+
+
+Artículo 4°.- La Comisión estará presidida por uno de los representantes del Poder Legislativo, quien convocará a los demás integrantes detallados en el Artículo 2º.
+
+
+Artículo 5º.- Comuníquese al Poder Ejecutivo.
+
+
+Aprobado el Proyecto de Ley por la Honorable Cámara de Senadores, a veinticuatro días del mes de julio del año dos mil catorce, quedando sancionado el mismo, por la Honorable Cámara de Diputados, a seis días del mes de noviembre del año dos mil catorce, de conformidad a lo dispuesto en el Artículo 211 de la Constitución Nacional.
