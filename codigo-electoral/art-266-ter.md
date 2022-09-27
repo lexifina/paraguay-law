@@ -1,0 +1,2 @@
+# Artículo 266 ter
+Cuando la suma de las firmas ológrafas y electrónicas alcance la cantidad determinada en el inciso b) del Artículo 266, la comisión promotora podrá presentar al Tribunal Superior de Justicia Electoral las firmas ológrafas de los electores proponentes que han sido recogidas en los pliegos proveídos por la Justicia Electoral. La presentación dejará constancia de la entrega de los mencionados pliegos con el detalle de la cantidad total de firmas ológrafas. Este acto será considerado como cierre del proceso de recolección de firmas.
