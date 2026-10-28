@@ -376,12 +376,23 @@ class Replay:
     def build(self) -> list[dict]:
         cur = dict(self.versions[0]['units'])
         out = list(self.versions)
+        history = [(self.versions[0]['from'], cur)]
         for frm in sorted(self.pending):
             p = self.pending[frm]
             new = dict(cur)
             credits: dict[str, list[str]] = {}
+            touched: set[str] = set()
             for kind, key, value, law_key in p['ops']:
-                if kind == 'set':
+                if kind == 'touch':        # an event that concerns the provision but changes no words
+                    if key not in new:
+                        sys.exit(f'{self.slug}: {law_key} concerns {key}, which is not in force')
+                    touched.add(key)
+                elif kind == 'restore':    # back to the wording in force the day before `value`
+                    old = [u for d, u in history if d < value][-1]
+                    if key not in old:
+                        sys.exit(f'{self.slug}: {law_key} restores {key}, which was not in force before {value}')
+                    new[key] = old[key]
+                elif kind == 'set':
                     if key not in new:
                         sys.exit(f'{self.slug}: {law_key} rewrites {key}, which is not in force')
                     new[key] = value
@@ -399,7 +410,7 @@ class Replay:
                 if law_key not in credits[key]:
                     credits[key].append(law_key)
             for k in list(credits):
-                if new.get(k) == cur.get(k):
+                if new.get(k) == cur.get(k) and k not in touched:
                     MISMATCHES.append(f'{self.slug}/{k}: {", ".join(credits[k])} restates the text in force; no change')
                     del credits[k]
             h = hashlib.sha256(b''.join(raw(u) for u in p['sha_urls'])).hexdigest()
@@ -411,6 +422,7 @@ class Replay:
                 v['note'] = ' '.join(p['notes'])
             out.append(v)
             cur = new
+            history.append((frm, new))
         return out
 
 
@@ -943,6 +955,236 @@ def penal_code_enacted() -> tuple[dict, list[str]]:
     return out, [f'{k}: {t}' for k, t in index]
 
 
+# ---------------------------------------------------------------- Código Procesal Penal (Ley 1286/1998)
+
+CPP_URL = BACN + '203/ley-n-1286-c-digo-procesal-penal-br'
+CPP_ART = re.compile(r'^Art[ií]culo\s+(\d+)\s*[°º]?\.\s*(.*)$')
+CPP_QART = re.compile(r'^"Art(?:[ií]culo)?\.?\s*(\d+)\s*[°º]?\s*(?:\.-|\.|-|:)\s*(.*)$')
+LOWER = re.compile(r'[a-zñáéíóúü]')
+
+
+def split_upper(rest: str) -> tuple[str, str]:
+    """'ACCIÓN PRIVADA. Serán …' -> ('ACCIÓN PRIVADA', 'Serán …'): the epigraph is the leading sentences without
+    lower-case letters."""
+    pos = 0
+    end = 0
+    for m in re.finditer(r'\.(\s+|$)', rest):
+        seg = rest[pos:m.start()]
+        if LOWER.search(seg) or not seg.strip():
+            break
+        end = m.start()
+        pos = m.end()
+    return (rest[:end].strip(), rest[pos:].strip()) if end else ('', rest.strip())
+
+
+def cpp_key(n: int) -> str:
+    return f'art-{n:03d}'
+
+
+def cpp_unit(n: int, epigraph: str, paras: list[str]) -> dict:
+    epigraph = epigraph.strip().rstrip('.:').strip()
+    return unit(f'Art. {n}', 'art', f'Artículo {n}. {epigraph}' if epigraph else f'Artículo {n}',
+                [p for p in paras if p])
+
+
+def cpp_enacted() -> dict:
+    L = page_lines(CPP_URL)
+    assert L[:3] == ['Descripción', 'LEY N° 1.286', 'CÓDIGO PROCESAL PENAL'] and L[4] == 'LEY:', L[:5]
+    units: dict[str, list] = {}
+    index: list[list] = []
+    cur = None
+    prev_heading = False
+    closing = None
+    nxt = 1
+    for ln in L[5:]:
+        if ln.startswith('Aprobado el Proyecto de Ley por la Honorable'):
+            closing = ln
+            break
+        m = CPP_ART.match(ln)
+        if m and int(m.group(1)) == nxt:
+            epi, text = split_upper(m.group(2))
+            cur = [epi, text]
+            units[cpp_key(nxt)] = cur
+            for e in index:
+                if e[0] is None:
+                    e[0] = cpp_key(nxt)
+            nxt += 1
+            prev_heading = False
+            continue
+        if not LOWER.search(ln):
+            if CP_LABEL.match(ln) or not prev_heading:
+                index.append([None, ln])
+            else:
+                index[-1][1] += (' - ' if CP_LABEL.match(index[-1][1]) and ' - ' not in index[-1][1] else ' / ') + ln
+            prev_heading = True
+            cur = None
+            continue
+        assert cur is not None, ln
+        cur.append(ln)
+        prev_heading = False
+    assert nxt == 507 and closing, (nxt, closing)
+    out = {k: cpp_unit(int(k[4:]), v[0], join_broken(v[1:], f'cpp art. {int(k[4:])}')) for k, v in units.items()}
+    out['indice'] = unit('Índice de partes, libros, títulos y capítulos', 'index',
+                         'PARTES, LIBROS, TITULOS Y CAPITULOS', [f'{k}: {t}' for k, t in index])
+    out['sancion'] = unit('Sanción', 'closing', 'SANCION', [closing])
+    return out
+
+
+def cpp_block(L: list[str], intro_pat: str, epigraph: str, where: str) -> list[tuple[int, dict]]:
+    """Quoted articles of one article of an amending law. epigraph: 'upper' (capitals up to the first sentence
+    with lower case), 'line' (the rest of the article line), 'sentence' (its first sentence) or 'none'."""
+    lines_ = segment_lines(L, intro_pat)
+    out = []
+    for ln in lines_:
+        m = CPP_QART.match(ln)
+        if m:
+            out.append([int(m.group(1)), m.group(2), []])
+        elif not LOWER.search(ln):
+            DROPPED_HEADINGS.append(f'{where}: {ln.strip(chr(34))}')
+        else:
+            assert out, (where, ln)
+            out[-1][2].append(ln)
+    res = []
+    for n, rest, more in out:
+        if epigraph == 'upper':
+            epi, first = split_upper(rest)
+        elif epigraph == 'line':
+            epi, first = rest, ''
+        elif epigraph == 'sentence':
+            epi, first = rest.split('. ', 1)
+        else:
+            epi, first = '', rest
+        paras = strip_quote(['"' + x for x in [first]][:1] + more) if first else strip_quote(['"' + more[0]] + more[1:])
+        res.append((n, cpp_unit(n, epi, join_broken(paras, f'{where} art. {n}'))))
+    return res
+
+
+def codigo_procesal_penal() -> dict:
+    base = cpp_enacted()
+    prom = page_meta(CPP_URL)['promulgated']
+    assert prom == '1998-07-08', prom
+    law('ley-1286-1998', label='Ley N° 1286/1998 (Código Procesal Penal)', kind='law', enacted=prom,
+        published=page_meta(CPP_URL)['published'], url=CPP_URL,
+        title='Código Procesal Penal, promulgado el 8 de julio de 1998; art. 505: entra en vigor un año después de '
+              'su promulgación')
+    # Ley 1444/1999 (transition): partial application from 9 July 1999 (art. 2), full from 1 March 2000 (art. 3);
+    # art. 18 repeals art. 17 inc. 15 and art. 505 from 9 July 1999, the first day the Code applied.
+    url1444, L1444, _ = bacn_law('ley-1444-1999', '1592', 'Ley N° 1444/1999')
+    a18 = next(l for l in L1444 if l.startswith('Desde el día 9 de julio de 1999, quedarán derogados'))
+    assert '2) el inciso 15) del artículo 17 de la Ley No. 1286/98' in a18 and '3) el artículo 505 de la Ley No. 1286/98' in a18
+    assert any(l.startswith('A partir del día 9 de julio de 1999, la aplicación de la Ley No. 1286/98') for l in L1444)
+    assert any(l.startswith('A partir del 1 de marzo del año 2000, entrará plenamente en vigencia la Ley No. 1286/98') for l in L1444)
+    first_units = dict(base)
+    t17 = first_units['art-017']['text'].split('\n')
+    i15 = t17.index('15) violación del derecho de autor o inventor.')
+    assert t17[i15 - 1] == '14) uso no autorizado de vehículo automotor; y', t17
+    del t17[i15]
+    first_units['art-017'] = {**first_units['art-017'], 'text': '\n'.join(t17)}
+    del first_units['art-505']
+    LAWS['ley-1444-1999']['note'] = (
+        'Ley 1444/1999 art. 3: from 1 March 2000 the Code applies in full ("vigencia plena"). From 9 July 1999 it '
+        'applied in part (art. 2), and from that day art. 18 repealed art. 17 inc. 15 and art. 505; those repeals '
+        'are already in the first version, which is the text that applied on 9 July 1999.')
+    first = {'from': '1999-07-09', 'source_url': CPP_URL, 'sha256': sha(CPP_URL), 'units': first_units, 'credits': {},
+             'note': 'The Code as enacted (BACN page of Ley 1286/1998) as it first applied on 9 July 1999 under Ley '
+                     '1444/1999 art. 2, which also repealed from that day art. 17 inc. 15 ("violación del derecho de '
+                     'autor o inventor") and art. 505 (entry into force); those two provisions are not in this version. '
+                     'Full application followed on 1 March 2000 (Ley 1444/1999 art. 3).'}
+    rp = Replay('codigo-procesal-penal', first_units, first)
+    for k in first_units:
+        if k.startswith('art-'):
+            rp.op('2000-03-01', 'ley-1444-1999', url1444, 'touch', k)
+
+    url, L, frm = bacn_law('ley-2341-2003', '5046', 'Ley N° 2341/2003')
+    (n, u), = cpp_block(L, r'^Artículo 1º', 'none', 'ley-2341-2003')
+    assert n == 136
+    rp.op(frm, 'ley-2341-2003', url, 'set', 'art-136', u)
+
+    url, L, frm = bacn_law('ley-2493-2004', '3997', 'Ley N° 2493/2004')
+    (n, u), = cpp_block(L, r'^Artículo 1º', 'upper', 'ley-2493-2004')
+    assert n == 245
+    rp.op(frm, 'ley-2493-2004', url, 'set', 'art-245', u)
+
+    url, L, frm = bacn_law('ley-4431-2011', '3773', 'Ley N° 4431/2011')
+    (n, u), = cpp_block(L, r'^Artículo 1°', 'upper', 'ley-4431-2011')
+    assert n == 245
+    rp.op(frm, 'ley-4431-2011', url, 'set', 'art-245', u)
+
+    # Ley 4669/2012 rewrites arts. 136-137; no vigencia clause, so in force the day after publication. Ley 4734/2012
+    # suspends it (2 years, extended to 3, 4 and 6 years); Ley 6146/2018 repeals it before the suspension ends.
+    url4669, L, frm4669 = bacn_law('ley-4669-2012', '3119', 'Ley N° 4669/2012')
+    b = cpp_block(L, r'^Artículo 1°', 'upper', 'ley-4669-2012')
+    assert [n for n, _ in b] == [136, 137]
+    for n, u in b:
+        rp.op(frm4669, 'ley-4669-2012', url4669, 'set', cpp_key(n), u)
+    url, L, frm = bacn_law('ley-4734-2012', '1202', 'Ley N° 4734/2012')
+    assert segments(L)[0][0].startswith('Artículo 1º.- Suspéndase por el plazo de dos años la vigencia de la Ley N° 4.669/12')
+    LAWS['ley-4734-2012'].update(restores='ley-4669-2012', note=(
+        'Suspends Ley 4669/2012 for two years (art. 1), so arts. 136 and 137 return to the wording in force before it. '
+        'Leyes 5276/2014, 5475/2015 and 5671/2016 extend the suspension to three, four and six years; Ley 6146/2018 '
+        'repeals Ley 4669/2012.'))
+    for k in ('art-136', 'art-137'):
+        rp.op(frm, 'ley-4734-2012', url, 'restore', k, frm4669)
+    susp_end = frm
+    for key, pid, label, years in (('ley-5276-2014', '3007', 'Ley N° 5276/2014', 'tres'),
+                                   ('ley-5475-2015', '4460', 'Ley N° 5475/2015', 'cuatro'),
+                                   ('ley-5671-2016', '5184', 'Ley N° 5671/2016', 'seis')):
+        url, L, frm = bacn_law(key, pid, label)
+        q = segment_lines(L, r'^Art[ií]culo 1')[0]
+        assert f'Suspéndase por el plazo de {years} años la vigencia de la Ley' in q, q
+        n_prev = {'tres': 2, 'cuatro': 3, 'seis': 4}[years]
+        end_prev = f'{int(susp_end[:4]) + n_prev}{susp_end[4:]}'
+        assert frm <= end_prev, (key, frm, end_prev)     # each extension takes effect before the suspension ends
+        LAWS[key]['note'] = (f'Extends the suspension of Ley 4669/2012 (Ley 4734/2012 art. 1) to {years} years, '
+                             f'before the previous period ended ({end_prev}); the wording of arts. 136 and 137 does not '
+                             'change.')
+        for k in ('art-136', 'art-137'):
+            rp.op(frm, key, url, 'touch', k)
+    url, L, frm = bacn_law('ley-6146-2018', '8655', 'Ley N° 6146/2018')
+    assert frm <= f'{int(susp_end[:4]) + 6}{susp_end[4:]}'
+    assert segments(L)[0][0].startswith('Artículo 1.° Derógase la Ley N° 4.669/2012')
+    LAWS['ley-6146-2018']['note'] = ('Repeals Ley 4669/2012, which was suspended, and confirms Ley 2341/2003 (art. 2); '
+                                     'the wording of arts. 136 and 137 does not change.')
+    for k in ('art-136', 'art-137'):
+        rp.op(frm, 'ley-6146-2018', url, 'touch', k)
+
+    url, L, frm = bacn_law('ley-4685-2012', '1225', 'Ley N° 4685/2012')
+    (n, u), = cpp_block(L, r'^Artículo 1º', 'upper', 'ley-4685-2012')
+    assert n == 57
+    rp.op(frm, 'ley-4685-2012', url, 'set', 'art-057', u)
+
+    url, L, frm = bacn_law('ley-6350-2019', '8902', 'Ley N° 6350/2019')
+    (n, u), = cpp_block(L, r'^Artículo 1\.', 'upper', 'ley-6350-2019')
+    assert n == 245
+    rp.op(frm, 'ley-6350-2019', url, 'set', 'art-245', u)
+
+    # Temporary wording (Leyes 6353/2019 and 6418/2019, art. 2): until 31 January 2020; from 1 February 2020 the
+    # original wording applies again. The return is a version credited to a "fin de vigencia" entry with `restores`.
+    for key, pid, label, arts, mode in (('ley-6353-2019', '8900', 'Ley N° 6353/2019', [129, 141, 251], 'line'),
+                                        ('ley-6418-2019', '9045', 'Ley N° 6418/2019', [253], 'sentence')):
+        url, L, frm = bacn_law(key, pid, label)
+        a2 = next(s for s in segments(L) if s[0].startswith('Artículo 2.'))
+        assert 'tendrán vigencia hasta el 31 de enero de 2020' in a2[0]
+        assert a2[1][0].startswith('A partir del 1 de febrero de 2020, volverán a regir') and 'conforme a su redacción original' in a2[1][0]
+        b = cpp_block(L, r'^Artículo 1\.', mode, key)
+        assert [n for n, _ in b] == arts, (key, b)
+        for n, u in b:
+            rp.op(frm, key, url, 'set', cpp_key(n), u)
+        LAWS[key]['temporary_until'] = '2020-01-31'
+        fin = key + '-fin'
+        law(fin, label=f'{label}, fin de vigencia', kind='law', enacted=LAWS[key]['enacted'],
+            published=LAWS[key]['published'], url=url, restores=key,
+            title=f'Fin de la vigencia temporal de la {label} (art. 2)',
+            note=f'{label} art. 2: its wording applied until 31 January 2020; from 1 February 2020 the original '
+                 f'wording of art. {", ".join(map(str, arts))} applies again.')
+        for n in arts:
+            rp.op('2020-02-01', fin, url, 'restore', cpp_key(n), frm)
+
+    versions = rp.build()
+    return {'slug': 'codigo-procesal-penal', 'short': 'CPP', 'title': 'Código Procesal Penal (Ley N° 1286/1998)',
+            'url': CPP_URL, 'first_law': 'ley-1286-1998', 'earlier_laws': [], 'versions': versions}
+
+
 # ---------------------------------------------------------------- corpus
 
 def sources() -> list[dict]:
@@ -964,7 +1206,7 @@ def sources() -> list[dict]:
 
 
 def main():
-    acts = [constitution(), civil_code(), penal_code()]
+    acts = [constitution(), civil_code(), penal_code(), codigo_procesal_penal()]
     corpus = {
         'country': {
             'code': 'PY', 'name': 'Paraguay', 'slug': 'paraguay', 'lang': 'es', 'tz': 'America/Asuncion',
