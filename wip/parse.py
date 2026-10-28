@@ -126,6 +126,13 @@ def lines(fragment: str) -> list[str]:
     s = re.sub(r'<!--.*?-->', '', fragment, flags=re.S)
     s = re.sub(r'(?is)<(script|style)\b.*?</\1>', '', s)
     s = re.sub(r'(?i)<br\s*/?>', '\n', s)
+
+    def number_ol(m):
+        # An HTML ordered list shows its numbers only when rendered; write them out ("1. ", "2. ", ...).
+        assert not re.search(r'(?i)<ol\b', m.group(1)), 'nested <ol>'
+        n = iter(range(1, 1000))
+        return re.sub(r'(?i)<li\b[^>]*>', lambda _: f'<li>{next(n)}. ', m.group(1))
+    s = re.sub(r'(?is)<ol\b[^>]*>(.*?)</ol\s*>', number_ol, s)
     s = re.sub(r'(?i)</(p|div|h[1-6]|li|tr|table|blockquote)\s*>', '\n', s)
     s = re.sub(r'(?i)<(p|div|h[1-6]|li|tr|table|blockquote)\b[^>]*>', '\n', s)
     s = re.sub(r'<[^>]+>', '', s)
@@ -694,8 +701,9 @@ def civil_code() -> dict:
 
 CP_URL = BACN + '3497/ley-n-1160-1997-c-digo-penal'
 CP_ART = re.compile(r'^Art[ií]culo\.?\s+(\d+)\s*[°º]?\s*(?:\.-|\.|-)\s*(.*)$')
-CP_QART = re.compile(r'^"Art[ií]culo\.?\s+(\d+)\s*[°º]?\s*(?:\.-|\.|-)\s*(.*)$')
+CP_QART = re.compile(r'^"Art(?:[ií]culo)?\.?\s*(\d+)\s*[°º]?\s*(?:\.?\s*([a-d])\b)?\s*(?:\.-|\.|-)?\s*(.*)$')
 CP_LABEL = re.compile(r'^(LIBRO|PARTE|TITULO|T[IÍ]TULO|CAPITULO|CAP[IÍ]TULO|SECCION|SECCI[OÓ]N)\b')
+DROPPED_HEADINGS: list[str] = []
 
 
 def cp_key(n: int, suffix: str = '') -> str:
@@ -703,9 +711,168 @@ def cp_key(n: int, suffix: str = '') -> str:
 
 
 def cp_unit(n: int, title: str, paras: list[str], suffix: str = '') -> dict:
-    num = f'{n}' + (f' {suffix}' if suffix else '')
-    head = f'Artículo {num}.- {title}'.rstrip() if title else f'Artículo {num}'
+    num = f'{n}{suffix}'
+    title = title.strip().rstrip('.:').strip() if paras else title.strip()
+    head = f'Artículo {num}.- {title}' if title else f'Artículo {num}'
     return unit(f'Art. {num}', 'art', head, paras)
+
+
+def cp_blocks(lines_: list[str], where: str) -> list[tuple[int, str, str, list[str]]]:
+    """Quoted 'Artículo N[a-d].- Title' blocks of an amending law: [(n, suffix, title, paragraphs)].
+    Book/title/chapter headings quoted between articles are dropped (the Penal Code is kept without them)."""
+    out = []
+    cur = None
+    for ln in lines_:
+        m = CP_QART.match(ln)
+        if m:
+            cur = [int(m.group(1)), m.group(2) or '', m.group(3), []]
+            out.append(cur)
+            continue
+        if not re.search(r'[a-zñáéíóúü]', ln):
+            DROPPED_HEADINGS.append(f'{where}: {ln.strip(chr(34))}')
+            continue
+        assert cur is not None, (where, ln)
+        cur[3].append(ln)
+    res = []
+    for n, suf, title, paras in out:
+        if not paras:          # a one-line quotation: the closing quote sits on the title line
+            title = title.rstrip('"')
+        else:
+            paras = strip_quote(['"' + paras[0]] + paras[1:])
+        res.append((n, suf, title.rstrip('"'), join_broken(paras, f'{where} art. {n}{suf}')))
+    return res
+
+
+def cp_apply(rp: 'Replay', frm_of, key: str, url: str, blocks, modified: list[int]):
+    """Apply quoted article blocks. An article the law lists as modified but quotes only as Na, Nb… is replaced by
+    those (art. N is removed); a lettered article the law does not list is inserted."""
+    plain = {n for n, s, _, _ in blocks if not s}
+    for n in modified:
+        if n not in plain:
+            assert any(b[0] == n for b in blocks), (key, n)
+            rp.op(frm_of(n), key, url, 'del', cp_key(n))
+    for n, s, title, paras in blocks:
+        k = cp_key(n, s)
+        kind = 'set' if not s else 'add'
+        rp.op(frm_of(n), key, url, kind, k, cp_unit(n, title, paras, s))
+
+
+def segment_lines(L: list[str], intro_pat: str) -> list[str]:
+    segs = [s for s in segments(L) if re.search(intro_pat, s[0])]
+    assert len(segs) == 1, (intro_pat, [s[0][:80] for s in segs])
+    return segs[0][1]
+
+
+def penal_code() -> dict:
+    base, _idx = penal_code_enacted()
+    base = {k: (cp_unit(int(k[4:]), v['text'].split('\n', 1)[0][2:].split('.- ', 1)[1] if '.- ' in v['text'].split('\n', 1)[0] else '',
+                        join_broken(v['text'].rstrip('\n').split('\n')[1:], f'cp art. {int(k[4:])}'))
+                if k.startswith('art-') else v) for k, v in base.items()}
+    prom = page_meta(CP_URL)['promulgated']
+    assert prom == '1997-11-26', prom
+    law('ley-1160-1997', label='Ley N° 1160/1997 (Código Penal)', kind='law', enacted=prom, published=None,
+        url=CP_URL, title='Código Penal, promulgado el 26 de noviembre de 1997; entra en vigor un año después de su '
+                          'promulgación (art. 325)')
+    first = {'from': '1998-11-26', 'source_url': CP_URL, 'sha256': sha(CP_URL), 'units': base, 'credits': {},
+             'note': 'The Code as enacted, from the BACN page of Ley 1160/1997.'}
+    rp = Replay('codigo-penal', base, first)
+    one = lambda frm: (lambda n: frm)   # noqa: E731
+
+    url, L, frm = bacn_law('ley-2212-2003', '4879', 'Ley N° 2212/2003')
+    b = cp_blocks(segment_lines(L, r'^Artículo 1°'), 'ley-2212-2003')
+    assert [x[0] for x in b] == [126]
+    cp_apply(rp, one(frm), 'ley-2212-2003', url, b, [126])
+
+    url, L, frm = bacn_law('ley-2593-2005', '4131', 'Ley N° 2593/2005')
+    a2 = next(s for s in segments(L) if s[0].startswith('Artículo 2°'))[0]
+    assert 'el numeral 2 del inciso 3° del Artículo 184 de la Ley N° 1160/97' in a2
+
+    def drop_184_3_2(u):
+        t = u['text'].split('\n')
+        i = t.index('3º Con la misma pena será castigado el que falsificara, imitara o, sin autorización del titular:')
+        assert t[i + 2].startswith('2. utilizara una invención protegida por patente')
+        del t[i + 2]
+        return {**u, 'text': '\n'.join(t)}
+    rp.op(frm, 'ley-2593-2005', url, 'fn', 'art-184', drop_184_3_2)
+
+    # Ley 3440/2008: two in-force days (art. 3).
+    url, L, _ = bacn_law('ley-3440-2008', '3485', 'Ley N° 3440/2008')
+    early = {104, 148, 154, 165, 181, 182, 316}
+    prom3440, pub3440 = LAWS['ley-3440-2008']['enacted'], LAWS['ley-3440-2008']['published']
+    late_day = f'{int(prom3440[:4]) + 1}{prom3440[4:]}'
+    early_day = day_after(max(prom3440, pub3440))
+    DECISIONS.append(f'Ley N° 3440/2008 art. 3: in force one year after promulgation ({prom3440} -> {late_day}), '
+                     f'except arts. 104, 148, 154, 165, 181, 182 and 316, in force the day after promulgation and '
+                     f'publication ({early_day}).')
+    a1 = segments(L)[0]
+    assert a1[0].startswith('Artículo 1º.- Modifícanse los artículos 2º, 3º, 6º')
+    listed = [int(x) for x in re.findall(r'\d+', a1[0].split('Modifícanse los artículos')[1].split('recapitúlese')[0])]
+    b = cp_blocks(a1[1], 'ley-3440-2008')
+    assert sorted({x[0] for x in b}) == sorted(listed), (sorted({x[0] for x in b}) , listed)
+    cp_apply(rp, lambda n: early_day if n in early else late_day, 'ley-3440-2008', url, b, listed)
+    DECISIONS.append('Ley N° 3440/2008 also "recapitulates" Title II of Book Two (new chapter headings) and repeals '
+                     'the penal provisions of six other laws and arts. 349-353 of the 1914 Code (which art. 323 had '
+                     'kept); none of that changes an article of this Code.')
+
+    url, L, frm = bacn_law('ley-4439-2011', '3777', 'Ley N° 4439/2011')
+    b = cp_blocks(segment_lines(L, r'^Artículo 1°'), 'ley-4439-2011')
+    assert [f'{x[0]}{x[1]}' for x in b] == ['140', '146b', '146c', '146d', '174b', '175', '175b', '188', '248b'], b
+    cp_apply(rp, one(frm), 'ley-4439-2011', url, b, [140, 175, 188])
+
+    for key, pid, label, n in (('ley-4614-2012', '3103', 'Ley N° 4614/2012', [236, 309]),
+                               ('ley-4628-2012', '2710', 'Ley N° 4628/2012', [229]),
+                               ('ley-4770-2012', '3152', 'Ley N° 4770/2012', [202]),
+                               ('ley-5378-2014', '3685', 'Ley N° 5378/2014', [229])):
+        url, L, frm = bacn_law(key, pid, label)
+        b = cp_blocks(segment_lines(L, r'^Art[ií]culo 1°'), key)
+        assert [x[0] for x in b] == n and not any(x[1] for x in b), (key, b)
+        cp_apply(rp, one(frm), key, url, b, n)
+
+    # Ley 5016/2014 (tránsito) art. 153 rewrites art. 217; the new text is given unquoted, with a closing quote.
+    url, L, frm = bacn_law('ley-5016-2014', '4418', 'Ley N° 5016/2014')
+    seg = next(s for s in segments(L) if s[0].startswith('Artículo 153.'))
+    assert 'Modifícase el Artículo 217, numeral 1) de la Ley N° 1160/97' in seg[0]
+    paras = strip_quote(seg[1])
+    assert paras[0] == 'El que dolosa o culposamente:' and len(paras) == 6, paras
+    rp.op(frm, 'ley-5016-2014', url, 'set', 'art-217',
+          cp_unit(217, 'Exposición a peligro del tránsito terrestre', paras))
+    DECISIONS.append('Ley N° 5016/2014 art. 153 says it modifies "el Artículo 217, numeral 1)" but gives the whole '
+                     'article (intro, numerals 1-4 and the penalty); that text replaces art. 217, keeping its title.')
+
+    url, L, frm = bacn_law('ley-6002-2017', '9906', 'Ley N° 6002/2017')
+    b = cp_blocks(segment_lines(L, r'^Artículo 1°'), 'ley-6002-2017')
+    assert [f'{x[0]}{x[1]}' for x in b] == ['135a', '135b'], b
+    cp_apply(rp, one(frm), 'ley-6002-2017', url, b, [135])
+
+    url, L, frm = bacn_law('ley-6452-2019', '9058', 'Ley N° 6452/2019')
+    b = cp_blocks(segment_lines(L, r'^Artículo 1\.'), 'ley-6452-2019')
+    assert [f'{x[0]}{x[1]}' for x in b] == ['91', '191a', '191b', '196', '268a', '268b', '268c'], b
+    cp_apply(rp, one(frm), 'ley-6452-2019', url, b, [91, 191, 196, 268])
+
+    for key, pid, label, n, pat in (('ley-6535-2020', '9215', 'Ley N° 6535/2020', [103], r'^Artículo 1°'),
+                                    ('ley-6771-2021', '9629', 'Ley N° 6771/2021', [107], r'^Artículo 1\.'),
+                                    ('ley-6830-2021', '9670', 'Ley N° 6830/2021', [142], r'^Artículo 1°'),
+                                    ('ley-6934-2022', '10525', 'Ley N° 6934/2022', [229], r'^Artículo 1°'),
+                                    ('ley-7220-2024', '12473', 'Ley N° 7220/2024', [172], r'^Artículo 1º'),
+                                    ('ley-7300-2024', '12443', 'Ley N° 7300/2024', [173], r'^Artículo 4\.')):
+        url, L, frm = bacn_law(key, pid, label)
+        b = cp_blocks(segment_lines(L, pat), key)
+        assert [x[0] for x in b] == n and not any(x[1] for x in b), (key, b)
+        cp_apply(rp, one(frm), key, url, b, n)
+    DECISIONS.append('Ley N° 6934/2022 art. 2 also repeals Leyes 4628/2012 and 5378/2014, whose wording of art. 229 '
+                     'it has just replaced; that changes no text.')
+
+    url, L, frm = bacn_law('ley-7062-2023', '11358', 'Ley N° 7062/2023')
+    b = cp_blocks(segment_lines(L, r'^Artículo 1\.'), 'ley-7062-2023')
+    assert [f'{x[0]}{x[1]}' for x in b] == ['8', '105a', '105b'], b
+    cp_apply(rp, one(frm), 'ley-7062-2023', url, b, [8, 105])
+    b = cp_blocks(segment_lines(L, r'^Artículo 2\.'), 'ley-7062-2023')
+    assert [x[0] for x in b] == [240]
+    cp_apply(rp, one(frm), 'ley-7062-2023', url, b, [240])
+
+    versions = rp.build()
+    return {'slug': 'codigo-penal', 'short': 'CP', 'title': 'Código Penal (Ley N° 1160/1997)', 'url': CP_URL,
+            'first_law': 'ley-1160-1997', 'earlier_laws': [], 'versions': versions}
 
 
 def penal_code_enacted() -> tuple[dict, list[str]]:
