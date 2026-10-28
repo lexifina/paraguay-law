@@ -1626,7 +1626,8 @@ def sources() -> list[dict]:
 
 
 def main():
-    acts = [constitution(), civil_code(), penal_code(), codigo_procesal_penal(), codigo_procesal_civil(), codigo_ninez()]
+    acts = [constitution(), civil_code(), penal_code(), codigo_procesal_penal(), codigo_procesal_civil(), codigo_ninez(),
+            codigo_aduanero(), ley_comerciante(), codigo_sanitario()]
     corpus = {
         'country': {
             'code': 'PY', 'name': 'Paraguay', 'slug': 'paraguay', 'lang': 'es', 'tz': 'America/Asuncion',
