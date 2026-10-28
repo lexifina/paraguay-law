@@ -400,7 +400,7 @@ def codigo_electoral() -> dict:
             'first_law': 'ley-834-1996', 'earlier_laws': [], 'versions': versions}
 
 
-TLABEL = ' (Disposiciones finales y transitorias, ampliadas)'
+TLABEL = ' transitorio'
 
 
 def tkey(n: int, s: str = '') -> str:
@@ -427,8 +427,8 @@ def decisions() -> list[str]:
         'Disposiciones Finales y Transitorias" with articles numbered 348 to 353, but the enacted art. 348 is '
         '"Comuníquese al Poder Ejecutivo", so two different articles carry the number 348. The enacted art. 348 stays '
         'art-348; the six added articles are keyed art-348-transitorio ... art-353-transitorio (one scheme for the '
-        'whole block, though only 348 clashes) and labelled "Art. N (Disposiciones finales y transitorias, '
-        'ampliadas)". Ley 2450/2004 rewrites the added art. 348 ("en lo referente al Artículo 348" of Ley 1830 art. '
+        'whole block, though only 348 clashes), labelled "Art. N transitorio" and headed "# Artículo N" as the laws '
+        'print them. Ley 2450/2004 rewrites the added art. 348 ("en lo referente al Artículo 348" of Ley 1830 art. '
         '2), so it changes art-348-transitorio.',
         'Código Electoral, Ley 1830/2001 art. 1 rewrites only "inciso e) del Artículo 32": that one line of art. 32 is '
         'replaced and the other incisos stay.',
