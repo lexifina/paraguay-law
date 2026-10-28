@@ -1,6 +1,6 @@
 """Código Electoral (Ley 834/1996) for Paraguay: writes corpus.d/50-electoral.json (scripts/gitlaw_common/SCHEMA.md).
 
-    python -X utf8 electoral/electoral.py --fetch     fetch (or reuse) every page in electoral/urls.txt
+    python -X utf8 electoral/electoral.py --fetch     fetch (or reuse) every page in electoral/sources.json
     python -X utf8 electoral/electoral.py             read the cache only, write corpus.d/50-electoral.json
     python -X utf8 electoral/electoral.py --out PATH  write a test part elsewhere
 
@@ -22,11 +22,10 @@ import parse  # noqa: E402
 from parse import (BACN, LAWS, LOWER, MISMATCHES, Replay, bacn_law, join_broken, law, page_meta,  # noqa: E402
                    segment_lines, segments, sha, strip_quote, unit)
 
-URLS = [u for u in (HERE / 'urls.txt').read_text(encoding='utf-8').split('\n') if u]
+URLS = json.loads((HERE / 'sources.json').read_text(encoding='utf-8'))['urls']
 parse.AMEND_URLS.extend(u for u in URLS if u not in parse.AMEND_URLS)
 CODE_URL = next(u for u in URLS if '/leyes-paraguayas/2346/' in u)
 SLUG = 'codigo-electoral'
-DECISIONS: list[str] = []
 
 
 # ---------------------------------------------------------------- page lines
@@ -42,10 +41,30 @@ def _unnumbered(m: re.Match) -> str:
     return m.group(0)
 
 
+def _table_rows(m: re.Match) -> str:
+    """A table row becomes one line, its cells separated by a space (the D'Hondt example of art. 258): BACN puts a
+    <p> in each cell, which would otherwise make every cell a line of its own."""
+    rows = []
+    for tr in re.findall(r'(?is)<tr\b[^>]*>(.*?)</tr\s*>', m.group(0)):
+        cells = re.findall(r'(?is)<t[dh]\b[^>]*>(.*?)</t[dh]\s*>', tr)
+        cells = [re.sub(r'(?i)</?(p|div|br)\b[^>]*/?>', ' ', c) for c in cells]
+        rows.append('<p>' + re.sub(r'\s+', ' ', ' '.join(cells)) + '</p>')
+    return '\n'.join(rows)
+
+
+PDF_NOTE = 'VER PDDF'          # BACN's stand-in for the example table of art. 258, given only in its PDF
+_KEEP = PDF_NOTE + ' \x00(text)'  # carried through parse.enacted_code as article text, not as a heading
+
+
 def page_lines(url: str) -> list[str]:
     frag = parse.bacn.body(parse.bacn.decode(parse.raw(url)))
     frag = re.sub(r'(?is)<ol\b[^>]*>(.*?)</ol\s*>', _unnumbered, frag)
-    return parse.bacn.lines(frag)
+    frag = re.sub(r'(?is)<table\b.*?</table\s*>', _table_rows, frag)
+    L = parse.bacn.lines(frag)
+    if url == CODE_URL:
+        assert L.count(PDF_NOTE) == 1
+        L = [_KEEP if x == PDF_NOTE else x for x in L]
+    return L
 
 
 parse.page_lines = page_lines     # parse.enacted_code and parse.bacn_law look it up at call time
@@ -53,7 +72,7 @@ parse.page_lines = page_lines     # parse.enacted_code and parse.bacn_law look i
 
 # ---------------------------------------------------------------- units
 
-QART = re.compile(r'^"Art(?:[ií]culo|\.)?\s*-?\s*(\d+)\s*[°º]?(?:\s+(bis|ter|quater|[a-z])(?=[.\s-]))?'
+QART = re.compile(r'^"Art(?:[ií]culo|\.)?\s*-?\s*(\d+)(?:\s*[°º])?(?:\s+(bis|ter|quater|[a-z])(?=[.\s-]))?'
                   r'\s*(?:\.-|\.|-)?\s*(.*)$')
 
 
@@ -67,10 +86,11 @@ def art_unit(n: int, suffix: str, paras: list[str], note: str = '') -> dict:
 
 
 def make_base(n: int, rest: str, paras: list[str]) -> dict:
-    return art_unit(n, '', [rest.strip(), *paras])
+    assert _KEEP not in paras or n == 258, n
+    return art_unit(n, '', [rest.strip(), *[PDF_NOTE if p == _KEEP else p for p in paras]])
 
 
-def blocks(L: list[str], intro: str, where: str) -> tuple[list[tuple[int, str, list[str]]], list[str]]:
+def blocks(L: list[str], intro: str, where: str, heads_ok: bool = False) -> tuple[list[tuple[int, str, list[str]]], list[str]]:
     """The quoted articles inside the one article of an amending law whose first line matches `intro`:
     [(number, suffix, paragraphs)] plus the capital-letter heading lines quoted between them."""
     out: list[list] = []
@@ -88,6 +108,7 @@ def blocks(L: list[str], intro: str, where: str) -> tuple[list[tuple[int, str, l
     for n, suf, paras in out:
         paras = strip_quote(['"' + paras[0]] + paras[1:])
         res.append((n, suf, join_broken([p for p in paras if p], f'{where} art. {n}')))
+    assert heads_ok or not heads, (where, heads)
     return res, heads
 
 
@@ -190,9 +211,9 @@ def codigo_electoral() -> dict:
     set_arts(rp, frm2858, 'ley-2858-2006', url2858, got, t3273)
     assert any(s[0].startswith('Artículo 2°.- Deróganse la Ley N° 2.783/05 y la modificación del Artículo 130') for s in segments(L))
 
-    # Ley 3166/2007; it also quotes two chapter headings: Libro IV (?) Capítulo III is renamed.
+    # Ley 3166/2007; it also quotes two chapter headings: Libro III, Título V, Capítulo III is renamed.
     url, L, frm = bacn_law('ley-3166-2007', '290', 'Ley N° 3166/2007')
-    got, heads = blocks(L, r'^Artículo 1°\.- Modifícanse los Artículos 106, 170, 246, 247, 248 y 258', 'ley-3166-2007')
+    got, heads = blocks(L, r'^Artículo 1°\.- Modifícanse los Artículos 106, 170, 246, 247, 248 y 258', 'ley-3166-2007', heads_ok=True)
     set_arts(rp, frm, 'ley-3166-2007', url, got, [106, 170, 246, 247, 248, 258])
     assert heads == ['CAPITULO III', 'DE LA ELECCION DE SENADORES, DIPUTADOS Y PARLAMENTARIOS DEL MERCOSUR',
                      'CAPITULO VII', 'DE LA DISTRIBUCION DE ESCAÑOS'], heads
@@ -421,7 +442,7 @@ def decisions() -> list[str]:
         'enacted text modifies only 130, 154 and 155, so only those are applied. Ley 2858/2006 art. 2 repeals Ley '
         '2783/2005 and the Ley 1975/2002 wording of art. 130; its art. 1 rewrites art. 130 the same day, so that '
         'wording replaces it.',
-        'Código Electoral, Ley 3166/2007 quotes two chapter headings with its articles: Libro IV Capítulo III becomes '
+        'Código Electoral, Ley 3166/2007 quotes two chapter headings with its articles: Libro III, Título V, Capítulo III becomes '
         '"DE LA ELECCION DE SENADORES, DIPUTADOS Y PARLAMENTARIOS DEL MERCOSUR" (applied to indice.md, credited to '
         'it); the Capítulo VII heading it quotes is unchanged. Ley 6918/2022 removes the Mercosur members from arts. '
         '246-248 and 258 but quotes no heading, so the Capítulo III heading keeps the Mercosur wording.',
@@ -457,6 +478,10 @@ def decisions() -> list[str]:
         'February 2001) set one-off rules "de conformidad con" arts. 98 and 130 without modifying or suspending them; '
         'Ley 4743/2012 arts. 4-12 and Ley 6501/2020 arts. 1 and 3 amend Ley 4743 itself; Ley 6983/2022 arts. 4-5 '
         'amend the Ley Orgánica Municipal; Leyes 4559/2012 and 635/1995 only cite the Code.',
+        'Código Electoral, art. 258 as enacted: BACN\'s page prints "VER PDDF" (see the PDF) where the Code gives its '
+        'D\'Hondt example table; the line is kept verbatim. The linked PDF (/archivos/2346/20140320134709.pdf) could '
+        'not be fetched (HTTP 522 twice) and no OCR is used, so the 1996 table is not in the text. Leyes 3166/2007, '
+        '6318/2019 and 6918/2022 print the table in their HTML; each table row is one line, cells separated by a space.',
         'Código Electoral: BACN wraps the incisos of Ley 6167/2018 (arts. 68 and 157) in HTML ordered lists styled '
         '"list-style-type:none", which show no numbers when rendered; electoral.py reads those lists as plain '
         'paragraphs instead of writing numbers out (../parse.py writes the numbers of other ordered lists).',
