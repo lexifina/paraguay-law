@@ -18,6 +18,7 @@ HERE = Path(__file__).resolve().parent
 SRC_FILE = next(p for p in (HERE / 'sources.json', HERE / 'repo' / 'tools' / 'sources.json') if p.exists())
 SRC = json.loads(SRC_FILE.read_text(encoding='utf-8'))
 RETRIEVED = SRC['retrieved']
+AMEND_URLS = SRC['urls']
 
 LAWS: dict[str, dict] = {}
 DECISIONS: list[str] = []
@@ -472,6 +473,196 @@ def civil_code_enacted() -> tuple[dict, list[str]]:
     return out, idx, missing
 
 
+def bacn_law(key: str, page_id: str, label: str, *, in_force: str | None = None, promulgated: str | None = None,
+             why: str = '') -> tuple[str, list[str], str]:
+    """Register an amending law from its BACN page; return (url, lines, in-force day).
+
+    In force: the law's own clause (in_force, with `why`) or, by default, the day after publication (CC art. 1).
+    When BACN gives no publication date, the day after promulgation is used and the decision says so."""
+    url = next(u for u in AMEND_URLS if f'/leyes-paraguayas/{page_id}/' in u)
+    L = page_lines(url)
+    m = page_meta(url)
+    prom = promulgated or m['promulgated']
+    pub = m['published']
+    if promulgated and promulgated != m['promulgated']:
+        DECISIONS.append(f'{label}: promulgation date {promulgated} ({why}); BACN\'s page metadata says '
+                         f'{m["promulgated"]}, which is impossible or contradicted.')
+    if in_force:
+        frm = in_force
+        if why and not promulgated:
+            DECISIONS.append(f'{label}: in force {in_force} ({why}).')
+    elif pub and (not promulgated or pub >= promulgated):
+        frm = day_after(pub)
+    else:
+        frm = day_after(prom)
+        DECISIONS.append(f'{label}: BACN records no publication date, so the version is dated the day after '
+                         f'promulgation ({prom}); the Gaceta Oficial could not be reached to confirm it.')
+    title = L[2] if len(L) > 2 else ''
+    law(key, label=label, title=title.rstrip('.'), kind='law', enacted=prom, published=pub, url=url)
+    return url, L, frm
+
+
+def cc_segment_blocks(L: list[str], intro_pat: str) -> list[tuple[int, list[str]]]:
+    """Quoted 'Art. N' blocks inside the amending law's own article whose first line matches intro_pat."""
+    segs = [s for s in segments(L) if re.search(intro_pat, s[0])]
+    assert len(segs) == 1, (intro_pat, [s[0][:80] for s in segs])
+    return amending_blocks(segs[0][1], CC_QART)
+
+
+def cc_set_blocks(rp: 'Replay', frm: str, key: str, url: str, blocks, expect: list[int], *, renumber=None):
+    got = [n for n, _ in blocks]
+    if renumber:
+        got = [renumber.get(n, n) for n in got]
+    assert got == expect, (key, got, expect)
+    for n, (_, paras) in zip(got, blocks):
+        rp.op(frm, key, url, 'set', cc_key(n), cc_unit(n, join_broken(paras, f'{key} art. {n}')))
+
+
+def civil_code() -> dict:
+    base, idx, missing = civil_code_enacted()
+    assert missing == [733, 1170, 1571, 2414, 2566], missing
+    base_units = dict(base)
+    base_units['indice'] = unit('Índice de libros, títulos, capítulos, secciones y parágrafos', 'index',
+                                'LIBROS, TITULOS, CAPITULOS, SECCIONES Y PARAGRAFOS', idx)
+    for k, v in list(base_units.items()):
+        if k.startswith('art-'):
+            head, *paras = v['text'].rstrip('\n').split('\n')
+            base_units[k] = cc_unit(int(k[4:]), join_broken(paras, f'cc art. {int(k[4:])}'))
+    law('ley-1183-1985', label='Ley N° 1183/1985 (Código Civil)', kind='law', enacted='1985-12-18',
+        published=None, url=CC_PAGES[0], title='Código Civil, sancionado por el Congreso Nacional el 18 de diciembre '
+                                                'de 1985; rige desde el 1 de enero de 1987 (art. 2813)')
+    sha_all = hashlib.sha256(b''.join(raw(u) for u in CC_PAGES)).hexdigest()
+    first = {'from': '1987-01-01', 'source_url': CC_PAGES[0], 'sha256': sha_all, 'units': base_units, 'credits': {},
+             'note': 'The Code as enacted, from BACN\'s five pages (sha256 over their concatenated cached bytes, in '
+                     'order: ' + ', '.join(CC_PAGES) + '). BACN\'s transcription omits arts. 733, 1170, 1571, 2414 '
+                     'and 2566; they are missing here too (the scan BACN offers has no text layer).'}
+    rp = Replay('codigo-civil', base_units, first)
+
+    # Ley 45/1991, divorcio vincular: art. 22 rewrites art. 163 (inline quotation).
+    url, L, frm = bacn_law('ley-45-1991', '689', 'Ley N° 45/1991')
+    a22 = next(s for s in segments(L) if s[0].startswith('Artículo 22'))
+    m = re.match(r'^Artículo 22º\.- El artículo 163 del Código Civil queda redactado de la siguiente forma: "(.*)$', a22[0])
+    rp.op(frm, 'ley-45-1991', url, 'set', 'art-0163', cc_unit(163, strip_quote(['"' + m.group(1)] + a22[1])))
+    DECISIONS.append('Ley N° 45/1991 art. 23 and Ley N° 1/1992 art. 98 also repeal, without naming them, the '
+                     'provisions of the Code that contradict them; only articles they name are changed here.')
+
+    # Ley 1/1992, reforma parcial: art. 98 repeals 40 articles by number.
+    url, L, frm = bacn_law('ley-1-1992', '695', 'Ley N° 1/1992', promulgated='1992-07-15',
+                           why='Ley N° 985/1996 art. 1 cites "Ley No. 1 … promulgada el 15 de julio de 1992"; BACN '
+                               'gives 9 April 1992, before its sanción on 25 June 1992')
+    a98 = next(s for s in segments(L) if s[0].startswith('Artículo 98'))
+    nums = [int(x) for x in re.findall(r'\d+', a98[0].split(':', 1)[1])]
+    assert len(nums) == 40 and nums[0] == 15 and nums[-1] == 224, nums
+    for n in nums:
+        rp.op(frm, 'ley-1-1992', url, 'del', cc_key(n))
+
+    url, L, frm = bacn_law('ley-204-1993', '690', 'Ley N° 204/1993')
+    cc_set_blocks(rp, frm, 'ley-204-1993', url, cc_segment_blocks(L, r'^Artículo 1º'), [2582, 2590, 2591])
+
+    url, L, frm = bacn_law('ley-388-1994', '684', 'Ley N° 388/1994')
+    for i, n in zip(range(1, 7), [91, 93, 967, 1050, 1051, 1079]):
+        cc_set_blocks(rp, frm, 'ley-388-1994', url, cc_segment_blocks(L, rf'^Artículo {i}º'), [n])
+
+    url, L, frm = bacn_law('ley-701-1995', '692', 'Ley N° 701/1995')
+    cc_set_blocks(rp, frm, 'ley-701-1995', url, cc_segment_blocks(L, r'^Artículo 1º'), [770])
+
+    # Ley 805/1996: art. 19 gives art. 1725 a transitional text from promulgation to 1 Jan 1997 (art. 18-19);
+    # arts. 1-5 take effect on 1 Jan 1997 (art. 17).
+    url, L, frm = bacn_law('ley-805-1996', '694', 'Ley N° 805/1996', in_force='1997-01-01',
+                           why='art. 17: "Los artículos 1° al 16 de esta Ley entrarán en vigencia el 1° de enero de 1997"')
+    prom = LAWS['ley-805-1996']['enacted']
+    cc_set_blocks(rp, prom, 'ley-805-1996', url, cc_segment_blocks(L, r'^Artículo 19'), [1725])
+    DECISIONS.append(f'Ley N° 805/1996 art. 19: transitional wording of art. 1725 "a partir de la promulgación" '
+                     f'({prom}) "y hasta el 1° de enero de 1997"; it is replaced on that day by the art. 3 wording.')
+    for i, n in zip(range(1, 6), [1696, 1706, 1725, 1726, 1752]):
+        cc_set_blocks(rp, '1997-01-01', 'ley-805-1996', url, cc_segment_blocks(L, rf'^Artículo {i}°'), [n])
+
+    url, L, frm = bacn_law('ley-1328-1998', '908', 'Ley N° 1328/1998')
+    a186 = next(s for s in segments(L) if s[0].startswith('Artículo 186'))
+    assert 'Artículos 867 al 879, inclusive del Código Civil' in a186[0]
+    for n in range(867, 880):
+        rp.op(frm, 'ley-1328-1998', url, 'del', cc_key(n))
+
+    url, L, frm = bacn_law('ley-1448-1999', '1588', 'Ley N° 1448/1999')
+    cc_set_blocks(rp, frm, 'ley-1448-1999', url, cc_segment_blocks(L, r'^Artículo 4°'), [2328])
+
+    url, L, frm = bacn_law('ley-2169-2003', '4845', 'Ley N° 2169/2003')
+    cc_set_blocks(rp, frm, 'ley-2169-2003', url, cc_segment_blocks(L, r'^Artículo 1°'), [36])
+    assert next(s for s in segments(L) if s[0].startswith('Artículo 2º'))[0].startswith(
+        'Artículo 2º.- Deróganse el inciso a) del Artículo 39 de la Ley N° 1183/85')
+
+    def drop_39a(u):
+        lines_ = u['text'].split('\n')
+        hit = [i for i, x in enumerate(lines_) if x.startswith('a) ')]
+        assert len(hit) == 1, lines_
+        del lines_[hit[0]]
+        return {**u, 'text': '\n'.join(lines_)}
+    rp.op(frm, 'ley-2169-2003', url, 'fn', 'art-0039', drop_39a)
+
+    url, L, frm = bacn_law('ley-2170-2003', '683', 'Ley N° 2170/2003')
+    cc_set_blocks(rp, frm, 'ley-2170-2003', url, cc_segment_blocks(L, r'^Artículo 1°'), [2073, 2074])
+
+    url, L, frm = bacn_law('ley-2559-2005', '4095', 'Ley N° 2559/2005')
+    q = next(s for s in segments(L) if s[0].startswith('Artículo 1°'))[1]
+    assert len(q) == 1 and q[0].startswith('"Art. 1898 inc. b) Los ríos'), q
+    new_b = 'b) ' + strip_quote([q[0]])[0].split('inc. b) ', 1)[1]
+
+    def set_1898b(u):
+        lines_ = u['text'].split('\n')
+        hit = [i for i, x in enumerate(lines_) if x.startswith('b) ')]
+        assert len(hit) == 1
+        lines_[hit[0]] = new_b
+        return {**u, 'text': '\n'.join(lines_)}
+    rp.op(frm, 'ley-2559-2005', url, 'fn', 'art-1898', set_1898b)
+
+    url, L, frm = bacn_law('ley-3120-2006', '687', 'Ley N° 3120/2006')
+    cc_set_blocks(rp, frm, 'ley-3120-2006', url, cc_segment_blocks(L, r'^Artículo 1º'),
+                  [2294, 2296, 2299, 2306, 2327, 2330, 2335, 2339, 2346, 2353])
+
+    url, L, frm = bacn_law('ley-3228-2007', '688', 'Ley N° 3228/2007')
+    cc_set_blocks(rp, frm, 'ley-3228-2007', url, cc_segment_blocks(L, r'^Artículo 1°'), [1051], renumber={5: 1051})
+    DECISIONS.append('Ley N° 3228/2007 rewrites "el Artículo 5º de la Ley Nº 388/94, que modifica el artículo 1051" of '
+                     'the Code; the article Ley 388 art. 5 wrote is art. 1051, so its new text is art. 1051.')
+
+    url, L, frm = bacn_law('ley-4297-2011', '3675', 'Ley N° 4297/2011')
+    cc_set_blocks(rp, frm, 'ley-4297-2011', url, cc_segment_blocks(L, r'^Artículo 1°'), [989])
+
+    url, L, frm = bacn_law('ley-4586-2012', '3096', 'Ley N° 4586/2012')
+    cc_set_blocks(rp, frm, 'ley-4586-2012', url, cc_segment_blocks(L, r'^Artículo 1°'), [108])
+
+    url, L, frm = bacn_law('ley-5063-2013', '4732', 'Ley N° 5063/2013')
+    cc_set_blocks(rp, frm, 'ley-5063-2013', url, cc_segment_blocks(L, r'^Artículo 1°'), [989])
+
+    url, L, frm = bacn_law('ley-5895-2017', '9118', 'Ley N° 5895/2017')
+    cc_set_blocks(rp, frm, 'ley-5895-2017', url, cc_segment_blocks(L, r'^Artículo 11\.'), [1050, 1069, 1070])
+
+    # Ley 7371/2025: art. 27 rewrites arts. 36, 37, 40 and 73-90 and two chapter headings; art. 30: in force the
+    # day after promulgation.
+    url, L, frm0 = bacn_law('ley-7371-2025', '12775', 'Ley N° 7371/2025')
+    frm = day_after(LAWS['ley-7371-2025']['enacted'])
+    DECISIONS.append(f'Ley N° 7371/2025: in force {frm}, the day after promulgation (art. 30 "entrará en vigencia al '
+                     f'día siguiente de su promulgación").')
+    seg = next(s for s in segments(L) if s[0].startswith('Artículo 27.'))[1]
+    heads = [i for i, x in enumerate(seg) if x.startswith('"CAPÍTULO')]
+    assert [seg[i] for i in heads] == ['"CAPÍTULO II', '"CAPÍTULO VI'], heads
+    new_heads = {36: f'CAPÍTULO II - {seg[heads[0] + 1].rstrip(chr(34))}', 73: f'CAPÍTULO VI - {seg[heads[1] + 1].rstrip(chr(34))}'}
+    body_ = [x for i, x in enumerate(seg) if i not in heads and i - 1 not in heads]
+    cc_set_blocks(rp, frm, 'ley-7371-2025', url, amending_blocks(body_, CC_QART), [36, 37, 40] + list(range(73, 91)))
+
+    def retitle(u):
+        lines_ = u['text'].split('\n')
+        for n, new in new_heads.items():
+            hit = [i for i, x in enumerate(lines_) if x.startswith(f'{cc_key(n)}: CAPITULO')]
+            assert len(hit) == 1, (n, hit)
+            lines_[hit[0]] = f'{cc_key(n)}: {new}'
+        return {**u, 'text': '\n'.join(lines_)}
+    rp.op(frm, 'ley-7371-2025', url, 'fn', 'indice', retitle)
+
+    versions = rp.build()
+    return {'slug': 'codigo-civil', 'short': 'CC', 'title': 'Código Civil (Ley N° 1183/1985)', 'url': CC_PAGES[0],
+            'first_law': 'ley-1183-1985', 'earlier_laws': [], 'versions': versions}
+
+
 # ---------------------------------------------------------------- Código Penal (Ley 1160/1997)
 
 CP_URL = BACN + '3497/ley-n-1160-1997-c-digo-penal'
@@ -553,7 +744,7 @@ def sources() -> list[dict]:
 
 
 def main():
-    acts = [constitution()]
+    acts = [constitution(), civil_code()]
     corpus = {
         'country': {
             'code': 'PY', 'name': 'Paraguay', 'slug': 'paraguay', 'lang': 'es', 'tz': 'America/Asuncion',

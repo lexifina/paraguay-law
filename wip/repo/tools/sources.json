@@ -1,16 +1,46 @@
 {
  "retrieved": "2026-10-28",
  "sources": [
-  {"name": "Biblioteca y Archivo Central del Congreso Nacional (BACN), Leyes Paraguayas", "url": "https://www.bacn.gov.py/leyes-paraguayas",
-   "hosts": ["www.bacn.gov.py"], "retrieved": "2026-10-28",
+  {
+   "name": "Biblioteca y Archivo Central del Congreso Nacional (BACN), Leyes Paraguayas",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas",
+   "hosts": [
+    "www.bacn.gov.py"
+   ],
+   "retrieved": "2026-10-28",
    "licence": "Official legal texts (public); BACN states no licence. robots.txt allows all agents.",
-   "notes": "One current text per law page, partly consolidated with '(Modificado por ...)' notes; signed originals as PDF scans under /archivos/<id>/. sitemap.xml lists every law page (7,126)."}
+   "notes": "One current text per law page, partly consolidated with '(Modificado por ...)' notes; signed originals as PDF scans under /archivos/<id>/. sitemap.xml lists every law page (7,126)."
+  }
  ],
  "urls": [
   "https://www.bacn.gov.py/sitemap.xml",
   "https://www.bacn.gov.py/leyes-paraguayas/9580/constitucion-de-la-republica-del-paraguay",
   "https://www.bacn.gov.py/leyes-paraguayas/9581/ley-n-11112-enmienda-constitucional-n-1",
   "https://www.bacn.gov.py/archivos/9580/ENMIENDA_CONSTITUCIONAL_N_1.pdf",
-  "https://www.bacn.gov.py/archivos/9580/CONSTITUCION_ORIGINAL_FIRMADA.pdf"
+  "https://www.bacn.gov.py/archivos/9580/CONSTITUCION_ORIGINAL_FIRMADA.pdf",
+  "https://www.bacn.gov.py/leyes-paraguayas/5293/ley-n-1183-codigo-civil",
+  "https://www.bacn.gov.py/leyes-paraguayas/5299/ley-n-1183-codigo-civil-ii-parte-libro-segundo-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/524/ley-n-1183-codigo-civil-iv-parte-libro-cuarto-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/528/ley-n-1183-codigo-civil-v-parte-libro-quinto-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/689/ley-n-45-establece-el-divorcio-vincular-del-matrimonio-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/695/ley-n-1-reforma-parcial-del-codigo-civil-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/690/ley-n-204-modifica-el-codigo-civil-y-establece-la-igualdad-de-los-hijos-en-el-derecho-hereditario-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/684/ley-n-388-establece-disposiciones-sobre-la-constitucion-de-sociedades-anonimas-y-modifica-articulos-de-la-ley-n-1-183-85",
+  "https://www.bacn.gov.py/leyes-paraguayas/692/ley-n-701-precisa-el-objeto-de-la-prohibici-n-de-la-venta-con-pacto-de-retroventa-y-el-pacto-de-reventa-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/694/ley-n-805-modifica-varios-articulos-del-capitulo-xxvi-titulo-ii-libro-iii-del-codigo-civil-y-crea-la-figura-del-cheque-bancario-de-pago-diferido-deroga-la-ley-n-941-64-y-despenaliza-el-cheque-con-fecha-adelantada-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/908/ley-n-1328-derecho-de-autor-y-derechos-conexos-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/1588/ley-n-1448-modifica-y-amplia-la-clasificacion-de-las-embarcaciones-para-la-inscripcion-en-la-direccion-general-de-registros-publicos-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/4845/ley-n-2169-establece-la-mayoria-de-edad-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/683/ley-n-2170-introduce-modificaciones-en-el-regimen-de-bien-de-familia-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/4095/ley-n-2559-modifica-el-inciso-b-del-articulo-1898-de-la-ley-n-1183-85-codigo-civil-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/687/ley-n-3120-modifica-los-art-culos-2-294-2-296-2-299-2-306-2-327-2-330-2-335-2-339-2-346-y-2-353-de-la-ley-n-1-183-85-c-digo-civil-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/688/ley-n-3228-modifica-el-articulo-5-de-la-ley-n-388-94-que-modifica-el-articulo-1051-de-la-ley-n-1183-85-codigo-civil-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/3675/ley-n-4297-amplia-el-articulo-989-paragrafo-iii-del-codigo-civil-paraguayo-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/3096/ley-n-4586-modifica-parcialmente-el-articulo-108-de-la-ley-n-1183-85-codigo-civil-paraguayo-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/4732/ley-n-5063-amplia-el-articulo-989-de-la-ley-n-1183-85-codigo-civil-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/9118/ley-n-5895-establece-reglas-de-transparencia-en-el-r-gimen-de-las-sociedades-constituidas-por-acciones",
+  "https://www.bacn.gov.py/leyes-paraguayas/12775/ley-n-7371-2025-que-garantiza-los-derechos-de-las-personas-con-discapacidad-modifica-varios-art-culos-de-la-ley-n-1183-1985-c-digo-civil-y-modifica-los-art-culos-262-y-357-de-la-ley-n-879-1981-c-digo-de-organizaci-n-judicial",
+  "https://www.bacn.gov.py/leyes-paraguayas/10970/ley-n-985-modifica-el-articulo-12-de-la-ley-no-1-del-15-de-julio-de-1992-de-reforma-parcial-del-codigo-civil"
  ]
 }
