@@ -1219,6 +1219,73 @@ def codigo_procesal_penal() -> dict:
             'url': CPP_URL, 'first_law': 'ley-1286-1998', 'earlier_laws': [], 'versions': versions}
 
 
+# ---------------------------------------------------------------- shared parser for codes printed article by article
+
+def enacted_code(url: str, art_re: re.Pattern, head: tuple[str, ...], closing_prefix: str, n_last: int,
+                 make_unit, where: str, skip: tuple[int, ...] = ()) -> dict:
+    """Articles numbered 1..n_last in order (numbers in `skip` are absent from BACN), headings to `indice`,
+    the closing formula to `sancion`. make_unit(n, rest_of_article_line, paragraphs) -> unit."""
+    L = page_lines(url)
+    assert tuple(L[:len(head)]) == head, L[:len(head) + 1]
+    units: dict[str, dict] = {}
+    raw_units: dict[int, list] = {}
+    index: list[list] = []
+    cur = None
+    prev_heading = False
+    closing = None
+    nxt = 1
+    for ln in L[len(head):]:
+        if ln.startswith(closing_prefix):
+            closing = ln
+            break
+        m = art_re.match(ln)
+        while nxt in skip:
+            nxt += 1
+        if m and int(m.group(1).replace('.', '')) == nxt:
+            cur = [m.group(2)]
+            raw_units[nxt] = cur
+            for e in index:
+                if e[0] is None:
+                    e[0] = f'art-{nxt:03d}'
+            nxt += 1
+            prev_heading = False
+            continue
+        if not LOWER.search(ln):
+            if CP_LABEL.match(ln) or not prev_heading:
+                index.append([None, ln])
+            else:
+                index[-1][1] += (' - ' if CP_LABEL.match(index[-1][1]) and ' - ' not in index[-1][1] else ' / ') + ln
+            prev_heading = True
+            cur = None
+            continue
+        assert cur is not None, (where, ln)
+        cur.append(ln)
+        prev_heading = False
+    assert nxt == n_last + 1 and closing, (where, nxt, closing)
+    for n, v in raw_units.items():
+        units[f'art-{n:03d}'] = make_unit(n, v[0], join_broken(v[1:], f'{where} art. {n}'))
+    units['indice'] = unit('Índice de libros, títulos y capítulos', 'index', 'LIBROS, TITULOS Y CAPITULOS',
+                           [f'{k}: {t}' for k, t in index])
+    units['sancion'] = unit('Sanción', 'closing', 'SANCION', [closing])
+    return units
+
+
+# ---------------------------------------------------------------- Código de la Niñez y la Adolescencia (Ley 1680/2001)
+
+CNA_URL = BACN + '5261/ley-n-1680-codigo-de-la-ni-ez-y-la-adolescencia-br'
+CNA_ART = re.compile(r'^Ar[tí]*culo\s+(\d+)\s*[°º]?\s*(?:\.-|\.|-)\s*(.*)$')
+
+
+def cna_unit(n: int, title: str, paras: list[str]) -> dict:
+    return cp_unit(n, title, paras)
+
+
+def cna_enacted() -> dict:
+    return enacted_code(CNA_URL, CNA_ART, ('Descripción', 'LEY N° 1680', 'CODIGO DE LA NIÑEZ Y LA ADOLESCENCIA',
+                                           'EL CONGRESO DE LA NACION PARAGUAYA SANCIONA CON FUERZA DE', 'LEY:'),
+                        'Aprobado el Proyecto de Ley por la Honorable', 259, cna_unit, 'cna')
+
+
 # ---------------------------------------------------------------- corpus
 
 def sources() -> list[dict]:
