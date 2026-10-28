@@ -64,12 +64,11 @@ CODE_DECISIONS: list[str] = [
     'paraguayas marks Penal Code articles as modified by 11 laws, all in this replay except Ley 4005/2010, which '
     'amends Ley 2849/2005 (antisecuestro), not the Code; it marks no Civil Code article as modified.',
     'Código Procesal Penal: BACN publishes it only as enacted (Ley 1286/1998, promulgated 8 July 1998). Ley '
-    '1444/1999 replaced its own entry into force (art. 505, repealed by Ley 1444 art. 18): it applied in part from '
-    '9 July 1999 (art. 2) and in full from 1 March 2000 (art. 3). The first version is dated 1999-07-09 and already '
-    'lacks art. 17 inc. 15 and art. 505, which Ley 1444 art. 18 repealed from that same day; the builder takes one '
-    'version per day and credits the first version only to the act, so those two repeals cannot have a commit of '
-    'their own (ISSUES.md). The full application on 2000-03-01 is a commit credited to Ley 1444/1999 that changes '
-    'no words.',
+    '1444/1999 replaced its own entry into force (art. 505): it applied in part from 9 July 1999 (art. 2) and in '
+    'full from 1 March 2000 (art. 3). The first version (1999-07-09) is the Code as enacted, credited to Ley '
+    '1286/1998; a second version on the same day (same_day) removes art. 17 inc. 15 and art. 505, credited to Ley '
+    '1444/1999 art. 18 ("Desde el día 9 de julio de 1999, quedarán derogados"). The full application on 2000-03-01 '
+    'is a commit credited to Ley 1444/1999 that changes no words.',
     'Código Procesal Penal: the amending laws were found with the BACN search ("1286/98", "1286/1998", "1.286", '
     '"procesal penal") and the sitemap, and screened as for the other codes; there is no official consolidation to '
     'check the current text against. Units are art-NNN headed "# Artículo N. EPIGRAPH"; the epigraph is the run of '
@@ -1110,14 +1109,16 @@ def codigo_procesal_penal() -> dict:
     first_units['art-017'] = {**first_units['art-017'], 'text': '\n'.join(t17)}
     del first_units['art-505']
     LAWS['ley-1444-1999']['note'] = (
-        'Ley 1444/1999 art. 3: from 1 March 2000 the Code applies in full ("vigencia plena"). From 9 July 1999 it '
-        'applied in part (art. 2), and from that day art. 18 repealed art. 17 inc. 15 and art. 505; those repeals '
-        'are already in the first version, which is the text that applied on 9 July 1999.')
-    first = {'from': '1999-07-09', 'source_url': CPP_URL, 'sha256': sha(CPP_URL), 'units': first_units, 'credits': {},
-             'note': 'The Code as enacted (BACN page of Ley 1286/1998) as it first applied on 9 July 1999 under Ley '
-                     '1444/1999 art. 2, which also repealed from that day art. 17 inc. 15 ("violación del derecho de '
-                     'autor o inventor") and art. 505 (entry into force); those two provisions are not in this version. '
-                     'Full application followed on 1 March 2000 (Ley 1444/1999 art. 3).'}
+        'Ley 1444/1999 (transition to the new procedure): the Code applied in part from 9 July 1999 (art. 2) and in '
+        'full from 1 March 2000 (art. 3, "vigencia plena"); art. 18 repealed art. 17 inc. 15 and art. 505 (the '
+        'Code's own entry into force) from 9 July 1999.')
+    enacted = {'from': '1999-07-09', 'source_url': CPP_URL, 'sha256': sha(CPP_URL), 'units': dict(base), 'credits': {},
+               'note': 'The Code as enacted (BACN page of Ley 1286/1998), on the day it first applied in part under '
+                       'Ley 1444/1999 art. 2. Ley 1444/1999 art. 18 repeals art. 17 inc. 15 and art. 505 the same day '
+                       '(next commit); full application followed on 1 March 2000 (art. 3).'}
+    repeal1444 = {'from': '1999-07-09', 'same_day': True, 'source_url': url1444, 'sha256': sha(url1444),
+                  'units': first_units, 'credits': {'art-017': ['ley-1444-1999'], 'art-505': ['ley-1444-1999']}}
+    first = {'from': '1999-07-09', 'source_url': url1444, 'sha256': sha(url1444), 'units': first_units, 'credits': {}}
     rp = Replay('codigo-procesal-penal', first_units, first)
     for k in first_units:
         if k.startswith('art-'):
@@ -1209,6 +1210,8 @@ def codigo_procesal_penal() -> dict:
             rp.op('2020-02-01', fin, url, 'restore', cpp_key(n), frm)
 
     versions = rp.build()
+    assert versions[0] is first
+    versions = [enacted, repeal1444] + versions[1:]     # the replay started from the state after Ley 1444 art. 18
     last = versions[-1]['units']
     for k in ('art-129', 'art-141', 'art-251', 'art-253'):     # "conforme a su redacción original"
         assert last[k] == first_units[k], k
