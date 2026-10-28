@@ -115,7 +115,17 @@ def lines(fragment: str) -> list[str]:
             out.append(ln)
     return out
 
-for _f in (decode, norm, body, lines):
+def meta(page: str) -> dict:
+    """BACN page metadata printed above the text: 'Fecha de Promulgación: DD-MM-YYYY Fecha de Publicación: DD-MM-YYYY'."""
+    t = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', page)))
+    out = {}
+    for key, word in (('promulgated', 'Promulgaci'), ('published', 'Publicaci')):
+        m = re.search(r'Fecha de ' + word + r'[^:]{0,3}:\s*(\d{2})-(\d{2})-(\d{4})', t)
+        out[key] = f'{m.group(3)}-{m.group(2)}-{m.group(1)}' if m else None
+    return out
+
+
+for _f in (decode, norm, body, lines, meta):
     setattr(bacn, _f.__name__, staticmethod(_f))
 
 
