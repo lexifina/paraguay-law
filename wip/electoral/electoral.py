@@ -416,8 +416,9 @@ def decisions() -> list[str]:
         'the day after promulgation is used (Código Civil art. 1). Every later version is rebuilt by applying, in '
         'order of entry into force, the text of each amending law as printed on its BACN page.',
         'Código Electoral: the amending laws were found with the BACN full-text search (queries "834/96", '
-        '"834/1996", "codigo electoral", "código electoral", "electoral paraguayo", "834") and the sitemap, and '
-        'the text of every hit was screened for articles that modify, add to, repeal or suspend the Code. Because '
+        '"834/1996", "codigo electoral", "código electoral", "electoral paraguayo", "834") and the BACN sitemap '
+        '(law pages whose address names "electoral", "834", "sufragio", "registro cívico" or "partidos políticos"), '
+        'and the text of every hit was screened for articles that modify, add to, repeal or suspend the Code. Because '
         'there is no official consolidation, the current text cannot be checked against one; an amending law the '
         'search does not find would be missing here.',
         'Código Electoral: units are art-NNN headed "# Artículo N" (the Code has no epigraphs); added articles are '
@@ -473,14 +474,15 @@ def decisions() -> list[str]:
         'Código Electoral, Ley 6951/2022 art. 13 rewrites art. 2; its art. 14 puts it in force "inmediatamente luego de '
         'su promulgación y publicación", both on 17 August 2022, so it is dated 2022-08-17 rather than the day after.',
         'Código Electoral, not applied: Leyes 3212/2007 and 7528/2025 "amplían las disposiciones del Código Electoral" '
-        'with articles of their own (concertaciones) that are not numbered into the Code; Ley 1576/2000 (expired '
-        'identity cards for the 2000-2003 registration) and Ley 1620/2000 (registration period extended to 28 '
-        'February 2001) set one-off rules "de conformidad con" arts. 98 and 130 without modifying or suspending them; '
-        'Ley 4743/2012 arts. 4-12 and Ley 6501/2020 arts. 1 and 3 amend Ley 4743 itself; Ley 6983/2022 arts. 4-5 '
-        'amend the Ley Orgánica Municipal; Leyes 4559/2012 and 635/1995 only cite the Code.',
+        'with articles of their own (concertaciones) that are not numbered into the Code; Leyes 859/1996, 1065/1997 '
+        'and 1576/2000 (expired identity cards for registration and voting) and Ley 1620/2000 (registration period '
+        'extended to 28 February 2001) set one-off rules "de conformidad con" arts. 98 and 130 without modifying or '
+        'suspending them; Ley 4743/2012 arts. 4-12 and Ley 6501/2020 arts. 1 and 3 amend Ley 4743 itself; Ley '
+        '6983/2022 arts. 4-5 amend the Ley Orgánica Municipal; Leyes 4559/2012, 5583/2016, 6768/2021 and 635/1995 '
+        'have provisions of their own or only cite the Code.',
         'Código Electoral, art. 258 as enacted: BACN\'s page prints "VER PDDF" (see the PDF) where the Code gives its '
-        'D\'Hondt example table; the line is kept verbatim. The linked PDF (/archivos/2346/20140320134709.pdf) could '
-        'not be fetched (HTTP 522 twice) and no OCR is used, so the 1996 table is not in the text. Leyes 3166/2007, '
+        'D\'Hondt example table; the line is kept verbatim. The linked PDF (/archivos/2346/20140320134709.pdf, the '
+        'signed original, 57 pages) has no text layer and no OCR is used, so the 1996 table is not in the text. Leyes 3166/2007, '
         '6318/2019 and 6918/2022 print the table in their HTML; each table row is one line, cells separated by a space.',
         'Código Electoral: BACN wraps the incisos of Ley 6167/2018 (arts. 68 and 157) in HTML ordered lists styled '
         '"list-style-type:none", which show no numbers when rendered; electoral.py reads those lists as plain '
