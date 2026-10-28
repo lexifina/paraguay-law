@@ -1,0 +1,424 @@
+{
+ "parts": {
+  "50-electoral.json": {
+   "acts": [
+    "codigo-electoral"
+   ],
+   "sha256": "78e7a43fa454f740b5f00efd7989b7b17e4aeca949c5e85aaa93875dd9706927"
+  },
+  "60-datos-crediticios.json": {
+   "acts": [
+    "ley-datos-crediticios"
+   ],
+   "sha256": "41a0d158e458230a4652acc59881c7200e55a91b69a2163d72d74768edd3b344"
+  },
+  "61-consumidor.json": {
+   "acts": [
+    "ley-defensa-consumidor"
+   ],
+   "sha256": "9e9abc219dba81665671842029727e481392f829aed49eef3c19510bade613ac"
+  },
+  "62-proteccion-datos-personales.json": {
+   "acts": [
+    "ley-proteccion-datos-personales"
+   ],
+   "sha256": "d51f0c82ff5c4849c9a93a3550b321e73b4a5cfa0db7ad2853287a3ebed62f47"
+  },
+  "63-procedimientos-administrativos.json": {
+   "acts": [
+    "ley-procedimientos-administrativos"
+   ],
+   "sha256": "8b04c1b3e4789fd4cfba9fe5aae7567469836273972053c34e4c422ec1e7b405"
+  },
+  "64-acceso-informacion-publica.json": {
+   "acts": [
+    "ley-acceso-informacion-publica"
+   ],
+   "sha256": "7e24e3515ea2ab7ad53f0879b88757ffc7c8a0e19cfd5ad3b734b8e4f449aed9"
+  },
+  "70-batch1.json": {
+   "acts": [
+    "ley-comercio-electronico",
+    "ley-contra-violencia-domestica",
+    "ley-corte-suprema",
+    "ley-de-lenguas",
+    "ley-defensoria-pueblo",
+    "ley-educacion-superior",
+    "ley-ministerio-publico",
+    "ley-proteccion-integral-mujeres",
+    "ley-servicios-confianza"
+   ],
+   "sha256": "47edee46f0072f272c483b2cf205134c3c11c2a099ab031f5456cabb77ade467"
+  },
+  "71-batch2.json": {
+   "acts": [
+    "ley-accesibilidad-medio-fisico",
+    "ley-forestal",
+    "ley-general-educacion",
+    "ley-ministerio-ambiente",
+    "ley-servicios-ambientales",
+    "ley-sistema-nacional-ambiente",
+    "ley-tramites-administrativos",
+    "ley-transito-seguridad-vial",
+    "ley-transparencia-sociedades",
+    "ley-zona-seguridad-fronteriza"
+   ],
+   "sha256": "2a518d3b83cd15f3a0734b58dd825dcc3e609be5b95f4d32ece53f5d6bd35d52"
+  },
+  "73-organica-municipal.json": {
+   "acts": [
+    "ley-organica-municipal"
+   ],
+   "sha256": "c48b1a9a1680849c9c9a469ba20ab39c67daebe7371b3edf05d3a69699739c60"
+  },
+  "80-lactancia-materna.json": {
+   "acts": [
+    "ley-lactancia-materna"
+   ],
+   "sha256": "324f76392b9074993a69a1be611643bf481a5a07771d278869e054b1f212c04e"
+  },
+  "81-trata-de-personas.json": {
+   "acts": [
+    "ley-trata-de-personas"
+   ],
+   "sha256": "ad0db1010b38d25ee141faddb298af062c6bc64ad80e98bf7cfd4de54e7e3045"
+  },
+  "82-derecho-de-autor.json": {
+   "acts": [
+    "ley-derecho-de-autor"
+   ],
+   "sha256": "c75d6475d811f976c7ce8b9eff05bdf1a4c54d86bdcc649d3026a1f37a490ab0"
+  },
+  "83-marcas.json": {
+   "acts": [
+    "ley-de-marcas"
+   ],
+   "sha256": "fd98076439633727fa87804d8856d0345c38fc059722ab55f7823ea038f84f5e"
+  },
+  "84-legitimacion-dinero.json": {
+   "acts": [
+    "ley-legitimacion-dinero"
+   ],
+   "sha256": "1bfbd84db043c2417f9312c0c1e4fb42d64ea14d4160679f4ad82d7339008d4c"
+  },
+  "85-funcion-publica.json": {
+   "acts": [
+    "ley-funcion-publica"
+   ],
+   "sha256": "0133b566e0569b28c3ddd4352f1ae63c56e90096bf6706206dd57b1ee9b33607"
+  },
+  "86-cooperativas.json": {
+   "acts": [
+    "ley-cooperativas"
+   ],
+   "sha256": "34d7fb80351efaaca137d7ab64e728c719db8681a08b01dff12b49ed7b6c3b85"
+  },
+  "87-estatuto-agrario.json": {
+   "acts": [
+    "estatuto-agrario"
+   ],
+   "sha256": "f5f4cfe77aa8520e351888498d242867bfed60c3d6bbf1a167898a7cf394c82c"
+  },
+  "88-areas-silvestres-protegidas.json": {
+   "acts": [
+    "ley-areas-silvestres-protegidas"
+   ],
+   "sha256": "aba7ee1679db925e9815def4ad4046d169477458e6a10b222c526ac43d9744b3"
+  },
+  "89-indert.json": {
+   "acts": [
+    "ley-indert"
+   ],
+   "sha256": "8ef4af22b283f8b879f39ee637067fbbf245ac631ffad68839ceff577f7d84a5"
+  },
+  "90-registro-unificado-nacional.json": {
+   "acts": [
+    "ley-registro-unificado-nacional"
+   ],
+   "sha256": "44dbe866bee656a82536691f5db23371530226b255d0fa52832c2dd0a03bd08c"
+  },
+  "91-recursos-hidricos.json": {
+   "acts": [
+    "ley-recursos-hidricos"
+   ],
+   "sha256": "fbb1659edf6cefc872668ddae9b4f3346c20c46a82fe3bf334aa5443169d93cf"
+  },
+  "92-vida-silvestre.json": {
+   "acts": [
+    "ley-vida-silvestre"
+   ],
+   "sha256": "869df1b17eccddfff231822e8a440f9d5b6aa6e4f71a17271616ee14f04a1947"
+  },
+  "93-bosques-protectores.json": {
+   "acts": [
+    "ley-bosques-protectores"
+   ],
+   "sha256": "b7f96c326501ebb48b100df338d802f74e1e27f092356c7de415076eb642a25d"
+  },
+  "94-efluentes-cloacales.json": {
+   "acts": [
+    "ley-efluentes-cloacales"
+   ],
+   "sha256": "192bc51badd0ea7a399101d5fa922e1e179738623b9e231ffe988408d316bbb5"
+  },
+  "95-residuos-solidos.json": {
+   "acts": [
+    "ley-residuos-solidos"
+   ],
+   "sha256": "224e85a625133d5d853f2fa847c66e49f9145fd8d9983cd47bc7b92bb91efde3"
+  },
+  "96-acuicultura.json": {
+   "acts": [
+    "ley-acuicultura"
+   ],
+   "sha256": "88712959132b54d54fa198608be710923f02e955da285d66afb48ca7bc3b14e3"
+  },
+  "97-pesca-acuicultura.json": {
+   "acts": [
+    "ley-pesca-acuicultura"
+   ],
+   "sha256": "ff955ae981611d141cb6d83155ca6eb17afa487423959fbc22e1ecd953d05b59"
+  },
+  "98-bienestar-animal.json": {
+   "acts": [
+    "ley-bienestar-animal"
+   ],
+   "sha256": "1ae83b1c67523f293390143a1785bea506d0b5ca6677d8af14046ab623567e3c"
+  },
+  "99-01-patentes-invenciones.json": {
+   "acts": [
+    "ley-patentes-invenciones"
+   ],
+   "sha256": "372b3581658f19e850df1b163eb2703f7735efdbcbe56c3e78f90468d2ede118"
+  },
+  "99-02-dibujos-modelos-industriales.json": {
+   "acts": [
+    "ley-dibujos-modelos-industriales"
+   ],
+   "sha256": "7dd69435b8f48255af4264cb0331fb22389e4000bb6a868ac80f4a73536af760"
+  },
+  "99-03-estatuto-educador.json": {
+   "acts": [
+    "ley-estatuto-educador"
+   ],
+   "sha256": "dbd2591cb3fa8c7d6a65e303474489c1e239a6cd02714ec2d51717cfd90876ee"
+  },
+  "99-04-incoop.json": {
+   "acts": [
+    "ley-incoop"
+   ],
+   "sha256": "113162cad1f96cc5ea7b6579feb1f21d2d487e4df8e1bdade0548901b325d4cd"
+  },
+  "99-05-carta-organica-departamental.json": {
+   "acts": [
+    "ley-carta-organica-departamental"
+   ],
+   "sha256": "e2bdeaa842611fd33d407839c21986526d22aa7e94fa2b3d8ed2560436beea30"
+  },
+  "99-06-telecomunicaciones.json": {
+   "acts": [
+    "ley-telecomunicaciones"
+   ],
+   "sha256": "bfdf4802f51c6a88789be1b79d28cddac7a679f7d0cab5424322f794cec75033"
+  },
+  "99-07-comunidades-indigenas.json": {
+   "acts": [
+    "ley-comunidades-indigenas"
+   ],
+   "sha256": "7884c458b1af1902ebc6bea2d348401023b5ab8a3c3080aece1299843f921fdc"
+  },
+  "99-08-residuos-establecimientos-salud.json": {
+   "acts": [
+    "ley-residuos-establecimientos-salud"
+   ],
+   "sha256": "38f3dc07f3f3f1dc21c906ce49790eb01f0727bae10fcb2908bf4a918b6df073"
+  },
+  "99-09-mercado-valores.json": {
+   "acts": [
+    "ley-mercado-valores"
+   ],
+   "sha256": "b686c3011216745a6f4abd6a8e635f8bc5acc673fbd40e39b49eb1d5aad98511"
+  },
+  "99-10-mercado-valores-productos.json": {
+   "acts": [
+    "ley-mercado-valores-productos"
+   ],
+   "sha256": "0d6f9cc241f3198d0bd90dcec8b311b0534659f6e8f4915458c0420997144898"
+  },
+  "99-11-arbitraje.json": {
+   "acts": [
+    "ley-arbitraje"
+   ],
+   "sha256": "3937557f69e9e2180cfacc2b8ec03ac5eba36e05f2b9059870855a84f77344d2"
+  },
+  "99-12-arancel-honorarios-abogados.json": {
+   "acts": [
+    "ley-arancel-honorarios-abogados"
+   ],
+   "sha256": "645c47f708200cbcd13612d13e893565b2df3de8d03bc4d2f0131dabd4b33c19"
+  },
+  "99-13-armas-de-fuego-2010.json": {
+   "acts": [
+    "ley-armas-de-fuego-2010"
+   ],
+   "sha256": "9e45bdb2007394fe982e4c242792a670d20a50e31bd24df07bf9b8190c7c1d14"
+  },
+  "99-14-armas-de-fuego.json": {
+   "acts": [
+    "ley-armas-de-fuego"
+   ],
+   "sha256": "39f0e87107f271428af540674c62ad2cd2d8690a557125d015109881b5b5f5a8"
+  },
+  "99-15-mipymes.json": {
+   "acts": [
+    "ley-mipymes"
+   ],
+   "sha256": "52a58eb7fad734a58be97d96d2f4c38810dc08c5d156a7355e1fcd66ddbd39d1"
+  },
+  "99-16-sistema-nacional-transporte.json": {
+   "acts": [
+    "ley-sistema-nacional-transporte"
+   ],
+   "sha256": "4d40c7854ba23cef23f7927d5aa3d01bc9e3c34f6f7f3af6626eb4af9db6dd43"
+  },
+  "99-17-estupefacientes.json": {
+   "acts": [
+    "ley-estupefacientes"
+   ],
+   "sha256": "0a5d745ab541161a89428d8fcdd5366afaeea25442ccb29a13b9e44e7a4c1e7e"
+  },
+  "99-18-inversiones.json": {
+   "acts": [
+    "ley-inversiones"
+   ],
+   "sha256": "0e2b1edbcce8f2190c2be8982b23e9f1f149c644beb6e2b754807e48eb650d02"
+  },
+  "99-19-transporte-electrico.json": {
+   "acts": [
+    "ley-transporte-electrico"
+   ],
+   "sha256": "ffa62c15e48f9964c30b55065b3ad341338a317bba2220bc70bf04c32a7cf181"
+  },
+  "99-20-divorcio-vincular.json": {
+   "acts": [
+    "ley-divorcio-vincular"
+   ],
+   "sha256": "e61ba4c953e73c906fd454ef7be1559c0e7eb8885f5384ea67a2b99d6820a9cc"
+  },
+  "99-21-reuniones-publicas.json": {
+   "acts": [
+    "ley-reuniones-publicas"
+   ],
+   "sha256": "a9fd42029d71405bac5ef13465612c1a57b9743017b51aeae981e38b0e5324da"
+  },
+  "99-22-pedido-de-informes.json": {
+   "acts": [
+    "ley-pedido-de-informes"
+   ],
+   "sha256": "7fc6679e1b5e3d9d7bcbe2f208699c37c25ce4eaca7eadda7add42e0daa3b47a"
+  },
+  "99-23-maltrato-infantil.json": {
+   "acts": [
+    "ley-maltrato-infantil"
+   ],
+   "sha256": "d47ba83a8b06ccf6b248dfe64379359ad97b41f6da879fb91bf9e09ca415a730"
+  },
+  "99-24-informacion-remuneraciones.json": {
+   "acts": [
+    "ley-informacion-remuneraciones"
+   ],
+   "sha256": "8bf1a8cc1e9bc61a9e1f8c27ee10859fd54f126f7fda1e3e255c6144839fe546"
+  },
+  "99-25-vehiculos-electricos.json": {
+   "acts": [
+    "ley-vehiculos-electricos"
+   ],
+   "sha256": "96c6b6a77a10a465a86a0473da14e4037b2c12183b2694eae236bbb51ea933da"
+  },
+  "99-26-prevencion-abuso-sexual.json": {
+   "acts": [
+    "ley-prevencion-abuso-sexual"
+   ],
+   "sha256": "4a8dfe17ffcfac4c490097722bc7c12c2617a2e658b676c74f2cc5762846aefd"
+  },
+  "99-27-objecion-de-conciencia.json": {
+   "acts": [
+    "ley-objecion-de-conciencia"
+   ],
+   "sha256": "aef6defa7a2ac5c4d39ed9616a68be16ffef09eafa5bbf894248aa65891f0e25"
+  },
+  "99-28-polucion-sonora.json": {
+   "acts": [
+    "ley-polucion-sonora"
+   ],
+   "sha256": "5ec4c8e6e3a0bd3974634efe2270e91ff8a2b32c62699e8ac4b9ab5889917b79"
+  },
+  "99-29-banco-central.json": {
+   "acts": [
+    "ley-banco-central"
+   ],
+   "sha256": "5acc5792deff5574aed7e220dd3ff4f304dbe55346586210cf19f22f5cc80aea"
+  },
+  "99-30-general-de-bancos.json": {
+   "acts": [
+    "ley-general-de-bancos"
+   ],
+   "sha256": "7faf9d3f87b4c1c6bd76f0a492c5daa5e6d98684ef2b12475e364fcade4593d2"
+  },
+  "99-31-garantia-depositos.json": {
+   "acts": [
+    "ley-garantia-depositos"
+   ],
+   "sha256": "93b70152049c106ad6fdda47fcf9081677d6c1e4846b408a063481b1ba21103e"
+  },
+  "99-32-agencia-financiera-desarrollo.json": {
+   "acts": [
+    "ley-agencia-financiera-desarrollo"
+   ],
+   "sha256": "8f9b645f105cbec7c745bf461e15602e1735b6de747407ac9b3124a01483df76"
+  },
+  "99-33-cuenta-unica-tesoro.json": {
+   "acts": [
+    "ley-cuenta-unica-tesoro"
+   ],
+   "sha256": "30f8fe7152b0d7b0f4231d442d02273a04c86d72c8b01278666ca3a3c1cedc7d"
+  },
+  "99-34-informacion-caracter-privado.json": {
+   "acts": [
+    "ley-informacion-caracter-privado"
+   ],
+   "sha256": "ac4ba9f662586117bf1ebb8aed47134fcba5f82cedf45c21bbfead4630385e16"
+  },
+  "99-35-enriquecimiento-ilicito.json": {
+   "acts": [
+    "ley-enriquecimiento-ilicito"
+   ],
+   "sha256": "d71e99061f01c503cea3c7500b2a14af17f47b406ffc4f9e8b2d49ec81d9af08"
+  },
+  "99-36-seguros.json": {
+   "acts": [
+    "ley-seguros"
+   ],
+   "sha256": "9e9fefbc190d106c2923b8417a155693ae0fe326671f9cea108224303345fcd8"
+  },
+  "99-37-inversion-infraestructura-publica.json": {
+   "acts": [
+    "ley-inversion-infraestructura-publica"
+   ],
+   "sha256": "2ecae6211aa1b34be31ce60380701dbcc1f33fcff920c3d0ba4269c8aaed7100"
+  },
+  "99-38-responsabilidad-fiscal.json": {
+   "acts": [
+    "ley-responsabilidad-fiscal"
+   ],
+   "sha256": "c326d8688c4ecbf3a1b745b8385f51c3eb70e11ad1e4752b15b83b4ad46fa9de"
+  },
+  "99-39-administracion-financiera-estado.json": {
+   "acts": [
+    "ley-administracion-financiera-estado"
+   ],
+   "sha256": "d55b59a2da94430226b40bd6372c4f5a068d076706bff8163fc23f9c55001e66"
+  }
+ },
+ "schema": 1
+}
