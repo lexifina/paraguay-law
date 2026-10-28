@@ -10,10 +10,13 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | --- | --- | ---: | --- |
 | `constitucion/` | Constitución de la República del Paraguay (1992) | 2 | As enacted (20 June 1992), then Enmienda Constitucional N° 1 (art. 120, in force 17 October 2011) |
 | `codigo-civil/` | Código Civil (Ley N° 1183/1985) | 19 | As enacted (in force 1 January 1987), then 18 amending laws from Ley 45/1991 (divorce) to Ley 7371/2025 (persons with disabilities), each applied from its own text |
+| `codigo-penal/` | Código Penal (Ley N° 1160/1997) | 20 | As enacted (in force 26 November 1998), then 18 amending laws from Ley 2212/2003 (kidnapping) to Ley 7300/2024 (theft of electricity), each applied from its own text; Ley 3440/2008 takes effect in two steps (21 August 2008 and 16 July 2009) |
 
 The Constitution is complete: 291 articles, the preamble, the 20 final and transitional provisions, the closing formula, and an index of its parts, titles, chapters and sections (`constitucion/indice.md`). It has been amended once since 1992.
 
-The Civil Code has 2,810 of its 2,815 articles as enacted (BACN's transcription lacks arts. 733, 1170, 1571, 2414 and 2566), the closing formula, and an index of its books, titles, chapters, sections and paragraphs (`codigo-civil/indice.md`). BACN publishes the Code only as enacted, so every later version here is rebuilt by applying each amending law's own text in order of entry into force: rewritten articles (for example art. 36, majority at 18, by Ley 2169/2003 and again by Ley 7371/2025), repealed articles (40 by Ley 1/1992, arts. 867-879 by Ley 1328/1998), one transitional wording (art. 1725 under Ley 805/1996 until 1 January 1997) and two retitled chapters. More acts follow as their history can be shown from official text; see "What it does not show".
+The Civil Code has 2,810 of its 2,815 articles as enacted (BACN's transcription lacks arts. 733, 1170, 1571, 2414 and 2566), the closing formula, and an index of its books, titles, chapters, sections and paragraphs (`codigo-civil/indice.md`). BACN publishes the Code only as enacted, so every later version here is rebuilt by applying each amending law's own text in order of entry into force: rewritten articles (for example art. 36, majority at 18, by Ley 2169/2003 and again by Ley 7371/2025), repealed articles (40 by Ley 1/1992, arts. 867-879 by Ley 1328/1998), one transitional wording (art. 1725 under Ley 805/1996 until 1 January 1997) and two retitled chapters. The Penal Code has all 326 articles as enacted and the closing formula. Its later versions replay 18 amending laws the same way, including Ley 3440/2008 (about sixty articles), the computer-crime articles of Ley 4439/2011 (146b-146d, 174b, 175b, 248b) and the sicariato article 105b of Ley 7062/2023. Where a law replaces art. N by lettered articles (129 by 129a-129c, 184 by 184a-184c, 135, 191, 268, 105), art. N is removed and the lettered articles are added. Its book, title and chapter headings are not kept (see "What it does not show").
+
+More acts follow as their history can be shown from official text; see "What it does not show".
 
 ## A lawyer's questions as git commands
 
@@ -21,6 +24,7 @@ The Civil Code has 2,810 of its 2,815 articles as enacted (BACN's transcription 
 | --- | --- |
 | What did art. 120 say on 1 January 2010? | `python tools/en_vigor_el.py 2010-01-01 constitucion 120` |
 | Majority age in the Civil Code on 1 January 2003 | `python tools/en_vigor_el.py 2003-01-01 codigo-civil 36` |
+| Family violence (Penal Code art. 229) on 1 January 2013, and who wrote it | `python tools/en_vigor_el.py --law 2013-01-01 codigo-penal 229` |
 | The same, with raw git (bash) | `git show $(git rev-list -1 --before="2010-01-01T23:59:59Z" main -- constitucion/art-120.md):constitucion/art-120.md` |
 | The same, in PowerShell | `$r = git rev-list -1 --before="2010-01-01T23:59:59Z" main -- constitucion/art-120.md; git show "$($r):constitucion/art-120.md"` |
 | Which law wrote each paragraph of art. 120? | `git blame constitucion/art-120.md` |
@@ -56,6 +60,8 @@ Blame credits whole lines (one paragraph per line). Use `git log -p --word-diff`
 
 ## What it does not show
 
+- **Penal Code headings.** The book/title/chapter headings of the Penal Code are not in the repository: Ley 3440/2008 rearranged the chapters of Title II of Book Two and Ley 6452/2019 added one, and the laws print the new headings next to the first article they rewrite, so the structure cannot be rebuilt mechanically. Each article keeps its own epigraph.
+- **The Penal Code, like the Civil Code, has no official consolidated text** to check the current text against; the history is a replay of every amending law found with BACN's search ("1160", "1.160", "1160/97", "1160/1997", "código penal").
 - **Five Civil Code articles are missing** (733, 1170, 1571, 2414, 2566): BACN's HTML skips them and the scan it links has no text layer. They are left out rather than typed in.
 - **Publication dates.** Where BACN gives no usable publication date (Leyes 1/1992, 388/1994, 701/1995), a version is dated the day after promulgation; `REPRODUCE.md` lists each case. For Ley 1/1992, BACN's promulgation date (9 April 1992) is earlier than its sanción, so the date cited in Ley 985/1996 (15 July 1992) is used.
 - **No dated consolidations exist.** BACN publishes one current text per law, partly consolidated with "(Modificado por …)" notes; it keeps no earlier versions, and its text under a note is not always updated (art. 120). Every earlier version here is rebuilt from the amending act's own text. Where the history cannot be shown from official text, the act is left out rather than guessed.
@@ -89,7 +95,7 @@ This repository is not legal advice and not an official publication.
 
 ## En español
 
-Historia del derecho paraguayo en git: un archivo por disposición y un commit por ley, fechado el día de su entrada en vigencia y firmado por la ley que hizo el cambio (`git blame` nombra la ley de cada párrafo). Contiene la Constitución Nacional de 1992 tal como fue sancionada y su Enmienda N° 1 (artículo 120, voto de los paraguayos en el exterior), sancionada y promulgada el 17 de octubre de 2011 tras el referéndum (Acuerdo y Sentencia N° 23 del TSJE). Contiene también el Código Civil (Ley N° 1183/1985) tal como fue sancionado, vigente desde el 1 de enero de 1987, y sus modificaciones por 18 leyes, desde la Ley 45/1991 hasta la Ley 7371/2025, aplicadas a partir del texto de cada ley modificatoria. La BACN no publica un texto consolidado del Código, por lo que el texto actual no puede cotejarse con uno oficial; faltan los artículos 733, 1170, 1571, 2414 y 2566, ausentes en la transcripción de la BACN.
+Historia del derecho paraguayo en git: un archivo por disposición y un commit por ley, fechado el día de su entrada en vigencia y firmado por la ley que hizo el cambio (`git blame` nombra la ley de cada párrafo). Contiene la Constitución Nacional de 1992 tal como fue sancionada y su Enmienda N° 1 (artículo 120, voto de los paraguayos en el exterior), sancionada y promulgada el 17 de octubre de 2011 tras el referéndum (Acuerdo y Sentencia N° 23 del TSJE). Contiene también el Código Civil (Ley N° 1183/1985) tal como fue sancionado, vigente desde el 1 de enero de 1987, y sus modificaciones por 18 leyes, desde la Ley 45/1991 hasta la Ley 7371/2025, aplicadas a partir del texto de cada ley modificatoria. La BACN no publica un texto consolidado del Código, por lo que el texto actual no puede cotejarse con uno oficial; faltan los artículos 733, 1170, 1571, 2414 y 2566, ausentes en la transcripción de la BACN. Contiene además el Código Penal (Ley N° 1160/1997), vigente desde el 26 de noviembre de 1998, y sus modificaciones por 18 leyes, desde la Ley 2212/2003 hasta la Ley 7300/2024, aplicadas del mismo modo.
 
 - Texto vigente en una fecha: `python tools/en_vigor_el.py 2010-01-01 constitucion 120`
 - Regla supletoria de vigencia: art. 1 del Código Civil (desde el día siguiente al de su publicación, o desde el día que la ley determine) y art. 213 de la Constitución.

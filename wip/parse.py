@@ -43,6 +43,25 @@ CODE_DECISIONS: list[str] = [
     'Código Civil: an amending law quotes the new article between quotation marks; the marks are removed (a closing '
     'quote before a full stop keeps the full stop). Inciso-level changes (art. 39 inc. a repealed by Ley 2169/2003; art. 1898 inc. b '
     'rewritten by Ley 2559/2005) replace or drop that one line.',
+    'Código Penal: BACN publishes the Code only as enacted (Ley 1160/1997, promulgated 26 November 1997); it is in '
+    'force from 1998-11-26 (art. 325 "entrará en vigor un año después de su promulgación"). Later versions replay '
+    'the amending laws, found with the BACN search (queries "1160", "1.160", "1160/97", "1160/1997", "codigo penal", '
+    '"código penal") and the sitemap, exactly as for the Civil Code; the same limit applies: there is no official '
+    'consolidation to check the current text against.',
+    'Código Penal: units are art-NNN (art-129-b for lettered articles), headed "# Artículo N.- epigraph"; a final '
+    'full stop or colon after an epigraph is dropped, because the amending laws print epigraphs with and without '
+    'one. The book/title/chapter headings are not kept: Ley 3440/2008 "recapitulates" Title II of Book Two and '
+    'Ley 6452/2019 adds a chapter, and the laws quote new headings next to the first article they rewrite rather '
+    'than the first article of each chapter, so the structure cannot be replayed mechanically.',
+    'Código Penal: when a law says it modifies art. N but gives only articles Na, Nb, ... (Ley 3440/2008 for 129 and '
+    '184; Ley 6002/2017 for 135; Ley 6452/2019 for 191 and 268; Ley 7062/2023 for 105), art. N is removed and the '
+    'lettered articles are added. Lettered articles a law adds without listing (Ley 4439/2011: 146b-d, 174b, 175b, '
+    '248b) are insertions.',
+    'Código Penal: laws found by the search that create offences in their own text, cite the Code, or amend other '
+    'laws (for example Leyes 4005/2010, 4682/2012, 4728/2012, 5162/2014, 5876/2017) do not change its text and are '
+    'not applied. Ley 1252 (1987) repeals arts. 107 and 108 of the 1914 Code, not of this one.',
+    'HTML ordered lists (<ol>) on BACN pages carry their item numbers only when rendered; parse.py writes the numbers '
+    'out ("1. ", "2. ", ...), as in Ley 7062/2023.',
 ]
 
 
@@ -141,7 +160,10 @@ def lines(fragment: str) -> list[str]:
     for ln in s.split('\n'):
         ln = norm(ln)
         if ln and ln not in ('-->',):
-            out.append(ln)
+            if out and re.fullmatch(r'\d+\.', out[-1]):
+                out[-1] = out[-1] + ' ' + ln      # a numbered <li> whose text sits in its own <p>
+            else:
+                out.append(ln)
     return out
 
 def meta(page: str) -> dict:
@@ -397,8 +419,9 @@ def join_broken(paras: list[str], where: str) -> list[str]:
     punctuation and the next starts with a lower-case word that is not an enumerator ("a)", "b)")."""
     out: list[str] = []
     for p in paras:
-        if (out and not re.search(r'[.;:,"\')]$', out[-1]) and re.match(r'^[a-zñáéíóú]', p)
-                and not re.match(r'^[a-zñ]{1,2}\)', p)):
+        if (out and not re.search(r'[.;:,"\')]$', out[-1])
+                and ((re.match(r'^[a-zñáéíóú]', p) and not re.match(r'^[a-zñ]{1,2}[).]\s', p))
+                     or (re.search(r'\b(incisos?|numerales|artículos)$', out[-1]) and re.match(r'^\d+° al \d+°', p)))):
             JOINS.append(f'{where}: "{out[-1][-30:]}" + "{p[:30]}"')
             out[-1] = out[-1] + ' ' + p
         else:
@@ -938,7 +961,7 @@ def sources() -> list[dict]:
 
 
 def main():
-    acts = [constitution(), civil_code()]
+    acts = [constitution(), civil_code(), penal_code()]
     corpus = {
         'country': {
             'code': 'PY', 'name': 'Paraguay', 'slug': 'paraguay', 'lang': 'es', 'tz': 'America/Asuncion',
