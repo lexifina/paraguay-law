@@ -60,6 +60,9 @@ CODE_DECISIONS: list[str] = [
     'Código Penal: laws found by the search that create offences in their own text, cite the Code, or amend other '
     'laws (for example Leyes 4005/2010, 4682/2012, 4728/2012, 5162/2014, 5876/2017) do not change its text and are '
     'not applied. Ley 1252 (1987) repeals arts. 107 and 108 of the 1914 Code, not of this one.',
+    'Reconciliation (metadata only, no text read or copied; the repository has no licence): ypsoftware/leyes-'
+    'paraguayas marks Penal Code articles as modified by 11 laws, all in this replay except Ley 4005/2010, which '
+    'amends Ley 2849/2005 (antisecuestro), not the Code; it marks no Civil Code article as modified.',
     'HTML ordered lists (<ol>) on BACN pages carry their item numbers only when rendered; parse.py writes the numbers '
     'out ("1. ", "2. ", ...), as in Ley 7062/2023.',
 ]
