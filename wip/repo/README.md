@@ -9,14 +9,18 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | Folder | Act | Versions | History |
 | --- | --- | ---: | --- |
 | `constitucion/` | Constitución de la República del Paraguay (1992) | 2 | As enacted (20 June 1992), then Enmienda Constitucional N° 1 (art. 120, in force 17 October 2011) |
+| `codigo-civil/` | Código Civil (Ley N° 1183/1985) | 19 | As enacted (in force 1 January 1987), then 18 amending laws from Ley 45/1991 (divorce) to Ley 7371/2025 (persons with disabilities), each applied from its own text |
 
-The Constitution is complete: 291 articles, the preamble, the 20 final and transitional provisions, the closing formula, and an index of its parts, titles, chapters and sections (`constitucion/indice.md`). It has been amended once since 1992. More acts follow as their history can be shown from official text; see "What it does not show".
+The Constitution is complete: 291 articles, the preamble, the 20 final and transitional provisions, the closing formula, and an index of its parts, titles, chapters and sections (`constitucion/indice.md`). It has been amended once since 1992.
+
+The Civil Code has 2,810 of its 2,815 articles as enacted (BACN's transcription lacks arts. 733, 1170, 1571, 2414 and 2566), the closing formula, and an index of its books, titles, chapters, sections and paragraphs (`codigo-civil/indice.md`). BACN publishes the Code only as enacted, so every later version here is rebuilt by applying each amending law's own text in order of entry into force: rewritten articles (for example art. 36, majority at 18, by Ley 2169/2003 and again by Ley 7371/2025), repealed articles (40 by Ley 1/1992, arts. 867-879 by Ley 1328/1998), one transitional wording (art. 1725 under Ley 805/1996 until 1 January 1997) and two retitled chapters. More acts follow as their history can be shown from official text; see "What it does not show".
 
 ## A lawyer's questions as git commands
 
 | Question | Command |
 | --- | --- |
 | What did art. 120 say on 1 January 2010? | `python tools/en_vigor_el.py 2010-01-01 constitucion 120` |
+| Majority age in the Civil Code on 1 January 2003 | `python tools/en_vigor_el.py 2003-01-01 codigo-civil 36` |
 | The same, with raw git (bash) | `git show $(git rev-list -1 --before="2010-01-01T23:59:59Z" main -- constitucion/art-120.md):constitucion/art-120.md` |
 | The same, in PowerShell | `$r = git rev-list -1 --before="2010-01-01T23:59:59Z" main -- constitucion/art-120.md; git show "$($r):constitucion/art-120.md"` |
 | Which law wrote each paragraph of art. 120? | `git blame constitucion/art-120.md` |
@@ -42,6 +46,7 @@ After a rebuild, refresh tags with `git fetch --force --tags`: a plain fetch kee
 - Health checks: no merge commits on `main`, commit dates never go backwards, nothing dated in the future, and every commit's trailers parse with `git interpret-trailers --parse`.
 - Against the official text today: the repository's current text equals BACN's Constitution page in every provision except art. 120, where BACN still prints the 1992 wording under a "(Modificado por ENMIENDA CONSTITUCIONAL N° 1)" note. The repository follows the Enmienda itself. Every such difference is listed in `REPRODUCE.md` under the decisions.
 - The amended art. 120 is read from the text layer of the signed original of the Enmienda (a BACN scan) and compared with BACN's HTML transcription. They differ in two small points ("Ley"/"ley", and a final full stop), and the signed original is used.
+- **The Civil Code cannot be checked against an official consolidated text, because none is published.** Its history is a replay: the enacted text plus every amending law found with BACN's full-text search and sitemap (queries for "1183", "1.183", "1183/85", "1183/1985" and "código civil"), each read for the articles it rewrites or repeals. The replay stops with an error if a law rewrites or repeals an article that is not in force. An amending law that BACN's search does not find would be missing; laws that only say "the contrary provisions are repealed" (Ley 45/1991 art. 23, Ley 1/1992 art. 98 second paragraph) are not applied, because they name no article.
 
 ## What "author" means
 
@@ -51,6 +56,8 @@ Blame credits whole lines (one paragraph per line). Use `git log -p --word-diff`
 
 ## What it does not show
 
+- **Five Civil Code articles are missing** (733, 1170, 1571, 2414, 2566): BACN's HTML skips them and the scan it links has no text layer. They are left out rather than typed in.
+- **Publication dates.** Where BACN gives no usable publication date (Leyes 1/1992, 388/1994, 701/1995), a version is dated the day after promulgation; `REPRODUCE.md` lists each case. For Ley 1/1992, BACN's promulgation date (9 April 1992) is earlier than its sanción, so the date cited in Ley 985/1996 (15 July 1992) is used.
 - **No dated consolidations exist.** BACN publishes one current text per law, partly consolidated with "(Modificado por …)" notes; it keeps no earlier versions, and its text under a note is not always updated (art. 120). Every earlier version here is rebuilt from the amending act's own text. Where the history cannot be shown from official text, the act is left out rather than guessed.
 - **The Gaceta Oficial** (gacetaoficial.gov.py) did not answer from the build machine (connection timeout), so publication dates in the Gaceta are not recorded.
 - **SILpy**, the Congress bill tracker, is not read: its robots.txt disallows every agent except Googlebot.
@@ -82,7 +89,7 @@ This repository is not legal advice and not an official publication.
 
 ## En español
 
-Historia del derecho paraguayo en git: un archivo por disposición y un commit por ley, fechado el día de su entrada en vigencia y firmado por la ley que hizo el cambio (`git blame` nombra la ley de cada párrafo). Contiene la Constitución Nacional de 1992 tal como fue sancionada y su Enmienda N° 1 (artículo 120, voto de los paraguayos en el exterior), sancionada y promulgada el 17 de octubre de 2011 tras el referéndum (Acuerdo y Sentencia N° 23 del TSJE).
+Historia del derecho paraguayo en git: un archivo por disposición y un commit por ley, fechado el día de su entrada en vigencia y firmado por la ley que hizo el cambio (`git blame` nombra la ley de cada párrafo). Contiene la Constitución Nacional de 1992 tal como fue sancionada y su Enmienda N° 1 (artículo 120, voto de los paraguayos en el exterior), sancionada y promulgada el 17 de octubre de 2011 tras el referéndum (Acuerdo y Sentencia N° 23 del TSJE). Contiene también el Código Civil (Ley N° 1183/1985) tal como fue sancionado, vigente desde el 1 de enero de 1987, y sus modificaciones por 18 leyes, desde la Ley 45/1991 hasta la Ley 7371/2025, aplicadas a partir del texto de cada ley modificatoria. La BACN no publica un texto consolidado del Código, por lo que el texto actual no puede cotejarse con uno oficial; faltan los artículos 733, 1170, 1571, 2414 y 2566, ausentes en la transcripción de la BACN.
 
 - Texto vigente en una fecha: `python tools/en_vigor_el.py 2010-01-01 constitucion 120`
 - Regla supletoria de vigencia: art. 1 del Código Civil (desde el día siguiente al de su publicación, o desde el día que la ley determine) y art. 213 de la Constitución.
