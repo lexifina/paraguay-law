@@ -476,7 +476,7 @@ def decisions() -> list[str]:
         '"list-style-type:none", which show no numbers when rendered; ../parse.py writes no number for such items '
         'and writes other list markers as the page\'s CSS shows them (lower-alpha "a.", start= honoured). Markers '
         'changed by that rule on 2026-10-28: arts. 68, 207, 258 (two lists, "a."-"b." and "c."-"d."), 278 and '
-        '278 bis/278-a now read "a.", "b.", ...; art. 64 second list continues "3.", "4." (start="3") instead of '
+        '278 a now read "a.", "b.", ...; art. 64 second list continues "3.", "4." (start="3") instead of '
         'restarting at "1.".',
     ]
 
