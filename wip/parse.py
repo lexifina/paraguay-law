@@ -214,10 +214,16 @@ def lines(fragment: str) -> list[str]:
     s = re.sub(r'(?i)<br\s*/?>', '\n', s)
 
     def number_ol(m):
-        # An HTML ordered list shows its numbers only when rendered; write them out ("1. ", "2. ", ...).
+        # An HTML ordered list shows its numbers only when rendered; write them out ("1. ", "2. ", ...). An item
+        # styled list-style-type:none still counts but shows no number (Ley 6167/2018 wraps its "a)" items so).
         assert not re.search(r'(?i)<ol\b', m.group(1)), 'nested <ol>'
         n = iter(range(1, 1000))
-        return re.sub(r'(?i)<li\b[^>]*>', lambda _: f'<li>{next(n)}. ', m.group(1))
+
+        def item(li):
+            k = next(n)
+            st = li.group(1).replace(' ', '').lower()
+            return '<li>' if re.search(r'list-style(-type)?:none', st) else f'<li>{k}. '
+        return re.sub(r'(?i)<li\b([^>]*)>', item, m.group(1))
     s = re.sub(r'(?is)<ol\b[^>]*>(.*?)</ol\s*>', number_ol, s)
     s = re.sub(r'(?i)</(p|div|h[1-6]|li|tr|table|blockquote)\s*>', '\n', s)
     s = re.sub(r'(?i)<(p|div|h[1-6]|li|tr|table|blockquote)\b[^>]*>', '\n', s)

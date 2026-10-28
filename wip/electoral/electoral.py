@@ -30,17 +30,6 @@ SLUG = 'codigo-electoral'
 
 # ---------------------------------------------------------------- page lines
 
-def _unnumbered(m: re.Match) -> str:
-    """An <ol> whose items are all styled list-style-type:none shows no numbers when rendered (Ley 6167/2018 wraps
-    its own "a)", "b)" items in one); turn it into plain blocks so ../parse.py does not write numbers out."""
-    lis = re.findall(r'(?i)<li\b([^>]*)>', m.group(1))
-    none = ['list-style-type:none' in a.replace(' ', '').lower() for a in lis]
-    if lis and all(none):
-        return '<div>' + m.group(1) + '</div>'
-    assert not any(none), 'an <ol> with some unnumbered items'
-    return m.group(0)
-
-
 def _table_rows(m: re.Match) -> str:
     """A table row becomes one line, its cells separated by a space (the D'Hondt example of art. 258): BACN puts a
     <p> in each cell, which would otherwise make every cell a line of its own."""
@@ -58,7 +47,6 @@ _KEEP = PDF_NOTE + ' \x00(text)'  # carried through parse.enacted_code as articl
 
 def page_lines(url: str) -> list[str]:
     frag = parse.bacn.body(parse.bacn.decode(parse.raw(url)))
-    frag = re.sub(r'(?is)<ol\b[^>]*>(.*?)</ol\s*>', _unnumbered, frag)
     frag = re.sub(r'(?is)<table\b.*?</table\s*>', _table_rows, frag)
     L = parse.bacn.lines(frag)
     if url == CODE_URL:
@@ -485,8 +473,8 @@ def decisions() -> list[str]:
         'signed original, 57 pages) has no text layer and no OCR is used, so the 1996 table is not in the text. Leyes 3166/2007, '
         '6318/2019 and 6918/2022 print the table in their HTML; each table row is one line, cells separated by a space.',
         'Código Electoral: BACN wraps the incisos of Ley 6167/2018 (arts. 68 and 157) in HTML ordered lists styled '
-        '"list-style-type:none", which show no numbers when rendered; electoral.py reads those lists as plain '
-        'paragraphs instead of writing numbers out (../parse.py writes the numbers of other ordered lists).',
+        '"list-style-type:none", which show no numbers when rendered; ../parse.py writes no number for such items '
+        '(it writes the numbers of other ordered list items).',
     ]
 
 
