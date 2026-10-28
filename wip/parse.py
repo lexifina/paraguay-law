@@ -1111,7 +1111,7 @@ def codigo_procesal_penal() -> dict:
     LAWS['ley-1444-1999']['note'] = (
         'Ley 1444/1999 (transition to the new procedure): the Code applied in part from 9 July 1999 (art. 2) and in '
         'full from 1 March 2000 (art. 3, "vigencia plena"); art. 18 repealed art. 17 inc. 15 and art. 505 (the '
-        'Code's own entry into force) from 9 July 1999.')
+        'entry-into-force article of the Code) from 9 July 1999.')
     enacted = {'from': '1999-07-09', 'source_url': CPP_URL, 'sha256': sha(CPP_URL), 'units': dict(base), 'credits': {},
                'note': 'The Code as enacted (BACN page of Ley 1286/1998), on the day it first applied in part under '
                        'Ley 1444/1999 art. 2. Ley 1444/1999 art. 18 repeals art. 17 inc. 15 and art. 505 the same day '

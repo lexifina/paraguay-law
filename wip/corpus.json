@@ -446,7 +446,7 @@
    "url": "https://www.bacn.gov.py/leyes-paraguayas/1592/ley-n-1444-regula-el-periodo-de-transicion-al-nuevo-sistema-procesal-penal-br",
    "temporary_until": null,
    "restores": null,
-   "note": "Ley 1444/1999 art. 3: from 1 March 2000 the Code applies in full (\"vigencia plena\"). From 9 July 1999 it applied in part (art. 2), and from that day art. 18 repealed art. 17 inc. 15 and art. 505; those repeals are already in the first version, which is the text that applied on 9 July 1999."
+   "note": "Ley 1444/1999 (transition to the new procedure): the Code applied in part from 9 July 1999 (art. 2) and in full from 1 March 2000 (art. 3, \"vigencia plena\"); art. 18 repealed art. 17 inc. 15 and art. 505 (the entry-into-force article of the Code) from 9 July 1999."
   },
   "ley-2341-2003": {
    "label": "Ley N° 2341/2003",
@@ -19884,7 +19884,7 @@
       "art-017": {
        "label": "Art. 17",
        "kind": "art",
-       "text": "# Artículo 17. ACCIÓN PRIVADA\nSerán perseguibles exclusivamente por acción privada los siguientes hechos punibles:\n1) maltrato físico;\n2) lesión;\n3) lesión culposa;\n4) amenaza;\n5) tratamiento médico sin consentimiento;\n6) violación de domicilio;\n7) lesión a la intimidad;\n8) violación del secreto de comunicación;\n9) calumnia;\n10) difamación;\n11) injuria;\n12) denigración de la memoria de un muerto;\n13) daño;\n14) uso no autorizado de vehículo automotor; y\nEn estos casos se procederá únicamente por querella de la víctima o de su representante legal, conforme al procedimiento especial regulado en este código.\n"
+       "text": "# Artículo 17. ACCIÓN PRIVADA\nSerán perseguibles exclusivamente por acción privada los siguientes hechos punibles:\n1) maltrato físico;\n2) lesión;\n3) lesión culposa;\n4) amenaza;\n5) tratamiento médico sin consentimiento;\n6) violación de domicilio;\n7) lesión a la intimidad;\n8) violación del secreto de comunicación;\n9) calumnia;\n10) difamación;\n11) injuria;\n12) denigración de la memoria de un muerto;\n13) daño;\n14) uso no autorizado de vehículo automotor; y\n15) violación del derecho de autor o inventor.\nEn estos casos se procederá únicamente por querella de la víctima o de su representante legal, conforme al procedimiento especial regulado en este código.\n"
       },
       "art-018": {
        "label": "Art. 18",
@@ -22321,6 +22321,11 @@
        "kind": "art",
        "text": "# Artículo 504. REMISIÓN\nEn todo lo relativo a la ejecución civil se aplicarán, análogamente, las normas previstas en el Código Procesal Civil.\n"
       },
+      "art-505": {
+       "label": "Art. 505",
+       "kind": "art",
+       "text": "# Artículo 505. ENTRADA EN VIGOR\nEste Código entrará en vigor un año después de su promulgación.\n"
+      },
       "art-506": {
        "label": "Art. 506",
        "kind": "art",
@@ -22338,7 +22343,29 @@
       }
      },
      "credits": {},
-     "note": "The Code as enacted (BACN page of Ley 1286/1998) as it first applied on 9 July 1999 under Ley 1444/1999 art. 2, which also repealed from that day art. 17 inc. 15 (\"violación del derecho de autor o inventor\") and art. 505 (entry into force); those two provisions are not in this version. Full application followed on 1 March 2000 (Ley 1444/1999 art. 3)."
+     "note": "The Code as enacted (BACN page of Ley 1286/1998), on the day it first applied in part under Ley 1444/1999 art. 2. Ley 1444/1999 art. 18 repeals art. 17 inc. 15 and art. 505 the same day (next commit); full application followed on 1 March 2000 (art. 3)."
+    },
+    {
+     "from": "1999-07-09",
+     "same_day": true,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1592/ley-n-1444-regula-el-periodo-de-transicion-al-nuevo-sistema-procesal-penal-br",
+     "sha256": "b0b69b08364cae948bbfd7235635b3220efdad9326c1b9ed3e18997c18997069",
+     "credits": {
+      "art-017": [
+       "ley-1444-1999"
+      ],
+      "art-505": [
+       "ley-1444-1999"
+      ]
+     },
+     "changes": {
+      "art-017": {
+       "label": "Art. 17",
+       "kind": "art",
+       "text": "# Artículo 17. ACCIÓN PRIVADA\nSerán perseguibles exclusivamente por acción privada los siguientes hechos punibles:\n1) maltrato físico;\n2) lesión;\n3) lesión culposa;\n4) amenaza;\n5) tratamiento médico sin consentimiento;\n6) violación de domicilio;\n7) lesión a la intimidad;\n8) violación del secreto de comunicación;\n9) calumnia;\n10) difamación;\n11) injuria;\n12) denigración de la memoria de un muerto;\n13) daño;\n14) uso no autorizado de vehículo automotor; y\nEn estos casos se procederá únicamente por querella de la víctima o de su representante legal, conforme al procedimiento especial regulado en este código.\n"
+      },
+      "art-505": null
+     }
     },
     {
      "from": "2000-03-01",
@@ -24183,7 +24210,7 @@
   "Código Penal: when a law says it modifies art. N but gives only articles Na, Nb, ... (Ley 3440/2008 for 129 and 184; Ley 6002/2017 for 135; Ley 6452/2019 for 191 and 268; Ley 7062/2023 for 105), art. N is removed and the lettered articles are added. Lettered articles a law adds without listing (Ley 4439/2011: 146b-d, 174b, 175b, 248b) are insertions.",
   "Código Penal: laws found by the search that create offences in their own text, cite the Code, or amend other laws (for example Leyes 4005/2010, 4682/2012, 4728/2012, 5162/2014, 5876/2017) do not change its text and are not applied. Ley 1252 (1987) repeals arts. 107 and 108 of the 1914 Code, not of this one.",
   "Reconciliation (metadata only, no text read or copied; the repository has no licence): ypsoftware/leyes-paraguayas marks Penal Code articles as modified by 11 laws, all in this replay except Ley 4005/2010, which amends Ley 2849/2005 (antisecuestro), not the Code; it marks no Civil Code article as modified.",
-  "Código Procesal Penal: BACN publishes it only as enacted (Ley 1286/1998, promulgated 8 July 1998). Ley 1444/1999 replaced its own entry into force (art. 505, repealed by Ley 1444 art. 18): it applied in part from 9 July 1999 (art. 2) and in full from 1 March 2000 (art. 3). The first version is dated 1999-07-09 and already lacks art. 17 inc. 15 and art. 505, which Ley 1444 art. 18 repealed from that same day; the builder takes one version per day and credits the first version only to the act, so those two repeals cannot have a commit of their own (ISSUES.md). The full application on 2000-03-01 is a commit credited to Ley 1444/1999 that changes no words.",
+  "Código Procesal Penal: BACN publishes it only as enacted (Ley 1286/1998, promulgated 8 July 1998). Ley 1444/1999 replaced its own entry into force (art. 505): it applied in part from 9 July 1999 (art. 2) and in full from 1 March 2000 (art. 3). The first version (1999-07-09) is the Code as enacted, credited to Ley 1286/1998; a second version on the same day (same_day) removes art. 17 inc. 15 and art. 505, credited to Ley 1444/1999 art. 18 (\"Desde el día 9 de julio de 1999, quedarán derogados\"). The full application on 2000-03-01 is a commit credited to Ley 1444/1999 that changes no words.",
   "Código Procesal Penal: the amending laws were found with the BACN search (\"1286/98\", \"1286/1998\", \"1.286\", \"procesal penal\") and the sitemap, and screened as for the other codes; there is no official consolidation to check the current text against. Units are art-NNN headed \"# Artículo N. EPIGRAPH\"; the epigraph is the run of capital-letter sentences that opens the article in BACN (or the epigraph line the amending law gives); amended articles take the epigraph the amending law prints, and none when it prints none (Ley 2341/2003, art. 136).",
   "Código Procesal Penal, Ley 4669/2012 (arts. 136-137): it has no vigencia clause, so by the default rule it took effect on 2012-07-24, the day after publication, and changed the text in force until Ley 4734/2012 suspended it from 2012-09-12; it therefore has a version of its own, not only a note. The suspension is a version credited to Ley 4734/2012 with restores = Ley 4669/2012 (arts. 136-137 return to the 2341/2003 and 1998 wording). The extensions (Leyes 5276/2014, 5475/2015, 5671/2016: three, four and six years from 2012-09-12) each took effect before the running period ended, and Ley 6146/2018 repealed Ley 4669 on 2018-08-30, before the six years ran out, so the 4669 wording never applied again; those four laws are commits with a note and no word change. Ley 5475/2015 calls Ley 4734 a suspension of the \"entrada en vigencia\" of Ley 4669; Ley 4734 itself says \"la vigencia\", and no text gives Ley 4669 a later start, so the default rule is kept. Ley 4669 also quotes the chapter heading \"CAPITULO V / CONTROL DE LA DURACION DE PROCEDIMIENTO\" (the 1998 heading without accents and \"DE\" for \"DEL\"); it is not applied to codigo-procesal-penal/indice.md.",
   "Código Procesal Penal, temporary wording: Ley 6353/2019 (arts. 129, 141, 251) and Ley 6418/2019 (art. 253) apply \"hasta el 31 de enero de 2020\" (temporary_until 2020-01-31); from 2020-02-01 \"volverán a regir ... conforme a su redacción original\". That return is a version credited to a separate entry (\"Ley N° 6353/2019, fin de vigencia\", key ley-6353-2019-fin; likewise for 6418) with restores set to the temporary law, and parse.py checks that the restored wording equals the 1999 text.",
