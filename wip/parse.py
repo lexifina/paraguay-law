@@ -214,17 +214,21 @@ def lines(fragment: str) -> list[str]:
     s = re.sub(r'(?i)<br\s*/?>', '\n', s)
 
     def number_ol(m):
-        # An HTML ordered list shows its numbers only when rendered; write them out ("1. ", "2. ", ...). An item
-        # styled list-style-type:none still counts but shows no number (Ley 6167/2018 wraps its "a)" items so).
-        assert not re.search(r'(?i)<ol\b', m.group(1)), 'nested <ol>'
-        n = iter(range(1, 1000))
+        # An HTML ordered list shows its markers only when rendered; write them out as the page's CSS shows them:
+        # list-style-type decimal "1.", lower-alpha "a.", upper-alpha "A.", lower-roman "i.", upper-roman "I.",
+        # none no marker (the item still counts; Ley 6167/2018 wraps its "a)" items so). start= and value= as in
+        # a browser. \x01 marks a written marker until the lines are split.
+        assert not re.search(r'(?i)<ol\b', m.group(2)), 'nested <ol>'
+        k = int(_attr(m.group(1), 'start') or 1) - 1
+        ol_type = _list_type(m.group(1)) or 'decimal'
 
         def item(li):
-            k = next(n)
-            st = li.group(1).replace(' ', '').lower()
-            return '<li>' if re.search(r'list-style(-type)?:none', st) else f'<li>{k}. '
-        return re.sub(r'(?i)<li\b([^>]*)>', item, m.group(1))
-    s = re.sub(r'(?is)<ol\b[^>]*>(.*?)</ol\s*>', number_ol, s)
+            nonlocal k
+            k = int(_attr(li.group(1), 'value') or k + 1)
+            t = _list_type(li.group(1)) or ol_type
+            return '<li>' if t == 'none' else f'<li>\x01{_marker(k, t)}. '
+        return re.sub(r'(?i)<li\b([^>]*)>', item, m.group(2))
+    s = re.sub(r'(?is)<ol\b([^>]*)>(.*?)</ol\s*>', number_ol, s)
     s = re.sub(r'(?i)</(p|div|h[1-6]|li|tr|table|blockquote)\s*>', '\n', s)
     s = re.sub(r'(?i)<(p|div|h[1-6]|li|tr|table|blockquote)\b[^>]*>', '\n', s)
     s = re.sub(r'<[^>]+>', '', s)
@@ -233,11 +237,51 @@ def lines(fragment: str) -> list[str]:
     for ln in s.split('\n'):
         ln = norm(ln)
         if ln and ln not in ('-->',):
-            if out and re.fullmatch(r'\d+\.', out[-1]):
+            if out and re.fullmatch(r'\d+\.|\x01[^ ]+\.', out[-1]):
                 out[-1] = out[-1] + ' ' + ln      # a numbered <li> whose text sits in its own <p>
             else:
                 out.append(ln)
-    return out
+    return [ln.replace('\x01', '') for ln in out]
+
+
+_LIST_TYPES = {'1': 'decimal', 'a': 'lower-alpha', 'A': 'upper-alpha', 'i': 'lower-roman', 'I': 'upper-roman'}
+
+
+def _attr(attrs: str, name: str) -> str | None:
+    m = re.search(r'(?i)\b' + name + r'\s*=\s*["\']?([^"\'\s>]+)', attrs)
+    return m.group(1) if m else None
+
+
+def _list_type(attrs: str) -> str | None:
+    """The list-style-type of an <ol>/<li> from its inline style (which wins), else its HTML type= attribute."""
+    m = re.search(r'(?i)list-style(?:-type)?\s*:\s*([a-z-]+)', attrs)
+    if m:
+        t = m.group(1).lower()
+        if t not in ('decimal', 'lower-alpha', 'upper-alpha', 'lower-latin', 'upper-latin', 'lower-roman',
+                     'upper-roman', 'none'):
+            raise ValueError(f'list-style-type {t} not handled')
+        return t.replace('latin', 'alpha')
+    t = _attr(attrs, 'type')
+    return _LIST_TYPES[t] if t else None
+
+
+def _marker(k: int, t: str) -> str:
+    if t == 'decimal':
+        return str(k)
+    if t.endswith('alpha'):
+        s = ''
+        while k > 0:
+            k, r = divmod(k - 1, 26)
+            s = chr(97 + r) + s
+        return s.upper() if t == 'upper-alpha' else s
+    assert 0 < k < 4000, k
+    s = ''
+    for v, r in ((1000, 'm'), (900, 'cm'), (500, 'd'), (400, 'cd'), (100, 'c'), (90, 'xc'), (50, 'l'), (40, 'xl'),
+                 (10, 'x'), (9, 'ix'), (5, 'v'), (4, 'iv'), (1, 'i')):
+        while k >= v:
+            k -= v
+            s += r
+    return s.upper() if t == 'upper-roman' else s
 
 def meta(page: str) -> dict:
     """BACN page metadata printed above the text: 'Fecha de Promulgación: DD-MM-YYYY Fecha de Publicación: DD-MM-YYYY'."""
