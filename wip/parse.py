@@ -128,7 +128,11 @@ CODE_DECISIONS: list[str] = [
     'Código Aduanero: amended by Ley 6417/2019 (arts. 336, 345). Laws that grant exemptions "en el marco de" its '
     'arts. 239-240 do not change its text.',
     'HTML ordered lists (<ol>) on BACN pages carry their item numbers only when rendered; parse.py writes the numbers '
-    'out ("1. ", "2. ", ...), as in Ley 7062/2023.',
+    'out as the page\'s CSS shows them (list-style-type, start= and value=): decimal "1. ", lower-alpha "a. ", '
+    'upper-alpha "A. ", lower-roman "i. ", upper-roman "I. ", and no marker for "none". BACN\'s HTML is the text '
+    'cited; the signed scans are images and are not read. Letters instead of numbers since 2026-10-28 in: Código '
+    'Penal art. 107 (Ley 6771/2021, "a." "b.") and Código de la Niñez y la Adolescencia art. 41 (Ley 6083/2018, '
+    '"a." to "h."); no other article of these acts changed.',
 ]
 
 

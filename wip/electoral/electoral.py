@@ -474,7 +474,10 @@ def decisions() -> list[str]:
         '6318/2019 and 6918/2022 print the table in their HTML; each table row is one line, cells separated by a space.',
         'Código Electoral: BACN wraps the incisos of Ley 6167/2018 (arts. 68 and 157) in HTML ordered lists styled '
         '"list-style-type:none", which show no numbers when rendered; ../parse.py writes no number for such items '
-        '(it writes the numbers of other ordered list items).',
+        'and writes other list markers as the page\'s CSS shows them (lower-alpha "a.", start= honoured). Markers '
+        'changed by that rule on 2026-10-28: arts. 68, 207, 258 (two lists, "a."-"b." and "c."-"d."), 278 and '
+        '278 bis/278-a now read "a.", "b.", ...; art. 64 second list continues "3.", "4." (start="3") instead of '
+        'restarting at "1.".',
     ]
 
 
