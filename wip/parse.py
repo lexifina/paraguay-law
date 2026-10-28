@@ -109,6 +109,24 @@ CODE_DECISIONS: list[str] = [
     'Code, so it is not applied.',
     'No article of the Código Procesal Civil or the Código de la Niñez exists only as a scan: both are complete in '
     'the BACN HTML.',
+    'Código Aduanero (Ley 2422/2004), Ley 1034/1983 del Comerciante and Código Sanitario (Ley 836/1980): enacted '
+    'texts from BACN, amending laws found with the BACN search ("2422/04", "2422/2004", "codigo aduanero", '
+    '"1034/83", "1.034", "del comerciante", "836/80", "codigo sanitario") and screened as for the other codes. '
+    'Their articles carry no separate epigraph in BACN (the Aduanero opens many articles with words such as '
+    '"Contrabando. Concepto." that are kept as text), so units are headed "# Artículo N" / "# Art. N". In force: '
+    'Aduanero 180 days after promulgation on 15 July 2004 (art. 397) = 2005-01-11; Comerciante and Sanitario have '
+    'no vigencia clause, so the day after publication (1983-12-17; 1980-12-16).',
+    'Ley del Comerciante: its headings are printed in mixed case ("Capìtulo I", "De los corredores"); parse.py '
+    'treats as headings the short unpunctuated lines that open with Capítulo/Sección/Disposición/"De l…" and the line '
+    'after a Capítulo/Sección line. Amended: art. 7 repealed by Ley 2169/2003, art. 76 by Ley 4924/2013, art. 122 '
+    'repealed by Ley 5810/2017.',
+    'Código Sanitario: BACN\'s HTML omits arts. 123-130 (Capítulos XII-XIII, cadáveres and ruidos); they exist only '
+    'as images in the signed scan BACN links (/archivos/2399/20140423122211.pdf, page 15, checked by eye that they '
+    'exist, not transcribed), so they are not in the repository. Art. 321 is also absent from the HTML; the scan '
+    'was not checked for it. Amended: arts. 270 and 272 by Ley 115/1990; arts. 149, 231 and 237 repealed by Ley '
+    '4995/2013 (Educación Superior).',
+    'Código Aduanero: amended by Ley 6417/2019 (arts. 336, 345). Laws that grant exemptions "en el marco de" its '
+    'arts. 239-240 do not change its text.',
     'HTML ordered lists (<ol>) on BACN pages carry their item numbers only when rendered; parse.py writes the numbers '
     'out ("1. ", "2. ", ...), as in Ley 7062/2023.',
 ]
@@ -1250,7 +1268,7 @@ def codigo_procesal_penal() -> dict:
 # ---------------------------------------------------------------- shared parser for codes printed article by article
 
 def enacted_code(url: str, art_re: re.Pattern, head: tuple[str, ...], closing_prefix: str, n_last: int,
-                 make_unit, where: str, skip: tuple[int, ...] = ()) -> dict:
+                 make_unit, where: str, skip: tuple[int, ...] = (), heading_lines: tuple[str, ...] = ()) -> dict:
     """Articles numbered 1..n_last in order (numbers in `skip` are absent from BACN), headings to `indice`,
     the closing formula to `sancion`. make_unit(n, rest_of_article_line, paragraphs) -> unit."""
     L = page_lines(url)
@@ -1278,7 +1296,7 @@ def enacted_code(url: str, art_re: re.Pattern, head: tuple[str, ...], closing_pr
             nxt += 1
             prev_heading = False
             continue
-        if not LOWER.search(ln):
+        if not LOWER.search(ln) or ln in heading_lines:
             if CP_LABEL.match(ln) or not prev_heading:
                 index.append([None, ln])
             else:
@@ -1453,6 +1471,138 @@ def codigo_procesal_civil() -> dict:
     versions = rp.build()
     return {'slug': 'codigo-procesal-civil', 'short': 'CPC', 'title': 'Código Procesal Civil (Ley N° 1337/1988)',
             'url': CPC_URL, 'first_law': 'ley-1337-1988', 'earlier_laws': [], 'versions': versions}
+
+
+# ---------------------------------------------------------------- Código Aduanero, Ley del Comerciante, Código Sanitario
+
+GEN_ART = re.compile(r'^Art(?:[ií]culo|\.+)\s*(\d+)\s*[°º]?\s*(?:\.-|\.|-)\s*(.*)$')
+
+
+def plain_unit(word: str):
+    """Articles without an epigraph: '# Art. N' (or '# Artículo N'), the text after the number as the first line."""
+    def make(n: int, rest: str, paras: list[str]) -> dict:
+        return unit(f'Art. {n}', 'art', f'{word} {n}', [p for p in [rest.strip(), *paras] if p])
+    return make
+
+
+def epigraph_unit(n: int, rest: str, paras: list[str]) -> dict:
+    epi, first = cpc_split(rest)
+    return unit(f'Art. {n}', 'art', f'Artículo {n}.- {epi}' if epi else f'Artículo {n}',
+                [p for p in [first, *paras] if p])
+
+
+def quoted(L: list[str], intro_pat: str, make, where: str) -> list[tuple[int, dict]]:
+    """'"Art. N.- …"' blocks inside one article of an amending law, made into units with `make`."""
+    out = []
+    for n, paras in amending_blocks(segment_lines(L, intro_pat), CC_QART):
+        out.append((n, make(n, paras[0], join_broken(paras[1:], f'{where} art. {n}'))))
+    return out
+
+
+def simple_code(slug, short, title, url, head, closing, n_last, make, law_key, law_label, law_title, frm, note,
+                amendments, skip=(), heading_lines=()) -> dict:
+    base = enacted_code(url, GEN_ART, head, closing, n_last, make, slug, skip, heading_lines)
+    m = page_meta(url)
+    law(law_key, label=law_label, kind='law', enacted=m['promulgated'], published=m['published'], url=url,
+        title=law_title)
+    first = {'from': frm, 'source_url': url, 'sha256': sha(url), 'units': base, 'credits': {}, 'note': note}
+    rp = Replay(slug, base, first)
+    for a in amendments:
+        a(rp, make)
+    return {'slug': slug, 'short': short, 'title': title, 'url': url, 'first_law': law_key, 'earlier_laws': [],
+            'versions': rp.build()}
+
+
+def set_from(key, pid, label, intro, arts):
+    def apply(rp, make):
+        url, L, frm = bacn_law(key, pid, label)
+        b = quoted(L, intro, make, key)
+        assert [n for n, _ in b] == arts, (key, [n for n, _ in b])
+        for n, u in b:
+            rp.op(frm, key, url, 'set', f'art-{n:03d}', u)
+    return apply
+
+
+def repeal_from(key, pid, label, intro, must, arts):
+    def apply(rp, make):
+        url, L, frm = bacn_law(key, pid, label)
+        a = next(s for s in segments(L) if re.search(intro, s[0]))[0]
+        assert must in a, (key, a)
+        for n in arts:
+            rp.op(frm, key, url, 'del', f'art-{n:03d}')
+    return apply
+
+
+ADU_URL = BACN + '2276/ley-n-2422-codigo-aduanero-br'
+COM_URL = BACN + '2538/ley-n-1034-del-comerciante'
+SAN_URL = BACN + '2399/ley-n-836-c-digo-sanitario-br'
+SAN_SCAN = 'https://www.bacn.gov.py/archivos/2399/20140423122211.pdf'
+
+
+def codigo_aduanero() -> dict:
+    import datetime as dt
+    m = page_meta(ADU_URL)
+    assert m['promulgated'] == '2004-07-15', m
+    frm = (dt.date.fromisoformat(m['promulgated']) + dt.timedelta(days=180)).isoformat()
+    a = simple_code('codigo-aduanero', 'CA', 'Código Aduanero (Ley N° 2422/2004)', ADU_URL,
+                    ('Descripción', 'LEY Nº 2422', 'CODIGO ADUANERO',
+                     'EL CONGRESO DE LA NACIÓN PARAGUAYA, SANCIONA CON FUERZA DE', 'L E Y :'),
+                    'Aprobado el Proyecto de Ley por la Honorable', 398, plain_unit('Artículo'),
+                    'ley-2422-2004', 'Ley N° 2422/2004 (Código Aduanero)',
+                    'Código Aduanero; entra en vigencia a los ciento ochenta días de su promulgación (art. 397)', frm,
+                    'The Code as enacted, from the BACN page of Ley 2422/2004.',
+                    [set_from('ley-6417-2019', '9046', 'Ley N° 6417/2019', r'^Artículo 1\.', [336, 345])])
+    assert 'Este Código entrará en vigencia a los ciento ochenta días de su promulgación' in \
+        a['versions'][0]['units']['art-397']['text']
+    return a
+
+
+def ley_comerciante() -> dict:
+    return simple_code('ley-del-comerciante', 'LC', 'Ley N° 1034/1983 del Comerciante', COM_URL,
+                       ('Descripción', 'LEY N° 1034', 'DEL COMERCIANTE',
+                        'EL CONGRESO DE LA NACION PARAGUAYA SANCIONAN CON FUERZA DE', 'LEY :'),
+                       'DADA EN LA SALA DE SESIONES DEL CONGRESO NACIONAL', 123, plain_unit('Art.'),
+                       'ley-1034-1983', 'Ley N° 1034/1983 (Del Comerciante)', 'Del Comerciante',
+                       day_after(page_meta(COM_URL)['published']),
+                       'The law as enacted, from its BACN page. In force the day after publication (Código Civil art. 1; '
+                       'the law has no vigencia clause).',
+                       [repeal_from('ley-2169-2003', '4845', 'Ley N° 2169/2003', r'^Artículo 2º',
+                                    'el Artículo 7° de la Ley N° 1034/83 "Del Comerciante"', [7]),
+                        set_from('ley-4924-2013', '1139', 'Ley N° 4924/2013', r'^Artículo 1°', [76]),
+                        repeal_from('ley-5810-2017', '9710', 'Ley N° 5810/2017', r'^Artículo 233\.',
+                                    'el artículo 122 de la Ley N° 1.034/83 "DEL COMERCIANTE"', [122])],
+                       heading_lines=comerciante_headings())
+
+
+def comerciante_headings() -> tuple[str, ...]:
+    """Ley 1034 prints its title/chapter/section headings in mixed case ("Capìtulo I", "De los corredores"): short
+    lines with no final punctuation that open with Cap/Secc/Disposici/Diposici/De l/Del."""
+    L = page_lines(COM_URL)
+    out, prev = [], False
+    for l in L[5:]:
+        short = not GEN_ART.match(l) and len(l) < 90 and not re.search(r'[.;:,]$', l)
+        hit = short and (prev or re.match(r'^(Cap[ií]tulo|Cap[ìi]tulo|Secci[oóò]n|Disposici|Diposici|De l|Del )', l))
+        if hit:
+            out.append(l)
+        prev = bool(hit) and bool(re.match(r'^(Cap|Secc)', l))
+    return tuple(out)
+
+
+def codigo_sanitario() -> dict:
+    return simple_code('codigo-sanitario', 'CS', 'Código Sanitario (Ley N° 836/1980)', SAN_URL,
+                       ('Descripción', 'LEY N° 836', 'CODIGO SANITARIO',
+                        'EL CONGRESO DE LA NACION PARAGUAYA SANCIONA CON FUERZA DE', 'LEY :'),
+                       'Dada en la Sala de Sesiones del Congreso Nacional', 328, plain_unit('Artículo'),
+                       'ley-836-1980', 'Ley N° 836/1980 (Código Sanitario)', 'Código Sanitario',
+                       day_after(page_meta(SAN_URL)['published']),
+                       'The Code as enacted, from its BACN page, in force the day after publication (no vigencia '
+                       'clause). BACN\'s HTML omits arts. 123-130, which exist only in the signed scan BACN links '
+                       '(' + SAN_SCAN + ', page 15), and art. 321; they are not in this repository.',
+                       [set_from('ley-115-1990', '5341', 'Ley N° 115/1990', r'^Artículo 1º', [270, 272]),
+                        repeal_from('ley-4995-2013', '4401', 'Ley N° 4995/2013', r'^Artículo 97\.',
+                                    'los Artículos 149, 231, 237 de la Ley N° 836/80 "CODIGO SANITARIO"',
+                                    [149, 231, 237])],
+                       skip=tuple(range(123, 131)) + (321,))
 
 
 # ---------------------------------------------------------------- corpus
