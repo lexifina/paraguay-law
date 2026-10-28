@@ -63,6 +63,34 @@ CODE_DECISIONS: list[str] = [
     'Reconciliation (metadata only, no text read or copied; the repository has no licence): ypsoftware/leyes-'
     'paraguayas marks Penal Code articles as modified by 11 laws, all in this replay except Ley 4005/2010, which '
     'amends Ley 2849/2005 (antisecuestro), not the Code; it marks no Civil Code article as modified.',
+    'Código Procesal Penal: BACN publishes it only as enacted (Ley 1286/1998, promulgated 8 July 1998). Ley '
+    '1444/1999 replaced its own entry into force (art. 505, repealed by Ley 1444 art. 18): it applied in part from '
+    '9 July 1999 (art. 2) and in full from 1 March 2000 (art. 3). The first version is dated 1999-07-09 and already '
+    'lacks art. 17 inc. 15 and art. 505, which Ley 1444 art. 18 repealed from that same day; the builder takes one '
+    'version per day and credits the first version only to the act, so those two repeals cannot have a commit of '
+    'their own (ISSUES.md). The full application on 2000-03-01 is a commit credited to Ley 1444/1999 that changes '
+    'no words.',
+    'Código Procesal Penal: the amending laws were found with the BACN search ("1286/98", "1286/1998", "1.286", '
+    '"procesal penal") and the sitemap, and screened as for the other codes; there is no official consolidation to '
+    'check the current text against. Units are art-NNN headed "# Artículo N. EPIGRAPH"; the epigraph is the run of '
+    'capital-letter sentences that opens the article in BACN (or the epigraph line the amending law gives); amended '
+    'articles take the epigraph the amending law prints, and none when it prints none (Ley 2341/2003, art. 136).',
+    'Código Procesal Penal, Ley 4669/2012 (arts. 136-137): it has no vigencia clause, so by the default rule it took '
+    'effect on 2012-07-24, the day after publication, and changed the text in force until Ley 4734/2012 suspended it '
+    'from 2012-09-12; it therefore has a version of its own, not only a note. The suspension is a version credited to '
+    'Ley 4734/2012 with restores = Ley 4669/2012 (arts. 136-137 return to the 2341/2003 and 1998 wording). The '
+    'extensions (Leyes 5276/2014, 5475/2015, 5671/2016: three, four and six years from 2012-09-12) each took effect '
+    'before the running period ended, and Ley 6146/2018 repealed Ley 4669 on 2018-08-30, before the six years ran out, '
+    'so the 4669 wording never applied again; those four laws are commits with a note and no word change. Ley '
+    '5475/2015 calls Ley 4734 a suspension of the "entrada en vigencia" of Ley 4669; Ley 4734 itself says "la '
+    'vigencia", and no text gives Ley 4669 a later start, so the default rule is kept. Ley 4669 also quotes the '
+    'chapter heading "CAPITULO V / CONTROL DE LA DURACION DE PROCEDIMIENTO" (the 1998 heading without accents and '
+    '"DE" for "DEL"); it is not applied to codigo-procesal-penal/indice.md.',
+    'Código Procesal Penal, temporary wording: Ley 6353/2019 (arts. 129, 141, 251) and Ley 6418/2019 (art. 253) apply '
+    '"hasta el 31 de enero de 2020" (temporary_until 2020-01-31); from 2020-02-01 "volverán a regir ... conforme a su '
+    'redacción original". That return is a version credited to a separate entry ("Ley N° 6353/2019, fin de '
+    'vigencia", key ley-6353-2019-fin; likewise for 6418) with restores set to the temporary law, and parse.py checks '
+    'that the restored wording equals the 1999 text.',
     'HTML ordered lists (<ol>) on BACN pages carry their item numbers only when rendered; parse.py writes the numbers '
     'out ("1. ", "2. ", ...), as in Ley 7062/2023.',
 ]
@@ -1135,7 +1163,7 @@ def codigo_procesal_penal() -> dict:
         n_prev = {'tres': 2, 'cuatro': 3, 'seis': 4}[years]
         end_prev = f'{int(susp_end[:4]) + n_prev}{susp_end[4:]}'
         assert frm <= end_prev, (key, frm, end_prev)     # each extension takes effect before the suspension ends
-        LAWS[key]['note'] = (f'Extends the suspension of Ley 4669/2012 (Ley 4734/2012 art. 1) to {years} years, '
+        LAWS[key]['note'] = (f'Extends the suspension of Ley 4669/2012 (Ley 4734/2012 art. 1) to {dict(tres="three", cuatro="four", seis="six")[years]} years, '
                              f'before the previous period ended ({end_prev}); the wording of arts. 136 and 137 does not '
                              'change.')
         for k in ('art-136', 'art-137'):
@@ -1181,6 +1209,9 @@ def codigo_procesal_penal() -> dict:
             rp.op('2020-02-01', fin, url, 'restore', cpp_key(n), frm)
 
     versions = rp.build()
+    last = versions[-1]['units']
+    for k in ('art-129', 'art-141', 'art-251', 'art-253'):     # "conforme a su redacción original"
+        assert last[k] == first_units[k], k
     return {'slug': 'codigo-procesal-penal', 'short': 'CPP', 'title': 'Código Procesal Penal (Ley N° 1286/1998)',
             'url': CPP_URL, 'first_law': 'ley-1286-1998', 'earlier_laws': [], 'versions': versions}
 
@@ -1258,6 +1289,16 @@ def main():
         ],
         'mismatches': MISMATCHES,
     }
+    # SCHEMA.md "Large acts": after the first version, store each version's delta (`changes`: unit, or null to
+    # remove) instead of every provision again. The builder expands it; the repository comes out identical.
+    for a in acts:
+        prev = a['versions'][0]['units']
+        for v in a['versions'][1:]:
+            cur = v.pop('units')
+            ch = {k: u for k, u in cur.items() if prev.get(k) != u}
+            ch.update({k: None for k in prev if k not in cur})
+            v['changes'] = dict(sorted(ch.items()))
+            prev = cur
     out = json.dumps(corpus, ensure_ascii=False, indent=1, sort_keys=False) + '\n'
     # --out PATH writes a test corpus elsewhere; the default write is atomic (autopush builds every change).
     dest = Path(sys.argv[sys.argv.index('--out') + 1]) if '--out' in sys.argv else HERE / 'corpus.json'
@@ -1265,7 +1306,7 @@ def main():
     tmp.write_text(out, encoding='utf-8', newline='\n')
     tmp.replace(dest)
     for a in acts:
-        print(a['slug'], len(a['versions']), 'versions', len(a['versions'][-1]['units']), 'units')
+        print(a['slug'], len(a['versions']), 'versions', len(a['versions'][0]['units']), 'units in the first')
     print(len(LAWS), 'laws;', len(MISMATCHES), 'mismatches recorded')
 
 
