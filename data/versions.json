@@ -1,0 +1,3065 @@
+{
+ "country": "PY",
+ "acts": [
+  {
+   "slug": "constitucion",
+   "short": "CN",
+   "title": "Constitución de la República del Paraguay (1992)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/9580/constitucion-de-la-republica-del-paraguay",
+   "versions": [
+    {
+     "from": "1992-06-20",
+     "units": 314,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9580/constitucion-de-la-republica-del-paraguay",
+     "sha256": "d61a452297b7f861c6eeaf9bc2c9d4c9fdbfe8dbe885039dd23d84cc3b33b4a9"
+    },
+    {
+     "from": "2011-10-17",
+     "units": 314,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9581/ley-n-11112-enmienda-constitucional-n-1",
+     "sha256": "05ea2abd2b0f1330ed230b46499ab4ea7a762cd0473c85622c78ca42e5b9d1bb"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-civil",
+   "short": "CC",
+   "title": "Código Civil (Ley N° 1183/1985)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/5293/ley-n-1183-codigo-civil",
+   "versions": [
+    {
+     "from": "1987-01-01",
+     "units": 2812,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5293/ley-n-1183-codigo-civil",
+     "sha256": "0df68370d03bc3049dba44ebc3c98d4a0dc4cdd149e89cb33bfa997f3b8552e2"
+    },
+    {
+     "from": "1991-10-02",
+     "units": 2812,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/689/ley-n-45-establece-el-divorcio-vincular-del-matrimonio-br",
+     "sha256": "c476ceb3d62d377da0899d7eb4add8502fa98ee997ebb698666e9cf5fc6f2a97"
+    },
+    {
+     "from": "1992-07-16",
+     "units": 2772,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/695/ley-n-1-reforma-parcial-del-codigo-civil-br",
+     "sha256": "4a9c1a4a198c5f3ac1366102a42956c1882735062d7dd588d87012d65f5a6c43"
+    },
+    {
+     "from": "1993-07-08",
+     "units": 2772,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/690/ley-n-204-modifica-el-codigo-civil-y-establece-la-igualdad-de-los-hijos-en-el-derecho-hereditario-br",
+     "sha256": "a3750580da2c903f0aca27cc7f9ea7faf5c9cbb0f4330dc87fa7b2bc25286af5"
+    },
+    {
+     "from": "1994-08-19",
+     "units": 2772,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/684/ley-n-388-establece-disposiciones-sobre-la-constitucion-de-sociedades-anonimas-y-modifica-articulos-de-la-ley-n-1-183-85",
+     "sha256": "9f564c616ff78c8c4112f13539219aac63f2b12f2abdc70ad631eae4ab472b7a"
+    },
+    {
+     "from": "1995-09-29",
+     "units": 2772,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/692/ley-n-701-precisa-el-objeto-de-la-prohibici-n-de-la-venta-con-pacto-de-retroventa-y-el-pacto-de-reventa-br",
+     "sha256": "602d0d4aac2dcd6a68d95d52a2349bff21378f94e675b075c5d51b4996232dc3"
+    },
+    {
+     "from": "1996-01-16",
+     "units": 2772,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/694/ley-n-805-modifica-varios-articulos-del-capitulo-xxvi-titulo-ii-libro-iii-del-codigo-civil-y-crea-la-figura-del-cheque-bancario-de-pago-diferido-deroga-la-ley-n-941-64-y-despenaliza-el-cheque-con-fecha-adelantada-br",
+     "sha256": "3e7879c67591b7a82b48ccfe9c8214d78972d9627882a8eab20a024ed4241715"
+    },
+    {
+     "from": "1997-01-01",
+     "units": 2772,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/694/ley-n-805-modifica-varios-articulos-del-capitulo-xxvi-titulo-ii-libro-iii-del-codigo-civil-y-crea-la-figura-del-cheque-bancario-de-pago-diferido-deroga-la-ley-n-941-64-y-despenaliza-el-cheque-con-fecha-adelantada-br",
+     "sha256": "3e7879c67591b7a82b48ccfe9c8214d78972d9627882a8eab20a024ed4241715"
+    },
+    {
+     "from": "1998-10-21",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/908/ley-n-1328-derecho-de-autor-y-derechos-conexos-br",
+     "sha256": "88d654acbb6319458709c5431fa30a49a4715678661bcac2c820b24a7529ef9a"
+    },
+    {
+     "from": "1999-07-15",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1588/ley-n-1448-modifica-y-amplia-la-clasificacion-de-las-embarcaciones-para-la-inscripcion-en-la-direccion-general-de-registros-publicos-br",
+     "sha256": "62cd56f7e6b2b9c4f0d3787e08160503763a6efd0e573451b027abbf300a881f"
+    },
+    {
+     "from": "2003-07-19",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4845/ley-n-2169-establece-la-mayoria-de-edad-br",
+     "sha256": "09998ce2f262e97bb07560f4ba6d0ab0917e34cdde503693661da1fd6d5aaf54"
+    },
+    {
+     "from": "2005-05-04",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4095/ley-n-2559-modifica-el-inciso-b-del-articulo-1898-de-la-ley-n-1183-85-codigo-civil-br",
+     "sha256": "45f5656c9f4898e25590365c7023112733f6f7c0608f0629e4067c65e9381a70"
+    },
+    {
+     "from": "2006-12-21",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/687/ley-n-3120-modifica-los-art-culos-2-294-2-296-2-299-2-306-2-327-2-330-2-335-2-339-2-346-y-2-353-de-la-ley-n-1-183-85-c-digo-civil-br",
+     "sha256": "a897f4f027469e8f7fe314fdad546cde71d189b216214f54020fa76a9dd8541c"
+    },
+    {
+     "from": "2007-07-04",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/688/ley-n-3228-modifica-el-articulo-5-de-la-ley-n-388-94-que-modifica-el-articulo-1051-de-la-ley-n-1183-85-codigo-civil-br",
+     "sha256": "b1485958288c71a638bd84797d9aeddd55281bcd23e967a4947793edaa999242"
+    },
+    {
+     "from": "2011-04-30",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3675/ley-n-4297-amplia-el-articulo-989-paragrafo-iii-del-codigo-civil-paraguayo-br",
+     "sha256": "2591f951a90adea8e6b337619ee70cb95515897708906c93a6697376eb03925c"
+    },
+    {
+     "from": "2012-03-30",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3096/ley-n-4586-modifica-parcialmente-el-articulo-108-de-la-ley-n-1183-85-codigo-civil-paraguayo-br",
+     "sha256": "aa1070fefd6070a5e610610ab7aaf0926e32dfa18c1c2bf1c512d42009f4bef7"
+    },
+    {
+     "from": "2013-10-05",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4732/ley-n-5063-amplia-el-articulo-989-de-la-ley-n-1183-85-codigo-civil-br",
+     "sha256": "97a11864729b3d38e571225519ad7030dc4cf27b94e4e08465573d2b429b4b4c"
+    },
+    {
+     "from": "2017-10-10",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9118/ley-n-5895-establece-reglas-de-transparencia-en-el-r-gimen-de-las-sociedades-constituidas-por-acciones",
+     "sha256": "de2b842d681301c60c38036a9c0a079f3f0639bb510a1023e30dc91017708836"
+    },
+    {
+     "from": "2025-07-01",
+     "units": 2759,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12775/ley-n-7371-2025-que-garantiza-los-derechos-de-las-personas-con-discapacidad-modifica-varios-art-culos-de-la-ley-n-1183-1985-c-digo-civil-y-modifica-los-art-culos-262-y-357-de-la-ley-n-879-1981-c-digo-de-organizaci-n-judicial",
+     "sha256": "bd9f92d71ae127c42e865924c0534fdc62e175e0ea82bdcb2ecf8ec88318bb26"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-penal",
+   "short": "CP",
+   "title": "Código Penal (Ley N° 1160/1997)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3497/ley-n-1160-1997-c-digo-penal",
+   "versions": [
+    {
+     "from": "1998-11-26",
+     "units": 327,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3497/ley-n-1160-1997-c-digo-penal",
+     "sha256": "05d2e40da232afcfbba4083ba9e0c1597fd6c2c799f128b4a91abe5f76b349d3"
+    },
+    {
+     "from": "2003-09-11",
+     "units": 327,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4879/ley-n-2212-modifica-el-articulo-126-secuestro-de-la-ley-n-1-160-de-fecha-26-de-noviembre-de-1997-codigo-penal-br",
+     "sha256": "f0563ae01aa9426263eb7f851303b1a76888be22186f505291cad11f68ba9881"
+    },
+    {
+     "from": "2005-07-09",
+     "units": 327,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4131/ley-n-2593-modifica-varios-articulos-y-deroga-el-articulo-75-de-la-ley-n-1630-de-patentes-de-invenciones-del-29-de-noviembre-de-2000-y-deroga-parte-del-articulo-184-de-la-ley-n-1160-97-codigo-penal-br",
+     "sha256": "e6e56e42b94842848f74d3a6f37bea9ae854ba776dbab666e11c77497deb772b"
+    },
+    {
+     "from": "2008-08-21",
+     "units": 327,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3485/ley-n-3440-modifica-varias-disposiciones-de-la-ley-n-1-160-97-c-digo-penal-br",
+     "sha256": "6d69fa404f34c8907265ce72086a98914b8700520d4175cc1a9fc3641f4b90cd"
+    },
+    {
+     "from": "2009-07-16",
+     "units": 331,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3485/ley-n-3440-modifica-varias-disposiciones-de-la-ley-n-1-160-97-c-digo-penal-br",
+     "sha256": "6d69fa404f34c8907265ce72086a98914b8700520d4175cc1a9fc3641f4b90cd"
+    },
+    {
+     "from": "2011-10-06",
+     "units": 337,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3777/ley-n-4439-modifica-y-amplia-varios-articulos-de-la-ley-n-1160-97-codigo-penal-br",
+     "sha256": "485cbc89668c76048a60704f51b7b849dd32656522542c254cfac392d6f4c8e6"
+    },
+    {
+     "from": "2012-05-25",
+     "units": 337,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3103/ley-n-4614-modifica-los-articulos-236-y-309-de-la-ley-n-1160-97-codigo-penal-br",
+     "sha256": "6e1e385e059235ee0cfab07cf86d6b99846df74bfad0c8c24f5cd65efa8fbaba"
+    },
+    {
+     "from": "2012-07-04",
+     "units": 337,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2710/ley-n-4628-modifica-el-articulo-229-de-la-ley-n-1160-97-codigo-penal-modificado-por-la-ley-n-3440-08-br",
+     "sha256": "6dd98cfff28d79868e15e2d2d6f440a63597476d7fa6c336f142a3dc5ecc5edb"
+    },
+    {
+     "from": "2012-10-26",
+     "units": 337,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3152/ley-n-4770-modifica-el-articulo-202-de-la-ley-n-1160-97-codigo-penal-br",
+     "sha256": "dbb4bfa784637d394ae96ee7fa684b32eec0b5f07573a8f8d29e42c39886a266"
+    },
+    {
+     "from": "2012-12-19",
+     "units": 335,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3158/ley-n-4788-integral-contra-la-trata-de-personas-br",
+     "sha256": "7ed73ed229de13df0da2dfe0b2f5c98a170677f0dc79b886cd8b6c60433d387c"
+    },
+    {
+     "from": "2014-05-22",
+     "units": 335,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4418/ley-n-5016-nacional-de-transito-y-seguridad-vial-br",
+     "sha256": "36d1df894468bdf46e6fccf5ac05c4ce9517c63f2042f6042205774199efeab5"
+    },
+    {
+     "from": "2014-12-30",
+     "units": 335,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3685/ley-n-5378-modifica-el-articulo-229-de-la-ley-n-1160-97-c-digo-penal-y-su-modificatoria-la-ley-n-4628-12-br",
+     "sha256": "a28de20eaca69965de718a86beed9fe6d9afcb9b6057fffc545aed2d71e2cf54"
+    },
+    {
+     "from": "2017-12-21",
+     "units": 336,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9906/ley-n-6002-modifica-el-art-culo-135-de-la-ley-n-1160-97-c-digo-penal-modificado-por-el-art-culo-1-de-la-ley-n-3440-08-que-modifica-varias-disposiciones-de-la-ley-n-1160-97-c-digo-penal",
+     "sha256": "0a97a3ab22e3ec3b766d5cc5ffbaa1c99b2b5a4f6620264148d785c273ab0e61"
+    },
+    {
+     "from": "2019-12-03",
+     "units": 339,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9058/ley-n-6452-modifica-varias-disposiciones-de-la-ley-n-1160-1997-c-digo-penal-y-su-modificatoria-la-ley-n-3-440-2008",
+     "sha256": "c6ba4a9d5a5c60609fa54f8d48a1751a8205dda114d0108845975702b527b72a"
+    },
+    {
+     "from": "2020-05-21",
+     "units": 339,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9215/ley-n-6535-modifica-el-art-culo-103-de-la-ley-n-1160-1997-codigo-penal",
+     "sha256": "1ea5c55b54312c22a791ffc9ec7a03c821baa8ed38af6bd2f6b6f19bf39207d2"
+    },
+    {
+     "from": "2021-07-27",
+     "units": 339,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9629/ley-n-6771-modifica-el-art-culo-107-de-la-ley-n-1160-1997-codigo-penal",
+     "sha256": "28cc44ea2434c42164fb25b7a01e0df53638177d358c143e3611fd711d1381be"
+    },
+    {
+     "from": "2021-10-01",
+     "units": 339,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9670/ley-n-6830-modifica-el-art-culo-142-de-la-ley-n-1160-1997",
+     "sha256": "c99ccb5b7ccc387bc97f925f4ebedd29eab01b8a9b6bb104add87a018f61688b"
+    },
+    {
+     "from": "2022-06-29",
+     "units": 339,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10525/ley-n-6934-modifica-el-articulo-229-de-la-ley-n-1160-1997-c-digo-penal-modificado-por-las-leyes-n-s-3440-2008-4628-2012-y-5378-2014",
+     "sha256": "9a40a285d7e133d720e7dddca88ca8bb165cbaf07a61977660ee7868f075581a"
+    },
+    {
+     "from": "2023-04-11",
+     "units": 340,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11358/ley-n-7062-modifica-los-art-culos-8-105-y-240-de-la-ley-n-1160-1997-codigo-penal-y-su-modificatoria-la-ley-n-3-440-2008-e-incorpora-el-hecho-punible-de-sicariato",
+     "sha256": "87c6ec5b079d3d6afe1128aac8f494a92f32554a9727e921dae8aa8d8b948880"
+    },
+    {
+     "from": "2024-07-20",
+     "units": 340,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12443/ley-n-7300-2024-que-protege-la-integridad-del-sistema-el-ctrico-dispone-la-incautaci-n-y-comiso-de-bienes-asociados-a-dicho-hecho-punible-y-modifica-el-art-culo-173-de-la-ley-n-1160-1997-codigo-penal",
+     "sha256": "0885298188309436c7ac451ba867ebc971fdec2b92b88d3609d0a19162f00e10"
+    },
+    {
+     "from": "2024-07-24",
+     "units": 340,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12473/ley-n-7220-2024-que-modifica-el-art-culo-172-de-la-ley-n-1160-1997-c-digo-penal",
+     "sha256": "d0f7120f6b1ce6132b3d7e1587c7c960e6d0dd36b02bd454babd6a734eed47e0"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-procesal-penal",
+   "short": "CPP",
+   "title": "Código Procesal Penal (Ley N° 1286/1998)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/203/ley-n-1286-c-digo-procesal-penal-br",
+   "versions": [
+    {
+     "from": "1999-07-09",
+     "units": 508,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/203/ley-n-1286-c-digo-procesal-penal-br",
+     "sha256": "d7e878e6552b606a60d3c831a9613c1f7965151e43e2696ddbb8efd479d6c15b"
+    },
+    {
+     "from": "1999-07-09",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1592/ley-n-1444-regula-el-periodo-de-transicion-al-nuevo-sistema-procesal-penal-br",
+     "sha256": "8f2ef5a1f35bfe03de6025f1731eb92d7847d3bf0cb13d641102587d8eaa127e"
+    },
+    {
+     "from": "2000-03-01",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1592/ley-n-1444-regula-el-periodo-de-transicion-al-nuevo-sistema-procesal-penal-br",
+     "sha256": "8f2ef5a1f35bfe03de6025f1731eb92d7847d3bf0cb13d641102587d8eaa127e"
+    },
+    {
+     "from": "2004-01-13",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5046/ley-n-2341-modifica-el-articulo-136-de-la-ley-n-1286-98-codigo-procesal-penal-br",
+     "sha256": "33a7af0498ed9252df28687fe3413718c1efd59df4fc779feca7b71ec924a929"
+    },
+    {
+     "from": "2004-10-23",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3997/ley-n-2493-modifica-articulo-245-del-codigo-procesal-penal-br",
+     "sha256": "26fb1593c09b1c61775472a0c56afb99715daf83b0191a4ec30c0e827b11feec"
+    },
+    {
+     "from": "2011-09-17",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3773/ley-n-4431-modifica-el-art-culo-245-de-la-ley-n-1-286-98-c-digo-procesal-penal-modificado-por-ley-n-2-493-04-que-modifica-el-art-culo-245-de-la-ley-n-1-286-98-c-digo-procesal-penal-br",
+     "sha256": "f7c68f0c2ab454fe323b0e895422260ab79b4d375fd4124604d2ae100cab6fd7"
+    },
+    {
+     "from": "2012-07-24",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3119/ley-n-4669-modifica-los-articulos-136-y-137-de-la-ley-n-1286-98-codigo-procesal-penal-modificado-por-ley-n-2341-03-br",
+     "sha256": "202d0b52bfbac2ad2aed17fed7377bf4c0b6aa5f92ef2b7b2cd61fd2a8f3b87b"
+    },
+    {
+     "from": "2012-07-28",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1225/ley-n-4685-modifica-el-art-culo-57-de-la-ley-n-1-286-98-c-digo-procesal-penal-br",
+     "sha256": "cab2cb053d70316d60394838ccc5d8a82ea6f467d3d6c78ddf331ff38883902b"
+    },
+    {
+     "from": "2012-09-12",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1202/ley-n-4734-suspende-la-vigencia-de-la-ley-n-4-669-12-que-modifica-los-art-culos-136-y-137-de-la-ley-n-1-286-98-c-digo-procesal-penal-modificado-por-ley-n-2-341-03-br",
+     "sha256": "ad47c771014fea66eb027e8c355e3800e3e46ac6e4b24d4de529cdaeb6881822"
+    },
+    {
+     "from": "2014-09-05",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3007/ley-n-5276-modifica-el-art-culo-1-de-la-ley-n-4-734-12-que-suspende-la-vigencia-de-la-ley-n-4-669-12-que-modifica-los-art-culos-136-y-137-de-la-ley-n-1-286-98-c-digo-procesal-penal-modificado-por-ley-n-2-341-03-br",
+     "sha256": "7f2bff423e713b2c1a5f397e1f6db981d4dd6534719669dd05f423217788294a"
+    },
+    {
+     "from": "2015-09-04",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4460/ley-n-5475-modifica-el-art-culo-1-de-la-ley-n-4734-12-que-suspende-la-entrada-en-vigencia-de-la-ley-n-4669-12-que-modifica-los-art-culos-136-y-137-de-la-ley-n-1286-98-c-digo-procesal-penal-modificado-por-la-ley-n-2341-03-br",
+     "sha256": "9dfbe67a750a881dd1c5901067a23a9f3f57146955b7ad81085e46341dcfed78"
+    },
+    {
+     "from": "2016-09-03",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5184/ley-n-5671-modifica-el-art-culo-1-de-la-ley-4-734-12-que-suspende-la-vigencia-de-la-ley-n-4-669-12-que-modifica-los-art-culos-136-y-137-de-la-ley-n-1-286-98-c-digo-procesal-penal-modificado-por-la-ley-n-2-341-03-modificado-por-las-leyes-n-s-5-276-14-y-5-475-15-br",
+     "sha256": "35ab9e115b4ce5ee57a8bcf375b33e40c0c4ed490c3282652c60a2816040ed53"
+    },
+    {
+     "from": "2018-08-30",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8655/ley-n-6146-deroga-la-ley-n-4-669-2012-que-modifica-los-art-culos-136-y-137-de-la-ley-n-1286-98-c-digo-procesal-penal-modificado-por-ley-n-2341-03",
+     "sha256": "f23f598dce6e6c2023a8eb4c8d6274b578e8f49fdffd015b5d1d814bbd672b97"
+    },
+    {
+     "from": "2019-07-21",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8900/ley-n-6353-modifica-temporalmente-los-art-culos-129-141-y-251-de-la-ley-n-1286-1998-c-digo-procesal-penal",
+     "sha256": "353e99b7ee64ae8e6dad08231f110293b0e579b0cc0fae373859c134e41b1a97"
+    },
+    {
+     "from": "2019-07-23",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8902/ley-n-6350-modifica-el-art-culo-245-de-la-ley-n-1286-1998-c-digo-procesal-penal-y-sus-modificatorias-las-leyes-n-s-4-431-2011-y-2493-2004",
+     "sha256": "8b68f4aec736fb0b4b76f898ad9c220dbd3d23a6f491305c8f80d56b70e27983"
+    },
+    {
+     "from": "2019-10-30",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9045/ley-n-6418-modifica-temporalmente-el-art-culo-253-de-la-ley-n-1286-1998-del-c-digo-procesal-penal",
+     "sha256": "e754854ac260330ffde8e7f4fcd7f39c03c7312abe3ab609b0abd49099843d2a"
+    },
+    {
+     "from": "2020-02-01",
+     "units": 507,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8900/ley-n-6353-modifica-temporalmente-los-art-culos-129-141-y-251-de-la-ley-n-1286-1998-c-digo-procesal-penal",
+     "sha256": "c611ec5c2aacaa49125d15d22714acbd0492780be7138e4eb9f1c6a73314a249"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-procesal-civil",
+   "short": "CPC",
+   "title": "Código Procesal Civil (Ley N° 1337/1988)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3038/ley-n-1337-codigo-procesal-civil-br",
+   "versions": [
+    {
+     "from": "1989-11-04",
+     "units": 841,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3038/ley-n-1337-codigo-procesal-civil-br",
+     "sha256": "3037f6afa717e833035d3b610da34c4aced29c1b84da847aa2051cb239298fec"
+    },
+    {
+     "from": "1995-06-17",
+     "units": 840,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11593/ley-n-600-deroga-el-articulo-580-y-modifica-el-articulo-582-de-la-ley-n-1-337-88-codigo-procesal-civil",
+     "sha256": "9a7c924bc6f053bca6d93067c10c6da025d8949e191000923d43248550046721"
+    },
+    {
+     "from": "2000-06-30",
+     "units": 840,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1568/ley-n-1493-modifica-los-art-culos-530-716-y-717-del-c-digo-procesal-civil-br",
+     "sha256": "00c0fe291039a72677c575435d90b5a3650db11da606975640abbbd0a8ddd9b6"
+    },
+    {
+     "from": "2011-09-30",
+     "units": 840,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3769/ley-n-4419-modifica-el-articulo-409-de-la-ley-n-1337-88-codigo-procesal-civil-br",
+     "sha256": "b9b1eb96579002a54a289892792b20b4e3034c66db03bf516742f6f16b49a817"
+    },
+    {
+     "from": "2013-02-22",
+     "units": 840,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3177/ley-n-4867-modifica-el-articulo-173-de-la-ley-n-1337-88-codigo-procesal-civil-br",
+     "sha256": "8fb23cd4c938f52decc52f845675d62dbb9dd2072e606bd460534c029329e70e"
+    },
+    {
+     "from": "2013-07-25",
+     "units": 840,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4767/ley-n-4992-reglamenta-modifica-y-amplia-las-funciones-de-los-actuarios-de-juzgados-y-tribunales-del-poder-judicial-br",
+     "sha256": "a65fbd2fc96dde3da895b911a6cab03421d4b624dd51c4cee1c704e53570c932"
+    },
+    {
+     "from": "2014-10-21",
+     "units": 840,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3037/ley-n-5330-modifica-el-art-culo-701-de-la-ley-n-1-337-88-c-digo-procesal-civil-br",
+     "sha256": "ae01ae12146571cd9bf3f21928531e4e80ca08d0e808deb649ad3288bd56d87b"
+    },
+    {
+     "from": "2018-07-04",
+     "units": 839,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8503/ley-n-6059-modifica-la-ley-n-879-81-c-digo-de-organizaci-n-judicial-y-ampl-a-sus-disposiciones-y-las-funciones-de-los-juzgados-de-paz",
+     "sha256": "4fbe97a391ac7ba9e6786f4ac740544b145f32d8fa2b00d57effb243d3528cfe"
+    },
+    {
+     "from": "2022-09-20",
+     "units": 839,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10672/ley-n-6979-modifica-y-ampl-a-el-art-culo-621-de-la-ley-n-1337-1998-c-digo-procesal-civil",
+     "sha256": "ca59f7082a9b8e3beb4bfc35d21dc59f30d64088b99f3aff030fa38b7bdea1c4"
+    },
+    {
+     "from": "2026-01-15",
+     "units": 838,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-7424-2025-que-crea-el-sistema-nacional-unificado-registral-y-catastral-y-el-registro-unificado-nacional",
+     "sha256": "5305030017605304e9392927827e35a101f690d2dcc9352a21dbb5f256c50f4c"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-ninez-adolescencia",
+   "short": "CNA",
+   "title": "Código de la Niñez y la Adolescencia (Ley N° 1680/2001)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/5261/ley-n-1680-codigo-de-la-ni-ez-y-la-adolescencia-br",
+   "versions": [
+    {
+     "from": "2001-11-30",
+     "units": 261,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5261/ley-n-1680-codigo-de-la-ni-ez-y-la-adolescencia-br",
+     "sha256": "20c00f7e5f0d90debab541c9e8f86e45770cf21bff1993da52298baed8ec54a5"
+    },
+    {
+     "from": "2003-07-19",
+     "units": 261,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4845/ley-n-2169-establece-la-mayoria-de-edad-br",
+     "sha256": "20f98a3fa1eb83f8f388dc71e5430075b99a88bbd3f49f2053ceeaebed862fb6"
+    },
+    {
+     "from": "2009-10-20",
+     "units": 261,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1509/ley-n-3879-modifica-el-art-culo-169-de-la-ley-n-1-680-01-c-digo-de-la-ni-ez-y-la-adolescencia-br",
+     "sha256": "c5d68254b8b8fc75672520c383e6ec017a6d6c96d5fd0def37836bd4441ba80c"
+    },
+    {
+     "from": "2018-06-09",
+     "units": 261,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8441/ley-n-6083-modifica-la-ley-n-1-680-01-c-digo-de-la-ni-ez-y-la-adolescencia",
+     "sha256": "271a5f3e239b21ae1e54f3e1981ecace45f043aec2db21d5704a57a7ad109de4"
+    },
+    {
+     "from": "2018-09-20",
+     "units": 258,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8805/ley-n-6174-eleva-al-rango-de-ministerio-a-la-secretar-a-nacional-de-la-ni-ez-y-la-adolescencia-snna-y-pasa-a-denominarse-ministerio-de-la-ni-ez-y-la-adolescencia-minna",
+     "sha256": "0a5a8b96e5af48ea45b5d74646d31e0e11695ef9778acc09306d0d52e27e16ed"
+    },
+    {
+     "from": "2020-02-05",
+     "units": 257,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9165/ley-n-6486-de-promoci-n-y-protecci-n-del-derecho-de-ni-os-ni-as-y-adolescentes-a-vivir-en-familia-que-regula-las-medidas-de-cuidados-alternativos-y-la-adopci-n",
+     "sha256": "06bbc943e59fe1ff989cd89f4cb6c4fa881df6d15ee1ba1902671fd3be3801a9"
+    },
+    {
+     "from": "2026-07-21",
+     "units": 257,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/13308/ley-n-7683-2026-que-modifica-el-art-culo-207-de-la-ley-n-1680-2001-c-digo-de-la-ni-ez-y-la-adolescencia",
+     "sha256": "2277b2bff33a63dd673fd281d108afa536038e65a7b67e9ef1ed162a58e36bbe"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-aduanero",
+   "short": "CA",
+   "title": "Código Aduanero (Ley N° 2422/2004)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2276/ley-n-2422-codigo-aduanero-br",
+   "versions": [
+    {
+     "from": "2005-01-11",
+     "units": 400,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2276/ley-n-2422-codigo-aduanero-br",
+     "sha256": "bdadfdd62dd834f52001855fdfce737fd6f057d71cb98c35dc4990fd42abd73f"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 399,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    },
+    {
+     "from": "2019-11-06",
+     "units": 399,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9046/ley-n-6417-modifica-y-ampl-a-los-art-culos-336-y-345-de-la-ley-n-2422-2004-codigo-aduanero",
+     "sha256": "686c58b3afd0a021e18926629bbdf11784d5114b4d09692da2f5697481bd72c6"
+    }
+   ]
+  },
+  {
+   "slug": "ley-del-comerciante",
+   "short": "LC",
+   "title": "Ley N° 1034/1983 del Comerciante",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2538/ley-n-1034-del-comerciante",
+   "versions": [
+    {
+     "from": "1983-12-17",
+     "units": 125,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2538/ley-n-1034-del-comerciante",
+     "sha256": "f09d17a87cdaeb0ab8fdec8e008d581dddaad2c58ce721e3082f78d76570cd9c"
+    },
+    {
+     "from": "2003-07-19",
+     "units": 124,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4845/ley-n-2169-establece-la-mayoria-de-edad-br",
+     "sha256": "20f98a3fa1eb83f8f388dc71e5430075b99a88bbd3f49f2053ceeaebed862fb6"
+    },
+    {
+     "from": "2013-06-04",
+     "units": 124,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1139/ley-n-4924-modifica-el-art-culo-76-de-la-ley-n-1-034-83-del-comerciante-br",
+     "sha256": "d7c583397b893524c119c25e684acf5e56a6925b36962a9baf69c39902b5fcef"
+    },
+    {
+     "from": "2017-07-26",
+     "units": 123,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9710/ley-n-5810-mercado-de-valores",
+     "sha256": "a9bf018b2f53c173a9814d2182d20175511daf08ee78520b483de7668373e8c3"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-sanitario",
+   "short": "CS",
+   "title": "Código Sanitario (Ley N° 836/1980)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2399/ley-n-836-c-digo-sanitario-br",
+   "versions": [
+    {
+     "from": "1980-12-16",
+     "units": 321,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2399/ley-n-836-c-digo-sanitario-br",
+     "sha256": "c2820950205c741d16af0c6ec2c131c40462d338c9bd0a927fd47924bcbd3b73"
+    },
+    {
+     "from": "1991-01-05",
+     "units": 321,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5341/ley-n-115-modifica-los-articulos-n-s-270-y-272-del-codigo-sanitario-ley-n-836-80-br",
+     "sha256": "eec274bfc9f519940724e233fe64f0722e0255047a6c9db1c8748a9244df0762"
+    },
+    {
+     "from": "2013-08-06",
+     "units": 318,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4401/ley-n-4995-2013-de-educacion-superior",
+     "sha256": "c5128b22f27a16cd5e4347130182bffe92792ec502ade19614710b2cbedea1c8"
+    },
+    {
+     "from": "2021-08-25",
+     "units": 300,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9645/ley-n-6788-establece-la-competencia-atribuciones-y-estructura-org-nica-de-la-direcci-n-nacional-de-vigilancia-sanitaria",
+     "sha256": "e749214b4b21a8a3d7e5f68e4f3be28e787cc135620779312c7c13138c7861f7"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-electoral",
+   "short": "CE",
+   "title": "Código Electoral Paraguayo (Ley N° 834/1996)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2346/ley-n-834-establece-el-codigo-electoral-paraguayo-br",
+   "versions": [
+    {
+     "from": "1996-04-18",
+     "units": 350,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2346/ley-n-834-establece-el-codigo-electoral-paraguayo-br",
+     "sha256": "a63211ddddb62736422c466143e4a711b201c4b13dd9e506e7ec7c1693501ae7"
+    },
+    {
+     "from": "2001-11-10",
+     "units": 350,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2493/ley-n-1825-establece-el-voto-electronico-en-determinados-municipios-locales-de-votacion-y-cantidad-de-mesas-receptoras-de-votos-para-las-elecciones-municipales-de-2001-y-se-suspenden-los-efectos-de-los-articulos-103-104-170-171-174-198-incisos-b-d-y-e-200-203-211-excepto-la-ltima-linea-222-223-224-226-y-227-de-ley-n-834-96",
+     "sha256": "b37cc897ca5ee43ec7ad11714f26f98e6388f73602848207142612f4fdf4c184"
+    },
+    {
+     "from": "2001-11-17",
+     "units": 353,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2494/ley-n-1830-modifica-el-inciso-e-del-articulo-32-y-los-art-culos-153-154-251-254-257-y-290-y-amplia-las-disposiciones-finales-y-transitorias-de-la-ley-n-834-del-17-de-abril-de-1996-que-establece-el-c-digo-electoral-paraguayo-br",
+     "sha256": "d9179b8032c6b24554259ea8198b077ec42d80e1cd6ab37fb801a3e798af94c6"
+    },
+    {
+     "from": "2002-05-14",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2495/ley-n-1890-modifica-los-articulos-153-154-y-amplia-las-disposiciones-finales-y-transitorias-de-la-ley-n-834-96-que-establece-el-codigo-electoral-paraguayo-modificado-por-las-leyes-n-s-1825-y-1830-01-br",
+     "sha256": "9c1e9b081c14e7b750c2b7a42e2a1b53a27108c1687f51fc98ece58d7119409d"
+    },
+    {
+     "from": "2002-09-07",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2501/ley-n-1975-modifica-los-articulos-130-154-y-155-de-la-ley-n-834-96-que-establece-el-codigo-electoral-paraguayo-modificado-por-las-leyes-n-s-1830-01-y-1890-02-br",
+     "sha256": "45ed0531b6020cba7a60279e15bb5b927fcadacc9a38301be224d14048e5f809"
+    },
+    {
+     "from": "2003-05-22",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2496/ley-n-2096-modifica-el-articulo-171-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-br",
+     "sha256": "e680c85f2aab068ce1f9e9ab7d0e4fb0dcc304671dcd78c6adcfdf5a8feb0161"
+    },
+    {
+     "from": "2004-09-03",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2497/ley-n-2450-modifica-parcialmente-el-articulo-2-de-la-ley-n-1830-de-fecha-16-de-noviembre-de-2001-modificatoria-de-la-ley-n-834-del-17-de-abril-de-1996-que-establece-el-codigo-electoral-paraguayo-br",
+     "sha256": "e8bc84d1b54ce5a3a3ae1f2f7cb6fd6ba4ce2e195c5f97e130b609e7497d9a90"
+    },
+    {
+     "from": "2005-06-03",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2499/ley-n-2582-modifica-el-articulo-98-de-la-ley-n-834-96-que-establece-el-codigo-electoral-paraguayo-br",
+     "sha256": "f76205ffb8a9b64c22953da2e4ff6dbffd8ac5e7a459a2e9222d6f7687625173"
+    },
+    {
+     "from": "2005-11-08",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2500/ley-n-2783-modifica-el-art-culo-130-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-modificado-por-la-ley-n-1-975-02-br",
+     "sha256": "5c806f725317630cc02ca4fed6b284eb9d153e0d1ec544fdd175f9e418d77ea6"
+    },
+    {
+     "from": "2006-01-04",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1941/ley-n-2858-modifica-los-art-culos-116-117-130-140-144-y-147-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-br",
+     "sha256": "037900aeaac134a8b53cc696cc14659a3872077298778fb8d22523c0c9ff2f5f"
+    },
+    {
+     "from": "2007-04-13",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/290/ley-n-3166-modifica-los-articulos-106-170-246-247-248-y-258-de-la-ley-n-834-96-que-establece-el-codigo-electoral-paraguayo-br",
+     "sha256": "f420e146f26d1c7c66345073ea94c793533b4fdf72108e4116c3237ef45ff637"
+    },
+    {
+     "from": "2007-08-02",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3319/ley-n-3273-suspende-transitoriamente-varios-articulos-del-codigo-electoral-br",
+     "sha256": "04f0f814beb53db6a47bb012b2f2668de9eb8a97544099eef67cf5fae0f55805"
+    },
+    {
+     "from": "2008-01-01",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3319/ley-n-3273-suspende-transitoriamente-varios-articulos-del-codigo-electoral-br",
+     "sha256": "04f0f814beb53db6a47bb012b2f2668de9eb8a97544099eef67cf5fae0f55805"
+    },
+    {
+     "from": "2009-10-28",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1502/ley-n-3872-modifica-el-articulo-4-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-br",
+     "sha256": "e6ace2c89a887c610bba8e3d021ff2e6da94cc201586f49912844d79b7d6800e"
+    },
+    {
+     "from": "2011-01-19",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2898/ley-n-4260-modifica-el-articulo-195-de-la-ley-n-834-96-que-establece-el-codigo-electoral-paraguayo-br",
+     "sha256": "5a95bfb6d9f7bddaa3eb9e8f7145a0c764a1331731966115325ef2da5fd3db97"
+    },
+    {
+     "from": "2012-02-21",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1267/ley-n-4584-modifica-los-art-culos-247-y-258-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-modificados-por-ley-n-3-166-07-que-modifica-los-art-culos-106-170-246-247-248-y-258-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-br",
+     "sha256": "386b9a7a84daf49759d1cf49c69bb38aae5ec4751cdfa2c908e783c86747d379"
+    },
+    {
+     "from": "2012-07-21",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2733/ley-n-4662-modifica-el-articulo-2-de-la-ley-n-4584-12-que-modifica-los-articulos-247-y-258-de-la-ley-n-834-96-que-establece-el-codigo-electoral-paraguayo-modificados-por-la-ley-3166-07-que-modifica-los-articulos-106-170-246-247-248-y-258-de-la-ley-834-96-que-establece-el-codigo-electoral-paraguayo-br",
+     "sha256": "272721586a678b4d3de5d4e00ebb67d0e4901712e597897b3a94c3b8d8a48d23"
+    },
+    {
+     "from": "2012-10-25",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1198/ley-n-4743-regula-el-financiamiento-pol-tico-br",
+     "sha256": "d533f1cc183ea07c0192c88eddc98763a933beb43d08ee4cca81b2df2ac94608"
+    },
+    {
+     "from": "2012-12-08",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3164/ley-n-4802-modifica-los-articulos-135-y-208-de-la-ley-n-834-96-que-establece-el-codigo-electoral-paraguayo-br",
+     "sha256": "ebed1b643df3c830e8e6e0a1b162d1c97bb3becbec5dc0673c43812713b577f4"
+    },
+    {
+     "from": "2014-09-18",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3014/ley-n-5286-modifica-el-art-culo-153-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-modificado-por-las-leyes-n-s-1-830-01-y-1-890-02-br",
+     "sha256": "5fd9a4410447abaf69e89daddab2a21f57cd71cd4082c24bc01785638001d34f"
+    },
+    {
+     "from": "2014-11-11",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4569/ley-n-5350-deroga-la-ley-n-4584-12-que-modifica-los-art-culos-247-y-258-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-modificados-por-ley-n-3166-07-que-modifica-los-art-culos-106-170-246-247-248-y-258-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-y-su-modificatoria-la-ley-n-4662-12-que-modifica-el-art-culo-2-de-la-ley-n-4584-12-que-modifica-los-art-culos-247-y-258-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-modificados-por-la-ley-n-3166-07-que-modifica-los-art-culos-106-170-246-247-248-y-258-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-br",
+     "sha256": "59940a211f5ab9425aba33f0ff5c56a29bcbacd759ee651b82a6a5a9d1ee1937"
+    },
+    {
+     "from": "2014-12-24",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3067/ley-n-5376-modifica-el-art-culo-257-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-modificado-por-la-ley-n-1-830-01-br",
+     "sha256": "cc4449bdc9571ae47ac66e37fb7939ed4f6354415c534129f32ce892635a2358"
+    },
+    {
+     "from": "2018-01-17",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9925/ley-n-6019-modifica-el-art-culo-122-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo",
+     "sha256": "acb7a28bf3c164d22583eb4539bec6f72e515665feec972cbe646a22d2cdb96c"
+    },
+    {
+     "from": "2018-09-20",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8683/ley-n-6167-modifica-varios-art-culos-de-la-ley-n-834-1996",
+     "sha256": "f581b1b9a42732c3d9e65129151f98167f2ed3564bbb2145fb69851ed159a4b6"
+    },
+    {
+     "from": "2019-05-25",
+     "units": 356,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8850/ley-n-6318-modifica-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-modificado-por-la-ley-n-3166-07-que-modifica-los-art-culos-106-170-246-247-248-y-258-de-la-ley-n-834-96-que-establece-el-c-digo-electoral-paraguayo-e-incorpora-el-sistema-de-listas-cerradas-desbloqueadas-y-de-representaci-n-proporcional-para-cargos-pluripersonales",
+     "sha256": "eaa893eaebaa029af4284778e77681ccbe69aaa9f231817cb083a898fde32864"
+    },
+    {
+     "from": "2020-02-19",
+     "units": 357,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9161/ley-n-6501-modifica-la-ley-n-4743-2012-que-regula-el-financiamiento-pol-tico-que-fuera-modificado-por-ley-n-6167-2018-y-modifica-la-ley-n-834-1996-que-establece-el-codigo-electoral-paraguayo",
+     "sha256": "34150adb2cb34810c20f293b5a0b94fcaad830e12aa49f9f6e07ef2dda06185d"
+    },
+    {
+     "from": "2020-06-10",
+     "units": 357,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9256/ley-n-6547-modifica-temporal-y-parcialmente-el-art-culo-154-de-la-ley-n-834-1996-que-establece-el-c-digo-electoral-paraguayo-a-los-efectos-de-los-comicios-municipales-del-a-o-2020-y-establece-un-nuevo-calendario-electoral-para-las-elecciones-municipales-a-o-2020",
+     "sha256": "8a193e558dae5ca6786e2675101c4289a5c525dbd61a59d3724f04fa6e67d625"
+    },
+    {
+     "from": "2020-12-12",
+     "units": 357,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9447/ley-n-6652-modif-ca-el-art-culo-266-inciso-b-y-el-art-culo-273-de-la-ley-n-834-1996-que-establece-el-c-digo-electoral-paraguayo",
+     "sha256": "1f147d757c8597dc66970cf49fa7fe9b0c8c51feb9b278ea121733285985af70"
+    },
+    {
+     "from": "2022-06-02",
+     "units": 357,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10452/ley-n-6918-modifica-los-art-culos-170-246-247-248-y-258-de-la-ley-n-834-1996-que-establece-el-c-digo-electoral-paraguayo-y-sus-modificatorias-leyes-n-s-3166-2007-y-6318-2019",
+     "sha256": "cbbf93f52fb4e9bde112900fbef139123558263bf1ba5c6a3e847ce9e7a742f4"
+    },
+    {
+     "from": "2022-06-16",
+     "units": 357,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10506/ley-n-6922-modifica-el-art-culo-266-inciso-b-de-la-ley-n-834-1996-que-establece-el-c-digo-electoral-paraguayo-modificado-por-la-ley-n-6652-2020",
+     "sha256": "4b78ede11c7dbd2e3dbbf388f00aa745ae7bbf40353f2f34926e62182f3a076c"
+    },
+    {
+     "from": "2022-08-17",
+     "units": 357,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10569/ley-n-6951-establece-la-inscripci-n-autom-tica-en-el-registro-c-vico-permanente-de-ciudadanos-paraguayos-y-paraguayas-residentes-en-el-paraguay-y-en-el-extranjero-para-el-pleno-ejercicio-del-derecho-al-voto",
+     "sha256": "e230b16b60e40718f83b59b0da5c435f637edc04495922f8ebdbeb39e95da25d"
+    },
+    {
+     "from": "2022-09-13",
+     "units": 357,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10623/ley-n-6971-modifica-los-art-culos-91-94-207-y-217-de-la-ley-n-834-1996-que-establece-el-codigo-electoral-paraguayo",
+     "sha256": "58de12bbb956bb5ca2e9798c28a008763fcb4ad82bf2897a2dcd6457409694bb"
+    },
+    {
+     "from": "2022-09-27",
+     "units": 360,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10742/ley-n-6983-modifica-los-art-culos-266-y-271-de-la-ley-n-834-1996-que-establece-el-c-digo-electoral-paraguayo-y-sus-modificatorias-y-el-art-culo-39-de-la-ley-n-3966-2010-org-nica-municipal",
+     "sha256": "d85fc4a9408dcb3922c3b7f1a7bfc2ff6039681843149a945a524c06716387bc"
+    },
+    {
+     "from": "2022-12-16",
+     "units": 360,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11228/ley-n-7044-suspende-temporalmente-el-par-grafo-quinto-del-art-culo-154-de-la-ley-n-834-1996-que-establece-el-c-digo-electoral-paraguayo-modificado-por-las-leyes-n-s-1830-2001-1890-2002-y-1975-2002",
+     "sha256": "577a1ee106338ff1dedbcf9a249481f93bb1a195a14a82cdf4285c1bea86e950"
+    },
+    {
+     "from": "2023-07-26",
+     "units": 360,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11862/ley-n-7135-modifica-el-art-culo-290-de-la-ley-n-834-1996-que-establece-el-codigo-electoral-paraguayo",
+     "sha256": "b73e1ae7c7110cadc07fb0091144de692c25af1395816f7ee64ba754b8de0e64"
+    },
+    {
+     "from": "2023-10-19",
+     "units": 360,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11989/ley-n-7176-que-suspende-temporalmente-la-aplicaci-n-del-art-culo-149-de-la-ley-n-834-1996-que-establece-el-c-digo-electoral-paraguayo",
+     "sha256": "e61716561fc612f6f26bf813cd3e2fb092efd2d549d034bc8c3254df45b55a15"
+    },
+    {
+     "from": "2025-06-24",
+     "units": 360,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12759/ley-n-7491-2025-que-modifica-el-art-culo-130-de-la-ley-n-834-1996-que-establece-el-codigo-electoral-paraguayo-modificado-por-la-ley-n-2-858-2006",
+     "sha256": "1005ec9f2394b07dbb15e913b403e66044e4a9d0e11bc5661399cccc9fe9b47e"
+    },
+    {
+     "from": "2025-08-20",
+     "units": 359,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12823/ley-n-7524-2025-que-modifica-los-art-culos-64-66-y-278-de-la-ley-n-834-1996-que-establece-el-c-digo-electoral-paraguayo-modificado-por-las-leyes-n-s-4743-2012-6167-2018-y-6501-2020",
+     "sha256": "f682f7f1e7a417c430b926f2a3f9abc7883dbe7bd185f1f936284ae722a7c21b"
+    }
+   ]
+  },
+  {
+   "slug": "ley-datos-crediticios",
+   "short": "LDPC",
+   "title": "Ley N° 6534/2020 de Protección de Datos Personales Crediticios",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/9417/ley-n-6534-de-protecci-n-de-datos-personales-crediticios",
+   "versions": [
+    {
+     "from": "2020-10-28",
+     "units": 33,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9417/ley-n-6534-de-protecci-n-de-datos-personales-crediticios",
+     "sha256": "b7212300a3591c5d6201d9c97f724ef8db28a08120dcbfd8f07a843d2ef2d1ae"
+    },
+    {
+     "from": "2027-11-28",
+     "units": 32,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-7593-2025-de-protecci-n-de-datos-personales-en-la-rep-blica-del-paraguay",
+     "sha256": "d2fbf11def87437e1f52656d652cd9cdae03df9424e455b4090cbbf39fab9407"
+    }
+   ]
+  },
+  {
+   "slug": "ley-defensa-consumidor",
+   "short": "LDC",
+   "title": "Ley N° 1334/1998 de Defensa del Consumidor y del Usuario",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/897/ley-n-1334-de-defensa-del-consumidor-y-del-usuario-br",
+   "versions": [
+    {
+     "from": "1999-04-25",
+     "units": 56,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/897/ley-n-1334-de-defensa-del-consumidor-y-del-usuario-br",
+     "sha256": "438c33261df0600c2d4197105b4b9db6a53cd274ed6017ab685e13c87b0ad8d9"
+    },
+    {
+     "from": "2004-01-13",
+     "units": 61,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5040/ley-n-2340-amplia-la-ley-n-1334-del-27-de-octubre-de-1998-de-defensa-del-consumidor-y-del-usuario-br",
+     "sha256": "312bedf86aa511fc3ad0364218bccb726fae90d2df011d6196ef4abb3632a1e9"
+    },
+    {
+     "from": "2013-08-29",
+     "units": 61,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4772/ley-n-4974-de-la-secretaria-de-defensa-del-consumidor-y-el-usuario-br",
+     "sha256": "b7a15ca3707ffff164a4f05337dd355b02da31fbe8d080c4d37095e34c0aa8b0"
+    },
+    {
+     "from": "2015-05-06",
+     "units": 61,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4415/ley-n-5427-modifica-el-art-culo-28-de-la-ley-n-1-334-98-de-defensa-del-consumidor-y-del-usuario-br",
+     "sha256": "a3fc8426da1c7ce848603dd0986c0afd7c720d5aa0c3a4c95e92a45dcea80394"
+    },
+    {
+     "from": "2019-09-21",
+     "units": 61,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9529/ley-n-6366-modifica-la-ley-n-1334-98-de-defensa-del-consumidor-y-del-usuario-y-establece-mayor-claridad-y-transparencia-en-la-informaci-n-sobre-operaciones-de-cr-dito",
+     "sha256": "88ebe9276179a3baa5729225280476c509d83e2b9f0e787ca8e29b26b1b42f3f"
+    },
+    {
+     "from": "2020-11-05",
+     "units": 61,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9409/ley-n-6624-modifica-el-art-culo-30-de-la-ley-n-1334-1998-de-defensa-del-consumidor-y-del-usuario",
+     "sha256": "81b88d9e56c95215237e2a766a62bcaffd50c0009b92cc4028ad9381092e4e5c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-proteccion-datos-personales",
+   "short": "LPDP",
+   "title": "Ley N° 7593/2025 de Protección de Datos Personales en la República del Paraguay",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-7593-2025-de-protecci-n-de-datos-personales-en-la-rep-blica-del-paraguay",
+   "versions": [
+    {
+     "from": "2027-11-28",
+     "units": 63,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-7593-2025-de-protecci-n-de-datos-personales-en-la-rep-blica-del-paraguay",
+     "sha256": "d2fbf11def87437e1f52656d652cd9cdae03df9424e455b4090cbbf39fab9407"
+    }
+   ]
+  },
+  {
+   "slug": "ley-procedimientos-administrativos",
+   "short": "LPA",
+   "title": "Ley N° 6715/2021 de Procedimientos Administrativos",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/10974/ley-n-6715-procedimientos-administrativos",
+   "versions": [
+    {
+     "from": "2022-09-29",
+     "units": 93,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10974/ley-n-6715-procedimientos-administrativos",
+     "sha256": "11e3d323ce8887efff7ab58615719caf98fdaa35b2ea829594daf26f7241bea4"
+    }
+   ]
+  },
+  {
+   "slug": "ley-acceso-informacion-publica",
+   "short": "LAIP",
+   "title": "Ley N° 5282/2014 de Libre Acceso Ciudadano a la Información Pública y Transparencia Gubernamental",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3013/ley-n-5282-2014-libre-acceso-ciudadano-a-la-informaci-n-p-blica-y-transparencia-gubernamental",
+   "versions": [
+    {
+     "from": "2015-09-18",
+     "units": 35,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3013/ley-n-5282-2014-libre-acceso-ciudadano-a-la-informaci-n-p-blica-y-transparencia-gubernamental",
+     "sha256": "61bc0b97f6aec9f9d618e3d37409512afd9d18e13d3ec6729b59329b54185b8c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-proteccion-integral-mujeres",
+   "short": "LPIM",
+   "title": "Ley N° 5777/2016 de Protección Integral a las Mujeres, contra toda forma de Violencia",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/8356/ley-n-5777-de-protecci-n-integral-a-las-mujeres-contra-toda-forma-de-violencia",
+   "versions": [
+    {
+     "from": "2016-12-30",
+     "units": 2,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8356/ley-n-5777-de-protecci-n-integral-a-las-mujeres-contra-toda-forma-de-violencia",
+     "sha256": "ebc520d8135343180ccb17800ee65e5ed0248cac874f488c541e457f75566ca9"
+    },
+    {
+     "from": "2017-12-29",
+     "units": 57,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8356/ley-n-5777-de-protecci-n-integral-a-las-mujeres-contra-toda-forma-de-violencia",
+     "sha256": "ebc520d8135343180ccb17800ee65e5ed0248cac874f488c541e457f75566ca9"
+    },
+    {
+     "from": "2021-09-25",
+     "units": 57,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9680/ley-n-6806-declara-emergencia-nacional-por-feminicidios",
+     "sha256": "a93120cbd55a7cf4c74ed11dfeb5b4e3002dbc70ca25d1f32480b3fe84f98d81"
+    },
+    {
+     "from": "2024-10-17",
+     "units": 57,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11985/ley-n-7183-que-modifica-los-art-culos-5-incisos-a-y-k-7-y-18-de-la-ley-n-6806-2021-que-declara-emergencia-nacional-por-feminicidios",
+     "sha256": "cd16d78e2effff1cf7341468746d640ae7bb4d5fefaa45b3fd2786a2a0da4e81"
+    }
+   ]
+  },
+  {
+   "slug": "ley-contra-violencia-domestica",
+   "short": "LVD",
+   "title": "Ley N° 1600/2000 contra la Violencia Doméstica",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/1689/ley-n-1600-contra-la-violencia-domestica-br",
+   "versions": [
+    {
+     "from": "2000-10-10",
+     "units": 13,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1689/ley-n-1600-contra-la-violencia-domestica-br",
+     "sha256": "ea45f94958930d504e62d9e2933eadfca7e446410824435e265cfd960ca09197"
+    },
+    {
+     "from": "2020-07-03",
+     "units": 13,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9284/ley-n-6568-modifica-el-art-culo-2-de-la-ley-n-1600-2000-contra-la-violencia-dom-stica",
+     "sha256": "02ab866bceca2f14aab7c0255ba0b07f9d966803e0d0fb26ea654891d603c077"
+    }
+   ]
+  },
+  {
+   "slug": "ley-de-lenguas",
+   "short": "LL",
+   "title": "Ley N° 4251/2010 de Lenguas",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2895/ley-n-4251-de-lenguas-br",
+   "versions": [
+    {
+     "from": "2011-01-01",
+     "units": 54,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2895/ley-n-4251-de-lenguas-br",
+     "sha256": "deb3f6b70d5169e2827b262ec147af6ec657388b7ef45820805179f300a45c4d"
+    }
+   ]
+  },
+  {
+   "slug": "ley-servicios-confianza",
+   "short": "LSC",
+   "title": "Ley N° 6822/2021 de los Servicios de Confianza para las Transacciones Electrónicas, del Documento Electrónico y los Documentos Transmisibles Electrónicos",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/10318/ley-n-6822-de-los-servicios-de-confianza-para-las-transacciones-electr-nicas-del-documento-electr-nico-y-los-documentos-transmisibles-electr-nicos",
+   "versions": [
+    {
+     "from": "2022-04-30",
+     "units": 107,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10318/ley-n-6822-de-los-servicios-de-confianza-para-las-transacciones-electr-nicas-del-documento-electr-nico-y-los-documentos-transmisibles-electr-nicos",
+     "sha256": "95baa870e5935ca505bb953ad20e0dba759c091230e410d818fd857f28f9d190"
+    }
+   ]
+  },
+  {
+   "slug": "ley-comercio-electronico",
+   "short": "LCE",
+   "title": "Ley N° 4868/2013 de Comercio Electrónico",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/961/ley-n-4868-comercio-electronico-br",
+   "versions": [
+    {
+     "from": "2013-03-02",
+     "units": 46,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/961/ley-n-4868-comercio-electronico-br",
+     "sha256": "860b738a617aef269fec28f9d8b6b85953a2750e40ef293c8858b05135125af8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-corte-suprema",
+   "short": "LCSJ",
+   "title": "Ley N° 609/1995 que organiza la Corte Suprema de Justicia",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2333/ley-n-609-1995-organiza-la-corte-suprema-de-justicia",
+   "versions": [
+    {
+     "from": "1995-06-24",
+     "units": 31,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2333/ley-n-609-1995-organiza-la-corte-suprema-de-justicia",
+     "sha256": "8a68e7f831dd7d5143ddffc743d54d4adb5f0aa14ad75f164be7c991561ab854"
+    },
+    {
+     "from": "2007-04-04",
+     "units": 31,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/305/ley-n-3181-modifica-el-articulo-19-de-la-ley-n-609-95-que-organiza-la-corte-suprema-de-justicia-br",
+     "sha256": "bbd4353eb807fdf6b2bddc027a31a02ead952b6ac39eebae2438261894283a87"
+    },
+    {
+     "from": "2010-05-01",
+     "units": 31,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3522/ley-n-3986-2010-amplia-el-articulo-11-inciso-a-de-la-ley-n-609-95-que-organiza-la-corte-suprema-de-justicia",
+     "sha256": "e3b4ad3677bcc876f1de9f07b8808adaaf4e1cd9115340a0a13665d11ac0ea5a"
+    },
+    {
+     "from": "2011-12-31",
+     "units": 31,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3841/ley-n-4542-modifica-el-articulo-3-inciso-m-y-el-articulo-14-de-la-ley-n-609-95-que-organiza-la-corte-suprema-de-justicia-br",
+     "sha256": "ed97c5bf7775251b90ca9701960ce3ab81120216c767443f80c95c6462951ec6"
+    },
+    {
+     "from": "2023-05-17",
+     "units": 31,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11519/ley-n-7058-modifica-el-art-culo-8-de-la-ley-n-609-1995-que-organiza-la-corte-suprema-de-justicia",
+     "sha256": "d97d9b19a46d41c8fffcd036d154219ab2f06f15e0b5f1f67d1e67918317c129"
+    },
+    {
+     "from": "2024-09-14",
+     "units": 31,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12686/ley-n-7307-2024-que-modifica-el-art-culo-11-inciso-a-de-la-ley-n-609-1995-que-organiza-la-corte-suprema-de-justicia-modificada-por-la-ley-n-3986-2010",
+     "sha256": "8062af1a60788b5a028b6a257a5223d06ef0d7e0a8dcd68cd7f1954614b1c857"
+    },
+    {
+     "from": "2025-12-30",
+     "units": 31,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12936/ley-n-7615-2025-que-modifica-el-art-culo-8-de-la-ley-n-609-1995-que-organiza-la-corte-suprema-de-justicia-y-deroga-la-ley-n-7058-2023",
+     "sha256": "c365f834a5eb027eb0aaedd0ac96844195b233240264821c95a5211f9496de3f"
+    }
+   ]
+  },
+  {
+   "slug": "ley-defensoria-pueblo",
+   "short": "LODP",
+   "title": "Ley N° 631/1995 Orgánica de la Defensoría del Pueblo",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/11573/ley-n-631-organica-de-la-defensoria-del-pueblo",
+   "versions": [
+    {
+     "from": "1995-11-15",
+     "units": 35,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11573/ley-n-631-organica-de-la-defensoria-del-pueblo",
+     "sha256": "cf6f5eddb9cfa28e01d1fb7fcb5fde1d7a564fe8502ff30b4ba1a5c969ded7be"
+    }
+   ]
+  },
+  {
+   "slug": "ley-ministerio-publico",
+   "short": "LOMP",
+   "title": "Ley N° 1562/2000 Orgánica del Ministerio Público",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/740/ley-n-1562-org-nica-del-ministerio-p-blico-br",
+   "versions": [
+    {
+     "from": "2000-08-11",
+     "units": 107,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/740/ley-n-1562-org-nica-del-ministerio-p-blico-br",
+     "sha256": "47d3340dc985045651f7100fa41569244cbeb1b32bc3f7c62301bff8834891c2"
+    },
+    {
+     "from": "2005-04-22",
+     "units": 107,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4099/ley-n-2564-modifica-los-articulos-22-de-la-ley-n-635-95-que-reglamenta-la-justicia-electoral-2-de-la-ley-n-860-96-por-la-cual-se-modifica-y-amplia-la-ley-n-879-81-codigo-de-organizaci-n-judicial-y-48-de-la-ley-n-1562-00-organica-del-ministerio-publico-br",
+     "sha256": "51d48a4b7159e4b02f11e46c1ed3caacbc9a4f2bea09c54581e244ff6308f129"
+    },
+    {
+     "from": "2023-07-19",
+     "units": 107,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11816/ley-n-7133-modifica-los-art-culos-34-50-y-62-de-la-ley-n-1562-2000-org-nica-del-ministerio-p-blico-para-la-protecci-n-de-los-agentes-fiscales-asignados-a-la-investigaci-n-en-los-casos-de-narcotr-fico-lavado-de-activos-y-crimen-organizado",
+     "sha256": "4a0063901db971fb4a9cd51d57da83c6faa7493119017b3c2c08d737c0539a8a"
+    },
+    {
+     "from": "2025-08-13",
+     "units": 107,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12781/ley-n-7511-2025-que-modifica-el-art-culo-60-de-la-ley-n-1562-2000-org-nica-del-ministerio-p-blico",
+     "sha256": "9aab2d56d666366b11c8f249ce633668089616aaacf024fb41f57a6b32a864cb"
+    }
+   ]
+  },
+  {
+   "slug": "ley-educacion-superior",
+   "short": "LES",
+   "title": "Ley N° 4995/2013 de Educación Superior",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4401/ley-n-4995-2013-de-educacion-superior",
+   "versions": [
+    {
+     "from": "2013-08-06",
+     "units": 100,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4401/ley-n-4995-2013-de-educacion-superior",
+     "sha256": "c5128b22f27a16cd5e4347130182bffe92792ec502ade19614710b2cbedea1c8"
+    },
+    {
+     "from": "2024-07-24",
+     "units": 100,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12444/ley-n-7301-2024-que-modifica-el-art-culo-15-de-la-ley-n-4995-2013-de-educacion-superior",
+     "sha256": "9387ecf50f13ed09919870ce37b7a11b97410c494136ff44e73f1997e9953e44"
+    }
+   ]
+  },
+  {
+   "slug": "ley-general-educacion",
+   "short": "LGE",
+   "title": "Ley N° 1264/1998 General de Educación",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3766/ley-n-1264-general-de-educaci-n",
+   "versions": [
+    {
+     "from": "1998-05-30",
+     "units": 163,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3766/ley-n-1264-general-de-educaci-n",
+     "sha256": "e1a963a1241b6dea1ca72e94183c7e8d22ab93d753c01f2fc1d880dbe593bab8"
+    },
+    {
+     "from": "2008-06-05",
+     "units": 163,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3486/ley-n-3488-modifica-el-articulo-127-de-la-ley-n-1264-98-general-de-educacion-br",
+     "sha256": "2c777c2425c474faa1b4885f4b4e5ae6a46dd51886bfe52528e1b629523af444"
+    },
+    {
+     "from": "2013-08-06",
+     "units": 158,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4401/ley-n-4995-2013-de-educacion-superior",
+     "sha256": "c5128b22f27a16cd5e4347130182bffe92792ec502ade19614710b2cbedea1c8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-transito-seguridad-vial",
+   "short": "LTSV",
+   "title": "Ley N° 5016/2014 Nacional de Tránsito y Seguridad Vial",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4418/ley-n-5016-nacional-de-transito-y-seguridad-vial-br",
+   "versions": [
+    {
+     "from": "2014-05-22",
+     "units": 161,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4418/ley-n-5016-nacional-de-transito-y-seguridad-vial-br",
+     "sha256": "36d1df894468bdf46e6fccf5ac05c4ce9517c63f2042f6042205774199efeab5"
+    },
+    {
+     "from": "2020-06-16",
+     "units": 161,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9190/ley-n-6509-modifica-el-art-culo-7-la-ley-n-5016-2014-nacional-de-tr-nsito-y-seguridad-vial",
+     "sha256": "aaf52d03298a25f2000b55eb74d2435f3f0623ba35358975b4ed528f01c8719b"
+    },
+    {
+     "from": "2021-11-13",
+     "units": 161,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9862/ley-n-6842-modifica-el-art-culo-112-inciso-x-y-el-art-culo-113-inciso-g-de-la-ley-n-5016-2014-nacional-de-transito-y-seguridad-vial",
+     "sha256": "12e16758b76af1d64068f4c035a5c111808ffb7a35f7338f994fad26816e5150"
+    },
+    {
+     "from": "2021-12-17",
+     "units": 161,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10175/ley-n-6868-modifica-y-ampl-a-el-art-culo-66-de-la-ley-n-5016-2014-nacional-de-transito-y-seguridad-vial",
+     "sha256": "f86948ca574e4582a3940a26601b323b79478722b44678d1b92ebcae3c683f45"
+    }
+   ]
+  },
+  {
+   "slug": "ley-sistema-nacional-ambiente",
+   "short": "LSNA",
+   "title": "Ley N° 1561/2000 que crea el Sistema Nacional del Ambiente, el Consejo Nacional del Ambiente y la Secretaría del Ambiente",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/1645/ley-n-1561-crea-el-sistema-nacional-del-ambiente-el-consejo-nacional-del-ambiente-y-la-secretaria-del-ambiente-br",
+   "versions": [
+    {
+     "from": "2000-07-25",
+     "units": 42,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1645/ley-n-1561-crea-el-sistema-nacional-del-ambiente-el-consejo-nacional-del-ambiente-y-la-secretaria-del-ambiente-br",
+     "sha256": "b822e37b38668767b2f5edc2177457262bb62d7be938c5cca23aa6b42fac9104"
+    },
+    {
+     "from": "2009-01-08",
+     "units": 42,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1859/ley-n-3679-modifica-el-articulo-8-de-la-ley-n-1561-00-que-crea-el-sistema-nacional-del-ambiente-el-consejo-nacional-del-ambiente-y-la-secretaria-del-ambiente-br",
+     "sha256": "65036639b6c34ad0f217a53b06b4dc766ed09bc7cc825f546ed379ea1f7a331a"
+    },
+    {
+     "from": "2014-07-05",
+     "units": 42,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4637/ley-n-5211-de-calidad-del-aire-br",
+     "sha256": "bc7861d3e346aa60e90cde10799d8b5da42cbdf05de7b8c56e87e05566824d8e"
+    },
+    {
+     "from": "2018-07-07",
+     "units": 38,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8411/ley-n-6123-eleva-al-rango-de-ministerio-a-la-secretar-a-del-ambiente-y-pasa-a-denominarse-ministerio-del-ambiente-y-desarrollo-sostenible",
+     "sha256": "a889015bfc78ba67fb9556c6b12dacdea085f451abc748cde0af3de15fda6e57"
+    }
+   ]
+  },
+  {
+   "slug": "ley-ministerio-ambiente",
+   "short": "LMADES",
+   "title": "Ley N° 6123/2018 que eleva al rango de Ministerio a la Secretaría del Ambiente y pasa a denominarse Ministerio del Ambiente y Desarrollo Sostenible",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/8411/ley-n-6123-eleva-al-rango-de-ministerio-a-la-secretar-a-del-ambiente-y-pasa-a-denominarse-ministerio-del-ambiente-y-desarrollo-sostenible",
+   "versions": [
+    {
+     "from": "2018-07-07",
+     "units": 9,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8411/ley-n-6123-eleva-al-rango-de-ministerio-a-la-secretar-a-del-ambiente-y-pasa-a-denominarse-ministerio-del-ambiente-y-desarrollo-sostenible",
+     "sha256": "a889015bfc78ba67fb9556c6b12dacdea085f451abc748cde0af3de15fda6e57"
+    }
+   ]
+  },
+  {
+   "slug": "ley-servicios-ambientales",
+   "short": "LSA",
+   "title": "Ley N° 3001/2006 de Valoración y Retribución de los Servicios Ambientales",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2085/ley-n-3001-valoracion-y-retribucion-de-los-servicios-ambientales-br",
+   "versions": [
+    {
+     "from": "2006-09-20",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2085/ley-n-3001-valoracion-y-retribucion-de-los-servicios-ambientales-br",
+     "sha256": "bfd709ff7c0792b8e7f02d9ef2e8b0ff9eb059c96a251bcdacd5518eb9514874"
+    }
+   ]
+  },
+  {
+   "slug": "ley-forestal",
+   "short": "LF",
+   "title": "Ley N° 422/1973 Forestal",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2370/ley-n-422-forestal-br",
+   "versions": [
+    {
+     "from": "1974-01-01",
+     "units": 74,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2370/ley-n-422-forestal-br",
+     "sha256": "40016d6ad4957b4d3906618319bf3362577786413aa9dedbde1d9f89982581fc"
+    },
+    {
+     "from": "2008-05-22",
+     "units": 64,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1016/ley-n-3464-crea-el-instituto-forestal-nacional-infona-br",
+     "sha256": "557f6a021202b2f628a0ae87cb7b828ed21ff4fb6c71a9dbcc798075204a21fe"
+    },
+    {
+     "from": "2010-05-25",
+     "units": 64,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1434/ley-n-3788-crea-el-instituto-paraguayo-de-tecnologia-agraria-br",
+     "sha256": "8fbc124e237d2d2dca850893f032e877501ba8760b7bf5cfeb23bc23bec68d0b"
+    }
+   ]
+  },
+  {
+   "slug": "ley-accesibilidad-medio-fisico",
+   "short": "LAMF",
+   "title": "Ley N° 4934/2013 de Accesibilidad al Medio Físico para las Personas con Discapacidad",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/1143/ley-n-4934-accesibilidad-al-medio-f-sico-para-las-personas-con-discapacidad-br",
+   "versions": [
+    {
+     "from": "2013-06-29",
+     "units": 23,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1143/ley-n-4934-accesibilidad-al-medio-f-sico-para-las-personas-con-discapacidad-br",
+     "sha256": "522fdf1d8a021d27e805b47bd525e1d500de79f88c5495961769de9020c2a721"
+    }
+   ]
+  },
+  {
+   "slug": "ley-zona-seguridad-fronteriza",
+   "short": "LZSF",
+   "title": "Ley N° 2532/2005 que establece la Zona de Seguridad Fronteriza de la República del Paraguay",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4025/ley-n-2532-establece-la-zona-de-seguridad-fronteriza-de-la-republica-del-paraguay-br",
+   "versions": [
+    {
+     "from": "2005-02-25",
+     "units": 12,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4025/ley-n-2532-establece-la-zona-de-seguridad-fronteriza-de-la-republica-del-paraguay-br",
+     "sha256": "95340af5c2af1e0ff1521b199a7a66b7b7f7075dd7d50e66e2fcb4fbc3232099"
+    },
+    {
+     "from": "2005-08-20",
+     "units": 12,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4202/ley-n-2647-modifica-el-articulo-3-de-la-ley-n-2532-del-17-de-febrero-de-2005-que-establece-la-zona-de-seguridad-fronteriza-de-la-republica-del-paraguay-br",
+     "sha256": "fc8b122600194deb1f78427b98573cd4af55f94ec1d210dc645f15991f116319"
+    }
+   ]
+  },
+  {
+   "slug": "ley-transparencia-sociedades",
+   "short": "LTSA",
+   "title": "Ley N° 5895/2017 que establece Reglas de Transparencia en el Régimen de las Sociedades constituidas por Acciones",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/9118/ley-n-5895-establece-reglas-de-transparencia-en-el-r-gimen-de-las-sociedades-constituidas-por-acciones",
+   "versions": [
+    {
+     "from": "2017-10-10",
+     "units": 15,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9118/ley-n-5895-establece-reglas-de-transparencia-en-el-r-gimen-de-las-sociedades-constituidas-por-acciones",
+     "sha256": "de2b842d681301c60c38036a9c0a079f3f0639bb510a1023e30dc91017708836"
+    },
+    {
+     "from": "2019-10-12",
+     "units": 15,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9358/ley-n-6399-modifica-los-art-culos-3-y-4-de-la-ley-n-5-895-2017-que-establece-reglas-de-transparencia-en-el-r-gimen-de-las-sociedades-constituidas-por-acciones-y-establece-medidas-transitorias",
+     "sha256": "eaba02776cfaf93e6987f39fe67057c2ebc661e275bdf73e099420130d307546"
+    }
+   ]
+  },
+  {
+   "slug": "ley-tramites-administrativos",
+   "short": "LTA",
+   "title": "Ley N° 4679/2012 de Trámites Administrativos",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/1229/ley-n-4679-tr-mites-administrativos-br",
+   "versions": [
+    {
+     "from": "2012-08-22",
+     "units": 11,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1229/ley-n-4679-tr-mites-administrativos-br",
+     "sha256": "930e7278164f4728732692187285c51e286432dd75bcab45ed08090f8c59969e"
+    },
+    {
+     "from": "2012-12-19",
+     "units": 23,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1229/ley-n-4679-tr-mites-administrativos-br",
+     "sha256": "930e7278164f4728732692187285c51e286432dd75bcab45ed08090f8c59969e"
+    },
+    {
+     "from": "2022-09-29",
+     "units": 16,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10974/ley-n-6715-procedimientos-administrativos",
+     "sha256": "b3dd03779a36978cf706c05271e4f7d99e9e472d6512cec228cf38830e3b05d3"
+    }
+   ]
+  },
+  {
+   "slug": "ley-organica-municipal",
+   "short": "LOM",
+   "title": "Ley N° 3966/2010 Orgánica Municipal",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/969/ley-n-3966-org-nica-municipal-br",
+   "versions": [
+    {
+     "from": "2010-02-11",
+     "units": 287,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/969/ley-n-3966-org-nica-municipal-br",
+     "sha256": "214bb5522c21d741dee67f56b80be5e62a892102ca95a9f427e751e6a6b05c88"
+    },
+    {
+     "from": "2010-08-17",
+     "units": 287,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/574/ley-n-4066-modifica-el-art-culo-249-de-la-ley-n-3-966-10-org-nica-municipal-br",
+     "sha256": "242901e7f99c13319abb1be262cc5184b2b3f4f36eeb09a601ab269869e34532"
+    },
+    {
+     "from": "2010-12-03",
+     "units": 287,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3609/ley-n-4198-modifica-los-art-culos-239-240-y-247-de-la-ley-n-3-966-10-org-nica-municipal-br",
+     "sha256": "acf6d93a6bc6b3b092bbd53f2404dd80e4e0682d7da33d8c1fdcce7f7c8771ee"
+    },
+    {
+     "from": "2012-09-12",
+     "units": 287,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3050/ley-n-4715-modifica-y-amplia-la-ley-n-3966-10-organica-municipal-br",
+     "sha256": "ff76510e47dad3df2e40c704284d6cc072a43b2afe2fe1349e2f4860f935a17d"
+    },
+    {
+     "from": "2013-06-06",
+     "units": 287,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1156/ley-n-4947-modifica-el-art-culo-137-de-la-ley-n-3-966-10-org-nica-municipal-referente-a-los-bienes-del-dominio-privado-municipal-br",
+     "sha256": "574d88a283a8fbaa0377a904b172502c24d0a751f43e4a38716f07a11bc2b436"
+    },
+    {
+     "from": "2014-11-06",
+     "units": 287,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3049/ley-n-5346-modifica-los-art-culos-245-246-248-250-255-y-258-de-la-ley-n-3-966-10-org-nica-municipal-modificada-por-la-ley-n-4-715-12-br",
+     "sha256": "498cc410504e1fd8e8cc424b596b6882cffb4438c91d81d67b7ccba001bcd675"
+    },
+    {
+     "from": "2015-10-30",
+     "units": 285,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4492/ley-n-5513-modifica-los-art-culos-60-62-66-70-y-74-de-la-ley-n-125-91-que-establece-el-nuevo-r-gimen-tributario-y-los-art-culos-155-y-179-de-la-ley-n-3-966-10-org-nica-municipal-br",
+     "sha256": "e48a915c2d971e1e15b2cfb9394276e6ee02c91a836976d10c692d8fe06b20b4"
+    },
+    {
+     "from": "2016-05-07",
+     "units": 285,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5056/ley-n-5590-modifica-el-art-culo-69-de-la-ley-n-3-966-10-org-nica-municipal-br",
+     "sha256": "518374c3575140bb000f5151b2e91638d3e39ea0f908dc06e42cdc5402450165"
+    },
+    {
+     "from": "2018-07-05",
+     "units": 285,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8421/ley-n-6101-modifica-el-art-culo-134-de-la-ley-n-3966-10-org-nica-municipal-referente-a-los-bienes-del-dominio-p-blico-municipal",
+     "sha256": "a27e9df065d9f6ea173bbbe1461fdf38d3ef04d4264bf962efe063592811fc25"
+    },
+    {
+     "from": "2020-05-21",
+     "units": 285,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9205/ley-n-6537-modifica-los-art-culos-73-y-97-de-la-ley-n-3-966-2010-org-nica-municipal",
+     "sha256": "51f2cff5f50f02890fe44a00d629cf2a7a0582625b1041ff667c4582e2653213"
+    },
+    {
+     "from": "2020-07-11",
+     "units": 285,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9294/ley-n-6564-modifica-el-art-culo-53-de-la-ley-n-3-966-2010-org-nica-municipal",
+     "sha256": "f98906c42f58751df6a4162e06914430dbefd7b95cd91f8860b02077a45fd6c1"
+    },
+    {
+     "from": "2021-08-21",
+     "units": 285,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9641/ley-n-6784-modifica-los-art-culos-27-y-28-de-la-ley-n-3966-2010-org-nica-municipal",
+     "sha256": "22ca24123fd93bfc566bc50db1a5e65da172af0dfaecf9c90183fec4c43b76e7"
+    },
+    {
+     "from": "2022-05-20",
+     "units": 285,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10445/ley-n-6910-modifica-el-art-culo-23-de-la-ley-n-3966-2010-org-nica-municipal",
+     "sha256": "9c852a152f4a2fe4abac01fb40400983b034d1c669e5bf355c63523f53a479aa"
+    },
+    {
+     "from": "2022-06-12",
+     "units": 285,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10173/ley-n-6866-modifica-el-art-culo-44-de-la-ley-n-3966-2010-org-nica-municipal",
+     "sha256": "b5daf57a286e5d1166b40f939ddf511ad1e0043671f26514a071c945a52bedc4"
+    },
+    {
+     "from": "2022-09-27",
+     "units": 288,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10742/ley-n-6983-modifica-los-art-culos-266-y-271-de-la-ley-n-834-1996-que-establece-el-c-digo-electoral-paraguayo-y-sus-modificatorias-y-el-art-culo-39-de-la-ley-n-3966-2010-org-nica-municipal",
+     "sha256": "e4553ac096bb291b114ec5171e64756962a4e3cbbf8b91132e4b94c0014a7b69"
+    },
+    {
+     "from": "2024-04-05",
+     "units": 288,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12549/ley-n-7231-2024-que-modifica-los-art-culos-209-212-y-216-de-la-ley-n-3-966-2010-org-nica-municipal",
+     "sha256": "8d84d5194e3e0cb7c8af17644da55ff8d644a1ec1093caf7ec0bb7bcaba115eb"
+    },
+    {
+     "from": "2026-01-08",
+     "units": 288,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12961/ley-n-7617-2026-que-establece-la-rector-a-sobre-el-transporte-terrestre-y-modifica-y-ampl-a-disposiciones-de-la-ley-n-1590-2000-que-regula-el-sistema-nacional-de-transporte-y-crea-la-direcci-n-nacional-de-transporte-dinatran-y-la-secretar-a-metropolitana-de-transporte-smt-relativas-al-servicio-de-transporte-p-blico-metropolitano-de-pasajeros",
+     "sha256": "2b0560c95518a24cbf2b93ff71d90c516c02b86367cbf8d14b268e2ddea620d5"
+    },
+    {
+     "from": "2026-01-15",
+     "units": 286,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-7424-2025-que-crea-el-sistema-nacional-unificado-registral-y-catastral-y-el-registro-unificado-nacional",
+     "sha256": "5305030017605304e9392927827e35a101f690d2dcc9352a21dbb5f256c50f4c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-lactancia-materna",
+   "short": "LPML",
+   "title": "Ley N° 5508/2015 de Promoción, Protección de la Maternidad y Apoyo a la Lactancia Materna",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4428/ley-n-5508-promoci-n-protecci-n-de-la-maternidad-y-apoyo-a-la-lactancia-materna-br",
+   "versions": [
+    {
+     "from": "2015-10-30",
+     "units": 26,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4428/ley-n-5508-promoci-n-protecci-n-de-la-maternidad-y-apoyo-a-la-lactancia-materna-br",
+     "sha256": "171df51fbcdaca4c83f4f50a759e92269607d805e13e6c5a11579e95a0763705"
+    },
+    {
+     "from": "2019-12-20",
+     "units": 26,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9184/ley-n-6453-modifica-y-ampl-a-la-ley-n-5508-2015-promoci-n-protecci-n-de-la-maternidad-y-apoyo-a-la-lactancia-materna",
+     "sha256": "8efb68f79d53403de86d95d9f8869f80d66ef3c740f91620b3a56468e25f90aa"
+    },
+    {
+     "from": "2025-09-24",
+     "units": 26,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12838/ley-n-7534-2025-que-modifica-y-ampl-a-los-art-culos-2-y-11-de-la-ley-n-5508-2015-promoci-n-protecci-n-de-la-maternidad-y-apoyo-a-la-lactancia-materna-y-su-modificatoria-ley-n-6453-2019-y-deroga-la-ley-n-5344-2014-que-establece-el-reposo-por-maternidad-en-cargos-electivos",
+     "sha256": "e720ab2bc3960edd537f8caad739bf66c2d48b0d895d089a5d382bbb07e358e2"
+    }
+   ]
+  },
+  {
+   "slug": "ley-trata-de-personas",
+   "short": "LTP",
+   "title": "Ley N° 4788/2012 Integral contra la Trata de Personas",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3158/ley-n-4788-integral-contra-la-trata-de-personas-br",
+   "versions": [
+    {
+     "from": "2012-12-19",
+     "units": 55,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3158/ley-n-4788-integral-contra-la-trata-de-personas-br",
+     "sha256": "7ed73ed229de13df0da2dfe0b2f5c98a170677f0dc79b886cd8b6c60433d387c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-derecho-de-autor",
+   "short": "LDA",
+   "title": "Ley N° 1328/1998 de Derecho de Autor y Derechos Conexos",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/908/ley-n-1328-derecho-de-autor-y-derechos-conexos-br",
+   "versions": [
+    {
+     "from": "1998-10-21",
+     "units": 189,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/908/ley-n-1328-derecho-de-autor-y-derechos-conexos-br",
+     "sha256": "88d654acbb6319458709c5431fa30a49a4715678661bcac2c820b24a7529ef9a"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 188,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    },
+    {
+     "from": "2013-01-04",
+     "units": 189,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3162/ley-n-4798-crea-la-direccion-nacional-de-propiedad-intelectual-dinapi-br",
+     "sha256": "310e23a6741a66d0764cc824cedf1b7c8907141793915508577764b5a626708e"
+    },
+    {
+     "from": "2014-07-29",
+     "units": 189,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2994/ley-n-5247-modifica-los-art-culos-126-y-130-de-la-ley-n-1-328-98-de-derecho-de-autor-y-derechos-conexos-br",
+     "sha256": "ee8834707eb2094b0967c023b46dd7670ac1ac2c916decd42f422c45dbdcec5e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-de-marcas",
+   "short": "LM",
+   "title": "Ley N° 1294/1998 de Marcas",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/862/ley-n-1294-de-marcas-br",
+   "versions": [
+    {
+     "from": "1998-10-01",
+     "units": 141,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/862/ley-n-1294-de-marcas-br",
+     "sha256": "9eea014a46334bc655eb546fb999e80c0a8289890a7c4585243b184081c7d6dd"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 140,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    },
+    {
+     "from": "2013-01-04",
+     "units": 138,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3162/ley-n-4798-crea-la-direccion-nacional-de-propiedad-intelectual-dinapi-br",
+     "sha256": "310e23a6741a66d0764cc824cedf1b7c8907141793915508577764b5a626708e"
+    },
+    {
+     "from": "2013-07-20",
+     "units": 134,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1138/ley-n-4923-indicaciones-geogr-ficas-y-denominaciones-de-origen-br",
+     "sha256": "9b4c252579aae7266ce27af179d8eee7b32cbc1bb8e165cdf9861c1cd41cb2c2"
+    }
+   ]
+  },
+  {
+   "slug": "ley-legitimacion-dinero",
+   "short": "LLD",
+   "title": "Ley N° 1015/1997 que previene y reprime los actos ilícitos destinados a la legitimación de dinero o bienes",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/988/ley-n-1015-previene-y-reprime-los-actos-ilicitos-destinados-a-la-legitimacion-de-dinero-o-bienes-br",
+   "versions": [
+    {
+     "from": "1997-01-11",
+     "units": 41,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/988/ley-n-1015-previene-y-reprime-los-actos-ilicitos-destinados-a-la-legitimacion-de-dinero-o-bienes-br",
+     "sha256": "201a6da8baf2f053a183805a5449e226b7bb113fafe39434dc15dcc427dc9c6b"
+    },
+    {
+     "from": "2009-07-23",
+     "units": 39,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1439/ley-n-3783-modifica-varios-art-culos-de-la-ley-n-1-015-97-que-previene-y-reprime-los-actos-il-citos-destinados-a-la-legitimaci-n-de-dinero-o-bienes-br",
+     "sha256": "d6d230c30ab6b7a8caded98c898284a9284c93a2ba8525ac0067c9ec1ca0fbe3"
+    },
+    {
+     "from": "2019-12-27",
+     "units": 39,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9095/ley-n-6497-modifica-disposiciones-de-la-ley-n-1015-1997-que-previene-y-reprime-los-actos-il-citos-destinados-a-la-legitimaci-n-de-dinero-o-bienes-y-su-modificatoria-ley-n-3783-2009",
+     "sha256": "baa70c3641f59e24a92480f3b5f98f23f9e8e9886c69af722f54b52c3bb7222f"
+    },
+    {
+     "from": "2021-08-25",
+     "units": 39,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9652/ley-n-6797-modifica-el-art-culo-13-de-la-ley-n-1015-1997-que-previene-y-reprime-los-actos-il-citos-destinados-a-la-legitimaci-n-de-dinero-o-bienes-modificada-por-la-ley-n-3783-2009",
+     "sha256": "a99c006c70404114c8732ed60946aec743a2139dff99a0c77bda36bb24e2630e"
+    },
+    {
+     "from": "2022-07-16",
+     "units": 39,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10556/ley-n-6960-modifica-los-art-culos-13-25-y-28-de-la-ley-n-1015-1997-que-previene-y-reprime-los-actos-il-citos-destinados-a-la-legitimaci-n-de-dinero-o-bienes-modificados-por-las-leyes-n-s-3783-2009-y-6797-2021",
+     "sha256": "49f4e27b3682936c17f23ec84b809ac86f16b931e523858b79d0057a53a38260"
+    }
+   ]
+  },
+  {
+   "slug": "ley-funcion-publica",
+   "short": "LFP",
+   "title": "Ley N° 1626/2000 de la Función Pública",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/1711/ley-n-1626-de-la-funcion-publica-br",
+   "versions": [
+    {
+     "from": "2000-12-29",
+     "units": 149,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1711/ley-n-1626-de-la-funcion-publica-br",
+     "sha256": "e075edc76bc645f56d6bb94c948d17eb7933d22a0465b4fb1250a58517703a7e"
+    },
+    {
+     "from": "2006-10-25",
+     "units": 149,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2114/ley-n-3031-2006-que-modifica-el-inciso-b-del-art-culo-14-de-la-ley-n-1-626-2000-de-la-funci-n-p-blica",
+     "sha256": "d001718a28420c4b274f720f0ab471f3c03aef15b220a18912ccb32fe1e92a42"
+    },
+    {
+     "from": "2009-07-10",
+     "units": 149,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1438/ley-n-3784-declara-estado-de-emergencia-sanitaria-en-todo-el-territorio-de-la-republica-del-paraguay-br",
+     "sha256": "e26b52acf5ac685221e36b85284c9f1498c1b8b45fe5932659ac6921997b4eb2"
+    },
+    {
+     "from": "2009-10-22",
+     "units": 148,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1487/ley-n-3856-establece-la-acumulaci-n-del-tiempo-de-servicios-en-las-cajas-del-sistema-de-jubilaci-n-y-pensi-n-paraguayo-y-deroga-el-articulo-107-de-la-ley-n-1626-00-de-la-funci-n-publica-br",
+     "sha256": "74758b8b48d84dbb2d69522ef9ba2636b21c91301d46c5d490a28ce16396fdec"
+    },
+    {
+     "from": "2010-05-05",
+     "units": 148,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3525/ley-n-3989-modifica-el-inciso-f-del-art-culo-16-y-el-art-culo-143-de-la-ley-n-1-626-2000-de-la-funci-n-p-blica-br",
+     "sha256": "2fcd7901cbbde91f4dfc10478a9ff125d60c5d83b2dc3fddb874ea4ca9f1289a"
+    },
+    {
+     "from": "2012-12-19",
+     "units": 148,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1229/ley-n-4679-tr-mites-administrativos-br",
+     "sha256": "930e7278164f4728732692187285c51e286432dd75bcab45ed08090f8c59969e"
+    },
+    {
+     "from": "2014-07-12",
+     "units": 148,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2972/ley-n-5207-modifica-el-art-culo-144-de-la-ley-n-1-626-00-de-la-funci-n-p-blica-br",
+     "sha256": "94a5a9cc8fd40a3937e7be0f6702b07423236465b08d3c9f9e100f4b7b54cf50"
+    },
+    {
+     "from": "2016-12-22",
+     "units": 148,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8312/ley-n-5766-modifica-los-art-culos-54-y-56-de-la-ley-n-1626-00-de-la-funci-n-p-blica",
+     "sha256": "3afa33df5967185fd0043aaeda3e34cc24baf07098ed27ea4b3148791ae64aec"
+    },
+    {
+     "from": "2021-11-26",
+     "units": 148,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10057/ley-n-6849-modifica-el-art-culo-54-de-la-ley-n-1626-2000-de-la-funci-n-p-blica-modificado-por-la-ley-n-5766-2016",
+     "sha256": "7ae498f5440d21aa312ed79279442f210b8c68d989961311c18e9d10e3eb9724"
+    },
+    {
+     "from": "2025-07-16",
+     "units": 0,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12637/ley-n-7445-2025-de-la-funci-n-p-blica-y-del-servicio-civil",
+     "sha256": "becaf7ee29a865273a9b20fd7b144b633a1ddb565f018bfebcda6a49a292f136"
+    }
+   ]
+  },
+  {
+   "slug": "ley-cooperativas",
+   "short": "LCOOP",
+   "title": "Ley N° 438/1994 de Cooperativas",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2373/ley-n-438-cooperativas-br",
+   "versions": [
+    {
+     "from": "1994-10-22",
+     "units": 134,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2373/ley-n-438-cooperativas-br",
+     "sha256": "9ad2e200f48aef67032256308f3b1a6f14db670859554492a0ab874004541e88"
+    },
+    {
+     "from": "2003-07-05",
+     "units": 123,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2423/ley-n-2157-regula-el-funcionamiento-del-instituto-nacional-de-cooperativismo-y-establece-su-carta-organica-br",
+     "sha256": "3e7f25cb3fbed1ac75d8495399c0ae441fd4407df3cb4c814bcbf2d721db1eb0"
+    },
+    {
+     "from": "2012-05-04",
+     "units": 123,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2703/ley-n-4596-modifica-el-articulo-46-de-la-ley-n-438-94-de-cooperativas-br",
+     "sha256": "2b9925186849880523bf5eb580006015eb094d16588ee21b2fcf92018d1d25eb"
+    },
+    {
+     "from": "2015-09-15",
+     "units": 123,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4482/ley-n-5501-modifica-varios-art-culos-de-la-ley-n-438-94-de-cooperativas-br",
+     "sha256": "8f5f283c0a5fd643ec977a91a36b4db16d223268c50d3ffdec2d6987233c50c0"
+    },
+    {
+     "from": "2015-12-31",
+     "units": 123,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4530/ley-n-5551-suspende-por-seis-meses-la-entrada-en-vigencia-de-la-ley-n-5501-15-que-modifica-varios-art-culos-de-la-ley-n-438-94-de-cooperativas-br",
+     "sha256": "c5a0c68707d96f3d17e9ed47e02742a229fc17374f84f042f62efe77058efa43"
+    },
+    {
+     "from": "2016-07-01",
+     "units": 123,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4530/ley-n-5551-suspende-por-seis-meses-la-entrada-en-vigencia-de-la-ley-n-5501-15-que-modifica-varios-art-culos-de-la-ley-n-438-94-de-cooperativas-br",
+     "sha256": "c5a0c68707d96f3d17e9ed47e02742a229fc17374f84f042f62efe77058efa43"
+    },
+    {
+     "from": "2018-10-05",
+     "units": 123,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9008/ley-n-6178-modifica-el-art-culo-113-de-la-ley-n-5501-15-que-modifica-varios-art-culos-de-la-ley-n-438-94-de-cooperativas",
+     "sha256": "be32d864b3c99481e5e3770ba76d6f0ebe620b9e46a9257b5378d2c0a3d9a59b"
+    },
+    {
+     "from": "2020-09-10",
+     "units": 123,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9375/ley-n-6608-modifica-los-art-culos-51-y-59-de-la-ley-n-438-94-de-cooperativas-modificado-por-la-ley-n-5501-15",
+     "sha256": "e1fef642bae1bf695e6178c599bb6b8d82159e156159dab896aaa29e5d612ef6"
+    },
+    {
+     "from": "2023-12-15",
+     "units": 122,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12162/ley-n-7235-ue-reglamenta-el-rol-supervisor-del-estado-a-las-entidades-de-jubilaciones-y-pensiones-en-cumplimiento-del-art-culo-95-de-la-constituci-n-nacional",
+     "sha256": "dfe1bd121246f7264a900f31aa7b316859e55ba1322234bfdfcfb3147f0e27c2"
+    }
+   ]
+  },
+  {
+   "slug": "estatuto-agrario",
+   "short": "EA",
+   "title": "Ley N° 1863/2002 Estatuto Agrario",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3124/ley-n-1863-establece-el-estatuto-agrario-br",
+   "versions": [
+    {
+     "from": "2002-02-01",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3124/ley-n-1863-establece-el-estatuto-agrario-br",
+     "sha256": "8646bd9e6780e3809c5ebd4670efd03985e54a3af3fdedbb78307b378a270a11"
+    },
+    {
+     "from": "2002-11-12",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4024/ley-n-2002-modifica-varios-articulos-de-la-ley-n-1863-del-30-de-enero-de-2002-que-establece-el-estatuto-agrario-br",
+     "sha256": "584ba197234cb2c47fab7f4a203428395d37195b7327caf2bf948cd94f0301de"
+    },
+    {
+     "from": "2005-01-05",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4023/ley-n-2531-modifica-el-articulo-16-de-la-ley-n-2002-02-que-modifica-varios-articulos-de-la-ley-n-1863-02-y-los-articulos-17-58-90-y-93-de-la-ley-n-1863-02-que-establece-el-estatuto-agrario-br",
+     "sha256": "6bc59ae3f24ec6ecd82ec1fcab62325c7a891e674239685c3ad444f400b5da1d"
+    },
+    {
+     "from": "2013-07-10",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4770/ley-n-4988-modifica-el-articulo-56-de-la-ley-n-1863-02-que-establece-el-estatuto-agrario-modificada-por-ley-n-2002-02-br",
+     "sha256": "096c5698515381e30856578def29baf371b03e29f41aafda7446f51d268ccfc2"
+    },
+    {
+     "from": "2014-07-12",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2970/ley-n-5205-modifica-el-art-culo-53-de-la-ley-n-1-863-02-que-establece-el-estatuto-agrario-br",
+     "sha256": "979f0e8eaa3320b132b0aaa6178135f07d51be752a5197c6c47eed7fc16b1cde"
+    },
+    {
+     "from": "2017-09-27",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9778/ley-n-5881-modifica-el-art-culo-56-de-la-ley-n-1-863-02-que-establece-el-estatuto-agrario-modificada-por-las-leyes-n-s-2-002-02-y-4-988-13",
+     "sha256": "cba371d37d5edf1414623763eb822bae5621adc8d6a6c71a37ff3ae6ec1117f4"
+    },
+    {
+     "from": "2018-06-09",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8439/ley-n-6081-modifica-el-art-culo-53-de-la-ley-n-1-863-02-que-establece-el-estatuto-agrario",
+     "sha256": "092ef5ba3bc75c47117be71ec068ff7b6245b2a0114953b8e758b555b9e51643"
+    },
+    {
+     "from": "2026-01-15",
+     "units": 115,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-7424-2025-que-crea-el-sistema-nacional-unificado-registral-y-catastral-y-el-registro-unificado-nacional",
+     "sha256": "5305030017605304e9392927827e35a101f690d2dcc9352a21dbb5f256c50f4c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-areas-silvestres-protegidas",
+   "short": "LASP",
+   "title": "Ley N° 352/1994 de Áreas Silvestres Protegidas",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2396/ley-n-352-areas-silvestres-protegidas-br",
+   "versions": [
+    {
+     "from": "1994-06-22",
+     "units": 75,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2396/ley-n-352-areas-silvestres-protegidas-br",
+     "sha256": "669ca4c3dac322bad231150b281d86cd5ab79ef38b00480b8071cdb083b9e564"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 74,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    },
+    {
+     "from": "2020-02-17",
+     "units": 74,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9232/ley-n-6422-modifica-los-art-culos-41-42-43-44-y-45-de-la-ley-n-352-1994-de-areas-silvestres-protegidas",
+     "sha256": "ec50b0425b184eb1025fe30bbba81faab5f3d766fa70a5c3a0283aec4709d257"
+    },
+    {
+     "from": "2026-03-18",
+     "units": 74,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12960/ley-n-7633-2026-que-establece-medidas-para-la-reforma-del-sistema-de-jubilaciones-y-pensiones-del-sector-p-blico-de-la-reforma-de-la-caja-fiscal",
+     "sha256": "f6480565e03156475319b406ed57445c5c5cea9f980cec40d3e6ed61aecdd17a"
+    }
+   ]
+  },
+  {
+   "slug": "ley-indert",
+   "short": "INDERT",
+   "title": "Ley N° 2419/2004 que crea el Instituto Nacional de Desarrollo Rural y de la Tierra",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2273/ley-n-2419-crea-el-instituto-nacional-de-desarrollo-rural-y-de-la-tierra-br",
+   "versions": [
+    {
+     "from": "2004-07-24",
+     "units": 55,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2273/ley-n-2419-crea-el-instituto-nacional-de-desarrollo-rural-y-de-la-tierra-br",
+     "sha256": "f5ee8e422ad449671da7c2822e4b5d47b916ed43e1a95c3fb691929652d752ed"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 54,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    }
+   ]
+  },
+  {
+   "slug": "ley-registro-unificado-nacional",
+   "short": "RUN",
+   "title": "Ley N° 7424/2025 que crea el Sistema Nacional Unificado Registral y Catastral y el Registro Unificado Nacional",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-7424-2025-que-crea-el-sistema-nacional-unificado-registral-y-catastral-y-el-registro-unificado-nacional",
+   "versions": [
+    {
+     "from": "2026-01-15",
+     "units": 203,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-7424-2025-que-crea-el-sistema-nacional-unificado-registral-y-catastral-y-el-registro-unificado-nacional",
+     "sha256": "5305030017605304e9392927827e35a101f690d2dcc9352a21dbb5f256c50f4c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-recursos-hidricos",
+   "short": "LRH",
+   "title": "Ley N° 3239/2007 de los Recursos Hídricos del Paraguay",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2724/ley-n-3239-de-los-recursos-hidricos-del-paraguay-br",
+   "versions": [
+    {
+     "from": "2007-07-11",
+     "units": 58,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2724/ley-n-3239-de-los-recursos-hidricos-del-paraguay-br",
+     "sha256": "147a0bca1fdb10420d7192cc06bfd2317432b06a841020f208145ffe004082e4"
+    }
+   ]
+  },
+  {
+   "slug": "ley-vida-silvestre",
+   "short": "LVS",
+   "title": "Ley N° 96/1992 de Vida Silvestre",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2391/ley-n-96-esta-ley-tiene-por-objetivo-la-protecci-n-manejo-y-conservaci-n-de-la-vida-silvestre-del-pa-s-as-como-su-incorporaci-n-a-la-econom-a-nacional-br",
+   "versions": [
+    {
+     "from": "1992-12-12",
+     "units": 64,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2391/ley-n-96-esta-ley-tiene-por-objetivo-la-protecci-n-manejo-y-conservaci-n-de-la-vida-silvestre-del-pa-s-as-como-su-incorporaci-n-a-la-econom-a-nacional-br",
+     "sha256": "61cc39c402a6fdb5c2499a632b2f4a4ba5f0baa5c04c1b65ce156db0c8860305"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 63,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    }
+   ]
+  },
+  {
+   "slug": "ley-bosques-protectores",
+   "short": "LBP",
+   "title": "Ley N° 4241/2010 de Restablecimiento de Bosques Protectores de Cauces Hídricos dentro del Territorio Nacional",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2893/ley-n-4241-restablecimiento-de-bosques-protectores-de-cauces-hidricos-dentro-del-territorio-nacional-br",
+   "versions": [
+    {
+     "from": "2010-12-23",
+     "units": 22,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2893/ley-n-4241-restablecimiento-de-bosques-protectores-de-cauces-hidricos-dentro-del-territorio-nacional-br",
+     "sha256": "6a8cb11c5c2643c4d227a28e3418d2a8f10033d236bfb30cbac514ac49a9df04"
+    }
+   ]
+  },
+  {
+   "slug": "ley-efluentes-cloacales",
+   "short": "LEC",
+   "title": "Ley N° 5428/2015 de Efluentes Cloacales",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/8189/ley-n-5428-de-efluentes-cloacales-br",
+   "versions": [
+    {
+     "from": "2015-10-28",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8189/ley-n-5428-de-efluentes-cloacales-br",
+     "sha256": "9243d1480a326c9f314d9fdcbc90842d26f5c782a0be58785692801ac0e2678c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-residuos-solidos",
+   "short": "LGIRS",
+   "title": "Ley N° 3956/2009 de Gestión Integral de los Residuos Sólidos en la República del Paraguay",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3208/ley-n-3956-gestion-integral-de-los-residuos-solidos-en-la-republica-del-paraguay-br",
+   "versions": [
+    {
+     "from": "2010-03-24",
+     "units": 48,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3208/ley-n-3956-gestion-integral-de-los-residuos-solidos-en-la-republica-del-paraguay-br",
+     "sha256": "9e1ebdd1c46c85a9aac297f2f8ef3b03c3f0a57c400c7519723e3dda258d56e1"
+    },
+    {
+     "from": "2010-11-23",
+     "units": 48,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2877/ley-n-4188-modifica-la-ley-n-3956-09-gestion-integral-de-los-residuos-solidos-en-la-republica-del-paraguay-br",
+     "sha256": "dbc93ccdff6649a0aef8642e858ed8c9fcef3563503c2e77fd550fbb9fd0cb82"
+    },
+    {
+     "from": "2020-01-08",
+     "units": 48,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9105/ley-n-6488-modifica-el-art-culo-27-de-la-ley-n-3956-2009-gesti-n-integral-de-los-residuos-s-lidos-en-la-rep-blica-del-paraguay",
+     "sha256": "57a6faaa3c980d1561ad68ea720bda75126ea0e93d99a0d2650eece07f1460dd"
+    }
+   ]
+  },
+  {
+   "slug": "ley-acuicultura",
+   "short": "LDSA",
+   "title": "Ley N° 4050/2010 del Desarrollo Sostenible de la Acuicultura",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/558/ley-n-4050-desarrollo-sostenible-de-la-acuicultura-br",
+   "versions": [
+    {
+     "from": "2010-08-12",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/558/ley-n-4050-desarrollo-sostenible-de-la-acuicultura-br",
+     "sha256": "939dc07a6e129622aff6374c1421d7b46e49d135aea4df53b7a2638479f16d35"
+    }
+   ]
+  },
+  {
+   "slug": "ley-pesca-acuicultura",
+   "short": "LPAC",
+   "title": "Ley N° 3556/2008 de Pesca y Acuicultura",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/1088/ley-n-3556-de-pesca-y-acuicultura-br",
+   "versions": [
+    {
+     "from": "2008-08-13",
+     "units": 60,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1088/ley-n-3556-de-pesca-y-acuicultura-br",
+     "sha256": "c971e8f03b35c5255ebb7740c94eb5d0ade2a963a3871851beea3e1462139f02"
+    },
+    {
+     "from": "2025-12-23",
+     "units": 60,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12937/ley-n-7618-2025-que-establece-el-r-gimen-de-licencia-ambiental-para-el-cultivo-engorde-y-comercializaci-n-de-especies-al-ctonas-o-ex-ticas-en-cuerpos-de-agua-cerrados-o-semiabiertos-en-la-rep-blica-del-paraguay",
+     "sha256": "332340bd74176dc37a89f01ee687f87b7052805ad355847c6bbe6de402d9c7c5"
+    }
+   ]
+  },
+  {
+   "slug": "ley-bienestar-animal",
+   "short": "LBPA",
+   "title": "Ley N° 7513/2025 de Bienestar y Protección Animal",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/12783/ley-n-7513-2025-de-bienestar-y-protecci-n-animal",
+   "versions": [
+    {
+     "from": "2025-08-20",
+     "units": 78,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12783/ley-n-7513-2025-de-bienestar-y-protecci-n-animal",
+     "sha256": "f3cc0e1ddb413649b58c600388259f8e774e8166bcbfa27db7ee458d67b6bd53"
+    }
+   ]
+  },
+  {
+   "slug": "ley-patentes-invenciones",
+   "short": "LPI",
+   "title": "Ley N° 1630/2000 de Patentes de Invenciones",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/1709/ley-n-1630-de-patentes-de-invenciones-br",
+   "versions": [
+    {
+     "from": "2001-01-29",
+     "units": 99,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1709/ley-n-1630-de-patentes-de-invenciones-br",
+     "sha256": "2a842ae4267a42297f5c221f80607f27e9b8aae206362ee46581d8682464e91b"
+    },
+    {
+     "from": "2002-12-31",
+     "units": 99,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10046/ley-n-2047-modifica-el-articulo-90-de-la-ley-n-1630-del-29-de-noviembre-de-2000-de-patentes-de-invenciones-y-lo-adecua-al-articulo-65-del-acuerdo-adpic-de-la-ronda-uruguay-del-gatt",
+     "sha256": "694b029faa73deaefbedcd0f6c6fc70146c317bfe5f8e1a3c5e57fcb5b157e8e"
+    },
+    {
+     "from": "2005-07-09",
+     "units": 98,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4131/ley-n-2593-modifica-varios-articulos-y-deroga-el-articulo-75-de-la-ley-n-1630-de-patentes-de-invenciones-del-29-de-noviembre-de-2000-y-deroga-parte-del-articulo-184-de-la-ley-n-1160-97-codigo-penal-br",
+     "sha256": "e6e56e42b94842848f74d3a6f37bea9ae854ba776dbab666e11c77497deb772b"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 97,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    },
+    {
+     "from": "2013-01-04",
+     "units": 96,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3162/ley-n-4798-crea-la-direccion-nacional-de-propiedad-intelectual-dinapi-br",
+     "sha256": "310e23a6741a66d0764cc824cedf1b7c8907141793915508577764b5a626708e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-dibujos-modelos-industriales",
+   "short": "LDMI",
+   "title": "Ley N° 868/1981 de Dibujos y Modelos Industriales",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2561/ley-n-868-dibujos-y-modelos-industriales-br",
+   "versions": [
+    {
+     "from": "1981-11-03",
+     "units": 51,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2561/ley-n-868-dibujos-y-modelos-industriales-br",
+     "sha256": "658125a23e9a94eaf5de1e97bc02fc62e9745acdbe9742e42889c68ef5f42c49"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 50,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    },
+    {
+     "from": "2013-01-04",
+     "units": 50,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3162/ley-n-4798-crea-la-direccion-nacional-de-propiedad-intelectual-dinapi-br",
+     "sha256": "310e23a6741a66d0764cc824cedf1b7c8907141793915508577764b5a626708e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-estatuto-educador",
+   "short": "LEE",
+   "title": "Ley N° 1725/2001 que establece el Estatuto del Educador",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/769/ley-n-1725-establece-el-estatuto-del-educador-br",
+   "versions": [
+    {
+     "from": "2001-09-18",
+     "units": 69,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/769/ley-n-1725-establece-el-estatuto-del-educador-br",
+     "sha256": "3445a455cefd20d53d71e013bb3aa3e55a45d47fc115fe2a11c643d1fcf2216f"
+    },
+    {
+     "from": "2003-01-24",
+     "units": 72,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/774/ley-n-2059-amplia-la-ley-n-1725-del-13-de-setiembre-de-2001-que-establece-el-estatuto-del-educador-br",
+     "sha256": "8582b4e0026425726d84710500a41b52b0f6d5e3f4baef24ace6469a63eba883"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 71,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    },
+    {
+     "from": "2013-04-12",
+     "units": 71,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1121/ley-n-4893-modifica-y-ampl-a-los-art-culos-28-y-36-de-la-ley-n-1-725-01-que-establece-el-estatuto-del-educador-modificado-por-la-ley-n-2-059-03-br",
+     "sha256": "327e7bbddbcae1c025f04529faa8a3303b2ca1df4b316fa893222e7c06a47dc8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-incoop",
+   "short": "LINCOOP",
+   "title": "Ley N° 2157/2003 que regula el funcionamiento del Instituto Nacional de Cooperativismo y establece su Carta Orgánica",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2423/ley-n-2157-regula-el-funcionamiento-del-instituto-nacional-de-cooperativismo-y-establece-su-carta-organica-br",
+   "versions": [
+    {
+     "from": "2003-07-05",
+     "units": 40,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2423/ley-n-2157-regula-el-funcionamiento-del-instituto-nacional-de-cooperativismo-y-establece-su-carta-organica-br",
+     "sha256": "3e7f25cb3fbed1ac75d8495399c0ae441fd4407df3cb4c814bcbf2d721db1eb0"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 39,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    }
+   ]
+  },
+  {
+   "slug": "ley-carta-organica-departamental",
+   "short": "LCOGD",
+   "title": "Ley N° 426/1994 que establece la Carta Orgánica del Gobierno Departamental",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2533/ley-n-426-establece-la-carta-organica-del-gobierno-departamental-br",
+   "versions": [
+    {
+     "from": "1994-12-08",
+     "units": 55,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2533/ley-n-426-establece-la-carta-organica-del-gobierno-departamental-br",
+     "sha256": "292491f2b4c92aa19fc9e4f51063c046ab0b6a571a51aca9c7909b77bf973a4d"
+    },
+    {
+     "from": "1995-08-23",
+     "units": 55,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11550/ley-n-643-modifica-el-articulo-38-de-la-ley-no-426-del-7-de-diciembre-de-1994",
+     "sha256": "7f6c06811adb8f57a9a52f2a5b4a6b8e413b4041bf53187d44068594dca714d4"
+    },
+    {
+     "from": "2006-01-11",
+     "units": 55,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1945/ley-n-2862-modifica-y-amplia-la-ley-n-426-94-que-establece-la-carta-organica-del-gobierno-departamental-br",
+     "sha256": "44fba6c18872a73c8d6b483f027558339972ccc4639449697cfe5260a44cdd50"
+    },
+    {
+     "from": "2008-12-13",
+     "units": 55,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1848/ley-n-3668-modifica-el-articulo-50-de-la-ley-n-426-94-que-establece-la-carta-organica-del-gobierno-departamental-br",
+     "sha256": "c0bbce11b58a771d6251a56c8f6374dc94488352a82b4b14094b12a3c7cbef61"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 54,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    },
+    {
+     "from": "2020-07-11",
+     "units": 54,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9295/ley-n-6565-modifica-el-art-culo-13-de-la-ley-n-426-1994-que-establece-la-carta-org-nica-del-gobierno-departamental",
+     "sha256": "438e7fb5abae492bed92c59664e82a21360cca29ee41c0721640aba2fae24afb"
+    }
+   ]
+  },
+  {
+   "slug": "ley-telecomunicaciones",
+   "short": "LTEL",
+   "title": "Ley N° 642/1995 de Telecomunicaciones",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2452/ley-n-642-telecomunicaciones-br",
+   "versions": [
+    {
+     "from": "1995-12-30",
+     "units": 141,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2452/ley-n-642-telecomunicaciones-br",
+     "sha256": "bea50f3a9b70cd8f87cf9fc8098cdba66bbdf73dd2dfad90158b6f68c6c9fbdc"
+    },
+    {
+     "from": "2004-10-23",
+     "units": 141,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3689/ley-n-2478-modifica-los-articulos-12-inc-c-73-inc-b-y-131-de-la-ley-n-642-95-de-telecomunicaciones-br",
+     "sha256": "8094083a6ea588d11d4a5f7422f19fc0b4f0a2b5cec1f614058057bb96c4af6a"
+    },
+    {
+     "from": "2004-10-23",
+     "units": 141,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3688/ley-n-2495-rectifica-error-material-de-la-ley-n-2478-que-modifica-los-articulos-12-inc-c-73-inc-b-y-131-de-la-ley-n-642-95-de-telecomunicaciones-br",
+     "sha256": "fef351f3a47acbc5f47b4983c2dffc5a499875d124864be1b5966e4542b9334d"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 140,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    },
+    {
+     "from": "2011-03-31",
+     "units": 141,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3601/ley-n-4179-modifica-y-ampl-a-los-art-culos-57-58-70-73-y-100-de-la-ley-n-642-95-de-telecomunicaciones-br",
+     "sha256": "efd2fbcb6584ddf829a5684ce60313d373786b930e27baba2937c6c7364d2298"
+    },
+    {
+     "from": "2011-10-28",
+     "units": 141,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3686/ley-n-4478-modifica-el-art-culo-34-de-la-ley-n-642-95-de-telecomunicaciones-br",
+     "sha256": "a820784d9b07409001d534f171129091bb3ebf5b37ca9a2fe84fc55e8e711421"
+    },
+    {
+     "from": "2014-05-09",
+     "units": 141,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2953/ley-n-5177-ampl-a-el-art-culo-93-de-la-ley-n-642-95-de-telecomunicaciones-br",
+     "sha256": "b181abfb8c2ac1611d2955f94dd92010b10610de6491fce4e7b0c9fbcf236763"
+    }
+   ]
+  },
+  {
+   "slug": "ley-comunidades-indigenas",
+   "short": "LECI",
+   "title": "Ley N° 904/1981 Estatuto de las Comunidades Indígenas",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2400/ley-n-904-estatuto-de-las-comunidades-ind-genas-br",
+   "versions": [
+    {
+     "from": "1981-12-19",
+     "units": 78,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2400/ley-n-904-estatuto-de-las-comunidades-ind-genas-br",
+     "sha256": "9e893fe75c95d1791611f782dd0821e42a68162c0562e2726a7966ac86960164"
+    },
+    {
+     "from": "1996-08-01",
+     "units": 78,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10878/ley-n-919-modifica-y-amplia-varios-articulos-de-la-ley-n-904-de-fecha-18-de-diciembre-de-1981",
+     "sha256": "8ac11d3a31403ea924c853e1cb3f02724253664f9d439d2ec0c6575a97e16197"
+    },
+    {
+     "from": "2003-09-11",
+     "units": 69,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/940/ley-n-2199-dispone-la-reorganizacion-de-los-organos-colegiados-encargados-de-la-direccion-de-empresas-y-entidades-del-estado-paraguayo-br",
+     "sha256": "f93327bfbb183ab1c214dc5f344b6e1f53ce278677bf78f306bf141376780067"
+    }
+   ]
+  },
+  {
+   "slug": "ley-residuos-establecimientos-salud",
+   "short": "LRES",
+   "title": "Ley N° 3361/2007 de Residuos generados en los Establecimientos de Salud y Afines",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3414/ley-n-3361-de-residuos-generados-en-los-establecimientos-de-salud-y-afines-br",
+   "versions": [
+    {
+     "from": "2007-11-22",
+     "units": 57,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3414/ley-n-3361-de-residuos-generados-en-los-establecimientos-de-salud-y-afines-br",
+     "sha256": "af1b71bd4a91c47558c13ac729ce72593c0f73b9c82846c614fc432928afd971"
+    }
+   ]
+  },
+  {
+   "slug": "ley-mercado-valores",
+   "short": "LMV",
+   "title": "Ley N° 5810/2017 de Mercado de Valores",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/9710/ley-n-5810-mercado-de-valores",
+   "versions": [
+    {
+     "from": "2017-07-26",
+     "units": 236,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9710/ley-n-5810-mercado-de-valores",
+     "sha256": "a9bf018b2f53c173a9814d2182d20175511daf08ee78520b483de7668373e8c3"
+    },
+    {
+     "from": "2023-09-02",
+     "units": 226,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11931/ley-n-7162-que-crea-la-superintendencia-de-valores-en-sustituci-n-de-la-comisi-n-nacional-de-valores-y-le-otorga-mayores-atribuciones",
+     "sha256": "49bca19d50c631fee2cec181468cbe579daee328c454833cc589f45a79581e42"
+    },
+    {
+     "from": "2025-11-08",
+     "units": 0,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12910/ley-n-7572-2025-mercado-de-valores-y-productos",
+     "sha256": "128201edfd9521bd8e15431822fd4330ee84c31222c3477059e5afdc774906c0"
+    }
+   ]
+  },
+  {
+   "slug": "ley-mercado-valores-productos",
+   "short": "LMVP",
+   "title": "Ley N° 7572/2025 de Mercado de Valores y Productos",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/12910/ley-n-7572-2025-mercado-de-valores-y-productos",
+   "versions": [
+    {
+     "from": "2025-11-08",
+     "units": 332,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12910/ley-n-7572-2025-mercado-de-valores-y-productos",
+     "sha256": "128201edfd9521bd8e15431822fd4330ee84c31222c3477059e5afdc774906c0"
+    }
+   ]
+  },
+  {
+   "slug": "ley-arbitraje",
+   "short": "LARB",
+   "title": "Ley N° 7561/2025 de Arbitraje",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/12917/ley-n-7561-2025-de-arbitraje",
+   "versions": [
+    {
+     "from": "2025-12-24",
+     "units": 74,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12917/ley-n-7561-2025-de-arbitraje",
+     "sha256": "bb6c4a5f47e1dd6394a8d5d3f8e4456e6a384d49e906ec96b8c2b15aaf890c49"
+    }
+   ]
+  },
+  {
+   "slug": "ley-arancel-honorarios-abogados",
+   "short": "LAHA",
+   "title": "Ley N° 1376/1988 Arancel de Honorarios de Abogados y Procuradores",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2444/ley-n-1376-arancel-de-honorarios-de-abogados-y-procuradores-br",
+   "versions": [
+    {
+     "from": "1988-12-23",
+     "units": 78,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2444/ley-n-1376-arancel-de-honorarios-de-abogados-y-procuradores-br",
+     "sha256": "acbc53f3cf23d7112fb2f5a5c5f419ca591901f9186954037e4be56df9aa240d"
+    },
+    {
+     "from": "2012-04-18",
+     "units": 78,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3098/ley-n-4590-modifica-los-articulos-n-s-27-inciso-e-54-y-55-de-la-ley-n-1376-88-arancel-de-honorarios-de-abogados-y-procuradores-br",
+     "sha256": "71b56ad466291a98b077b4d8f4ca8dbb42da1aa7cc71a8eee77916bf814eadb2"
+    }
+   ]
+  },
+  {
+   "slug": "ley-armas-de-fuego-2010",
+   "short": "LAFA",
+   "title": "Ley N° 4036/2010 de Armas de Fuego, sus Piezas y Componentes, Municiones, Explosivos, Accesorios y Afines",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/516/ley-n-4036-de-armas-de-fuego-sus-piezas-y-componentes-municiones-explosivos-accesorios-y-afines-br",
+   "versions": [
+    {
+     "from": "2010-08-14",
+     "units": 113,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/516/ley-n-4036-de-armas-de-fuego-sus-piezas-y-componentes-municiones-explosivos-accesorios-y-afines-br",
+     "sha256": "a4e4ce882db14297211a7f4a23bcc18cb262ab24027ff5f1355f2f1977e4093c"
+    },
+    {
+     "from": "2025-01-04",
+     "units": 0,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12639/ley-n-7411-2024-de-armas-de-fuego-sus-componentes-municiones-y-sus-componentes-accesorios-controlados-explosivos-accesorios-de-explosivos-precursores-qu-micos-de-explosivos-afines-de-explosivos-y-art-culos-pirot-cnicos",
+     "sha256": "1401ae552bf83621f5d959f3d676cf6d1ff87a6861d2f24181ba02ec4096b047"
+    }
+   ]
+  },
+  {
+   "slug": "ley-armas-de-fuego",
+   "short": "LAF",
+   "title": "Ley N° 7411/2024 de Armas de Fuego, sus Componentes, Municiones y sus Componentes, Accesorios Controlados, Explosivos, Accesorios de Explosivos, Precursores Químicos de Explosivos, Afines de Explosivos y Artículos Pirotécnicos",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/12639/ley-n-7411-2024-de-armas-de-fuego-sus-componentes-municiones-y-sus-componentes-accesorios-controlados-explosivos-accesorios-de-explosivos-precursores-qu-micos-de-explosivos-afines-de-explosivos-y-art-culos-pirot-cnicos",
+   "versions": [
+    {
+     "from": "2025-01-04",
+     "units": 286,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12639/ley-n-7411-2024-de-armas-de-fuego-sus-componentes-municiones-y-sus-componentes-accesorios-controlados-explosivos-accesorios-de-explosivos-precursores-qu-micos-de-explosivos-afines-de-explosivos-y-art-culos-pirot-cnicos",
+     "sha256": "1401ae552bf83621f5d959f3d676cf6d1ff87a6861d2f24181ba02ec4096b047"
+    }
+   ]
+  },
+  {
+   "slug": "ley-mipymes",
+   "short": "LMIP",
+   "title": "Ley N° 4457/2012 para las Micro, Pequeñas y Medianas Empresas (MIPYMES)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/8272/ley-n-4457-para-las-micro-peque-as-y-medianas-empresas-mipymes",
+   "versions": [
+    {
+     "from": "2012-05-18",
+     "units": 57,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8272/ley-n-4457-para-las-micro-peque-as-y-medianas-empresas-mipymes",
+     "sha256": "9cbd6a0287a7cfeb8895c4eae1d8b12bca0c63fd893a3a5838bc820a74834ffc"
+    },
+    {
+     "from": "2025-01-08",
+     "units": 56,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12698/ley-n-7444-2025-que-modifica-varios-art-culos-y-ampl-a-la-ley-n-4-457-2012-para-las-micro-peque-as-y-medianas-empresas-mipymes",
+     "sha256": "242969b1eea5e48d08b35018f28cd0796d1e390d89d9992bc0b32d6c78d19e87"
+    }
+   ]
+  },
+  {
+   "slug": "ley-sistema-nacional-transporte",
+   "short": "LSNT",
+   "title": "Ley N° 1590/2000 que regula el Sistema Nacional de Transporte y crea la Dirección Nacional de Transporte (DINATRAN) y la Secretaría Metropolitana de Transporte (SMT)",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/1669/ley-n-1590-regula-el-sistema-nacional-de-transporte-y-crea-la-direccion-nacional-de-transporte-dinatran-y-la-secretaria-metropolitana-de-transporte-smt-br",
+   "versions": [
+    {
+     "from": "2000-09-19",
+     "units": 49,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1669/ley-n-1590-regula-el-sistema-nacional-de-transporte-y-crea-la-direccion-nacional-de-transporte-dinatran-y-la-secretaria-metropolitana-de-transporte-smt-br",
+     "sha256": "47a89da57aa3be8329de6a50b0ad8263fbbd626ab595a41d4f325444fddb5b58"
+    },
+    {
+     "from": "2001-11-09",
+     "units": 49,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10156/ley-n-1818-modifica-el-articulo-11-de-la-ley-n-1590-del-16-de-setiembre-de-2000-que-regula-el-sistema-nacional-de-transporte-y-crea-la-direccion-nacional-de-transporte-dinatran-y-la-secretaria-metropolitana-de-transporte-smt",
+     "sha256": "85bce290e8ceb50446dc3971eface86374b7675473d803dd7570a835acabc9d0"
+    },
+    {
+     "from": "2009-08-12",
+     "units": 49,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1876/ley-n-3698-modifica-los-art-culos-37-y-38-de-la-ley-n-1590-2000-que-regula-el-sistema-nacional-de-transporte-y-crea-la-direcci-n-nacional-de-transporte-dinatr-n-y-la-secretar-a-metropolitana-de-transporte-smt-br",
+     "sha256": "909c66d2c4b1a695cf94a843204b704a931bb027574b8865a107a0a2be5ecf29"
+    },
+    {
+     "from": "2009-10-17",
+     "units": 49,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2585/ley-n-3850-crea-el-sistema-nacional-de-inspeccion-tecnica-vehicular-y-establece-la-obligatoriedad-de-la-realizacion-de-la-inspeccion-tecnica-como-requisito-previo-para-la-obtencion-o-renovacion-de-la-patente-municipal-de-rodados-en-todo-el-territorio-nacional-br",
+     "sha256": "c3db3a47e058670ce1f493557969ffbf32a817fa2641605a3b036f57afa3e676"
+    },
+    {
+     "from": "2010-09-09",
+     "units": 49,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/591/ley-n-4090-modifica-varios-art-culos-de-la-ley-n-1-590-2000-que-regula-el-sistema-nacional-de-transporte-y-crea-la-direcci-n-nacional-de-transporte-dinatran-y-la-secretar-a-metropolitana-de-transporte-smt-br",
+     "sha256": "752ac01161548d40964f74c12f68efd18f5ad8da3c641c643a626db94db8937d"
+    },
+    {
+     "from": "2014-04-09",
+     "units": 34,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4653/ley-n-5152-deroga-el-capitulo-iv-de-la-ley-n-1590-de-fecha-16-de-setiembre-de-2000-que-regula-el-sistema-nacional-de-transporte-y-crea-la-direccion-nacional-de-transporte-dinatran-y-la-secretaria-metropolitana-de-transporte-smt-y-sus-leyes-modificatorias-br",
+     "sha256": "379f95206de9575655e9bb7dc0b89624407c2ef921b140dedebd79cefb0fcc77"
+    },
+    {
+     "from": "2026-01-08",
+     "units": 34,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12961/ley-n-7617-2026-que-establece-la-rector-a-sobre-el-transporte-terrestre-y-modifica-y-ampl-a-disposiciones-de-la-ley-n-1590-2000-que-regula-el-sistema-nacional-de-transporte-y-crea-la-direcci-n-nacional-de-transporte-dinatran-y-la-secretar-a-metropolitana-de-transporte-smt-relativas-al-servicio-de-transporte-p-blico-metropolitano-de-pasajeros",
+     "sha256": "2b0560c95518a24cbf2b93ff71d90c516c02b86367cbf8d14b268e2ddea620d5"
+    }
+   ]
+  },
+  {
+   "slug": "ley-estupefacientes",
+   "short": "LEST",
+   "title": "Ley N° 1340/1988 que reprime el tráfico ilícito de estupefacientes y drogas peligrosas y otros delitos afines y establece medidas de prevención y recuperación de farmacodependientes",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2562/ley-n-1340-modifica-adiciona-y-actualiza-la-ley-n-357-72",
+   "versions": [
+    {
+     "from": "1988-11-23",
+     "units": 85,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2562/ley-n-1340-modifica-adiciona-y-actualiza-la-ley-n-357-72",
+     "sha256": "5dde1b23554206f87b0035ee9f0688952966e696778bdbedacf4f80559df219f"
+    },
+    {
+     "from": "1991-12-28",
+     "units": 85,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11734/ley-n-108-crea-la-secretaria-nacional-antidroga-senad",
+     "sha256": "dbe493470b458d37233f21e9344a0a82853e9de5cfcc7831a4a0d15b9b4c9ed2"
+    },
+    {
+     "from": "1992-02-18",
+     "units": 85,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5342/ley-n-68-aprueba-con-modificaciones-el-decreto-ley-n-9-del-17-de-febrero-de-1992-por-el-cual-se-modifica-el-articulo-2-de-la-ley-n-1-340-de-fecha-22-de-noviembre-de-1988-br",
+     "sha256": "ec7f0f9a82b29c81cf1b201e7e795ba3a19d3090edafa62deeaa2520620c22f8"
+    },
+    {
+     "from": "1992-11-17",
+     "units": 85,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5342/ley-n-68-aprueba-con-modificaciones-el-decreto-ley-n-9-del-17-de-febrero-de-1992-por-el-cual-se-modifica-el-articulo-2-de-la-ley-n-1-340-de-fecha-22-de-noviembre-de-1988-br",
+     "sha256": "ec7f0f9a82b29c81cf1b201e7e795ba3a19d3090edafa62deeaa2520620c22f8"
+    },
+    {
+     "from": "2002-07-09",
+     "units": 106,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4423/ley-n-1881-modifica-la-ley-n-1340-del-22-de-noviembre-de-1988-que-reprime-el-trafico-ilicito-de-estupefacientes-y-drogas-peligrosas-y-otros-delitos-afines-y-establece-medidas-de-prevenci-n-y-recuperaci-n-de-farmacodependientes-br",
+     "sha256": "00f9870fc42e4a4d3a41a1ce9aa9804c57db6630f0b77c00e16550098c445ba9"
+    },
+    {
+     "from": "2015-06-05",
+     "units": 106,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4422/ley-n-5434-modifica-el-art-culo-23-de-la-ley-n-1-340-del-22-de-noviembre-de-1988-que-reprime-el-tr-fico-il-cito-de-estupefacientes-y-drogas-peligrosas-y-otros-delitos-afines-y-establece-medidas-de-prevenci-n-y-recuperaci-n-de-farmacodependientes-modificado-por-la-ley-n-1-881-02-br",
+     "sha256": "3417b18455bb1dc46e43eac40d1e2386d663ccd9223f90f5a65adc892f7f6b85"
+    },
+    {
+     "from": "2017-09-27",
+     "units": 105,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9306/ley-n-5876-de-administraci-n-de-bienes-incautados-y-comisados",
+     "sha256": "27f3fccbecb11b88bc0a08758a6699f6d6e63006eefa52c1b899c41c853cce1b"
+    },
+    {
+     "from": "2022-04-12",
+     "units": 105,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10256/ley-n-6902-modifica-varios-art-culos-de-la-ley-n-1-340-del-22-de-noviembre-de-1988-que-modifica-y-actualiza-la-ley-n-357-72-que-reprime-el-tr-fico-il-cito-de-estupefacientes-y-drogas-peligrosas-y-otros-delitos-afines-y-establece-medidas-de-prevenci-n-y-recuperaci-n-de-farmacodependientes-y-sus-modificatorias-leyes-n-s-68-1992-1881-2002-y-5-434-2015",
+     "sha256": "5bcbe49fc2381e90301bea6db5c54a4e1e9cde309565b68c1701b1aa1ef09ca1"
+    }
+   ]
+  },
+  {
+   "slug": "ley-inversiones",
+   "short": "LINV",
+   "title": "Ley N° 117/1991 de Inversiones",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/785/ley-n-117-de-inversiones-br",
+   "versions": [
+    {
+     "from": "1992-01-08",
+     "units": 21,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/785/ley-n-117-de-inversiones-br",
+     "sha256": "c320af785fdb7d81026ba9cf055e8c537bdf4f8c298ee2091c123420fa7e24fb"
+    }
+   ]
+  },
+  {
+   "slug": "ley-transporte-electrico",
+   "short": "LTE",
+   "title": "Ley N° 6925/2022 de Incentivos y Promoción del Transporte Eléctrico en el Paraguay",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/11279/ley-n-6925-de-incentivos-y-promoci-n-del-transporte-el-ctrico-en-el-paraguay",
+   "versions": [
+    {
+     "from": "2022-10-27",
+     "units": 44,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11279/ley-n-6925-de-incentivos-y-promoci-n-del-transporte-el-ctrico-en-el-paraguay",
+     "sha256": "5cfac957b22422f34b4f64956e2da7d9e06bb5d4f08848ce31d4680634b0c383"
+    },
+    {
+     "from": "2026-01-08",
+     "units": 44,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12961/ley-n-7617-2026-que-establece-la-rector-a-sobre-el-transporte-terrestre-y-modifica-y-ampl-a-disposiciones-de-la-ley-n-1590-2000-que-regula-el-sistema-nacional-de-transporte-y-crea-la-direcci-n-nacional-de-transporte-dinatran-y-la-secretar-a-metropolitana-de-transporte-smt-relativas-al-servicio-de-transporte-p-blico-metropolitano-de-pasajeros",
+     "sha256": "2b0560c95518a24cbf2b93ff71d90c516c02b86367cbf8d14b268e2ddea620d5"
+    }
+   ]
+  },
+  {
+   "slug": "ley-divorcio-vincular",
+   "short": "LDV",
+   "title": "Ley N° 45/1991 que establece el Divorcio Vincular del Matrimonio",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/689/ley-n-45-establece-el-divorcio-vincular-del-matrimonio-br",
+   "versions": [
+    {
+     "from": "1991-10-02",
+     "units": 26,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/689/ley-n-45-establece-el-divorcio-vincular-del-matrimonio-br",
+     "sha256": "c476ceb3d62d377da0899d7eb4add8502fa98ee997ebb698666e9cf5fc6f2a97"
+    },
+    {
+     "from": "2015-05-12",
+     "units": 26,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3879/ley-n-5422-modifica-los-art-culos-4-5-6-7-y-13-de-la-ley-n-45-91-que-establece-el-divorcio-vincular-del-matrimonio-br",
+     "sha256": "cd4033a99a2fedf066e8ea7a74a5edba9edb4f13b305d7aba11a2a522219dbfa"
+    }
+   ]
+  },
+  {
+   "slug": "ley-reuniones-publicas",
+   "short": "LRP",
+   "title": "Ley N° 1066/1997 que reglamenta el Artículo 32 de la Constitución Nacional",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/9511/ley-n-1066-reglamenta-el-articulo-32-de-la-constituci-n-nacional",
+   "versions": [
+    {
+     "from": "1997-06-24",
+     "units": 20,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9511/ley-n-1066-reglamenta-el-articulo-32-de-la-constituci-n-nacional",
+     "sha256": "753e04aa260d1764f9a4529eb40a6a0b4f322073a5c3aace8716ea0cb99c34e9"
+    }
+   ]
+  },
+  {
+   "slug": "ley-pedido-de-informes",
+   "short": "LPINF",
+   "title": "Ley N° 5453/2015 que reglamenta el Artículo 192 de la Constitución Nacional, del Pedido de Informes",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4442/ley-n-5453-2015-que-reglamenta-el-art-culo-192-de-la-constituci-n-nacional-del-pedido-de-informes",
+   "versions": [
+    {
+     "from": "2015-07-22",
+     "units": 9,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4442/ley-n-5453-2015-que-reglamenta-el-art-culo-192-de-la-constituci-n-nacional-del-pedido-de-informes",
+     "sha256": "3496f4a0bb431488ab99d607455c6921c7ddd06b7dc26e7c29f3d3fb451644e0"
+    },
+    {
+     "from": "2024-08-06",
+     "units": 9,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12489/ley-n-7199-2024-que-modifica-el-articulo-3-de-la-ley-n-5453-2015",
+     "sha256": "cd88ba27e9aed208f194c521124070fd991c7be387248ac2bcc08b36fad9f3f5"
+    }
+   ]
+  },
+  {
+   "slug": "ley-maltrato-infantil",
+   "short": "LMI",
+   "title": "Ley N° 4295/2011 que establece el Procedimiento Especial para el Tratamiento del Maltrato Infantil en la Jurisdicción Especializada",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3673/ley-n-4295-establece-el-procedimiento-especial-para-el-tratamiento-del-maltrato-infantil-en-la-jurisdiccion-especializada-br",
+   "versions": [
+    {
+     "from": "2011-05-05",
+     "units": 16,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3673/ley-n-4295-establece-el-procedimiento-especial-para-el-tratamiento-del-maltrato-infantil-en-la-jurisdiccion-especializada-br",
+     "sha256": "a08eba4560ce4fd065b74ef5ad6b1aec46cd318bb7cb1552e5c4758be05b661f"
+    }
+   ]
+  },
+  {
+   "slug": "ley-informacion-remuneraciones",
+   "short": "LIR",
+   "title": "Ley N° 5189/2014 que establece la Obligatoriedad de la Provisión de Informaciones en el Uso de los Recursos Públicos sobre Remuneraciones y otras Retribuciones asignadas al Servidor Público",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2962/ley-n-5189-2014-establece-la-obligatoriedad-de-la-provisi-n-de-informaciones-en-el-uso-de-los-recursos-p-blicos-sobre-remuneraciones-y-otras-retribuciones-asignadas-al-servidor-p-blico-de-la-rep-blica-del-paraguay-br",
+   "versions": [
+    {
+     "from": "2014-05-22",
+     "units": 12,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2962/ley-n-5189-2014-establece-la-obligatoriedad-de-la-provisi-n-de-informaciones-en-el-uso-de-los-recursos-p-blicos-sobre-remuneraciones-y-otras-retribuciones-asignadas-al-servidor-p-blico-de-la-rep-blica-del-paraguay-br",
+     "sha256": "f4abda2185ea6d5afbd5bdd9fd4c18994495d6d4ca841397a64018c6e79b1029"
+    },
+    {
+     "from": "2016-11-25",
+     "units": 12,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8293/ley-n-5747-modifica-el-art-culo-8-de-la-ley-n-5189-14-que-establece-la-obligatoriedad-de-la-provisi-n-de-informaciones-en-el-uso-de-los-recursos-p-blicos-sobre-remuneraciones-y-otras-retribuciones-asignadas-al-servidor-p-blico-de-la-rep-blica-del-paraguay",
+     "sha256": "c500c3a99056ca53c44b5e89ef5513182cc485d6d3afb9248bfcad219f1fd42b"
+    }
+   ]
+  },
+  {
+   "slug": "ley-vehiculos-electricos",
+   "short": "LVE",
+   "title": "Ley N° 4601/2012 de Incentivos a la Importación de Vehículos Eléctricos",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2958/ley-n-4601-de-incentivos-a-la-importacion-de-vehiculos-electricos-br",
+   "versions": [
+    {
+     "from": "2012-05-04",
+     "units": 8,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2958/ley-n-4601-de-incentivos-a-la-importacion-de-vehiculos-electricos-br",
+     "sha256": "300d1c72f881f47338708ac6ac94c18a5930187ddfa848951ea8e335842dc60d"
+    },
+    {
+     "from": "2014-05-27",
+     "units": 8,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2957/ley-n-5183-modifica-la-ley-n-4-601-12-de-incentivos-a-la-importaci-n-de-veh-culos-el-ctricos-br",
+     "sha256": "db18ff5e59c5eefa2b0567c69a59b7ed574157b7249a1ec6c3205dbeab0e2aa9"
+    }
+   ]
+  },
+  {
+   "slug": "ley-prevencion-abuso-sexual",
+   "short": "LPAS",
+   "title": "Ley N° 6202/2018 que adopta normas para la Prevención del Abuso Sexual y la Atención Integral de los Niños, Niñas y Adolescentes Víctimas de Abuso Sexual",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/8927/ley-n-6202-adopta-normas-para-la-prevenci-n-del-abuso-sexual-y-la-atenci-n-integral-de-los-ni-os-ni-as-y-adolescentes-v-ctimas-de-abuso-sexual",
+   "versions": [
+    {
+     "from": "2018-11-16",
+     "units": 13,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8927/ley-n-6202-adopta-normas-para-la-prevenci-n-del-abuso-sexual-y-la-atenci-n-integral-de-los-ni-os-ni-as-y-adolescentes-v-ctimas-de-abuso-sexual",
+     "sha256": "34fd9bda72f5bed631cb8f01dd2a2d183b8465bd4485275369af934e646c367d"
+    }
+   ]
+  },
+  {
+   "slug": "ley-objecion-de-conciencia",
+   "short": "LOC",
+   "title": "Ley N° 4013/2010 que reglamenta el ejercicio del Derecho a la Objeción de Conciencia al Servicio Militar Obligatorio y establece el Servicio Sustitutivo al mismo en beneficio de la Población Civil",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3546/ley-n-4013-reglamenta-el-ejercicio-del-derecho-a-la-objecion-de-conciencia-al-servicio-militar-obligatorio-y-establece-el-servicio-sustitutivo-al-mismo-en-beneficio-de-la-poblacion-civil-br",
+   "versions": [
+    {
+     "from": "2010-06-19",
+     "units": 28,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3546/ley-n-4013-reglamenta-el-ejercicio-del-derecho-a-la-objecion-de-conciencia-al-servicio-militar-obligatorio-y-establece-el-servicio-sustitutivo-al-mismo-en-beneficio-de-la-poblacion-civil-br",
+     "sha256": "71ca3e96e4b0a534988424a42fc12b6ab8fd9b8873df6366e7ce9986ab29e565"
+    }
+   ]
+  },
+  {
+   "slug": "ley-polucion-sonora",
+   "short": "LPS",
+   "title": "Ley N° 1100/1997 de Prevención de la Polución Sonora",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/9414/ley-n-1100-de-prevencion-de-la-polucion-sonora",
+   "versions": [
+    {
+     "from": "1997-08-27",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9414/ley-n-1100-de-prevencion-de-la-polucion-sonora",
+     "sha256": "bbcb17d8bd3f15cc625f8aebd6744476dd5236aaebc38485bd6805f34b9b72bc"
+    },
+    {
+     "from": "2020-01-14",
+     "units": 0,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9413/ley-n-6390-regula-la-emisi-n-de-ruidos",
+     "sha256": "dbeaeb41a46b5409263ceade7bf3c60c3a06e275a40f48f56012495ea50640ec"
+    }
+   ]
+  },
+  {
+   "slug": "ley-banco-central",
+   "short": "LBCP",
+   "title": "Ley N° 489/1995 Orgánica del Banco Central del Paraguay",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/699/ley-n-489-organica-del-banco-central-del-paraguay-br",
+   "versions": [
+    {
+     "from": "1995-06-30",
+     "units": 132,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/699/ley-n-489-organica-del-banco-central-del-paraguay-br",
+     "sha256": "d917760962f51ec2b6d77184cb91290565b149b1113bf27b34d270576d99e019"
+    },
+    {
+     "from": "2003-10-04",
+     "units": 132,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4892/ley-n-2226-modifica-el-articulo-29-de-la-ley-n-489-del-29-de-junio-de-1995-organica-del-banco-central-del-paraguay-br",
+     "sha256": "d2965df57813b10ee029a4a4e2ea927289652a7b45b215fb6701d61a6d972991"
+    },
+    {
+     "from": "2004-01-13",
+     "units": 132,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5034/ley-n-2339-modifica-el-articulo-44-de-la-ley-n-489-95-organica-del-banco-central-del-paraguay-br",
+     "sha256": "601575ce4dfe1fee762dec5c16285b3a778ab6c11a97f254d62150b289810acf"
+    },
+    {
+     "from": "2005-06-21",
+     "units": 132,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4134/ley-n-2598-modifica-los-articulos-68-y-70-de-la-ley-n-489-95-organica-del-banco-central-del-paraguay-br",
+     "sha256": "d6bb7321603347ccbedb3a6cff5de24b571ba53fef239fe23d42d6d2c5ab496b"
+    },
+    {
+     "from": "2010-07-31",
+     "units": 131,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/554/ley-n-4046-modifica-el-art-culo-4-de-la-ley-n-1-462-1935-que-establece-el-procedimiento-para-lo-contencioso-administrativo-br",
+     "sha256": "28636150ac204629d51acb205f779e544d0e7a130f70d5d5678bcd0aa0c49309"
+    },
+    {
+     "from": "2018-07-07",
+     "units": 126,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8424/ley-n-6104-modifica-y-ampl-a-la-ley-n-489-95-org-nica-del-banco-central-del-paraguay",
+     "sha256": "ee611f8ac07b740b8b5f182fb2b9812acb52221fbf5b2eb13a934bdf5d0d2f5d"
+    },
+    {
+     "from": "2023-04-20",
+     "units": 126,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11459/ley-n-7066-modifica-el-art-culo-7-de-la-ley-n-489-1995-org-nica-del-banco-central-del-paraguay-modificado-por-la-ley-n-6104-2018",
+     "sha256": "a355c1da50ab23e668c9fba133a382bd4e0cd6fdc4f1d88e27711e4dd73ad5db"
+    }
+   ]
+  },
+  {
+   "slug": "ley-general-de-bancos",
+   "short": "LGB",
+   "title": "Ley N° 861/1996 General de Bancos, Financieras y otras Entidades de Crédito",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4135/ley-n-861-general-de-bancos-financieras-y-otras-entidades-de-credito-br",
+   "versions": [
+    {
+     "from": "1996-06-25",
+     "units": 166,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4135/ley-n-861-general-de-bancos-financieras-y-otras-entidades-de-credito-br",
+     "sha256": "842ec6eeeaef848e332d05bbda7f19a59c3aa4ceecac98c164b44f828390ff2f"
+    },
+    {
+     "from": "1999-05-22",
+     "units": 166,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1616/ley-n-1420-establece-un-r-gimen-especial-y-transitorio-para-el-saneamiento-del-sistema-financiero-br",
+     "sha256": "10463d552fdc2e6afce905811416e860934fb1abc41fec92c56bae917ecd1ed2"
+    },
+    {
+     "from": "2003-12-12",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2513/ley-n-2334-garantia-de-depositos-y-resolucion-de-entidades-de-intermediacion-financiera-sujetos-de-la-ley-general-de-bancos-financieras-y-otras-entidades-de-cr-dito-br",
+     "sha256": "2d1ff026f1b56560131d0e3f1dd7886b932bfb42962e489e48ca81eeaede29aa"
+    },
+    {
+     "from": "2004-09-17",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3960/ley-n-2451-modifica-el-articulo-66-de-la-ley-n-861-96-general-de-bancos-financieras-y-otras-entidades-de-creditos-br",
+     "sha256": "317006c746f8fac10d8209a97a86880cb080146fb997d55cc5cbdb17207bde03"
+    },
+    {
+     "from": "2009-11-24",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1528/ley-n-3899-regula-a-las-sociedades-calificadoras-de-riesgo-deroga-la-ley-n-1056-97-y-modifica-el-articulo-106-de-la-ley-n-861-96-general-de-bancos-financieras-y-otras-entidades-de-credito-y-el-inciso-d-del-articulo-61-de-la-ley-n-827-96-de-seguros-br",
+     "sha256": "92c4fb4d39dfe4dddcb1e6cc7303cb8099ca8c45c3dab60cb495e1927673981b"
+    },
+    {
+     "from": "2013-01-11",
+     "units": 119,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3174/ley-n-4851-modifica-el-articulo-36-de-la-ley-n-861-96-general-de-bancos-financieras-y-otras-entidades-de-credito-br",
+     "sha256": "2ea6b00bf496995aaafb66688e813555c8120b2421c97a3b0ac21bce4afce895"
+    },
+    {
+     "from": "2016-12-27",
+     "units": 107,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8367/ley-n-5787-de-modernizaci-n-y-fortalecimiento-de-las-normas-que-regulan-el-funcionamiento-del-sistema-financiero-paraguayo",
+     "sha256": "546f14182c9f8d01cc8a43138bed4e7c2b1a5d542df3ceb6bf942e4ce941eca0"
+    }
+   ]
+  },
+  {
+   "slug": "ley-garantia-depositos",
+   "short": "LGD",
+   "title": "Ley N° 2334/2003 de Garantía de Depósitos y Resolución de Entidades de Intermediación Financiera sujetos de la Ley General de Bancos, Financieras y otras Entidades de Crédito",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/2513/ley-n-2334-garantia-de-depositos-y-resolucion-de-entidades-de-intermediacion-financiera-sujetos-de-la-ley-general-de-bancos-financieras-y-otras-entidades-de-cr-dito-br",
+   "versions": [
+    {
+     "from": "2003-12-12",
+     "units": 39,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2513/ley-n-2334-garantia-de-depositos-y-resolucion-de-entidades-de-intermediacion-financiera-sujetos-de-la-ley-general-de-bancos-financieras-y-otras-entidades-de-cr-dito-br",
+     "sha256": "2d1ff026f1b56560131d0e3f1dd7886b932bfb42962e489e48ca81eeaede29aa"
+    },
+    {
+     "from": "2005-09-28",
+     "units": 39,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4278/ley-n-2723-modifica-el-inciso-a-del-art-culo-1-de-la-ley-n-2-334-03-de-garant-a-de-dep-sitos-y-resoluci-n-de-entidades-de-intermediaci-n-financiera-sujetos-de-la-ley-general-de-bancos-financieras-y-otras-entidades-de-cr-dito-y-el-art-culo-2-de-la-ley-n-1-896-02-que-ampl-a-las-funciones-de-las-sociedades-de-ahorro-y-pr-stamo-para-la-vivienda-y-modifica-y-deroga-art-culos-de-la-ley-n-325-7i-que-crea-el-banco-nacional-de-ahorro-y-pr-stamo-para-la-vivienda-y-el-sistema-nacional-de-ahorro-y-pr-stamo-y-otras-leyes-conexas-br",
+     "sha256": "e0ac91c44812dae2f31368dda032676ec9dc57932a8d98f5ffe54a23f4c00640"
+    }
+   ]
+  },
+  {
+   "slug": "ley-agencia-financiera-desarrollo",
+   "short": "LAFD",
+   "title": "Ley N° 2640/2005 que crea la Agencia Financiera de Desarrollo",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3380/ley-n-2640-crea-la-agencia-financiera-de-desarrollo-br",
+   "versions": [
+    {
+     "from": "2005-07-30",
+     "units": 25,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3380/ley-n-2640-crea-la-agencia-financiera-de-desarrollo-br",
+     "sha256": "34afc2f69d75b596b32ef811a5fe2bb99ebf848284e5532e02bf413128302588"
+    },
+    {
+     "from": "2007-10-30",
+     "units": 25,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3379/ley-n-3330-modifica-los-articulos-1-3-5-6-y-14-de-la-ley-n-2640-05-que-crea-la-agencia-financiera-de-desarrollo-br",
+     "sha256": "42da7d29cf84063d1f722f5c2df4e07da01ca1a1a2c232d90287ca925d455987"
+    },
+    {
+     "from": "2008-11-28",
+     "units": 25,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1837/ley-n-3655-modifica-el-articulo-22-de-la-ley-n-2640-05-que-crea-la-agencia-financiera-de-desarrollo-br",
+     "sha256": "b4b8c9ad25c41fda3afd815f0a49de54aba95e3028bfd172c356a2ead8ebf570"
+    },
+    {
+     "from": "2020-03-27",
+     "units": 25,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9156/ley-n-6524-declara-estado-de-emergencia-en-todo-el-territorio-de-la-rep-blica-del-paraguay-ante-la-pandemia-declarada-por-la-organizaci-n-mundial-de-la-salud-a-causa-del-covid-19-o-coronavirus-y-se-establecen-medidas-administrativas-fiscales-y-financieras",
+     "sha256": "51a7b6320c7e995c4174fb777daf22f7c9044d663eed29460c98ef127e80cc1a"
+    },
+    {
+     "from": "2021-07-17",
+     "units": 25,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9627/ley-n-6769-modifica-y-ampl-a-la-ley-n-2640-2005",
+     "sha256": "448526c56585e79434e1189d981e724240dfedcfbc0637c80cc4930ca2478bd9"
+    }
+   ]
+  },
+  {
+   "slug": "ley-cuenta-unica-tesoro",
+   "short": "LCUT",
+   "title": "Ley N° 5097/2013 que dispone Medidas de Modernización de la Administración Financiera del Estado y establece el Régimen de Cuenta Única y de los Títulos de Deuda del Tesoro Público",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4670/ley-n-5097-dispone-medidas-de-modernizaci-n-de-la-administraci-n-financiera-del-estado-y-establece-el-r-gimen-de-cuenta-nica-y-de-los-t-tulos-de-deuda-del-tesoro-p-blico-br",
+   "versions": [
+    {
+     "from": "2013-11-01",
+     "units": 25,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4670/ley-n-5097-dispone-medidas-de-modernizaci-n-de-la-administraci-n-financiera-del-estado-y-establece-el-r-gimen-de-cuenta-nica-y-de-los-t-tulos-de-deuda-del-tesoro-p-blico-br",
+     "sha256": "b33c266683c96bd27158f6489a436ba45232999c689b6ac84878ee82700616ce"
+    },
+    {
+     "from": "2018-07-07",
+     "units": 23,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8424/ley-n-6104-modifica-y-ampl-a-la-ley-n-489-95-org-nica-del-banco-central-del-paraguay",
+     "sha256": "ee611f8ac07b740b8b5f182fb2b9812acb52221fbf5b2eb13a934bdf5d0d2f5d"
+    },
+    {
+     "from": "2020-11-19",
+     "units": 23,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9436/ley-n-6638-modifica-y-ampl-a-la-ley-n-5-097-2013-que-dispone-medidas-de-modernizaci-n-de-la-administraci-n-financiera-del-estado-y-establece-el-r-gimen-de-cuenta-nica-y-de-los-t-tulos-de-deuda-del-tesoro-p-blico-y-establece-disposiciones-legales-complementarias-para-la-administraci-n-de-la-deuda-p-blica",
+     "sha256": "f76afff5597ea971b32c14cf479100006dfb390e76e6d0470f9d7f96a9a59fa0"
+    }
+   ]
+  },
+  {
+   "slug": "ley-informacion-caracter-privado",
+   "short": "LICP",
+   "title": "Ley N° 1682/2001 que reglamenta la Información de Carácter Privado",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/1760/ley-n-1682-reglamenta-la-informaci-n-de-car-cter-privado-br",
+   "versions": [
+    {
+     "from": "2001-07-19",
+     "units": 14,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1760/ley-n-1682-reglamenta-la-informaci-n-de-car-cter-privado-br",
+     "sha256": "1fe79d76c45120cfd8088308fe81c72edbe4d326838dd3236b36d92ed2bdac32"
+    },
+    {
+     "from": "2002-09-07",
+     "units": 14,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/2539/ley-n-1969-modifica-ampl-a-y-deroga-varios-articulos-de-la-ley-n-1682-2001",
+     "sha256": "d7b4ada5b3141906956d1ac90a3fe3ef7780c06c81d3b1465c8e9a8f16ffe8fb"
+    },
+    {
+     "from": "2015-12-17",
+     "units": 14,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4524/ley-n-5543-modifica-los-art-culos-5-y-9-de-la-ley-n-1-682-01-que-reglamenta-la-informaci-n-de-car-cter-privado-modificado-por-la-ley-n-1-969-02-br",
+     "sha256": "c82568e701683ff2e1dca8a40ef1276881db7c8b73765e2fc6a1c15d4055f4e3"
+    },
+    {
+     "from": "2020-10-28",
+     "units": 0,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9417/ley-n-6534-de-protecci-n-de-datos-personales-crediticios",
+     "sha256": "13af89682d6031df44da457e9420f25fcf0b35c2abc4c0a91a113a791dd5e4d5"
+    }
+   ]
+  },
+  {
+   "slug": "ley-enriquecimiento-ilicito",
+   "short": "LEIFP",
+   "title": "Ley N° 2523/2004 que previene, tipifica y sanciona el Enriquecimiento Ilícito en la Función Pública y el Tráfico de Influencias",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4020/ley-n-2523-previene-tipifica-y-sanciona-el-enriquecimiento-ilicito-en-la-funcion-publica-y-el-trafico-de-influencias-br",
+   "versions": [
+    {
+     "from": "2004-12-31",
+     "units": 13,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4020/ley-n-2523-previene-tipifica-y-sanciona-el-enriquecimiento-ilicito-en-la-funcion-publica-y-el-trafico-de-influencias-br",
+     "sha256": "923c5706ca1ef2d6a0cdd997e413291fc534b98112a7b23588b29cf9f51f2275"
+    }
+   ]
+  },
+  {
+   "slug": "ley-seguros",
+   "short": "LSEG",
+   "title": "Ley N° 827/1996 de Seguros",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/703/ley-n-827-de-seguros-br",
+   "versions": [
+    {
+     "from": "1996-02-13",
+     "units": 140,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/703/ley-n-827-de-seguros-br",
+     "sha256": "8e11cec2ca953fb880fd2dd29c74ca7e61f4cf8547cf33223ab42e44f8b1b09c"
+    },
+    {
+     "from": "2009-11-24",
+     "units": 140,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1528/ley-n-3899-regula-a-las-sociedades-calificadoras-de-riesgo-deroga-la-ley-n-1056-97-y-modifica-el-articulo-106-de-la-ley-n-861-96-general-de-bancos-financieras-y-otras-entidades-de-credito-y-el-inciso-d-del-articulo-61-de-la-ley-n-827-96-de-seguros-br",
+     "sha256": "92c4fb4d39dfe4dddcb1e6cc7303cb8099ca8c45c3dab60cb495e1927673981b"
+    },
+    {
+     "from": "2018-07-07",
+     "units": 140,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8424/ley-n-6104-modifica-y-ampl-a-la-ley-n-489-95-org-nica-del-banco-central-del-paraguay",
+     "sha256": "ee611f8ac07b740b8b5f182fb2b9812acb52221fbf5b2eb13a934bdf5d0d2f5d"
+    }
+   ]
+  },
+  {
+   "slug": "ley-inversion-infraestructura-publica",
+   "short": "LAPP",
+   "title": "Ley N° 5102/2013 de Promoción de la Inversión en Infraestructura Pública y Ampliación y Mejoramiento de los Bienes y Servicios a cargo del Estado",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4669/ley-n-5102-2013-promocion-de-la-inversion-en-infraestructura-publica-y-ampliacion-y-mejoramiento-de-los-bienes-y-servicios-a-cargo-del-estado-br",
+   "versions": [
+    {
+     "from": "2013-11-05",
+     "units": 59,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4669/ley-n-5102-2013-promocion-de-la-inversion-en-infraestructura-publica-y-ampliacion-y-mejoramiento-de-los-bienes-y-servicios-a-cargo-del-estado-br",
+     "sha256": "306546f81dfdfc55912d3a7ce152b8234c16956ecd923c0b507dda42354ec2b8"
+    },
+    {
+     "from": "2025-01-28",
+     "units": 0,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12703/ley-n-7452-2025-de-modernizaci-n-del-r-gimen-de-promoci-n-de-la-inversi-n-en-infraestructura-p-blica-y-ampliaci-n-y-mejoramiento-de-los-bienes-y-servicios-a-cargo-del-estado",
+     "sha256": "007ff6e22c52b886ec1a16a590233b59350d708010a4a789955358102aa00576"
+    }
+   ]
+  },
+  {
+   "slug": "ley-responsabilidad-fiscal",
+   "short": "LRF",
+   "title": "Ley N° 5098/2013 de Responsabilidad Fiscal",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4671/ley-n-5098-de-responsabilidad-fiscal-br",
+   "versions": [
+    {
+     "from": "2013-11-01",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4671/ley-n-5098-de-responsabilidad-fiscal-br",
+     "sha256": "0d529c022f3198b1a6a27138b8a32ae506a6d18312d392d4487a7f455fa33b8d"
+    },
+    {
+     "from": "2019-11-27",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9197/ley-n-6444-autoriza-al-poder-ejecutivo-la-aplicaci-n-del-art-culo-11-de-la-ley-n-5098-2013-de-responsabilidad-fiscal",
+     "sha256": "e76817d553e88a6f0f2487373f32ae9e69249ecf64c097b52777d49e597224f9"
+    },
+    {
+     "from": "2020-03-27",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9156/ley-n-6524-declara-estado-de-emergencia-en-todo-el-territorio-de-la-rep-blica-del-paraguay-ante-la-pandemia-declarada-por-la-organizaci-n-mundial-de-la-salud-a-causa-del-covid-19-o-coronavirus-y-se-establecen-medidas-administrativas-fiscales-y-financieras",
+     "sha256": "51a7b6320c7e995c4174fb777daf22f7c9044d663eed29460c98ef127e80cc1a"
+    },
+    {
+     "from": "2021-01-10",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9492/ley-n-6672-aprueba-el-presupuesto-general-de-la-nacion-para-el-ejercicio-fiscal-2021",
+     "sha256": "c97d3efbcfd0e3debda428611fce84e9bf9f8c21f08130ddfd4c1a2b3760a0ed"
+    },
+    {
+     "from": "2022-01-07",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10179/ley-n-6873-aprueba-el-presupuesto-general-de-la-naci-n-del-ejercicio-fiscal-2022",
+     "sha256": "da4fb18c4995e483f8cc90bf9101db709f1bc3888f371ed93c63a9bca9e46386"
+    },
+    {
+     "from": "2023-01-06",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/11239/ley-n-7050-aprueba-el-presupuesto-general-de-la-naci-n-para-el-ejercicio-fiscal-2023",
+     "sha256": "7ca55b4452a58c6c3b4ea2de464cd9b6baa5150b15df8e7e3ea880a5c3c93469"
+    },
+    {
+     "from": "2023-11-17",
+     "units": 17,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12089/ley-n-7218-por-el-cual-se-establecen-medidas-extraordinarias-de-gesti-n-para-las-finanzas-p-blicas",
+     "sha256": "ccf61351760d6282b021a97cb35aaa892ff99efcc9f9ccfd62d7a7e0da9382c5"
+    }
+   ]
+  },
+  {
+   "slug": "ley-administracion-financiera-estado",
+   "short": "LAFE",
+   "title": "Ley N° 1535/1999 de Administración Financiera del Estado",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3000/ley-n-1535-1999-de-administraci-n-financiera-del-estado",
+   "versions": [
+    {
+     "from": "2000-01-03",
+     "units": 91,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3000/ley-n-1535-1999-de-administraci-n-financiera-del-estado",
+     "sha256": "75971e8f38b920a277cf33d0c6a9bfc4a7d94821f5e40d5fa8fccda6048ba78a"
+    },
+    {
+     "from": "2000-12-01",
+     "units": 91,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1716/ley-n-1636-regula-la-aplicacion-del-articulo-88-de-la-ley-n-1535-del-31-de-diciembre-de-1999-de-administracion-financiera-del-estado-br",
+     "sha256": "4ab68ab3bffe727563f92baba01a46bc42274030bf4e631d16aa9628faf844fb"
+    },
+    {
+     "from": "2002-08-02",
+     "units": 91,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/8217/ley-n-1954-que-modifica-el-art-culo-23-de-la-ley-n-1535-de-administraci-n-financiera-del-estado-br",
+     "sha256": "90fe380c256dee19429c74dd8fc7968dd509b2457c5be04290f874b3e7fc0bd7"
+    },
+    {
+     "from": "2004-12-17",
+     "units": 91,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4013/ley-n-2515-modifica-articulo-de-la-ley-n-1535-99-de-administracion-financiera-del-estado-br",
+     "sha256": "865b4ec83c130f9a0bb3c763a778aefbebf70e8d8dfb6f3c0892774052fef549"
+    },
+    {
+     "from": "2012-11-01",
+     "units": 91,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/1313/ley-n-4767-modifica-el-art-culo-21-de-la-ley-n-1-535-99-de-administraci-n-financiera-del-estado-br",
+     "sha256": "31e9cd6ec9dd02238dde9886ca7d716c6ee0acb1bb6850eb1cab079c60772e87"
+    },
+    {
+     "from": "2013-11-01",
+     "units": 91,
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4670/ley-n-5097-dispone-medidas-de-modernizaci-n-de-la-administraci-n-financiera-del-estado-y-establece-el-r-gimen-de-cuenta-nica-y-de-los-t-tulos-de-deuda-del-tesoro-p-blico-br",
+     "sha256": "b33c266683c96bd27158f6489a436ba45232999c689b6ac84878ee82700616ce"
+    }
+   ]
+  }
+ ]
+}
