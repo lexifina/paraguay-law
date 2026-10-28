@@ -354,6 +354,36 @@ class Replay:
         return out
 
 
+JOINS: list[str] = []
+
+
+def join_broken(paras: list[str], where: str) -> list[str]:
+    """BACN sometimes breaks a sentence over two paragraphs (a stray <br>). Rejoin when a paragraph ends without
+    punctuation and the next starts with a lower-case word that is not an enumerator ("a)", "b)")."""
+    out: list[str] = []
+    for p in paras:
+        if (out and not re.search(r'[.;:,"\')]$', out[-1]) and re.match(r'^[a-zñáéíóú]', p)
+                and not re.match(r'^[a-zñ]{1,2}\)', p)):
+            JOINS.append(f'{where}: "{out[-1][-30:]}" + "{p[:30]}"')
+            out[-1] = out[-1] + ' ' + p
+        else:
+            out.append(p)
+    return out
+
+
+def segments(L: list[str]) -> list[tuple[str, list[str]]]:
+    """An amending law split into its own articles: [(the article's first line, the lines that follow)]."""
+    out: list[tuple[str, list[str]]] = []
+    for ln in L:
+        if re.match(r'^Art[ií]culo\s*\d+\s*[°º.o]*\s*[.-]', ln) or re.match(r'^Artículo \d+\.', ln):
+            out.append((ln, []))
+        elif re.match(r'^(Aprobad|DADA|Dada)', ln):
+            out.append((ln, []))
+        elif out:
+            out[-1][1].append(ln)
+    return out
+
+
 def amending_blocks(L: list[str], art_re: re.Pattern) -> list[tuple[int, list[str]]]:
     """Quoted article blocks in an amending law: [(article number, paragraphs)], in order of appearance."""
     out = []
