@@ -23,6 +23,27 @@ AMEND_URLS = SRC['urls']
 LAWS: dict[str, dict] = {}
 DECISIONS: list[str] = []
 MISMATCHES: list[str] = []
+CODE_DECISIONS: list[str] = [
+    'Código Civil: BACN publishes the Code only as enacted (Ley 1183/1985, five pages, no "Modificado por" notes) '
+    'and no official consolidated text exists online. The first version is the enacted text, in force 1987-01-01 '
+    '(art. 2813 "Este Código comenzará a regir el 1° de enero de 1987"). Every later version is rebuilt by applying, '
+    'in order of entry into force, the text of each amending law as printed on its BACN page.',
+    'Código Civil: the amending laws were found with the BACN full-text search (queries "1183", "1.183", "1183/85", '
+    '"1183/1985", "codigo civil", "código civil") and its sitemap; the text of each hit was screened for articles '
+    'that modify, repeal or add to the Code. Laws that amend Ley 805/1996 or Ley 1/1992 themselves (Leyes 985/1996, '
+    '2835/2005, 3711/2009, 5329/2014, 5419/2015) change those laws, not the text of the Code, and are not applied.',
+    'Código Civil: the current text cannot be checked against an official consolidation, because none is published; '
+    'an amending law that the BACN search does not find would be missing here. This is the main limit of this act.',
+    'Código Civil: units are art-NNNN (four digits; the Code has 2815 articles), headed "# Art. N", with the text '
+    'after the BACN "Art.N.-" prefix as the first paragraph. Book/title/chapter/section/paragraph headings are kept '
+    'verbatim in codigo-civil/indice.md, each prefixed with the first article that follows it. The closing formula '
+    '("DADA EN LA SALA ...") is codigo-civil/sancion.md.',
+    'Código Civil: the BACN transcription has no arts. 733, 1170, 1571, 2414 and 2566 (the numbering jumps); the '
+    'scan BACN links has no text layer and no OCR is used, so these five articles are absent rather than typed in.',
+    'Código Civil: an amending law quotes the new article between quotation marks; the marks are removed (a closing '
+    'quote before a full stop keeps the full stop). Inciso-level changes (art. 39 inc. a repealed by Ley 2169/2003; art. 1898 inc. b '
+    'rewritten by Ley 2559/2005) replace or drop that one line.',
+]
 
 
 def raw(url: str) -> bytes:
@@ -329,6 +350,12 @@ class Replay:
             credits: dict[str, list[str]] = {}
             for kind, key, value, law_key in p['ops']:
                 if kind == 'set':
+                    if key not in new:
+                        sys.exit(f'{self.slug}: {law_key} rewrites {key}, which is not in force')
+                    new[key] = value
+                elif kind == 'add':
+                    if key in new:
+                        sys.exit(f'{self.slug}: {law_key} inserts {key}, which already exists')
                     new[key] = value
                 elif kind == 'del':
                     if key not in new:
@@ -781,17 +808,27 @@ def main():
             'BACN prints transitional art. 16 twice; the first copy is used and the duplicate is recorded as a '
             'mismatch. BACN also prints "CAPITULO VIII" twice in Part I (the first should read VII); kept verbatim.',
             'SILpy (silpy.congreso.gov.py) is not crawled: its robots.txt disallows every agent except Googlebot.',
+        ] + CODE_DECISIONS + [
+            'Line joins: BACN sometimes breaks one sentence over two paragraphs; parse.py rejoins a paragraph that '
+            'ends without punctuation when the next begins with a lower-case word that is not an enumerator. '
+            f'Joins made: {len(JOINS)} ({"; ".join(JOINS)}).',
         ],
         'ai_use': [
-            'Claude Opus 5.5 (claude-opus-5-5) in Claude Code wrote fetch.py, bacn.py and parse.py, chose the acts '
-            'and read dates from official scans (the Enmienda N° 1 signature block). No model wrote or changed '
+            'Claude Opus 5.5 (claude-opus-5-5) in Claude Code wrote fetch.py and parse.py, chose the acts, found the '
+            'amending laws through BACN\'s own search and read them to write the replay table in parse.py (which '
+            'article each law rewrites or repeals, and when), and read dates from official scans (the Enmienda N° 1 '
+            'signature block). No model wrote or changed '
             'legal text: every provision is extracted by code from BACN pages or the text layer of BACN\'s PDF.',
             'No model runs at data-build or git-build time.',
         ],
         'mismatches': MISMATCHES,
     }
     out = json.dumps(corpus, ensure_ascii=False, indent=1, sort_keys=False) + '\n'
-    (HERE / 'corpus.json').write_text(out, encoding='utf-8', newline='\n')
+    # --out PATH writes a test corpus elsewhere; the default write is atomic (autopush builds every change).
+    dest = Path(sys.argv[sys.argv.index('--out') + 1]) if '--out' in sys.argv else HERE / 'corpus.json'
+    tmp = dest.with_name(dest.name + '.tmp')
+    tmp.write_text(out, encoding='utf-8', newline='\n')
+    tmp.replace(dest)
     for a in acts:
         print(a['slug'], len(a['versions']), 'versions', len(a['versions'][-1]['units']), 'units')
     print(len(LAWS), 'laws;', len(MISMATCHES), 'mismatches recorded')
