@@ -269,6 +269,239 @@ def enmienda1_art120() -> list[str]:
     return paras
 
 
+# ---------------------------------------------------------------- codes: shared replay engine
+
+BACN = 'https://www.bacn.gov.py/leyes-paraguayas/'
+
+
+def page_meta(url: str) -> dict:
+    return bacn.meta(bacn.decode(raw(url)))
+
+
+def day_after(d: str) -> str:
+    import datetime as dt
+    return (dt.date.fromisoformat(d) + dt.timedelta(days=1)).isoformat()
+
+
+def strip_quote(paras: list[str]) -> list[str]:
+    """Drop the quotation marks of an amending formula ("Art. N.- …") from a block of paragraphs."""
+    out = list(paras)
+    if out and out[0].startswith('"'):
+        out[0] = out[0][1:]
+    if out:
+        last = out[-1]
+        for tail, repl in (('".', '.'), ('";', ''), ('"', '')):
+            if last.endswith(tail):
+                out[-1] = last[: -len(tail)] + repl
+                break
+    return [p.strip() for p in out]
+
+
+class Replay:
+    """Apply amending laws to an act's units, one version per in-force day, crediting every changed unit."""
+
+    def __init__(self, slug: str, base: dict, first: dict):
+        self.slug = slug
+        self.units = dict(base)
+        self.versions = [first]
+        self.pending: dict[str, dict] = {}     # from -> {'units':…, 'credits':…, 'source_url', 'sha256', 'notes'}
+
+    def _v(self, frm: str, url: str):
+        if frm not in self.pending:
+            self.pending[frm] = {'ops': [], 'source_url': url, 'sha_urls': [], 'notes': []}
+        return self.pending[frm]
+
+    def op(self, frm: str, law_key: str, url: str, kind: str, key: str, value=None, note=None):
+        v = self._v(frm, url)
+        v['ops'].append((kind, key, value, law_key))
+        if url not in v['sha_urls']:
+            v['sha_urls'].append(url)
+        if note:
+            v['notes'].append(note)
+
+    def build(self) -> list[dict]:
+        cur = dict(self.versions[0]['units'])
+        out = list(self.versions)
+        for frm in sorted(self.pending):
+            p = self.pending[frm]
+            new = dict(cur)
+            credits: dict[str, list[str]] = {}
+            for kind, key, value, law_key in p['ops']:
+                if kind == 'set':
+                    new[key] = value
+                elif kind == 'del':
+                    if key not in new:
+                        sys.exit(f'{self.slug}: {law_key} repeals {key}, which is not in force')
+                    del new[key]
+                elif kind == 'fn':
+                    new[key] = value(new[key])
+                credits.setdefault(key, [])
+                if law_key not in credits[key]:
+                    credits[key].append(law_key)
+            for k in list(credits):
+                if new.get(k) == cur.get(k):
+                    MISMATCHES.append(f'{self.slug}/{k}: {", ".join(credits[k])} restates the text in force; no change')
+                    del credits[k]
+            h = hashlib.sha256(b''.join(raw(u) for u in p['sha_urls'])).hexdigest()
+            v = {'from': frm, 'source_url': p['source_url'], 'sha256': h, 'units': new, 'credits': credits}
+            if len(p['sha_urls']) > 1:
+                v['note'] = ('sha256 is over the concatenated cached bytes of: ' + ', '.join(p['sha_urls'])
+                             + ('. ' + ' '.join(p['notes']) if p['notes'] else ''))
+            elif p['notes']:
+                v['note'] = ' '.join(p['notes'])
+            out.append(v)
+            cur = new
+        return out
+
+
+def amending_blocks(L: list[str], art_re: re.Pattern) -> list[tuple[int, list[str]]]:
+    """Quoted article blocks in an amending law: [(article number, paragraphs)], in order of appearance."""
+    out = []
+    cur = None
+    for ln in L:
+        m = art_re.match(ln)
+        if m:
+            cur = (int(m.group(1).replace('.', '')), [m.group(2)] if m.group(2) else [])
+            out.append(cur)
+            continue
+        if re.match(r'^Art[ií]culo \d+', ln) or re.match(r'^(Aprobad|DADA|Dada)', ln):
+            cur = None
+            continue
+        if cur is not None:
+            cur[1].append(ln)
+    return [(n, strip_quote(['"' + p[0]] + p[1:]) if p else []) for n, p in out]
+
+
+# ---------------------------------------------------------------- Código Civil (Ley 1183/1985)
+
+CC_PAGES = [BACN + '5293/ley-n-1183-codigo-civil',
+            BACN + '5299/ley-n-1183-codigo-civil-ii-parte-libro-segundo-br',
+            BACN + '522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br',
+            BACN + '524/ley-n-1183-codigo-civil-iv-parte-libro-cuarto-br',
+            BACN + '528/ley-n-1183-codigo-civil-v-parte-libro-quinto-br']
+CC_ART = re.compile(r'^Art\.\s*(\d{1,2}\.\d{3}|\d+)\s*[°º]?\s*\.?\s*-\s*(.*)$')
+CC_QART = re.compile(r'^"Art\.?\s*(\d{1,2}\.\d{3}|\d+)\s*[°º]?\s*\.?\s*-?\s*(.*)$')
+CC_LABEL = re.compile(r'^(LIBRO|TITULO|T[IÍ]TULO|CAPITULO|CAP[IÍ]TULO|SECCION|SECCI[OÓ]N|PARAGRAFO|PAR[AÁ]GRAFO)\b')
+
+
+def cc_key(n: int) -> str:
+    return f'art-{n:04d}'
+
+
+def cc_unit(n: int, paras: list[str]) -> dict:
+    return unit(f'Art. {n}', 'art', f'Art. {n}', paras)
+
+
+def cc_heading_line(ln: str) -> bool:
+    return not re.search(r'[a-zñáéíóúü]', ln)
+
+
+def civil_code_enacted() -> tuple[dict, list[str]]:
+    units: dict[str, dict] = {}
+    index: list[list] = []          # [first article key or None, text]
+    closing = None
+    for url in CC_PAGES:
+        L = page_lines(url)
+        assert L[0] == 'Descripción' and L[1] in ('LEY N° 1.183', 'LEY N° 1183') and L[2] == 'CODIGO CIVIL', L[:3]
+        assert L[3].startswith('EL CONGRESO DE LA NACION PARAGUAYA SANCIONA') and L[4] == 'LEY:', L[3:5]
+        cur = None
+        prev_heading = False
+        for ln in L[5:]:
+            if ln.startswith('DADA EN LA SALA DE SESIONES'):
+                closing = closing or ln
+                assert ln == closing
+                cur = None
+                continue
+            m = CC_ART.match(ln)
+            if m:
+                n = int(m.group(1).replace('.', ''))
+                k = cc_key(n)
+                assert k not in units, k
+                cur = [m.group(2)]
+                units[k] = cur
+                for e in index:
+                    if e[0] is None:
+                        e[0] = k
+                prev_heading = False
+                continue
+            if cc_heading_line(ln):
+                if CC_LABEL.match(ln) or not prev_heading:
+                    index.append([None, ln])
+                else:
+                    index[-1][1] += ' - ' + ln if CC_LABEL.match(index[-1][1]) and ' - ' not in index[-1][1] else ' / ' + ln
+                prev_heading = True
+                cur = None
+                continue
+            assert cur is not None, ln
+            cur.append(ln)
+            prev_heading = False
+    out = {k: cc_unit(int(k[4:]), v) for k, v in units.items()}
+    missing = [n for n in range(1, 2816) if cc_key(n) not in out]
+    idx = [f'{k}: {t}' for k, t in index]
+    out['sancion'] = unit('Sanción', 'closing', 'SANCION', [closing])
+    return out, idx, missing
+
+
+# ---------------------------------------------------------------- Código Penal (Ley 1160/1997)
+
+CP_URL = BACN + '3497/ley-n-1160-1997-c-digo-penal'
+CP_ART = re.compile(r'^Art[ií]culo\.?\s+(\d+)\s*[°º]?\s*(?:\.-|\.|-)\s*(.*)$')
+CP_QART = re.compile(r'^"Art[ií]culo\.?\s+(\d+)\s*[°º]?\s*(?:\.-|\.|-)\s*(.*)$')
+CP_LABEL = re.compile(r'^(LIBRO|PARTE|TITULO|T[IÍ]TULO|CAPITULO|CAP[IÍ]TULO|SECCION|SECCI[OÓ]N)\b')
+
+
+def cp_key(n: int, suffix: str = '') -> str:
+    return f'art-{n:03d}' + (f'-{suffix}' if suffix else '')
+
+
+def cp_unit(n: int, title: str, paras: list[str], suffix: str = '') -> dict:
+    num = f'{n}' + (f' {suffix}' if suffix else '')
+    head = f'Artículo {num}.- {title}'.rstrip() if title else f'Artículo {num}'
+    return unit(f'Art. {num}', 'art', head, paras)
+
+
+def penal_code_enacted() -> tuple[dict, list[str]]:
+    L = page_lines(CP_URL)
+    assert L[:3] == ['Descripción', 'LEY N° 1160', 'CODIGO PENAL'] and L[4] == 'LEY', L[:5]
+    units: dict[str, list] = {}
+    index: list[list] = []
+    cur = None
+    prev_heading = False
+    closing = None
+    nxt = 1
+    for ln in L[5:]:
+        if ln.startswith('Aprobada por la Honorable'):
+            closing = ln
+            cur = None
+            continue
+        m = CP_ART.match(ln)
+        if m and not m.group(2).startswith('"') and int(m.group(1)) == nxt:
+            n = nxt
+            nxt += 1
+            cur = [m.group(2)]
+            units[cp_key(n)] = cur
+            for e in index:
+                if e[0] is None:
+                    e[0] = cp_key(n)
+            prev_heading = False
+            continue
+        if not re.search(r'[a-zñáéíóúü]', ln):
+            if CP_LABEL.match(ln) or not prev_heading:
+                index.append([None, ln])
+            else:
+                index[-1][1] += (' - ' if CP_LABEL.match(index[-1][1]) and ' - ' not in index[-1][1] else ' ') + ln
+            prev_heading = True
+            cur = None
+            continue
+        assert cur is not None, ln
+        cur.append(ln)
+        prev_heading = False
+    assert nxt == 327 and closing, (nxt, closing)
+    out = {k: cp_unit(int(k[4:]), v[0], v[1:]) for k, v in units.items()}
+    out['sancion'] = unit('Sanción', 'closing', 'SANCION', [closing])
+    return out, [f'{k}: {t}' for k, t in index]
+
+
 # ---------------------------------------------------------------- corpus
 
 def sources() -> list[dict]:
