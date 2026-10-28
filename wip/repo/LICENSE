@@ -1,0 +1,16 @@
+The legal texts come from the Biblioteca y Archivo Central del Congreso Nacional of Paraguay:
+
+  Source: Biblioteca y Archivo Central del Congreso Nacional (BACN), Leyes Paraguayas,
+  https://www.bacn.gov.py/leyes-paraguayas, retrieved 28 October 2026.
+
+BACN states no licence for its pages. They are official legal texts of the Republic of Paraguay, which are public.
+
+Changes made by Lexifina: each page was converted to one Markdown file per article, one paragraph per line; spacing,
+quotes and dashes were normalised; BACN's "(Modificado por ...)" notes were removed from article headings and used
+only to credit the amending law; and the versions were arranged as git commits credited to the laws that made each
+change. The wording of the law was not changed. Where an earlier version was rebuilt from an amending act, the text
+comes from that act as BACN publishes it. BACN does not endorse this repository.
+
+Lexifina's own contributions (the arrangement of the history, the commit messages, the tables and the tools) are
+dedicated to the public domain under CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode

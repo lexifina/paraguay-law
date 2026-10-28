@@ -1,0 +1,16 @@
+{
+ "retrieved": "2026-10-28",
+ "sources": [
+  {"name": "Biblioteca y Archivo Central del Congreso Nacional (BACN), Leyes Paraguayas", "url": "https://www.bacn.gov.py/leyes-paraguayas",
+   "hosts": ["www.bacn.gov.py"], "retrieved": "2026-10-28",
+   "licence": "Official legal texts (public); BACN states no licence. robots.txt allows all agents.",
+   "notes": "One current text per law page, partly consolidated with '(Modificado por ...)' notes; signed originals as PDF scans under /archivos/<id>/. sitemap.xml lists every law page (7,126)."}
+ ],
+ "urls": [
+  "https://www.bacn.gov.py/sitemap.xml",
+  "https://www.bacn.gov.py/leyes-paraguayas/9580/constitucion-de-la-republica-del-paraguay",
+  "https://www.bacn.gov.py/leyes-paraguayas/9581/ley-n-11112-enmienda-constitucional-n-1",
+  "https://www.bacn.gov.py/archivos/9580/ENMIENDA_CONSTITUCIONAL_N_1.pdf",
+  "https://www.bacn.gov.py/archivos/9580/CONSTITUCION_ORIGINAL_FIRMADA.pdf"
+ ]
+}

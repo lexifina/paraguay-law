@@ -1,0 +1,10 @@
+{
+  "path": "py",
+  "code": "PY",
+  "name": "Paraguay",
+  "level": "country",
+  "repo": "https://github.com/lexifina/paraguay-law",
+  "build": "constitution: 1992 text + Enmienda N° 1 (2011)",
+  "register": "https://claude.ai/artifact/DdS9F6yqpPZtV2i7FGQhYZ",
+  "register_date": "2026-10-28"
+}
