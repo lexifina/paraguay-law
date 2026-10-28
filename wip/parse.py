@@ -90,6 +90,25 @@ CODE_DECISIONS: list[str] = [
     'redacción original". That return is a version credited to a separate entry ("Ley N° 6353/2019, fin de '
     'vigencia", key ley-6353-2019-fin; likewise for 6418) with restores set to the temporary law, and parse.py checks '
     'that the restored wording equals the 1999 text.',
+    'Código Procesal Civil (Ley 1337/1988): BACN publishes it only as enacted; all 839 articles are in its HTML. '
+    'Sanctioned 20 October 1988; promulgated 4 November 1988, a date read (by the model, see ai_use) from the last '
+    'page of the signed original scan BACN links, because BACN metadata gives the sanción date; Ley 600/1995 cites '
+    '"Ley Nº 1.337 del 4 de setiembre de 1988", which contradicts both. In force 1989-11-04 (art. 837 "al año de su '
+    'promulgación", taken as the anniversary, as for the Penal Code). Amending laws found with the BACN search '
+    '("1337/88", "1337/1988", "1.337", "procesal civil") and screened as for the other codes. Units are art-NNN '
+    'headed "# Art. N.- epigraph" (the first sentence after BACN "Art.N.-"); Ley 600/1995 rewrites art. 582 without '
+    'an epigraph, so it has none from 1995.',
+    'Código Procesal Civil: Ley 7663/2026 (arts. 158, 159, 444, 448 and a new art. 501 bis) takes effect only once '
+    'the Corte Suprema de Justicia issues its implementing Acordada (art. 7); no in-force day is known, so it is not '
+    'applied. Ley 6059/2018 art. 8 repeals art. 684; Ley 4992/2013 art. 4 repeals art. 37 inc. c.',
+    'Código de la Niñez y la Adolescencia (Ley 1680/2001): enacted text from BACN (all 259 articles; BACN prints '
+    '"Arículo 199"), in force 2001-11-30 (art. 258: six months after promulgation on 30 May 2001). Amending laws '
+    'found with the BACN search ("1680/01", "1680/2001", "1.680", "niñez y la adolescencia"): Leyes 2169/2003 (art. '
+    '2, no epigraph in its text), 3879/2009 (169), 6083/2018 (12 articles) and 6174/2018 (repeals 39-41). Ley '
+    '3929/2009 "amplía" Book IV Title II Chapter III with five articles of its own that are not numbered into the '
+    'Code, so it is not applied.',
+    'No article of the Código Procesal Civil or the Código de la Niñez exists only as a scan: both are complete in '
+    'the BACN HTML.',
     'HTML ordered lists (<ol>) on BACN pages carry their item numbers only when rendered; parse.py writes the numbers '
     'out ("1. ", "2. ", ...), as in Ley 7062/2023.',
 ]
@@ -462,7 +481,7 @@ def join_broken(paras: list[str], where: str) -> list[str]:
     out: list[str] = []
     for p in paras:
         if (out and not re.search(r'[.;:,"\')]$', out[-1])
-                and ((re.match(r'^[a-zñáéíóú]', p) and not re.match(r'^[a-zñ]{1,2}[).]\s', p))
+                and ((re.match(r'^[a-zñáéíóú]', p) and not re.match(r'^[a-zñ]{1,2}(\)(?!,)|\.\s)', p))
                      or (re.search(r'\b(incisos?|numerales|artículos)$', out[-1]) and re.match(r'^\d+° al \d+°', p)))):
             JOINS.append(f'{where}: "{out[-1][-30:]}" + "{p[:30]}"')
             out[-1] = out[-1] + ' ' + p
@@ -782,9 +801,18 @@ def cp_unit(n: int, title: str, paras: list[str], suffix: str = '') -> dict:
     return unit(f'Art. {num}', 'art', head, paras)
 
 
-def cp_blocks(lines_: list[str], where: str) -> list[tuple[int, str, str, list[str]]]:
+def cp_blocks(lines_: list[str], where: str, epigraph: str = 'line') -> list[tuple[int, str, str, list[str]]]:
     """Quoted 'Artículo N[a-d].- Title' blocks of an amending law: [(n, suffix, title, paragraphs)].
-    Book/title/chapter headings quoted between articles are dropped (the Penal Code is kept without them)."""
+    Book/title/chapter headings quoted between articles are dropped (the Penal Code is kept without them).
+    epigraph: 'line' (the rest of the article line is the title), 'upper' (its leading capital-letter sentences)
+    or 'none' (the amending law gives no title; the rest of the line is the first paragraph)."""
+    if epigraph != 'line':
+        res = []
+        for n, suf, title, paras in cp_blocks(lines_, where):
+            whole = [title, *paras]       # quotes are already stripped by the plain call
+            epi, first = split_upper(whole[0]) if epigraph == 'upper' else ('', whole[0])
+            res.append((n, suf, epi, [p for p in [first, *whole[1:]] if p]))
+        return res
     out = []
     cur = None
     for ln in lines_:
@@ -1286,6 +1314,147 @@ def cna_enacted() -> dict:
                         'Aprobado el Proyecto de Ley por la Honorable', 259, cna_unit, 'cna')
 
 
+def codigo_ninez() -> dict:
+    base = cna_enacted()
+    m = page_meta(CNA_URL)
+    assert m['promulgated'] == '2001-05-30', m
+    t258 = base['art-258']['text']
+    assert 'El presente Código entrará en vigencia a partir de los seis meses de su promulgación.' in t258
+    law('ley-1680-2001', label='Ley N° 1680/2001 (Código de la Niñez y la Adolescencia)', kind='law',
+        enacted=m['promulgated'], published=m['published'], url=CNA_URL,
+        title='Código de la Niñez y la Adolescencia, promulgado el 30 de mayo de 2001; entra en vigencia a los seis '
+              'meses de su promulgación (art. 258)')
+    first = {'from': '2001-11-30', 'source_url': CNA_URL, 'sha256': sha(CNA_URL), 'units': base, 'credits': {},
+             'note': 'The Code as enacted, from the BACN page of Ley 1680/2001 (BACN prints "Arículo 199").'}
+    rp = Replay('codigo-ninez-adolescencia', base, first)
+    one = lambda frm: (lambda n: frm)   # noqa: E731
+
+    url, L, frm = bacn_law('ley-2169-2003', '4845', 'Ley N° 2169/2003')    # already a Civil Code amender
+    b = cp_blocks(segment_lines(L, r'^Artículo 4°'), 'ley-2169-2003 (cna)', 'none')
+    assert [x[0] for x in b] == [2], b
+    cp_apply(rp, one(frm), 'ley-2169-2003', url, b, [2])
+
+    url, L, frm = bacn_law('ley-3879-2009', '1509', 'Ley N° 3879/2009')
+    b = cp_blocks(segment_lines(L, r'^Artículo 1°'), 'ley-3879-2009', 'upper')
+    assert [x[0] for x in b] == [169], b
+    cp_apply(rp, one(frm), 'ley-3879-2009', url, b, [169])
+
+    url, L, frm = bacn_law('ley-6083-2018', '8441', 'Ley N° 6083/2018')
+    listed = [29, 41, 92, 93, 94, 95, 96, 158, 159, 165, 167, 175]
+    b = cp_blocks(segment_lines(L, r'^Artículo 1\.'), 'ley-6083-2018')
+    assert [x[0] for x in b] == listed and not any(x[1] for x in b), b
+    cp_apply(rp, one(frm), 'ley-6083-2018', url, b, listed)
+
+    url, L, frm = bacn_law('ley-6174-2018', '8805', 'Ley N° 6174/2018')
+    a12 = next(s for s in segments(L) if s[0].startswith('Artículo 12.'))[0]
+    assert 'Quedan derogados los artículos 39, 40 y 41 de la Ley N° 1.680/2001' in a12
+    for n in (39, 40, 41):
+        rp.op(frm, 'ley-6174-2018', url, 'del', cp_key(n))
+
+    versions = rp.build()
+    return {'slug': 'codigo-ninez-adolescencia', 'short': 'CNA',
+            'title': 'Código de la Niñez y la Adolescencia (Ley N° 1680/2001)', 'url': CNA_URL,
+            'first_law': 'ley-1680-2001', 'earlier_laws': [], 'versions': versions}
+
+
+# ---------------------------------------------------------------- Código Procesal Civil (Ley 1337/1988)
+
+CPC_URL = BACN + '3038/ley-n-1337-codigo-procesal-civil-br'
+CPC_SCAN = 'https://www.bacn.gov.py/archivos/3038/20150225135017.pdf'
+CPC_ART = re.compile(r'^Art\.\s*(\d{1,2}\.\d{3}|\d+)\s*[°º]?\s*(?:\.-|\.|-)\s*(.*)$')
+CPC_QART = re.compile(r'^"Art\.?\s*(\d{1,2}\.\d{3}|\d+)\s*[°º]?\s*(?:\.-|\.|-)\s*(.*)$')
+
+
+def cpc_split(rest: str) -> tuple[str, str]:
+    """'Aplicación de este Código. Las disposiciones …' -> epigraph, text (the epigraph is the first sentence)."""
+    m = re.match(r'^(.+?)\s*\.-?\s*(?=[A-ZÁÉÍÓÚÑ¿"(]|$)', rest)
+    if not m or not rest[m.end():].strip():
+        return '', rest.strip()
+    return m.group(1).strip(), rest[m.end():].strip()
+
+
+def cpc_unit(n: int, rest: str, paras: list[str]) -> dict:
+    epi, first = cpc_split(rest)
+    return unit(f'Art. {n}', 'art', f'Art. {n}.- {epi}' if epi else f'Art. {n}', [p for p in [first, *paras] if p])
+
+
+def cpc_blocks(L: list[str], intro_pat: str, where: str, epigraph: bool = True) -> list[tuple[int, dict]]:
+    out = []
+    for ln in segment_lines(L, intro_pat):
+        m = CPC_QART.match(ln)
+        if m:
+            out.append([int(m.group(1).replace('.', '')), m.group(2), []])
+        elif not LOWER.search(ln):
+            DROPPED_HEADINGS.append(f'{where}: {ln.strip(chr(34))}')
+        else:
+            assert out, (where, ln)
+            out[-1][2].append(ln)
+    res = []
+    for n, rest, more in out:
+        paras = strip_quote(['"' + rest] + more)
+        if epigraph:
+            res.append((n, cpc_unit(n, paras[0], join_broken(paras[1:], f'{where} art. {n}'))))
+        else:
+            res.append((n, unit(f'Art. {n}', 'art', f'Art. {n}', join_broken(paras, f'{where} art. {n}'))))
+    return res
+
+
+def codigo_procesal_civil() -> dict:
+    base = enacted_code(CPC_URL, CPC_ART, ('Descripción', 'LEY N° 1.337', 'CODIGO PROCESAL CIVIL',
+                                           'EL CONGRESO DE LA NACION PARAGUAYA SANCIONA CON FUERZA DE', 'LEY'),
+                        'Dada en la Sala de sesiones del Congreso Nacional', 839, cpc_unit, 'cpc')
+    assert base['art-837']['text'].split('\n')[1].startswith('Las disposiciones de este Código entrará en vigencia al '
+                                                              'año de su promulgación'), base['art-837']['text']
+    law('ley-1337-1988', label='Ley N° 1337/1988 (Código Procesal Civil)', kind='law', enacted='1988-11-04',
+        published=None, url=CPC_URL,
+        title='Código Procesal Civil, sancionado el 20 de octubre de 1988 y promulgado el 4 de noviembre de 1988; '
+              'entra en vigencia al año de su promulgación (art. 837)')
+    first = {'from': '1989-11-04', 'source_url': CPC_URL, 'sha256': sha(CPC_URL), 'units': base, 'credits': {},
+             'note': 'The Code as enacted, from the BACN page of Ley 1337/1988. The promulgation date (4 November 1988) '
+                     'is read from the signed original scan BACN links (' + CPC_SCAN + ', last page).'}
+    rp = Replay('codigo-procesal-civil', base, first)
+
+    url, L, frm = bacn_law('ley-600-1995', '11593', 'Ley N° 600/1995')
+    a1 = segments(L)[0]
+    assert a1[0].startswith('Artículo 1º.- Derógase el Artículo 580, Título II "DEL JUICIO DE AMPARO" de la Ley Nº 1.337')
+    rp.op(frm, 'ley-600-1995', url, 'del', 'art-580')
+    (n, u), = cpc_blocks(L, r'^Artículo 1º', 'ley-600-1995', epigraph=False)
+    assert n == 582
+    rp.op(frm, 'ley-600-1995', url, 'set', 'art-582', u)
+
+    for key, pid, label, arts, pat in (('ley-1493-2000', '1568', 'Ley N° 1493/2000', [530, 716, 717], r'^Artículo 1º'),
+                                       ('ley-4419-2011', '3769', 'Ley N° 4419/2011', [409], r'^Artículo 1°'),
+                                       ('ley-4867-2013', '3177', 'Ley N° 4867/2013', [173], r'^Artículo 1°'),
+                                       ('ley-5330-2014', '3037', 'Ley N° 5330/2014', [701], r'^Artículo 1\.'),
+                                       ('ley-6979-2022', '10672', 'Ley N° 6979/2022', [621], r'^Artículo 1º')):
+        url, L, frm = bacn_law(key, pid, label)
+        b = cpc_blocks(L, pat, key)
+        assert [n for n, _ in b] == arts, (key, [n for n, _ in b])
+        for n, u in b:
+            rp.op(frm, key, url, 'set', f'art-{n:03d}', u)
+
+    url, L, frm = bacn_law('ley-4992-2013', '4767', 'Ley N° 4992/2013')
+    a4 = next(s for s in segments(L) if s[0].startswith('Artículo 4°'))[0]
+    assert a4.startswith('Artículo 4°.- Derógase el inciso c) del Artículo 37 de la Ley N° 1337/88')
+
+    def drop_37c(u):
+        t = u['text'].split('\n')
+        hit = [i for i, x in enumerate(t) if x.startswith('c) ')]
+        assert len(hit) == 1, t
+        del t[hit[0]]
+        return {**u, 'text': '\n'.join(t)}
+    rp.op(frm, 'ley-4992-2013', url, 'fn', 'art-037', drop_37c)
+
+    url, L, frm = bacn_law('ley-6059-2018', '8503', 'Ley N° 6059/2018')
+    a8 = next(s for s in segments(L) if s[0].startswith('Artículo 8.'))[0]
+    assert 'el Artículo 684 del Título XIII del Libro IV, de la Ley N° 1337/88 "CÓDIGO PROCESAL CIVIL"' in a8
+    rp.op(frm, 'ley-6059-2018', url, 'del', 'art-684')
+
+    versions = rp.build()
+    return {'slug': 'codigo-procesal-civil', 'short': 'CPC', 'title': 'Código Procesal Civil (Ley N° 1337/1988)',
+            'url': CPC_URL, 'first_law': 'ley-1337-1988', 'earlier_laws': [], 'versions': versions}
+
+
 # ---------------------------------------------------------------- corpus
 
 def sources() -> list[dict]:
@@ -1307,7 +1476,7 @@ def sources() -> list[dict]:
 
 
 def main():
-    acts = [constitution(), civil_code(), penal_code(), codigo_procesal_penal()]
+    acts = [constitution(), civil_code(), penal_code(), codigo_procesal_penal(), codigo_procesal_civil(), codigo_ninez()]
     corpus = {
         'country': {
             'code': 'PY', 'name': 'Paraguay', 'slug': 'paraguay', 'lang': 'es', 'tz': 'America/Asuncion',
@@ -1353,7 +1522,8 @@ def main():
             'Claude Opus 5.5 (claude-opus-5-5) in Claude Code wrote fetch.py and parse.py, chose the acts, found the '
             'amending laws through BACN\'s own search and read them to write the replay table in parse.py (which '
             'article each law rewrites or repeals, and when), and read dates from official scans (the Enmienda N° 1 '
-            'signature block). No model wrote or changed '
+            'signature block; the promulgation date "Asunción 4 de Noviembre de 1988" on the last page of the Código '
+            'Procesal Civil scan, viewed as an image). No model wrote or changed '
             'legal text: every provision is extracted by code from BACN pages or the text layer of BACN\'s PDF.',
             'No model runs at data-build or git-build time.',
         ],
