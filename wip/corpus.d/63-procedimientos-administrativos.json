@@ -1,0 +1,509 @@
+{
+ "laws": {
+  "ley-6715-2021": {
+   "label": "Ley N° 6715/2021",
+   "title": "De Procedimientos Administrativos",
+   "kind": "law",
+   "enacted": "2021-09-29",
+   "published": "2021-09-29",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/10974/ley-n-6715-procedimientos-administrativos",
+   "temporary_until": null,
+   "restores": null
+  }
+ },
+ "acts": [
+  {
+   "slug": "ley-procedimientos-administrativos",
+   "short": "LPA",
+   "title": "Ley N° 6715/2021 de Procedimientos Administrativos",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/10974/ley-n-6715-procedimientos-administrativos",
+   "first_law": "ley-6715-2021",
+   "earlier_laws": [],
+   "versions": [
+    {
+     "from": "2022-09-29",
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/10974/ley-n-6715-procedimientos-administrativos",
+     "sha256": "11e3d323ce8887efff7ab58615719caf98fdaa35b2ea829594daf26f7241bea4",
+     "units": {
+      "art-001": {
+       "label": "Art. 1",
+       "kind": "art",
+       "text": "# Artículo 1. Objeto y Finalidad\nLa presente Ley tiene por objeto:\na. Establecer el régimen jurídico de los actos administrativos.\nb. Regular el procedimiento administrativo, incluyendo el régimen de los recursos administrativos y el procedimiento sancionador.\nc. Posibilitar la sustanciación de trámites y actuaciones administrativas por medios electrónicos.\nLas normas de la presente Ley tienen por finalidad proteger y garantizar los derechos, fundamentales o no, de las personas, la sujeción de las autoridades a la Constitución Nacional, a los preceptos del ordenamiento jurídico y al derecho, para el eficaz cumplimiento de los fines públicos, el funcionamiento eficiente y democrático de la administración, y la observancia de los deberes del Estado y de los particulares.\n"
+      },
+      "art-002": {
+       "label": "Art. 2",
+       "kind": "art",
+       "text": "# Artículo 2. Ámbito de aplicación\nEsta Ley se aplicará a los procedimientos y actos administrativos de todos los Organismos y Entidades del Estado cuando realicen función administrativa.\nLas disposiciones de la presente Ley serán aplicables también a las personas físicas o jurídicas bajo el régimen privado que prestan servicios públicos o ejercen función administrativa, por virtud de concesión, licencia o autorización estatal.\n"
+      },
+      "art-003": {
+       "label": "Art. 3",
+       "kind": "art",
+       "text": "# Artículo 3. Concepto de acto administrativo\nSe entiende por acto administrativo, a los fines de la presente Ley, toda declaración unilateral efectuada por un órgano de la Administración Pública en ejercicio de funciones administrativas que produce efectos jurídicos de alcance general o particular.\n"
+      },
+      "art-004": {
+       "label": "Art. 4",
+       "kind": "art",
+       "text": "# Artículo 4. Reglamentos y actos administrativos individuales\nA los efectos de la presente Ley, el acto administrativo se clasifica en:\na. Acto administrativo reglamentario o reglamento: que es el acto administrativo que produce efectos jurídicos de alcance general.\nb. Acto administrativo individual: que es el acto administrativo que produce efectos jurídicos de alcance particular.\n"
+      },
+      "art-005": {
+       "label": "Art. 5",
+       "kind": "art",
+       "text": "# Artículo 5. Clases de reglamentos\nLos reglamentos se clasifican en:\na. Reglamento Interno, que va dirigido y obliga a los agentes de la Administración.\nb. Reglamento externo, que contiene disposiciones obligatorias para la generalidad de los habitantes, sea en materias determinadas, sea dentro de circunscripciones territoriales delimitadas.\nc. Reglamento de ejecución, dictado para el mejor cumplimiento de la Ley. Detalla, precisa y aclara el contenido y alcance de la Ley para viabilizar o facilitar su aplicación. No puede crear obligaciones o prohibiciones nuevas sino proveer las disposiciones necesarias para el mejor cumplimiento de la Ley.\n"
+      },
+      "art-006": {
+       "label": "Art. 6",
+       "kind": "art",
+       "text": "# Artículo 6. Competencia para dictar las diversas clases de reglamentos\na. Tiene competencia para dictar reglamentos internos el Presidente de la República para los agentes de los órganos de la administración del Poder Ejecutivo, incluso para los entes descentralizados en materias que no estén especialmente regladas en sus respectivas leyes orgánicas. Tienen también competencia para dictar esta clase de reglamento, las autoridades que por Ley o reglamento de organización administrativa o por facultad implícita en el orden jerárquico, pueden reglar la actuación de sus subordinados.\nb. Los reglamentos de ejecución los dicta el Presidente de la República en virtud de la disposición del Artículo 238 numeral 3) de la Constitución Nacional.\n"
+      },
+      "art-007": {
+       "label": "Art. 7",
+       "kind": "art",
+       "text": "# Artículo 7. Legalidad\nEl acto debe estar positivamente autorizado por el ordenamiento jurídico.\n"
+      },
+      "art-008": {
+       "label": "Art. 8",
+       "kind": "art",
+       "text": "# Artículo 8. Competencia\nEl acto administrativo debe ser dictado por el órgano facultado por el ordenamiento jurídico, a través de la autoridad competente.\n"
+      },
+      "art-009": {
+       "label": "Art. 9",
+       "kind": "art",
+       "text": "# Artículo 9. Finalidad\nEl acto administrativo debe dictarse con la finalidad que resulte de las normas que lo autorizan, sin poder perseguir otros fines, públicos o privados, distintos de los que justifican el acto. Las medidas que el acto establezca deben ser proporcionalmente adecuadas a aquella finalidad.\n"
+      },
+      "art-010": {
+       "label": "Art. 10",
+       "kind": "art",
+       "text": "# Artículo 10. Causa\nEl acto administrativo debe ser consecuencia fundada de los antecedentes de hecho y de derecho que le dan sustento, a partir del cumplimiento del presupuesto de hecho contenido en una norma, lo que debe ser explicado en su correlación con el caso concreto aplicado y fundado en los antecedentes del caso.\n"
+      },
+      "art-011": {
+       "label": "Art. 11",
+       "kind": "art",
+       "text": "# Artículo 11. Procedimiento\nHabiendo procedimiento prescrito en la ley o reglamento, el acto debe ceñirse a él. En su defecto, la autoridad administrativa puede adoptar el procedimiento que estime más adecuado para satisfacer los intereses públicos en el marco del respeto a los derechos constitucionales de las personas.\n"
+      },
+      "art-012": {
+       "label": "Art. 12",
+       "kind": "art",
+       "text": "# Artículo 12. Forma de los actos administrativos\na) El acto debe observar la forma prescrita en el ordenamiento jurídico. Se expresará por escrito, a menos que su naturaleza exija o permita otra forma distinta de expresión y constancia más adecuada.\nb) El acto escrito indicará la fecha y lugar en que es emitido, denominación del órgano del cual emana, nombre y firma de la autoridad interviniente. Si el acto o medida se ha generado por medios automatizados o electrónicos, deberá el sistema indicar tal circunstancia, expresando el órgano al cual se imputa el acto o medida.\nc) Cuando el acto administrativo es producido por medio de sistemas automatizados o electrónicos, debe garantizarse al administrado conocer el nombre y cargo de la autoridad que lo expide, además de adecuarse a los requisitos específicos que la reglamentación específica determine para ellos.\nd) Cuando deban emitirse varios actos administrativos de la misma naturaleza, podrá ser empleada firma mecánica o electrónica o integrarse en un solo documento bajo una misma motivación, siempre que se individualice a los administrados sobre los que recaen los efectos del acto. Para todos los efectos subsiguientes, los actos administrativos serán considerados como actos diferentes.\ne) El acto administrativo deberá ser motivado, como requisito de validez. La motivación contendrá la explicación de las razones de hecho y de derecho que fundamentan el acto, con un sucinto resumen de los antecedentes relevantes del expediente, la finalidad pública que justifica su emisión, la norma concreta que habilita la competencia en ejercicio y, en su caso, la que establece las obligaciones o deberes que se impongan al administrado.\nLa motivación no puede consistir en la remisión genérica a propuestas, dictámenes o resoluciones previas. A mayor grado de discrecionalidad en el dictado del acto, mayor exigencia de motivarlo suficientemente.\nf) En los casos de urgencia o cuya naturaleza lo exija, cuando los órganos administrativos ejerzan su competencia de forma verbal, la constancia escrita del acto, cuando sea necesaria, se efectuará y firmará por el funcionario autorizado al efecto.\n"
+      },
+      "art-013": {
+       "label": "Art. 13",
+       "kind": "art",
+       "text": "# Artículo 13. Presunción de legitimidad y ejecutividad\nEl acto administrativo goza de presunción de legitimidad; su ejecutividad faculta a la Administración a ponerlo en práctica por sus propios medios, a menos que la Ley o la naturaleza del acto exigieren intervención judicial.\n"
+      },
+      "art-014": {
+       "label": "Art. 14",
+       "kind": "art",
+       "text": "# Artículo 14. Validez\nEl acto administrativo individual adquiere validez y produce efectos desde el día siguiente al de su notificación al interesado o desde el día que dicho acto determine.\nEl acto administrativo reglamentario adquiere validez y produce efectos desde el día siguiente al de su publicación o desde el día que dicho acto determine.\n"
+      },
+      "art-015": {
+       "label": "Art. 15",
+       "kind": "art",
+       "text": "# Artículo 15. Ejecutoriedad\nLos actos administrativos causan inmediata ejecutoriedad, salvo en aquellos casos en que una disposición establezca lo contrario o necesiten aprobación o autorización.\n"
+      },
+      "art-016": {
+       "label": "Art. 16",
+       "kind": "art",
+       "text": "# Artículo 16. Fuerza Ejecutiva\nEl instrumento en que conste el acto administrativo, otorgado en debida forma por el órgano competente, es instrumento público y tiene fuerza ejecutiva.\n"
+      },
+      "art-017": {
+       "label": "Art. 17",
+       "kind": "art",
+       "text": "# Artículo 17. Prescripción Liberatoria\nLas acciones provenientes de los actos administrativos creadores de obligaciones a cargo de los administrados, prescribirán en el término de dos años, salvo que en leyes especiales se establezcan plazos diferentes.\n"
+      },
+      "art-018": {
+       "label": "Art. 18",
+       "kind": "art",
+       "text": "# Artículo 18. Caducidad\nLos derechos y obligaciones regidos por el Derecho Administrativo pueden extinguirse también por caducidad, cuando el acto administrativo que los concede o establece, así lo prescribe, o cuando la extinción se produce ipso jure por disposición de la Ley.\nEl tiempo de caducidad no se suspende ni interrumpe.\n"
+      },
+      "art-019": {
+       "label": "Art. 19",
+       "kind": "art",
+       "text": "# Artículo 19. Nulidad\nEl acto administrativo será nulo según sea la gravedad del vicio de irregularidad. La calificación del vicio se determina por la gravedad e importancia que reviste la antijuridicidad en el caso concreto y la afectación de los derechos de las personas.\nEn caso de duda acerca de la importancia y calificación del vicio que afecta al acto administrativo, debe estarse a la consecuencia más favorable al mismo.\nLa nulidad parcial de un acto administrativo no afecta a aquellas partes del mismo acto que resulten independientes. La nulidad de un acto administrativo no implicará la nulidad de aquellos actos sucesivos independientes al acto declarado nulo.\n"
+      },
+      "art-020": {
+       "label": "Art. 20",
+       "kind": "art",
+       "text": "# Artículo 20. Causales de Nulidad\nEs nulo el acto administrativo en los siguientes casos:\na. Sanción expresa de nulidad para el caso, estatuida en la Ley.\nb. Acto administrativo dictado contra expresa prohibición de la Ley.\nc. Inexistencia del presupuesto de hecho, falta de causa o falsa causa.\nd. Actos que vulneren materias reservadas a la Ley.\ne. Incompetencia manifiesta por razón de la materia o del territorio.\nf. Inobservancia total y absoluta del procedimiento exigido en la Ley, especialmente las relativas a la defensa del particular afectado.\ng. Inobservancia total y absoluta de las normas que contienen las reglas esenciales para la formación de la voluntad de los órganos colegiados.\nh. Error manifiesto de hecho o de derecho, dolo o violencia, en cuanto hubiese determinado el pronunciamiento o desviado el acto de su correcta finalidad.\ni. Cuando el acto constituya un hecho punible o fuera consecuencia de éste.\n"
+      },
+      "art-021": {
+       "label": "Art. 21",
+       "kind": "art",
+       "text": "# Artículo 21. Revisión de oficio de los actos nulos\nLos actos que incurren en las causales de nulidad establecidas en el Artículo 20 carecen de estabilidad y no pueden válidamente generar derechos subjetivos frente al orden público y a la necesidad de vigencia de la legalidad. Podrán ser revocados o sustituidos por razones de ilegitimidad aun en sede administrativa.\n"
+      },
+      "art-022": {
+       "label": "Art. 22",
+       "kind": "art",
+       "text": "# Artículo 22. Revisión de oficio de actos anulables que no generen derechos subjetivos o no afecten intereses legítimos\nLos actos anulables que no generen derechos subjetivos o no afecten intereses legítimos podrán ser revocados y subsanados de oficio en sede administrativa en cualquier momento, en todo o en parte, por la misma autoridad que los dictó, o por el respectivo superior jerárquico.\n"
+      },
+      "art-023": {
+       "label": "Art. 23",
+       "kind": "art",
+       "text": "# Artículo 23. Declaración judicial de nulidad\nSi el acto viciado de irregularidad estuviere firme y consentido y hubiere generado derechos subjetivos a favor de particulares que se estén cumpliendo, sólo se podrá impedir su subsistencia y la de los efectos aún pendientes mediante declaración judicial de nulidad demandada por la Administración que emitió el acto.\nSerá competente para declarar la nulidad de los actos que demande la Administración el Tribunal de Cuentas de la República.\nLa declaración judicial de nulidad tendrá efecto declarativo y retroactivo a la fecha del acto, salvo derechos adquiridos de buena fe por terceros, en cuyo caso operará a futuro. Si el acto viciado se hubiera consumado, o bien sea imposible retrotraer sus efectos, dará lugar a la indemnización para el afectado.\n"
+      },
+      "art-024": {
+       "label": "Art. 24",
+       "kind": "art",
+       "text": "# Artículo 24. Subsanación del acto anulable\nEl acto administrativo afectado por alguna causal de anulabilidad puede ser subsanado mediante:\na. Ratificación por el órgano superior, cuando el acto hubiere sido emitido con incompetencia en razón de grado y siempre que la avocación, delegación o sustitución fueren procedentes.\nb. Aclaratoria o confirmación por el órgano que dictó el acto, subsanando el vicio que lo afecte.\nc. Los efectos de la subsanación se retrotraerán a la fecha de emisión del acto objeto de ratificación, aclaratoria o confirmación.\n"
+      },
+      "art-025": {
+       "label": "Art. 25",
+       "kind": "art",
+       "text": "# Artículo 25. Errores materiales\nLa autoridad puede corregir en cualquier momento los errores de escritura, de operaciones aritméticas y demás errores notorios del acto administrativo, de oficio o a petición de parte.\n"
+      },
+      "art-026": {
+       "label": "Art. 26",
+       "kind": "art",
+       "text": "# Artículo 26. Revocación de actos administrativos discrecionales\nEs revocable el acto administrativo cuando fuere discrecional y de ejecución sucesiva o continuada en los siguientes casos:\na. Por cambio de las circunstancias de hecho.\nb. Por cambio de nueva tecnología aplicable en la materia.\nc. Por cambio de la Ley bajo la cual se produjo el acto.\nd. Por cambio del criterio de la autoridad respecto del mejor modo de satisfacer las necesidades públicas.\nEn todos estos casos la revocación sólo tiene efecto para el futuro.\n"
+      },
+      "art-027": {
+       "label": "Art. 27",
+       "kind": "art",
+       "text": "# Artículo 27. Actos irrevocables\nEs irrevocable el acto administrativo reglado que genere derechos subjetivos o afecte intereses legítimos, tanto si es de ejecución única como de ejecución sucesiva o continuada.\nEs irrevocable el acto administrativo discrecional de ejecución única que genere derechos subjetivos o afecte intereses legítimos.\n"
+      },
+      "art-028": {
+       "label": "Art. 28",
+       "kind": "art",
+       "text": "# Artículo 28. Revocación con indemnización\nAun cuando el acto administrativo sea irrevocable según las reglas precedentes, la autoridad puede disponerlo para impedir o eliminar graves perjuicios al bien público, indemnizando en todo caso al particular el daño por la revocación.\n"
+      },
+      "art-029": {
+       "label": "Art. 29",
+       "kind": "art",
+       "text": "# Artículo 29. Racionalidad de la revocación\nSi la facultad para la revocación del acto es discrecional, la autoridad debe ejercerla razonablemente, atendiendo tanto a la causa como a la finalidad.\n"
+      },
+      "art-030": {
+       "label": "Art. 30",
+       "kind": "art",
+       "text": "# Artículo 30. Revocación a favor del particular\nPueden ser revocados los actos considerados irrevocables cuando la revocación es a favor del particular afectado, siempre que no concurran condiciones que lo impidan como las siguientes:\na. Que no se trate de facultades regladas de las que no puede apartarse la autoridad administrativa.\nb. Que lo que se concede con la revocación a uno, no se le niegue a otro.\nc. Que la revocación no afecte derechos de terceros.\n"
+      },
+      "art-031": {
+       "label": "Art. 31",
+       "kind": "art",
+       "text": "# Artículo 31. Reglas no aplicables\nLas precedentes reglas no tienen aplicación en el proceso de formación del acto administrativo que puede ser revocado, modificado o confirmado en las diversas instancias.\n"
+      },
+      "art-032": {
+       "label": "Art. 32",
+       "kind": "art",
+       "text": "# Artículo 32. Aplicación de principios jurídicos\nLa Administración servirá con objetividad al interés general y garantizará en sus procedimientos administrativos el derecho fundamental a una buena administración pública, que importa, tanto para administradores como administrados, la exigencia que los asuntos de naturaleza pública sean tratados con equidad, justicia, objetividad, imparcialidad, garantizando los principios del debido procedimiento, derecho a la defensa, legalidad, razonabilidad y resolverse en plazo razonable, conforme las circunstancias de cada caso, apreciadas razonablemente con el fin último del servicio a la dignidad de la persona humana como contenido indudable del bien común.\nEn la tramitación de todo asunto administrativo, administradores y administrados deberán actuar con lealtad, colaboración, buena fe, veracidad, responsabilidad, decoro y respeto mutuo, y se garantizará la protección en sede administrativa y judicial de los derechos humanos reconocidos en las diversas fuentes jurídicas con rango constitucional.\nToda actuación administrativa se sustenta fundamentalmente en los principios expuestos en el presente artículo, sin perjuicio de la vigencia de otros principios generales del Derecho Administrativo.\nLos principios señalados servirán también de criterio interpretativo para resolver las cuestiones que puedan suscitarse en la aplicación de las reglas de procedimiento, como parámetros para la generación de otras disposiciones administrativas de carácter general, y para suplir los vacíos en el ordenamiento administrativo. La relación de principios enunciados no tiene carácter taxativo ni limitativo. Estos son:\na) Principio de la Legalidad. Los actos y procedimientos administrativos se ajustarán al ordenamiento jurídico.\nb) Respeto a los Derechos Fundamentales de las personas. La substanciación de cualquier procedimiento administrativo deberá respetar los derechos fundamentales de las personas previstos en la Constitución Nacional y en las leyes. En todo procedimiento administrativo del cual pudiera derivarse una sanción o la revocación o cancelación de un acto administrativo que haya otorgado un derecho subjetivo a los administrados se garantizará el derecho a la defensa.\nc) Principio de Escrituración. El procedimiento administrativo y los actos administrativos a los cuales da origen se expresarán por escrito en formatos impresos o electrónicos, a menos que su naturaleza exija o permita otra forma más adecuada de expresión y constancia.\nd) Principio de Gratuidad. Todo el procedimiento administrativo y las actuaciones derivadas del mismo serán gratuitos para los interesados. Los particulares sólo estarán obligados a realizar prestaciones personales o patrimoniales en favor de la Administración, cuando la ley expresamente lo establezca. El particular no será condenado en costas cuando ejercita el derecho a peticionar a las autoridades en la instancia administrativa.\ne) Principio de Celeridad y Economía Procesal. Los procedimientos administrativos se desarrollarán con economía, simplicidad y celeridad, evitando la realización de trámites y diligencias innecesarias o que constituyan mero formalismo, a fin de alcanzar una decisión en tiempo razonable, sin que ello vulnere el ordenamiento jurídico.\nf) Principio de Simplicidad. Los trámites establecidos por la autoridad administrativa deberán ser sencillos, debiendo eliminarse toda complejidad innecesaria. Los requisitos exigidos deberán ser racionales y proporcionales a los fines que se persigue cumplir.\ng) Principio de Oficiosidad. Sin perjuicio del impulso que realicen las partes, el procedimiento administrativo será impulsado de oficio por el funcionario responsable. El funcionario responsable de cada proceso podrá disponer de oficio el practicamiento de actuaciones, diligenciamientos de prueba, como cualquier otro acto de impulso procesal que no haya sido ofrecido ni requerido por las partes.\nh) Principio de Objetividad. Las autoridades administrativas deberán actuar sin ninguna clase de discriminación hacia los administrados, tanto en la substanciación del procedimiento como en las decisiones que adopte, otorgándoles tratamiento y tutela igualitarios frente al procedimiento, resolviendo conforme al ordenamiento jurídico y con atención al interés general.\nLos actos administrativos de carácter individual no podrán vulnerar lo establecido en una disposición de carácter general, salvo discriminaciones positivas y excepciones de carácter constitucional.\ni) Principio del Informalismo. Las normas de procedimiento deben ser interpretadas en forma favorable a la admisión y decisión final de las pretensiones de los administrados, de modo que sus derechos e intereses no sean afectados por la exigencia de aspectos formales que puedan ser subsanados dentro del procedimiento, siempre que el informalismo no afecte derechos de terceros o el interés público.\nj) Principio de Transparencia y de publicidad. El procedimiento, así como toda actuación administrativa, se realizarán con transparencia, de manera que permitan y promuevan el conocimiento, contenidos y fundamentos de las decisiones que se adopten en los mismos. En consecuencia, salvo las excepciones establecidas en el ordenamiento jurídico, son públicos los actos de los órganos de la Administración y los documentos que le sirvan de sustento o complemento directo o esencial.\nk) Principio de Razonabilidad y Proporcionalidad. Todas las decisiones de la autoridad administrativa deben ajustarse a los límites de la facultad atribuida y mantener la debida proporción entre los medios a emplear y los fines públicos que deba tutelar, a fin de que respondan a lo estrictamente necesario para la satisfacción de su cometido. Las competencias administrativas sólo pueden ser válidamente ejercidas en la extensión e intensidad proporcionales a lo que sea realmente demandado para el cumplimiento de la finalidad del interés público a que están unidas.\nl) Principio de Protección de la Confianza Legítima. Consiste en la protección de la situación jurídica del administrado en toda relación jurídica en la que este ha actuado de buena fe y siempre que la Administración haya producido signos externos lo suficientemente concluyentes para que le induzca al administrado a confiar razonablemente en la legalidad de sus actos.\nm) Interpretación Pro Homine. La interpretación de las normas debe hacerse extensivamente para tutelar los derechos de las personas y su dignidad, así como restrictivamente para determinar las limitaciones a tales derechos. Cuanto mayor es la invasión en los derechos de las personas, tanto más debe estar justificado el acto administrativo; así como a mayor discrecionalidad, mayor exigencia de motivación.\nn) Moralidad Pública. Todas las personas al servicio de la Administración pública deberán actuar con rectitud, lealtad, honestidad, integridad, profesionalismo y compromiso.\n"
+      },
+      "art-033": {
+       "label": "Art. 33",
+       "kind": "art",
+       "text": "# Artículo 33. Derecho de las personas en los procedimientos administrativos\nLas personas, en sus relaciones con la Administración, tienen derecho a:\na. Conocer, en cualquier momento, el estado de la tramitación de los procedimientos en los que tengan la condición de interesados, y obtener copia de los documentos que rolan en el expediente y la devolución de los originales, salvo que por mandato legal o reglamentario éstos deban ser acompañados a los autos, a su costa.\nb. Identificar a las autoridades y al personal al servicio de la Administración, bajo cuya responsabilidad se tramiten los procedimientos.\nc. Eximirse de presentar documentos que no correspondan al procedimiento, o que ya se encuentren en poder de la Administración.\nd. Acceder a las actuaciones en los términos previstos en la Ley.\ne. Ser tratados con respeto y deferencia por las autoridades y funcionarios, que habrán de facilitarles el ejercicio de sus derechos y el cumplimiento de sus obligaciones. Los actos de instrucción que requieran la intervención de los interesados habrán de practicarse en la forma que resulte más cómoda para ellos y sea compatible, en la medida de lo posible, con sus obligaciones laborales o profesionales.\nf. Exigir las responsabilidades de la Administración Pública y del personal a su servicio, cuando así corresponda legalmente.\ng. Obtener información acerca de los requisitos jurídicos o técnicos que las disposiciones vigentes impongan a los proyectos, actuaciones o solicitudes que se propongan realizar, y cualesquiera otros que les reconozcan la Constitución Nacional y las leyes.\n"
+      },
+      "art-034": {
+       "label": "Art. 34",
+       "kind": "art",
+       "text": "# Artículo 34. Procedimientos especiales\nLos procedimientos administrativos que tengan regímenes especiales en las leyes seguirán vigentes y las disposiciones sobre procedimientos establecidas en los Capítulos III y V del presente Título les serán aplicables sólo en forma supletoria.\n"
+      },
+      "art-035": {
+       "label": "Art. 35",
+       "kind": "art",
+       "text": "# Artículo 35. Formación del expediente\nEl procedimiento administrativo deberá constar en un expediente escrito en formatos impresos o electrónicos, a menos que su naturaleza exija o permita otra forma más adecuada de expresión y constancia.\nEn el expediente escrito se asentarán los documentos presentados por los interesados, por terceros y otros órganos públicos, con expresión de la fecha y hora de su recepción. Asimismo, se incorporarán las actuaciones y los documentos y resoluciones que el órgano administrativo remita a los interesados, a terceros o a otros órganos públicos y las notificaciones y comunicaciones a que estas den lugar, con expresión de la fecha y hora de su envío.\n"
+      },
+      "art-036": {
+       "label": "Art. 36",
+       "kind": "art",
+       "text": "# Artículo 36. Información general obligatoria\nLos organismos y entidades sometidos a la presente Ley, difundirán por los medios de publicación que se establezcan en la reglamentación respectiva, datos referidos a su estructura orgánica y funcional, como así detalles en relación a las prestaciones públicas que le corresponden, con claridad y precisión.\n"
+      },
+      "art-037": {
+       "label": "Art. 37",
+       "kind": "art",
+       "text": "# Artículo 37. Tramitación expeditiva\nLos órganos administrativos utilizarán procedimientos expeditivos en la tramitación de aquellos asuntos que así lo justifiquen. Cuando sean idénticos los motivos y fundamentos de las resoluciones, se podrán usar medios de producción en serie, siempre que no se lesionen las garantías jurídicas de los interesados.\n"
+      },
+      "art-038": {
+       "label": "Art. 38",
+       "kind": "art",
+       "text": "# Artículo 38. Procedimiento no formal\nEl procedimiento ordinario administrativo no es formal, en el sentido que a continuación se expresa:\na. Si no existe procedimiento especial prescrito en la Ley, la autoridad llamada a ejecutarla puede elegir el procedimiento más adecuado, atendiendo a la celeridad, eficacia y razonabilidad de la ejecución, dentro del marco de las disposiciones establecidas en la presente Ley.\nb. Puede obviar formas o etapas del procedimiento, incluso resolver con la mera fórmula \"como se pide\" o \"no ha lugar\" si la cuestión planteada es simple y de toda evidencia en cuanto a los hechos alegados y el derecho aplicable.\nc. Las deficiencias formales no darán lugar a nulidad siempre que sean subsanables, retrotrayendo el procedimiento en lo que fuere posible.\n"
+      },
+      "art-039": {
+       "label": "Art. 39",
+       "kind": "art",
+       "text": "# Artículo 39. Parte interesada\nEs parte interesada, legitimada para el procedimiento administrativo:\na. La que invoque un derecho o impugne una obligación en un acto administrativo dictado o solicitado para su caso particular (derecho subjetivo).\nb. La que solicite la declaración de un derecho a su favor o la exención de una obligación, de una disposición de carácter general que eventualmente le sea aplicable (interés legítimo).\nc. La que sea o pueda ser afectada por la decisión de la autoridad al resolver sobre derechos u obligaciones de terceros.\nd. La que recurre a la instancia administrativa como procedimiento previo, para promover demanda ordinaria contra la Administración.\n"
+      },
+      "art-040": {
+       "label": "Art. 40",
+       "kind": "art",
+       "text": "# Artículo 40. Capacidad de comparecencia\nTienen capacidad para comparecer en el procedimiento administrativo las personas físicas y jurídicas.\nLas asociaciones que carezcan de personalidad jurídica podrán actuar en cuestiones que les afecten directamente, o en representación de sus miembros o asociados involucrados en dichas cuestiones de interés gremial o colectivo.\n"
+      },
+      "art-041": {
+       "label": "Art. 41",
+       "kind": "art",
+       "text": "# Artículo 41. Actuación por sí o por poder\nLa parte interesada podrá ejercer sus derechos ante la Administración por si misma o mediante mandatario, que deberá ser abogado matriculado. En este caso, la parte interesada podrá otorgar poder por escritura pública, autorización por certificación de firma por escribano público o mediante acta, extendida en el expediente administrativo.\n"
+      },
+      "art-042": {
+       "label": "Art. 42",
+       "kind": "art",
+       "text": "# Artículo 42. Notificaciones\nDeberán ser notificadas:\n1. Las decisiones administrativas definitivas:\na. Las que resuelvan un incidente planteado o afecten derechos subjetivos, o intereses legítimos jurídicamente protegidos.\nb. Las que dispongan emplazamientos, citaciones, vistas o traslados.\nc. Todas las demás que la autoridad así dispusiere, teniendo en cuenta su naturaleza e importancia.\n2. La resolución puede ser notificada directamente al interesado con la firma del mismo en el expediente, por cédula de notificación, por correo con aviso de retorno, por telegrama colacionado o por otros medios electrónicos que el administrado expresamente haya consentido, conforme a la reglamentación que se dicte para el efecto. En caso de ser ignorado el domicilio, se citará a la parte interesada por edictos que se publicarán en los medios que determine la reglamentación, bajo apercibimiento de que, en caso de no comparecer con justa causa, se proseguirá el procedimiento en rebeldía.\n3. Las notificaciones deberán realizarse hasta diez días después de dictada la decisión y deben:\na. Adjuntar o transcribir el texto íntegro de su resolución comunicada.\nb. Indicar cuál o cuáles recursos son procedentes contra esa decisión, así como los plazos para interponerlos, el lugar en que deben presentarse y las autoridades competentes para resolverlos.\nc. Si el acto agota la instancia administrativa, deberá indicarse la acción y el plazo disponible para su impugnación en sede judicial.\nLa omisión de estos requisitos no invalida la decisión y esta adquiere eficacia inmediata cuando produce consecuencias favorables para los administrados, sin embargo, el plazo de impugnación del acto notificado empezará a computarse cuando se corrijan las omisiones de las exigencias establecidas en el presente artículo, sin perjuicio de las acciones y los recursos que caben contra las resoluciones fictas.\n"
+      },
+      "art-043": {
+       "label": "Art. 43",
+       "kind": "art",
+       "text": "# Artículo 43. Los plazos\nLos plazos serán obligatorios para los interesados y la Administración.\nCuando no se hubiere establecido plazo especial para la realización de trámites, notificaciones y citaciones, cumplimiento de intimaciones y emplazamientos, contestación de traslados, vistas e informes, aquel será de diez días.\nAntes del vencimiento de un plazo podrá la Administración de oficio o a pedido del interesado disponer su ampliación, por el tiempo razonable que fijare mediante resolución fundada y siempre que no resulten perjudicados derechos de terceros.\n"
+      },
+      "art-044": {
+       "label": "Art. 44",
+       "kind": "art",
+       "text": "# Artículo 44. Cómputo de plazos\nLos términos en días se computarán desde el día siguiente de la notificación del acto administrativo. Sólo se contarán los días hábiles, salvo disposición legal en contrario o habilitación resuelta de oficio o petición de parte. En la instancia administrativa se computarán como días hábiles los días sábados sólo cuando la administración esté abierta al público en esos días.\nLos términos de meses y años se computan desde el día siguiente a la fecha de su notificación, hasta la medianoche del día de la misma fecha del calendario, incluidos los feriados, sin consideración al número de días del mes o del año. Si en el mes de vencimiento del término no hubiere día correspondiente al de su comienzo, el término vencerá el último día del mes de vencimiento.\nCuando la presentación esté sujeta a un plazo perentorio y no se permita su presentación electrónica, las efectuadas hasta las nueve de la mañana del día posterior al de su vencimiento se considerarán hechas en término.\n"
+      },
+      "art-045": {
+       "label": "Art. 45",
+       "kind": "art",
+       "text": "# Artículo 45. Iniciación del procedimiento\nEl procedimiento podrá ser iniciado por la parte interesada o de oficio por la autoridad competente.\n"
+      },
+      "art-046": {
+       "label": "Art. 46",
+       "kind": "art",
+       "text": "# Artículo 46. Presentación\nEl escrito de presentación del interesado expresará su nombre y apellido, domicilio, el carácter en que se presenta, la autoridad a la que se dirige y la exposición sucinta de los hechos y derechos que invoca.\nSi existe prueba documental que respalde su derecho, la acompañará o indicará la oficina o lugar en que se encuentra. Si desea su desglose y devolución presentará copias que serán autenticadas por el encargado de la mesa de entrada o de la recepción del documento o por el funcionario que intervenga en el trámite.\n"
+      },
+      "art-047": {
+       "label": "Art. 47",
+       "kind": "art",
+       "text": "# Artículo 47. Información y orientación\nSi el interesado lo necesita, los funcionarios de la oficina competente para atender la cuestión, le informarán y orientarán sobre la corrección de su escrito, la autoridad competente y los demás requisitos que deben observarse.\nEn caso de que la autoridad a quien va dirigida no sea la competente, se deberá de igual manera recibir la presentación y remitirla sin demora a quien sea competente para su tramitación, siempre que se trate del mismo Organismo o Entidad del Estado.\n"
+      },
+      "art-048": {
+       "label": "Art. 48",
+       "kind": "art",
+       "text": "# Artículo 48. Impulso del procedimiento\nEl procedimiento se impulsará a instancia del interesado o de oficio por la autoridad en todo lo conducente al objeto del mismo.\n"
+      },
+      "art-049": {
+       "label": "Art. 49",
+       "kind": "art",
+       "text": "# Artículo 49. Pruebas\nSi los hechos alegados por el interesado no hubiesen sido suficientemente justificados con las pruebas que haya acompañado o indicado en su primera presentación, la autoridad le emplazará para que lo haga por los medios, plazos y formas que le serán señalados.\nSin perjuicio de las pruebas aportadas, la Administración podrá ordenar todas aquellas diligencias que considere pertinentes.\n"
+      },
+      "art-050": {
+       "label": "Art. 50",
+       "kind": "art",
+       "text": "# Artículo 50. Colaboración\nLos órganos de la Administración en general deberán colaborar con la autoridad interviniente proporcionando sin tardanza los informes, certificados u otros documentos que ésta les solicite.\nLa comunicación de dicha autoridad con los demás órganos se hará directamente, sin necesidad de recurrir a la autoridad superior para que ésta retransmita el pedido.\n"
+      },
+      "art-051": {
+       "label": "Art. 51",
+       "kind": "art",
+       "text": "# Artículo 51. Pronunciamiento en el procedimiento ordinario\nLa resolución que ponga fin al procedimiento ordinario decidirá las cuestiones planteadas por los interesados y será fundada. La resolución debe ser pronunciada por escrito y motivada con la mención de los hechos probados (motivados) y cita de las disposiciones legales aplicables (justificación). La Administración Pública está obligada a dictar resolución expresa en todos los procedimientos, cualquiera sea su forma de iniciación.\nEl plazo máximo para dictar resolución en el procedimiento ordinario será de tres meses desde la iniciación del procedimiento, salvo plazo distinto, establecido por Ley.\nEn el caso de que el hecho y el derecho invocados por el peticionante sean manifiestos, la resolución puede simplemente expresar su conformidad con la petición, en la inteligencia de que podrán ser demostrados obviamente sus fundamentos si la misma resolución llega a ser recurrida.\n"
+      },
+      "art-052": {
+       "label": "Art. 52",
+       "kind": "art",
+       "text": "# Artículo 52. Silencio de la Administración\nEn los procedimientos iniciados a solicitud del interesado, si no se dictare la resolución definitiva dentro de los plazos establecidos en la Ley se tendrá por denegada la petición, a los efectos de interponer los recursos administrativos respectivos.\n"
+      },
+      "art-053": {
+       "label": "Art. 53",
+       "kind": "art",
+       "text": "# Artículo 53. De la Renuncia\nTodo interesado podrá desistir de su solicitud, o cuando ello no esté prohibido por el ordenamiento jurídico, renunciar a sus derechos. Si el escrito de iniciación se hubiera formulado por dos o más interesados, el desistimiento o la renuncia solo afectará a aquellos que lo hubiesen formulado.\n"
+      },
+      "art-054": {
+       "label": "Art. 54",
+       "kind": "art",
+       "text": "# Artículo 54. Medidas Cautelares\nLa autoridad administrativa podrá dictar y disponer las medidas cautelares que considere necesarias para preservar la salud, la seguridad pública, el orden o cualquier otra razón de interés general.\nPodrá igualmente disponerlas para asegurar el resultado de los procedimientos conducidos por la Administración sustanciados de oficio o por impulso de los administrados.\nLa Administración podrá hacer efectivas y ejecutar las medidas cautelares que dicte o disponga por sus propios medios, salvo los casos donde la Ley requiera intervención y autorización judicial expresa.\n"
+      },
+      "art-055": {
+       "label": "Art. 55",
+       "kind": "art",
+       "text": "# Artículo 55. Pronunciamiento en peticiones que no requieran substanciación\nA falta de disposición expresa, toda petición, presentación o solicitud de naturaleza administrativa dirigida por los particulares a los órganos de la administración pública y que no requiera substanciación, deberá ser resuelta dentro de los veinte días siguientes a su presentación o a la fecha posterior en la que el interesado hubiere cumplido los requisitos legales exigidos.\nA los efectos previstos en el presente artículo, la reglamentación de esta Ley determinará cuáles son las peticiones que no requieren de substanciación.\n"
+      },
+      "art-056": {
+       "label": "Art. 56",
+       "kind": "art",
+       "text": "# Artículo 56. Normas procesales supletorias\nSon de aplicación supletoria en el procedimiento ordinario administrativo las normas del Código Procesal Civil, siempre que no sean incompatibles con las de la presente Ley que se consideran especiales en materia administrativa.\n"
+      },
+      "art-057": {
+       "label": "Art. 57",
+       "kind": "art",
+       "text": "# Artículo 57. Procedencia\nToda decisión administrativa que resuelva el fondo de la cuestión planteada o ponga fin a una actuación administrativa y que produce efectos jurídicos individuales e inmediatos, sea definitiva, incidental o de mero trámite, unilateral o bilateral, que no constituya un mero pronunciamiento de la administración a falta de disposición especial en contrario, es impugnable mediante los recursos que se regulan en este Capítulo, para la defensa de los derechos e intereses jurídicamente protegidos.\nLos recursos administrativos proceden contra toda clase de resolución de carácter definitivo, siempre que dichos actos administrativos, a criterio de los interesados, afecten, lesionen o pudieren causar perjuicio a sus derechos subjetivos o intereses legítimos.\nEl régimen recursivo previsto en el presente Capítulo será común y obligatorio para todos los procedimientos administrativos.\n"
+      },
+      "art-058": {
+       "label": "Art. 58",
+       "kind": "art",
+       "text": "# Artículo 58. Improcedencia\nNo proceden recursos administrativos contra los reglamentos.\nTampoco proceden contra los actos administrativos de carácter preparatorio o de mero trámite, salvo que se trate de actos que determinen la imposibilidad de continuar el procedimiento o produzcan indefensión.\n"
+      },
+      "art-059": {
+       "label": "Art. 59",
+       "kind": "art",
+       "text": "# Artículo 59. Forma de Presentación\nLos recursos se presentarán de manera fundada, cumpliendo con los requisitos y formalidades, en los plazos que establece la presente Ley.\n"
+      },
+      "art-060": {
+       "label": "Art. 60",
+       "kind": "art",
+       "text": "# Artículo 60. Efectos de la interposición de recursos administrativos\nLa interposición de cualquier recurso no suspenderá la ejecución del acto impugnado, salvo que una norma expresa establezca lo contrario. No obstante, el órgano administrativo competente para resolver el recurso, podrá suspender la ejecución del acto recurrido, de oficio o a solicitud del recurrente, cuando:\na. Dicha ejecución pueda causar un daño de difícil o imposible reparación al recurrente o un daño proporcionalmente mayor que los perjuicios que la suspensión le acarrearía al Estado.\nb. Cuando se alegue y acredite prima facie un vicio grave que acarree la nulidad del acto impugnado.\nc. Por razones de interés público.\n"
+      },
+      "art-061": {
+       "label": "Art. 61",
+       "kind": "art",
+       "text": "# Artículo 61. Terceros afectados\nSi con la impugnación de una resolución se afectasen derechos subjetivos o intereses legítimos de terceras personas, individuales o colectivas, la autoridad administrativa deberá hacerles conocer la correspondiente impugnación.\n"
+      },
+      "art-062": {
+       "label": "Art. 62",
+       "kind": "art",
+       "text": "# Artículo 62. Resolución\nLos recursos administrativos previstos en la presente Ley, serán resueltos confirmando o revocando total o parcialmente la resolución impugnada, o en su caso, desestimando el recurso si éste estuviese interpuesto fuera de término, no cumpliese las formalidades señaladas expresamente en disposiciones aplicables o si no cumpliese los requisitos de legitimación respectivos.\nLa resolución expondrá en forma motivada los aspectos de hecho y de derecho en los que se fundare, y se referirá siempre a las pretensiones formuladas por el recurrente, sin que en ningún caso pueda agravarse su situación inicial como consecuencia exclusiva de su propio recurso.\n"
+      },
+      "art-063": {
+       "label": "Art. 63",
+       "kind": "art",
+       "text": "# Artículo 63. Prueba\nLa autoridad administrativa, de oficio o a pedido de parte, podrá determinar la apertura de un término de prueba y ordenará la realización de las diligencias correspondientes.\nEl plazo para la prueba en esta instancia, será determinado a criterio de la autoridad, conforme a las circunstancias y conforme a la reglamentación de la presente Ley.\nEl término de prueba procederá sólo cuando haya nuevos hechos o documentos que no estén considerados en el expediente. Los recursos administrativos se ajustarán al procedimiento general establecido en la presente ley.\n"
+      },
+      "art-064": {
+       "label": "Art. 64",
+       "kind": "art",
+       "text": "# Artículo 64. Plazo\nEl recurso de reconsideración procede contra las resoluciones definitivas o actos administrativos que tengan carácter equivalente y deberá ser interpuesto por el interesado ante la autoridad administrativa que pronunció la resolución impugnada o dictó el acto que es materia de impugnación, dentro del plazo de diez días siguientes a su notificación.\n"
+      },
+      "art-065": {
+       "label": "Art. 65",
+       "kind": "art",
+       "text": "# Artículo 65. Plazo de Resolución y Alcance\nEl órgano ante el cual se interpone el recurso de reconsideración tendrá un plazo de veinte días para sustanciarlo y resolverlo. En caso de rechazarse el mismo, el interesado podrá interponer el recurso jerárquico, o recurrir a la impugnación judicial por la vía del proceso contencioso-administrativo si ya no cabe el recurso jerárquico por tratarse de la máxima autoridad. Si vencido el plazo no se dictare resolución, el recurso se tendrá por denegado.\n"
+      },
+      "art-066": {
+       "label": "Art. 66",
+       "kind": "art",
+       "text": "# Artículo 66. Recurso Jerárquico\nContra la resolución que rechace el recurso de reconsideración, el interesado o afectado podrá interponer el recurso jerárquico.\nEl recurso jerárquico también podrá ser interpuesto directamente contra las resoluciones definitivas o actos administrativos que tengan carácter equivalente, anteponiéndolo al recurso de reconsideración.\nEl recurso jerárquico se interpondrá ante el órgano jerárquico competente para resolverlo. El plazo para interponer el recurso es de diez días contados desde el día siguiente a la notificación del acto recurrido, o desde el día siguiente al que feneció el plazo para resolver el recurso de reconsideración.\nInterpuesto el recurso, el órgano competente requerirá, de inmediato, la remisión del expediente al inferior que hubiere dictado el acto recurrido, quien deberá remitirlo dentro del plazo de cuarenta y ocho horas.\nLa autoridad competente para resolver los recursos jerárquicos será la máxima instancia administrativa del organismo cuya decisión se recurra.\n"
+      },
+      "art-067": {
+       "label": "Art. 67",
+       "kind": "art",
+       "text": "# Artículo 67. Plazo y alcance\nPara sustanciar y resolver el recurso jerárquico, la autoridad administrativa competente, tendrá el plazo de veinte días.\nEl plazo se computará a partir de la interposición del recurso. Si vencido dicho plazo no se dicta resolución, el recurso se tendrá por denegado.\nLas resoluciones de los recursos jerárquicos deberán definir el fondo del asunto en trámite y en ningún caso podrán disponer que la autoridad inferior dicte una nueva resolución.\nResuelto el recurso jerárquico el interesado podrá acudir a la impugnación judicial por la vía de la acción contencioso-administrativo.\n"
+      },
+      "art-068": {
+       "label": "Art. 68",
+       "kind": "art",
+       "text": "# Artículo 68. Agotamiento de la vía administrativa\nLa vía administrativa quedará agotada en los casos siguientes:\na) Cuando se trate de resolución dictada por la máxima instancia de un Organismo o Entidad del Estado.\nb) Cuando se trate de resolución que resuelva un recurso de reconsideración, siempre y cuando no quepa recurso jerárquico.\nc) Cuando se trate de resolución que resuelva un recurso jerárquico.\nd) Cuando se trate de actos administrativos contra los cuales no proceda ningún recurso en vía administrativa, conforme con lo dispuesto en la presente Ley o en leyes especiales.\n"
+      },
+      "art-069": {
+       "label": "Art. 69",
+       "kind": "art",
+       "text": "# Artículo 69. Acción Contencioso/Administrativa\nAgotada la vía administrativa, podrá el interesado promover impugnación judicial por la vía de la acción contencioso-administrativa ante el órgano jurisdiccional competente, dentro del plazo de dieciocho días hábiles.\nEl plazo se computará a partir del día siguiente de la notificación de la resolución que tenga por agotada la vía administrativa.\nEn caso que la vía administrativa se agote por denegatoria ficta, el cómputo para plantear la acción contencioso-administrativa se iniciará a partir del día siguiente del término otorgado a la Administración para dictar la resolución correspondiente, no obstante, el derecho a recurrir persistirá para el particular afectado hasta tanto se dé por notificado personalmente ante el Organismo o Entidad del Estado de la denegatoria ficta.\n"
+      },
+      "art-070": {
+       "label": "Art. 70",
+       "kind": "art",
+       "text": "# Artículo 70. Principios Sancionadores\nLas sanciones administrativas que las autoridades competentes deban imponer a las personas, estarán sometidas a los principios de legalidad, tipicidad, presunción de inocencia, proporcionalidad, irretroactividad y verdad material.\n"
+      },
+      "art-071": {
+       "label": "Art. 71",
+       "kind": "art",
+       "text": "# Artículo 71. Principio de Legalidad\nLas sanciones administrativas solamente podrán ser impuestas cuando éstas hayan sido previstas por norma expresa, conforme al procedimiento establecido en la presente ley y disposiciones reglamentarias aplicables.\n"
+      },
+      "art-072": {
+       "label": "Art. 72",
+       "kind": "art",
+       "text": "# Artículo 72. Principio de Tipicidad\nSon infracciones administrativas las acciones u omisiones expresamente definidas en las leyes y disposiciones reglamentarias.\nSolo podrán imponerse aquellas sanciones administrativas expresamente establecidas en las leyes y disposiciones reglamentarias.\nLas sanciones administrativas, sean o no de naturaleza pecuniaria, no podrán implicar en ningún caso ni directa ni indirectamente la privación de libertad.\n"
+      },
+      "art-073": {
+       "label": "Art. 73",
+       "kind": "art",
+       "text": "# Artículo 73. Principio de Presunción de Inocencia y derechos de las personas\nSe presume la inocencia de las personas mientras no se demuestre lo contrario en idóneo procedimiento administrativo.\nEn el procedimiento administrativo sancionador, el presunto infractor tendrá derecho a:\na. Recibir la comunicación de su imputación en forma previa y detallada, así como a disponer de copias, medios y plazos indispensables para la preparación de su defensa en libre comunicación.\nb. Ofrecer, practicar, controlar e impugnar pruebas.\nc. Acceder, por sí o por intermedio de su defensor, a las actuaciones del procedimiento, las cuales en ningún caso podrán ser secretas para él.\nd. A abstenerse de declarar, o a no declarar contra sí mismo, contra su cónyuge o contra la persona con quien está unida ni contra sus parientes dentro del cuarto grado de consanguinidad o segundo de afinidad inclusive.\ne. A que no se le opongan pruebas obtenidas o actuaciones producidas en violación de las normas jurídicas.\n"
+      },
+      "art-074": {
+       "label": "Art. 74",
+       "kind": "art",
+       "text": "# Artículo 74. Principio de Proporcionalidad\nEl establecimiento de sanciones pecuniarias deberá prever que la comisión de las infracciones tipificadas no resulte más beneficiosa para el infractor que el cumplimiento de las normas infringidas.\nSe deberá guardar la debida adecuación entre la gravedad del hecho constitutivo de la infracción y la sanción aplicada, considerándose especialmente los siguientes criterios para la graduación de la sanción a aplicar:\na. La existencia de un daño y su dimensión.\nb. La naturaleza de la infracción, en función de su materialidad o gravedad.\nc. El reconocimiento oportuno de los hechos que hayan configurado la infracción.\nd. La subsanación de la infracción por iniciativa propia, sin previo requerimiento de la Administración.\ne. La reincidencia o conducta anterior, atendiendo a las sanciones que le hubieren sido impuestas durante los últimos cinco años.\n"
+      },
+      "art-075": {
+       "label": "Art. 75",
+       "kind": "art",
+       "text": "# Artículo 75. Principio de Irretroactividad\nSólo serán aplicables las disposiciones sancionadoras que estuvieran vigentes en el momento de producirse los hechos que constituyan la infracción administrativa.\n"
+      },
+      "art-076": {
+       "label": "Art. 76",
+       "kind": "art",
+       "text": "# Artículo 76. Principio de Verdad Material\nEl procedimiento administrativo sancionador, durante su tramitación, deberá propender a la búsqueda de la verdad material u objetiva, garantizando con su ejercicio, la observancia de los demás principios contemplados en este Capítulo. En tal sentido, la Administración podrá requerir y producir cuantos dictámenes e informes que resulten necesarios para el esclarecimiento del hecho investigado.\n"
+      },
+      "art-077": {
+       "label": "Art. 77",
+       "kind": "art",
+       "text": "# Artículo 77. Prescripción de Infracciones\nLas infracciones prescribirán en el término de dos años. La prescripción de las infracciones quedará interrumpida mediante la iniciación del procedimiento sancionador.\n"
+      },
+      "art-078": {
+       "label": "Art. 78",
+       "kind": "art",
+       "text": "# Artículo 78. Relación con otros procesos\nLa responsabilidad administrativa es independiente de la responsabilidad penal y civil.\nEn caso de sobreseimiento o absolución del encausado en el proceso penal, no se podrá alegar en el procedimiento administrativo la existencia del hecho principal sobre el cual hubiese recaído el sobreseimiento o la absolución, si la sentencia hubiese declarado su inexistencia. Esta disposición no se aplica cuando en la sentencia se ha decidido que el hecho no constituye hecho punible, o cuando el sobreseimiento, o la absolución, se ha fundado en que el agente está exento de responsabilidad penal o cuando el mismo ha reconocido el hecho para acogerse a alguna salida alternativa al proceso.\nDespués de la condena en el proceso penal, no se podrá negar en el procedimiento administrativo sancionador la existencia del hecho principal que constituye el hecho punible, ni impugnar la culpa del condenado. La sentencia dictada en juicio penal no será oponible al obligado por el hecho de otro, si aquél no tuvo ocasión de ejercer su defensa.\n"
+      },
+      "art-079": {
+       "label": "Art. 79",
+       "kind": "art",
+       "text": "# Artículo 79. Etapas\nLos procedimientos administrativos sancionadores que se tramiten, deberán contemplar necesariamente las sucesivas etapas que garanticen a las partes intervinientes, el desarrollo efectivo de sus derechos. Necesariamente, deberán ser observadas las siguientes etapas: etapas de actuaciones previas al inicio sumarial, etapa inicial, etapa de tramitación y etapa final o conclusiva.\nSerá innecesaria la apertura de procedimientos sancionatorios, cuando la persona imputada acepte la falta y cumpla voluntariamente con la sanción impuesta por el ordenamiento jurídico regulatorio.\n"
+      },
+      "art-080": {
+       "label": "Art. 80",
+       "kind": "art",
+       "text": "# Artículo 80. De la caducidad del procedimiento sancionador\nSe operará la caducidad de toda clase de procedimiento sancionador, expediente sancionador o sumario administrativo, cuando no se instare su curso dentro del plazo de tres meses desde la fecha de la última actuación idónea para impulsar el procedimiento.\nTranscurrido el plazo señalado precedentemente, sin que la Administración realice las actividades necesarias para reanudar la tramitación, de oficio o a instancia de parte, se declarará abandonado el procedimiento y ordenará su archivo, notificándoselo al interesado.\nLos trámites investigativos o de inspección y análisis previos al inicio formal del procedimiento sancionador, que se inicia con el auto de apertura sumarial o similar, no se computarán para la caducidad aquí prevista.\nLa declaración de caducidad del procedimiento administrativo sancionador no importa la prescripción de la acción de la Administración. No obstante, el procedimiento caduco se tiene por inexistente a los efectos de la interrupción de la prescripción.\n"
+      },
+      "art-081": {
+       "label": "Art. 81",
+       "kind": "art",
+       "text": "# Artículo 81. Plazo razonable de substanciación del procedimiento sancionatorio\nLa tramitación del procedimiento sumarial se deberá desarrollar en un plazo de tiempo razonable, teniendo en cuenta los siguientes parámetros: la complejidad del asunto, la actividad procesal de la sumariada y la afectación generada en la situación jurídica de la misma.\nSin perjuicio de lo establecido en el artículo anterior y a falta de disposición legal diferente, el Juez Instructor deberá arbitrar las medidas pertinentes a los efectos de procurar que la substanciación del procedimiento sumarial a su cargo no exceda de cuatro meses en total, plazo que se computará desde la fecha de emisión de la resolución que ordene la instrucción del sumario administrativo, hasta la notificación a la sumariada de la providencia de autos. Notificada esta, la autoridad respectiva tendrá treinta días para dictar la resolución conclusiva.\nSi, durante el transcurso del procedimiento sumarial, por circunstancias imprevistas o extraordinarias, por la complejidad del asunto, el volumen de las pruebas ofrecidas o por dificultades en la producción integral de las pruebas admitidas, el Juez Instructor no pudiese lograr que la substanciación del procedimiento sumarial a su cargo no exceda de cuatro meses en total, podrá prorrogar dicho plazo hasta el doble del establecido, por medio de una resolución fundada, señalando los motivos que han imposibilitado finalizar la substanciación del sumario administrativo en el plazo previsto.\nEl incumplimiento de los plazos establecidos en el presente artículo para la substanciación del procedimiento sumarial no tendrá por sí mismo ningún efecto sobre el sumario administrativo.\nEl vencimiento del plazo razonable de substanciación del procedimiento sumarial o, en su caso, de su prórroga, no conlleva la extinción del sumario ni implica sobreseimiento de la sumariada, pero hará incurrir al funcionario responsable en falta grave.\n"
+      },
+      "art-082": {
+       "label": "Art. 82",
+       "kind": "art",
+       "text": "# Artículo 82. Reducción de la sanción administrativa\nLa autoridad administrativa podrá reducir el importe de la multa que le correspondería como sanción o, en su caso, atenuar una sanción de carácter no pecuniario, cuando la persona física o jurídica imputada acepte la falta imputada por la Administración. A estos efectos, se deberá reglamentar los parámetros y criterios generales.\nLas reglas aplicables al concurso de faltas serán determinadas en la reglamentación de la presente Ley.\n"
+      },
+      "art-083": {
+       "label": "Art. 83",
+       "kind": "art",
+       "text": "# Artículo 83. Descuento de sanción impuesta por pronto pago\nLa autoridad administrativa podrá reducir el importe de la multa impuesta como sanción cuando la persona física o jurídica sancionada consienta la resolución sancionatoria por la cual quede agotada la vía administrativa y proceda a cumplir con la sanción impuesta por la Administración en el plazo especialmente establecido para ello.\nA estos efectos, se deberá reglamentar los parámetros y criterios generales.\n"
+      },
+      "art-084": {
+       "label": "Art. 84",
+       "kind": "art",
+       "text": "# Artículo 84. Recursos y Efectos\nContra la resolución que imponga una sanción, procederán los recursos administrativos previstos en la presente Ley. Los recursos interpuestos contra actos administrativos que dispongan sanciones tendrán efectos suspensivos, salvo en aquellos casos en los que la Administración considere que su ejecución y eficacia inmediata sean impostergables por razones de interés público.\n"
+      },
+      "art-085": {
+       "label": "Art. 85",
+       "kind": "art",
+       "text": "# Artículo 85. Utilización de medios electrónicos\nLos trámites y actuaciones que conforman los procedimientos administrativos previstos en la presente Ley, así como los actos y medidas administrativas que en virtud de la misma se dicten o dispongan, podrán realizarse por medios electrónicos.\nSu validez jurídica y su valor probatorio serán idénticos a los de las actuaciones administrativas que se tramiten por medios convencionales.\n"
+      },
+      "art-086": {
+       "label": "Art. 86",
+       "kind": "art",
+       "text": "# Artículo 86. Reglamentación de uso de medios electrónicos\nLa utilización de recursos tecnológicos para la gestión pública se conducirá conforme a la legislación específica que se sancione para regularlos o la reglamentación que en su defecto dicte el Poder Ejecutivo.\n"
+      },
+      "art-087": {
+       "label": "Art. 87",
+       "kind": "art",
+       "text": "# Artículo 87. Intercambio de datos entre unidades y reparticiones de la Administración Pública\nEs de interés público, para el mejor cumplimiento de los servicios, el intercambio permanente y directo de datos e información entre las unidades y reparticiones de la Administración Pública, sea cual fuere su naturaleza jurídica o posición institucional, a través de cualquier medio hábil de comunicación, sin más limitación que los documentos o piezas calificados como secretos, confidenciales o reservados, de acuerdo con las normas legales o reglamentarias correspondientes. En su caso, el deber de secreto o reserva se transmite.\nA efectos de implantar sistemas de libre flujo de información, se propenderá a la interconexión de los equipos de procesamiento electrónico de información u otros medios similares, así como la disposición de información pública en formato de datos abiertos.\n"
+      },
+      "art-088": {
+       "label": "Art. 88",
+       "kind": "art",
+       "text": "# Artículo 88\nEn los procedimientos administrativos iniciados antes de la fecha de vigencia de la presente Ley, se aplicarán los plazos de la misma a partir de dicha fecha, si con ello se reduce la duración del trámite.\n"
+      },
+      "art-089": {
+       "label": "Art. 89",
+       "kind": "art",
+       "text": "# Artículo 89. Derogación\nDeróganse los Artículos 11, 12, 13, 14, 15, 16 y 17 del CAPÍTULO III DE LA PERENCIÓN DE LA INSTANCIA ADMINISTRATIVA, de la Ley N° 4679/2012 \"DE TRÁMITES ADMINISTRATIVOS\" y todas las disposiciones legales generales contrarias a la presente ley.\n"
+      },
+      "art-090": {
+       "label": "Art. 90",
+       "kind": "art",
+       "text": "# Artículo 90\nLa presente Ley entrará en vigencia un año después de su publicación en la Gaceta Oficial de la República. Dentro de dicho plazo, el Poder Ejecutivo dictará los reglamentos y disposiciones a que hubiere lugar y adoptará las medidas administrativas necesarias para la mejor aplicación de aquella, estableciendo que cada Organismo o Entidad del Estado deban dar la más amplia publicidad a los procedimientos, plazos y requisitos.\n"
+      },
+      "art-091": {
+       "label": "Art. 91",
+       "kind": "art",
+       "text": "# Artículo 91\nComuníquese al Poder Ejecutivo.\n"
+      },
+      "indice": {
+       "label": "Índice de libros, títulos y capítulos",
+       "kind": "index",
+       "text": "# LIBROS, TITULOS Y CAPITULOS\nart-001: TÍTULO PRELIMINAR\nart-001: CAPÍTULO ÚNICO - DISPOSICIONES GENERALES\nart-003: TÍTULO I - RÉGIMEN JURÍDICO DE LOS ACTOS ADMINISTRATIVOS\nart-003: CAPÍTULO I - ACTO ADMINISTRATIVO\nart-007: CAPÍTULO II - REQUISITOS DE REGULARIDAD Y VALIDEZ\nart-013: CAPÍTULO III - VALIDEZ Y EFICACIA DEL ACTO ADMINISTRATIVO\nart-019: CAPÍTULO IV - SANCIÓN DE LAS IRREGULARIDADES DEL ACTO ADMINISTRATIVO\nart-026: CAPÍTULO V - REVOCACIÓN DE LOS ACTOS REGULARES\nart-032: TÍTULO II - PROCEDIMIENTO ADMINISTRATIVO\nart-032: CAPÍTULO I - PRINCIPIOS DEL PROCEDIMIENTO ADMINISTRATIVO\nart-035: CAPÍTULO II - EXPEDIENTE ADMINISTRATIVO\nart-038: CAPÍTULO III - PROCEDIMIENTO ORDINARIO ADMINISTRATIVO\nart-057: CAPÍTULO IV - PROCEDIMIENTO DE LOS RECURSOS ADMINISTRATIVOS\nart-057: SECCIÓN PRIMERA - DISPOSICIONES GENERALES\nart-064: SECCIÓN SEGUNDA - RECURSO DE RECONSIDERACIÓN\nart-066: SECCIÓN TERCERA - RECURSO JERÁRQUICO\nart-068: SECCIÓN CUARTA - AGOTAMIENTO DE LA VÍA ADMINISTRATIVA\nart-070: CAPÍTULO V - PROCEDIMIENTO SANCIONADOR\nart-070: SECCIÓN PRIMERA - PRINCIPIOS GENERALES\nart-079: SECCIÓN SEGUNDA - ETAPAS DEL PROCEDIMIENTO SANCIONADOR\nart-085: TÍTULO III - DE LA GESTIÓN Y TRÁMITES ELECTRÓNICOS\nart-088: TÍTULO IV - DISPOSICIONES FINALES Y TRANSITORIAS\n"
+      },
+      "sancion": {
+       "label": "Sanción",
+       "kind": "closing",
+       "text": "# SANCION\nAprobado el Proyecto de Ley por la Honorable Cámara de Diputados, a los dieciséis días del mes de setiembre del año dos mil veinte, quedando sancionado el mismo, por la Honorable Cámara de Senadores, a los veintitrés días del mes de marzo del año dos mil veintiuno, de conformidad a lo dispuesto en el Artículo 207 numeral 1) de la Constitución Nacional. Aceptada la objeción parcial formulada por el Poder Ejecutivo en el Decreto N° 5191 de fecha 29 de abril de 2021, sancionando nuevamente la parte no objetada, según Resolucion Honorable Cámara de Senadores N° 2045 de fecha 24 de junio de 2021 y la Resolucion Honorable Cámara de Diputados N° 2769 de fecha 25 de agosto de 2021, de conformidad con lo establecido en el Artículo 208 de la Constitucion Nacional.\n"
+      }
+     },
+     "credits": {},
+     "note": "The law as enacted, from its BACN page; in force one year after its publication on 29 September 2021 (art. 90)."
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  "Ley 6715/2021 de Procedimientos Administrativos: BACN publishes it as enacted (promulgated and, per BACN, published on 29 September 2021). Art. 90: in force \"un año después de su publicación en la Gaceta Oficial\", taken as the anniversary, 2022-09-29, as for the Código Penal (\"un año después de su promulgación\"). Art. 89 repeals arts. 11-17 of Ley 4679/2012 (not in this repository).",
+  "Ley 6715/2021: Amending laws were looked for with the BACN search (queries \"6715\", \"6715/2021\", \"procedimientos administrativos\", \"5282\", \"5282/2014\", \"5.282\", \"libre acceso ciudadano\"); every hit was screened for a modifying, repealing or suspending formula that names the law, and none was found (Leyes 7411/2024, 7547/2025 and 7593/2025 only refer to Ley 6715). The current text is therefore the enacted text; there is no official consolidated text to compare it with.",
+  "Ley 6715/2021 units: art-NNN headed \"# Artículo N. Epigraph\" (BACN prints the epigraph on the article line and the text below it; arts. 88, 90 and 91 have none). BACN HTML lists are read with datos/pages.py (nested lists numbered innermost first, markers as the page CSS shows them); unit headings and chapter headings as for the other acts (indice.md, sancion.md).",
+  "Ley 6715/2021: no line joins were needed."
+ ],
+ "ai_use": [
+  "Ley 6715/2021 part: Claude Opus 5.5 (claude-opus-5-5) in Claude Code wrote administrativo/administrativo.py, ran the BACN searches and screened the hits. No model wrote or changed legal text: every provision is extracted by code from the BACN page."
+ ]
+}

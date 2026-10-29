@@ -1,0 +1,7 @@
+{
+ "note": "BACN pages read by administrativo/administrativo.py (Ley 6715/2021 de Procedimientos Administrativos, Ley 5282/2014 de Libre Acceso Ciudadano a la Información Pública y Transparencia Gubernamental), fetched with ../fetch.py: python -X utf8 administrativo/administrativo.py --fetch",
+ "urls": [
+  "https://www.bacn.gov.py/leyes-paraguayas/10974/ley-n-6715-procedimientos-administrativos",
+  "https://www.bacn.gov.py/leyes-paraguayas/3013/ley-n-5282-2014-libre-acceso-ciudadano-a-la-informaci-n-p-blica-y-transparencia-gubernamental"
+ ]
+}

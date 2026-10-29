@@ -1,0 +1,219 @@
+{
+ "laws": {
+  "ley-5282-2014": {
+   "label": "Ley N° 5282/2014",
+   "title": "De Libre Acceso Ciudadano a la Información Pública y Transparencia Gubernamental",
+   "kind": "law",
+   "enacted": "2014-09-18",
+   "published": "2014-09-19",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3013/ley-n-5282-2014-libre-acceso-ciudadano-a-la-informaci-n-p-blica-y-transparencia-gubernamental",
+   "temporary_until": null,
+   "restores": null
+  }
+ },
+ "acts": [
+  {
+   "slug": "ley-acceso-informacion-publica",
+   "short": "LAIP",
+   "title": "Ley N° 5282/2014 de Libre Acceso Ciudadano a la Información Pública y Transparencia Gubernamental",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/3013/ley-n-5282-2014-libre-acceso-ciudadano-a-la-informaci-n-p-blica-y-transparencia-gubernamental",
+   "first_law": "ley-5282-2014",
+   "earlier_laws": [],
+   "versions": [
+    {
+     "from": "2015-09-18",
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/3013/ley-n-5282-2014-libre-acceso-ciudadano-a-la-informaci-n-p-blica-y-transparencia-gubernamental",
+     "sha256": "61bc0b97f6aec9f9d618e3d37409512afd9d18e13d3ec6729b59329b54185b8c",
+     "units": {
+      "art-001": {
+       "label": "Art. 1",
+       "kind": "art",
+       "text": "# Artículo 1. Objeto\nLa presente ley reglamenta el artículo 28 de la Constitución Nacional, a fin de garantizar a todas las personas, el efectivo ejercicio del derecho al acceso a la información pública, a través de la implementación de las modalidades, plazos, excepciones y sanciones correspondientes, que promuevan la trasparencia del Estado.\nNinguna disposición de esta ley podrá ser entendida o utilizarse para negar, menoscabar o limitar la libertad de expresión, la libertad de prensa o la libertad de ejercicio del periodismo.\n"
+      },
+      "art-002": {
+       "label": "Art. 2",
+       "kind": "art",
+       "text": "# Artículo 2. Definiciones\nA los efectos de esta ley, se entenderán como:\n1. Fuentes públicas: Son los siguientes organismos:\na) El Poder Legislativo, sus Cámaras, comisiones y todos sus órganos administrativos, así como los Parlamentarios del Mercado Común del Sur (MERCOSUR);\nb) El Poder Ejecutivo, sus ministerios, secretarías y todos los demás órganos administrativos, así como la Procuraduría General de la República y la Policía Nacional;\nc) El Poder Judicial, el Consejo de la Magistratura, el Jurado de Enjuiciamiento de Magistrados, el Ministerio Público y la Justicia Electoral;\nd) Las Fuerzas Armadas de la Nación;\ne) La Defensoría del Pueblo, la Contraloría General de la República y el Banco Central del Paraguay;\nf) Las entidades financieras del Estado, las empresas públicas, las sociedades comerciales con participación estatal mayoritaria, las sociedades de economía mixta, los entes reguladores o de control y todas las demás entidades descentralizadas con personería jurídica de derecho público;\ng) Las universidades nacionales;\nh) Los gobiernos departamentales y municipales; e,\ni) Las comisiones mixtas y las entidades binacionales en las que participe la República del Paraguay. Los representantes, directores y consejeros paraguayos de estas reparticiones públicas deberán garantizar el efectivo ejercicio del derecho de las personas a solicitar y recibir información pública de las mismas.\n2. Información pública: Aquella producida, obtenida, bajo control o en poder de las fuentes públicas, independientemente de su formato, soporte, fecha de creación, origen, clasificación o procesamiento, salvo que se encuentre establecida como secreta o de carácter reservado por las leyes.\n"
+      },
+      "art-003": {
+       "label": "Art. 3",
+       "kind": "art",
+       "text": "# Artículo 3. Difusión\nLa información pública estará sometida a la publicidad y las fuentes públicas están obligadas a prever la adecuada organización, sistematización, informatización y disponibilidad para que sea difundida en forma permanente, a los efectos de asegurar el más amplio y fácil acceso a los interesados.\n"
+      },
+      "art-004": {
+       "label": "Art. 4",
+       "kind": "art",
+       "text": "# Artículo 4. Alcance y gratuidad\nCualquier persona, sin discriminación de ningún tipo, podrá acceder a la información pública, en forma gratuita y sin necesidad alguna de justificar las razones por las que formulan su pedido, conforme al procedimiento establecido en la presente ley.\n"
+      },
+      "art-005": {
+       "label": "Art. 5",
+       "kind": "art",
+       "text": "# Artículo 5. Responsabilidad\nAquellos que administren, manipulen, archiven o conserven información pública, serán personalmente responsables por sus acciones u omisiones, que deriven en la ocultación, alteración, pérdida o desmembración de la misma, sin perjuicio de la responsabilidad subsidiaria del Estado.\n"
+      },
+      "art-006": {
+       "label": "Art. 6",
+       "kind": "art",
+       "text": "# Artículo 6. Organo competente\nLas fuentes públicas deberán habilitar una Oficina de Acceso a la Información Pública, en la que se recibirán las solicitudes, así como orientar y asistir al solicitante en forma sencilla y comprensible.\n"
+      },
+      "art-007": {
+       "label": "Art. 7",
+       "kind": "art",
+       "text": "# Artículo 7. Funciones\nLas fuentes públicas deberán capacitar, actualizar y entrenar en forma constante a los funcionarios encargados de la oficina, para optimizar progresivamente la aplicación de las disposiciones de la presente ley.\n"
+      },
+      "art-008": {
+       "label": "Art. 8",
+       "kind": "art",
+       "text": "# Artículo 8. Regla general\nLas fuentes públicas deben mantener actualizadas y a disposición del público en forma constante, como mínimo, las siguientes informaciones:\na) Su estructura orgánica;\nb) Las facultades, deberes, funciones y/o atribuciones de sus órganos y dependencias internas;\nc) Todo el marco normativo que rija su funcionamiento y las normas constitucionales, legales de alcance nacional o local y reglamentario cuya aplicación esté a su cargo;\nd) Una descripción general de cómo funciona y cuál es el proceso de toma de decisiones;\ne) El listado actualizado de todas las personas que cumplan una función pública o sean funcionarios públicos, con indicación de sus números de cédula de identidad civil, las funciones que realizan, los salarios u honorarios que perciben en forma mensual, incluyendo todos los adicionales, prestaciones complementarias y/o viáticos;\nf) Descripción de la política institucional y de los planes de acción;\ng) Descripción de los programas institucionales en ejecución, con la definición de metas, el grado de ejecución de las mismas y el presupuesto aplicado a dichos programas, publicando trimestralmente informes de avance de resultados;\nh) Informes de auditoría;\ni) Informes de los viajes oficiales realizados dentro del territorio de la República o al extranjero;\nj) Convenios y contratos celebrados, fecha de celebración, objeto, monto total de la contratación, plazos de ejecución, mecanismos de control y rendición de cuentas y, en su caso, estudios de impacto ambiental y/o planes de gestión ambiental;\nk) Cartas oficiales;\nl) Informes finales de consultorías;\nm) Cuadros de resultados;\nn) Lista de poderes vigentes otorgados a abogados;\no) Sistema de mantenimiento, clasificación e índice de los documentos existentes;\np) Descripción de los procedimientos previstos para que las personas interesadas puedan acceder a los documentos que obren en su poder, incluyendo el lugar en donde están archivados y el nombre del funcionario responsable; y,\nq) Mecanismos de participación ciudadana.\n"
+      },
+      "art-009": {
+       "label": "Art. 9",
+       "kind": "art",
+       "text": "# Artículo 9. Información mínima del Poder Legislativo\nEl Congreso de la Nación debe mantener actualizada y a disposición del público de manera informatizada, una base de datos que contenga:\na) Todas las leyes de la República y todos los Proyectos de Ley, con indicación de su trámite parlamentario y los dictámenes que hubieran producido las comisiones asesoras.\nb) Todas las intervenciones de los Senadores y Diputados en las sesiones de sus respectivas Cámaras deben ser grabadas. Las copias taquigráficas deben compilarse en un Diario de Sesiones, que estará a disposición de cualquier persona interesada.\nc) El resultado de todas las votaciones sobre proyectos de ley o resoluciones.\n"
+      },
+      "art-010": {
+       "label": "Art. 10",
+       "kind": "art",
+       "text": "# Artículo 10. Información mínima del Poder Ejecutivo\nEl Poder Ejecutivo debe mantener actualizada y a disposición del público de manera informatizada, una base de datos que contenga:\na) El Presupuesto General de la Nación vigente, el Anteproyecto de Presupuesto elaborado por el Ministerio de Hacienda para el año siguiente al tiempo de su presentación al Congreso de la Nación y la Ejecución Presupuestaria del año anterior y del año fiscal en curso, actualizado diariamente.\nAdemás de la información completa referente a los documentos señalados, deben elaborarse resúmenes con la comparación del gasto en cada área y la ejecución del mismo en cada caso con la de los años anteriores; el porcentaje de lo presupuestado y efectivamente ejecutado en cada rubro con relación al Producto Interno Bruto y al presupuesto total; el porcentaje del gasto de personal y otros gastos rígidos y la inversión en obras; y el porcentaje de la inversión social con relación al Producto Interno Bruto y el presupuesto total, discriminando la inversión social en salud pública, educación, vivienda y programas contra la pobreza;\nb) Todos los decretos promulgados por el Presidente;\nc) Los indicadores económicos;\nd) Los datos referentes a la deuda pública, servicio de la deuda, entidades deudoras y comparación de la situación presente con la de los años anteriores. Asimismo, la proyección de la deuda pública para los años siguientes;\ne) La información referente a las contrataciones públicas, mencionando montos, empresas que fueron adjudicadas, procedimientos administrativos utilizados para la adjudicación, datos de las empresas y estado de la ejecución de los contratos. Esta información será conservada por al menos cinco años;\nf) Los datos referentes al destino de los recursos provenientes de la deuda pública, con mención específica de los programas, inversiones y obras efectuadas, empresas y consultoras contratadas para la ejecución de los mismos, procedimientos de contratación de dichas entidades y estado presente de ejecución;\ng) Los documentos elaborados por la Dirección General de Estadística, Encuestas y Censos;\nh) Un informe anual sobre derechos humanos y situación carcelaria, con especial énfasis en los derechos sociales a la salud y la educación;\ni) Declaraciones de impacto ambiental, planes de manejo, planes de cambio de uso de suelo, planes de reforestación; concesiones y permisos de aprovechamiento de los recursos hídricos; y todos los demás actos administrativos que otorguen derechos de aprovechamiento de los recursos naturales, cualquier que sea la repartición pública que los expida;\nj) Un informe anual sobre el estado y la calidad de los elementos del medio ambiente, tales como las aguas, el aire, el suelo, las áreas silvestres protegidas, la fauna, la flora, incluidas sus interacciones recíprocas, así como las actividades y medidas que los hayan afectado o puedan afectarlos; y,\nk) Las estadísticas referentes a la seguridad ciudadana, con mención de los tipos y cantidad de hechos punibles denunciados mensualmente por departamento y ciudad.\n"
+      },
+      "art-011": {
+       "label": "Art. 11",
+       "kind": "art",
+       "text": "# Artículo 11. Información mínima del Poder Judicial\nEl Poder Judicial debe mantener actualizada y a disposición del público de manera informatizada, una base de datos que contenga:\na) Todas las resoluciones emitidas por la Corte Suprema de Justicia;\nb) Una selección de las sentencias firmes de los tribunales de apelaciones y juzgados de primera instancia de la República que sean representativas de los criterios jurisprudenciales de los magistrados y sus variaciones;\nc) Todas las acordadas y resoluciones administrativas de la Corte Suprema de Justicia;\nd) Todas las resoluciones del Jurado de Enjuiciamiento de Magistrados; y,\ne) Todas las resoluciones del Tribunal de Ética.\n"
+      },
+      "art-012": {
+       "label": "Art. 12",
+       "kind": "art",
+       "text": "# Artículo 12. Forma y contenido\nToda persona interesada en acceder a la información pública, deberá presentar una solicitud ante la oficina establecida en la fuente pública correspondiente, personalmente, por correo electrónico, en forma escrita o verbal, y en este último caso, se extenderá un acta. La presentación contendrá la identificación del solicitante, su domicilio real, la descripción clara y precisa de la información pública que requiere, y finalmente, el formato o soporte preferido, sin que esto último constituya una obligación para el requerido.\n"
+      },
+      "art-013": {
+       "label": "Art. 13",
+       "kind": "art",
+       "text": "# Artículo 13. Defectos\nSi la solicitud no contiene todos los datos exigidos en el artículo anterior, se hará saber el o los defectos al solicitante, para que los subsane y complete su presentación, a los efectos de su tramitación.\n"
+      },
+      "art-014": {
+       "label": "Art. 14",
+       "kind": "art",
+       "text": "# Artículo 14. Incompetencia\nSi la fuente pública requerida no cuenta con la información pública solicitada, por no ser competente para entregarla o por no tenerla, deberá enviar la presentación a aquella habilitada para tal efecto.\n"
+      },
+      "art-015": {
+       "label": "Art. 15",
+       "kind": "art",
+       "text": "# Artículo 15. Improcedencia del rechazo\nNo podrán ser motivo de rechazo o archivo de la solicitud de acceso a la información, aquellas que fuesen defectuosas o se presenten ante una fuente pública no competente.\n"
+      },
+      "art-016": {
+       "label": "Art. 16",
+       "kind": "art",
+       "text": "# Artículo 16. Plazo y entrega\nToda solicitud deberá ser respondida dentro del plazo de quince días hábiles, contados a partir del día siguiente de la presentación. La información pública requerida será entregada en forma personal, o a través del formato o soporte elegido por el solicitante.\n"
+      },
+      "art-017": {
+       "label": "Art. 17",
+       "kind": "art",
+       "text": "# Artículo 17. Límites\nEn caso que la información pública solicitada ya esté disponible para el solicitante, a través de cualquier medio fehaciente, la fuente pública requerida le hará saber, además de indicar la fuente, el lugar y la forma en que puede tener acceso a la misma, con lo cual se entenderá que se dio cumplimiento a la obligación de informar.\n"
+      },
+      "art-018": {
+       "label": "Art. 18",
+       "kind": "art",
+       "text": "# Artículo 18. Prohibiciones\nNo se permitirá la salida de datos o registros originales de los archivos de las fuentes públicas en los que se hallen almacenados, y tampoco se podrá solicitar que se efectúen evaluaciones o análisis que no corresponden al ámbito de sus funciones.\n"
+      },
+      "art-019": {
+       "label": "Art. 19",
+       "kind": "art",
+       "text": "# Artículo 19. Denegatoria\nSolo se podrá negar la información pública requerida mediante resolución fundada, la que deberá ser dictada por la máxima autoridad de la fuente pública requerida, quien expresará los motivos de hecho y de derecho en que se basa la decisión.\nEn este caso, la fuente pública deberá informar al solicitante, respecto a las vías procesales que le son otorgadas para el reclamo de la decisión así como los órganos legales competentes para entender en esa cuestión.\n"
+      },
+      "art-020": {
+       "label": "Art. 20",
+       "kind": "art",
+       "text": "# Artículo 20. Resolución ficta\nSi dentro del plazo previsto en el artículo 16 de la presente ley, no existe respuesta alguna por parte de la fuente pública requerida, se entenderá que la solicitud fue denegada.\n"
+      },
+      "art-021": {
+       "label": "Art. 21",
+       "kind": "art",
+       "text": "# Artículo 21. Recurso\nEn caso de denegación expresa o tácita de una solicitud de acceso a la información pública, procederá el recurso de reconsideración, a fin de que la misma autoridad examine nuevamente la cuestión y dicte la resolución que corresponda.\n"
+      },
+      "art-022": {
+       "label": "Art. 22",
+       "kind": "art",
+       "text": "# Artículo 22. Definición\nLa información pública reservada es aquella que ha sido o sea calificada o determinada como tal en forma expresa por la ley.\n"
+      },
+      "art-023": {
+       "label": "Art. 23",
+       "kind": "art",
+       "text": "# Artículo 23. Competencia\nEn caso de denegación expresa o tácita de una solicitud de acceso a la información o de cualquier otro incumplimiento de una repartición pública con relación a las obligaciones previstas en la presente ley, el solicitante, haya o no interpuesto el recurso de reconsideración, podrá, a su elección, acudir ante cualquier Juez de Primera Instancia con jurisdicción en el lugar de su domicilio o en donde tenga su asiento la fuente pública.\n"
+      },
+      "art-024": {
+       "label": "Art. 24",
+       "kind": "art",
+       "text": "# Artículo 24. Plazo\nLa acción contra la denegación expresa o tácita de una solicitud de acceso a la información pública, deberá ser interpuesta en el plazo de sesenta días.\n"
+      },
+      "art-025": {
+       "label": "Art. 25",
+       "kind": "art",
+       "text": "# Artículo 25. Medidas de urgencia\nSi de los fundamentos del escrito de interposición de la acción o en cualquier otro momento del proceso resultare, a criterio del Juzgado, la necesidad de su inmediata actuación, este dispondrá, con carácter provisional, las medidas que correspondieren en amparo del derecho o libertad presuntamente negados o menoscabados.\n"
+      },
+      "art-026": {
+       "label": "Art. 26",
+       "kind": "art",
+       "text": "# Artículo 26. Cumplimiento\na) Toda decisión judicial que ordene la entrega de información pública, deberá cumplirse en los plazos legales pertinentes.\nb) El que incumpliere la decisión judicial descrita en el inciso anterior, será castigado con pena de multa de hasta trescientos días-multa y una medida de inhabilitación para el ejercicio de la función pública de hasta dos años.\n"
+      },
+      "art-027": {
+       "label": "Art. 27",
+       "kind": "art",
+       "text": "# Artículo 27\nLos montos obtenidos por la aplicación de la pena prevista en el artículo anterior serán destinados a la Dirección General del Tesoro, para el cumplimiento de sus fines.\n"
+      },
+      "art-028": {
+       "label": "Art. 28",
+       "kind": "art",
+       "text": "# Artículo 28. Sumario administrativo\nEl incumplimiento de los deberes y obligaciones dispuestos en la presente ley, por parte de funcionarios y empleados públicos, también será considerado como falta grave e incurrirán en responsabilidad administrativa, por lo que serán pasibles de las sanciones establecidas en la Ley N° 1.626/00 \"DE LA FUNCIÓN PÚBLICA\" y en las disposiciones legales correspondientes.\n"
+      },
+      "art-029": {
+       "label": "Art. 29",
+       "kind": "art",
+       "text": "# Artículo 29. Legislación aplicable\nEn el caso que el incumplimiento sea cometido por parte de un sujeto que no sea funcionario o empleado público, se aplicarán las sanciones establecidas en las disposiciones legales que rijan su relación laboral con la fuente pública a la cual pertenece.\n"
+      },
+      "art-030": {
+       "label": "Art. 30",
+       "kind": "art",
+       "text": "# Artículo 30. Presunción\nEn los casos señalados en este Título, siempre se presumirá la buena fe y razonabilidad de los actos, de quien ejerce un cargo público.\n"
+      },
+      "art-031": {
+       "label": "Art. 31",
+       "kind": "art",
+       "text": "# Artículo 31. Partidas presupuestarias\nLas fuentes públicas deberán prever dentro de su presupuesto anual, los recursos necesarios para implementar las disposiciones establecidas en la presente ley.\n"
+      },
+      "art-032": {
+       "label": "Art. 32",
+       "kind": "art",
+       "text": "# Artículo 32. Entrada en vigencia\nLa presente ley entrará a regir a partir del año siguiente de su promulgación.\n"
+      },
+      "art-033": {
+       "label": "Art. 33",
+       "kind": "art",
+       "text": "# Artículo 33\nComuníquese al Poder Ejecutivo.\n"
+      },
+      "indice": {
+       "label": "Índice de libros, títulos y capítulos",
+       "kind": "index",
+       "text": "# LIBROS, TITULOS Y CAPITULOS\nart-001: TÍTULO I - DISPOSICIONES GENERALES\nart-006: TÍTULO II - AUTORIDAD DE APLICACIÓN\nart-008: TÍTULO III - INFORMACIÓN MÍNIMA\nart-012: TÍTULO IV - PROCEDIMIENTO\nart-022: TÍTULO V - INFORMACION PÚBLICA RESERVADA\nart-023: TÍTULO VI - ACCIÓN JUDICIAL\nart-028: TÍTULO VII - SANCIONES\nart-031: TÍTULO VIII - DISPOSICIONES FINANCIERAS\nart-032: TÍTULO IX - DISPOSICIONES FINALES\n"
+      },
+      "sancion": {
+       "label": "Sanción",
+       "kind": "closing",
+       "text": "# SANCION\nAprobado el Proyecto de Ley por la Honorable Cámara de Diputados, a los veintiocho días del mes de mayo del año dos mil catorce, y por la Honorable Cámara de Senadores, a los veintiún días del mes de agosto del año dos mil catorce, queda sancionado, de conformidad con lo dispuesto en el artículo 207, numeral 1 de la Constitución Nacional.\n"
+      }
+     },
+     "credits": {},
+     "note": "The law as enacted, from its BACN page; in force one year after its promulgation on 18 September 2014 (art. 32)."
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  "Ley 5282/2014 de Libre Acceso Ciudadano a la Información Pública y Transparencia Gubernamental: BACN publishes it as enacted (promulgated 18 September 2014). Art. 32: \"entrará a regir a partir del año siguiente de su promulgación\", taken as one year after promulgation, 2015-09-18.",
+  "Ley 5282/2014: Amending laws were looked for with the BACN search (queries \"6715\", \"6715/2021\", \"procedimientos administrativos\", \"5282\", \"5282/2014\", \"5.282\", \"libre acceso ciudadano\"); every hit was screened for a modifying, repealing or suspending formula that names the law, and none was found (Leyes 7411/2024, 7547/2025 and 7593/2025 only refer to Ley 6715). The current text is therefore the enacted text; there is no official consolidated text to compare it with.",
+  "Ley 5282/2014 units: art-NNN headed \"# Artículo N. Epigraph\": the epigraph is the opening sentence when it has at most 60 characters and is followed by a capital (art. 26 prints \"Cumplimiento.\" alone on its line); arts. 27 and 33 have none. BACN HTML lists are read with datos/pages.py (nested lists numbered innermost first, markers as the page CSS shows them); unit headings and chapter headings as for the other acts (indice.md, sancion.md).",
+  "Ley 5282/2014: no line joins were needed."
+ ],
+ "ai_use": [
+  "Ley 5282/2014 part: Claude Opus 5.5 (claude-opus-5-5) in Claude Code wrote administrativo/administrativo.py, ran the BACN searches and screened the hits. No model wrote or changed legal text: every provision is extracted by code from the BACN page."
+ ]
+}

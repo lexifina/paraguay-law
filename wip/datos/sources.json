@@ -1,0 +1,7 @@
+{
+ "note": "BACN pages read by datos/datos.py (Ley 6534/2020 de Protección de Datos Personales Crediticios and Ley 7593/2025 de Protección de Datos Personales), fetched with ../fetch.py: python -X utf8 datos/datos.py --fetch",
+ "urls": [
+  "https://www.bacn.gov.py/leyes-paraguayas/9417/ley-n-6534-de-protecci-n-de-datos-personales-crediticios",
+  "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-7593-2025-de-protecci-n-de-datos-personales-en-la-rep-blica-del-paraguay"
+ ]
+}

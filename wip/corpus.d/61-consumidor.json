@@ -1,0 +1,551 @@
+{
+ "laws": {
+  "ley-1334-1998": {
+   "label": "Ley N° 1334/1998",
+   "title": "De Defensa del Consumidor y del Usuario",
+   "kind": "law",
+   "enacted": "1998-10-27",
+   "published": "1998-10-30",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/897/ley-n-1334-de-defensa-del-consumidor-y-del-usuario-br",
+   "temporary_until": null,
+   "restores": null
+  },
+  "ley-2340-2003": {
+   "label": "Ley N° 2340/2003",
+   "title": "QUE AMPLIA LA LEY N° 1334 DEL 27 DE OCTUBRE DE 1998 \"DE DEFENSA DEL CONSUMIDOR Y DEL USUARIO\"",
+   "kind": "law",
+   "enacted": "2003-12-26",
+   "published": "2004-01-12",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/5040/ley-n-2340-amplia-la-ley-n-1334-del-27-de-octubre-de-1998-de-defensa-del-consumidor-y-del-usuario-br",
+   "temporary_until": null,
+   "restores": null
+  },
+  "ley-4974-2013": {
+   "label": "Ley N° 4974/2013",
+   "title": "DE LA SECRETARIA DE DEFENSA DEL CONSUMIDOR Y EL USUARIO",
+   "kind": "law",
+   "enacted": "2013-08-22",
+   "published": "2013-08-28",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4772/ley-n-4974-de-la-secretaria-de-defensa-del-consumidor-y-el-usuario-br",
+   "temporary_until": null,
+   "restores": null,
+   "note": "Ley 4974/2013 creates the Secretaría de Defensa del Consumidor y el Usuario (SEDECO) and, by its art. 22, repeals arts. 40, 41 and 42 of Ley 1334/1998 only \"en lo atinente al Ministerio de Industria y Comercio\"; the repeal names no words to strike, so the text is unchanged."
+  },
+  "ley-5427-2015": {
+   "label": "Ley N° 5427/2015",
+   "title": "QUE MODIFICA EL ARTÍCULO 28 DE LA LEY N° 1.334/98 \"DE DEFENSA DEL CONSUMIDOR Y DEL USUARIO\"",
+   "kind": "law",
+   "enacted": "2015-04-30",
+   "published": "2015-05-05",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/4415/ley-n-5427-modifica-el-art-culo-28-de-la-ley-n-1-334-98-de-defensa-del-consumidor-y-del-usuario-br",
+   "temporary_until": null,
+   "restores": null
+  },
+  "ley-6366-2019": {
+   "label": "Ley N° 6366/2019",
+   "title": "QUE MODIFICA LA LEY Nº 1334/98 \"DE DEFENSA DEL CONSUMIDOR Y DEL USUARIO\" Y ESTABLECE MAYOR CLARIDAD Y TRANSPARENCIA EN LA INFORMACIÓN SOBRE OPERACIONES DE CRÉDITO",
+   "kind": "law",
+   "enacted": "2019-09-20",
+   "published": "2019-09-20",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/9529/ley-n-6366-modifica-la-ley-n-1334-98-de-defensa-del-consumidor-y-del-usuario-y-establece-mayor-claridad-y-transparencia-en-la-informaci-n-sobre-operaciones-de-cr-dito",
+   "temporary_until": null,
+   "restores": null
+  },
+  "ley-6624-2020": {
+   "label": "Ley N° 6624/2020",
+   "title": "QUE MODIFICA EL ARTÍCULO 30 DE LA LEY N° 1334/1998 \"DE DEFENSA DEL CONSUMIDOR Y DEL USUARIO\"",
+   "kind": "law",
+   "enacted": "2020-10-15",
+   "published": "2020-11-04",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/9409/ley-n-6624-modifica-el-art-culo-30-de-la-ley-n-1334-1998-de-defensa-del-consumidor-y-del-usuario",
+   "temporary_until": null,
+   "restores": null
+  }
+ },
+ "acts": [
+  {
+   "slug": "ley-defensa-consumidor",
+   "short": "LDC",
+   "title": "Ley N° 1334/1998 de Defensa del Consumidor y del Usuario",
+   "url": "https://www.bacn.gov.py/leyes-paraguayas/897/ley-n-1334-de-defensa-del-consumidor-y-del-usuario-br",
+   "first_law": "ley-1334-1998",
+   "earlier_laws": [],
+   "versions": [
+    {
+     "from": "1999-04-25",
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/897/ley-n-1334-de-defensa-del-consumidor-y-del-usuario-br",
+     "sha256": "438c33261df0600c2d4197105b4b9db6a53cd274ed6017ab685e13c87b0ad8d9",
+     "units": {
+      "art-001": {
+       "label": "Art. 1",
+       "kind": "art",
+       "text": "# Artículo 1\nLa presente ley establece las normas de protección y de defensa de los consumidores y usuarios, en su dignidad, salud, seguridad e intereses económicos.\n"
+      },
+      "art-002": {
+       "label": "Art. 2",
+       "kind": "art",
+       "text": "# Artículo 2\nLos derechos reconocidos por la presente ley a los consumidores no podrán ser objetos de renuncia, transacción o limitación convencional y prevalecerán sobre cualquier norma legal, uso, costumbre, práctica o estipulación en contrario.\n"
+      },
+      "art-003": {
+       "label": "Art. 3",
+       "kind": "art",
+       "text": "# Artículo 3\nQuedarán sujetos a las disposiciones de la presente ley todos los actos celebrados entre proveedores y consumidores relativos a la distribución, venta, compra o cualquier otra forma de transacción comercial de bienes y servicios.\n"
+      },
+      "art-004": {
+       "label": "Art. 4",
+       "kind": "art",
+       "text": "# Artículo 4\nA los efectos de la presente ley, se entenderán por:\na) CONSUMIDOR Y USUARIO: a toda persona física o jurídica, nacional o extranjera que adquiera, utilice o disfrute como destinatario final de bienes o servicios de cualquier naturaleza;\nb) PROVEEDOR: a toda persona física o jurídica, nacional o extranjera, pública o privada que desarrolle actividades de producción, fabricación, importación, distribución, comercialización, venta o arrendamiento de bienes o de prestación de servicios a consumidores o usuarios, respectivamente, por los que cobre un precio o tarifa;\nc) PRODUCTOS: a todas las cosas que se consumen con su empleo o uso y las cosas o artefactos de uso personal o familiar que no se extinguen por su uso;\nd) SERVICIOS: a cualquier actividad onerosa suministrada en el mercado, inclusive las de naturaleza bancaria, financiera, de crédito o de seguro, con excepción de las que resultan de las relaciones laborales.\nNo están comprendidos en esta ley, los servicios de profesionales liberales que requieran para su ejercicio título universitario y matrícula otorgada por la autoridad facultada para ello, pero sí la publicidad que se haga de su ofrecimiento.\ne) ANUNCIANTE: al proveedor de bienes o servicios que ha encargado la difusión pública de un mensaje publicitario o de cualquier tipo de información referida a sus productos o servicios;\nf) ACTOS DE CONSUMO: es todo tipo de acto, propio de las relaciones de consumo, celebrado entre proveedores y consumidores o usuarios, referidos a la producción, distribución, depósito, comercialización, venta o arrendamiento de bienes, muebles o inmuebles o a la contratación de servicios;\ng) CONSUMO SUSTENTABLE: es todo acto de consumo, destinado a satisfacer necesidades humanas, realizado sin socavar, dañar o afectar significativamente la calidad del medio ambiente y su capacidad para dar satisfacción a las necesidades de las generaciones presentes y futuras;\nh) CONTRATO DE ADHESION: es aquél cuyas cláusulas han sido establecidas unilateralmente por el proveedor de bienes o servicios, sin que el consumidor, para celebrarlo, pueda discutir, alterar o modificar substancialmente su contenido; e,\ni) INTERESES COLECTIVOS: son aquellos intereses supraindividuales, de naturaleza indivisible de los que sean titulares un grupo, categoría o clase de personas, ligadas entre sí o con la parte contraria por una relación jurídica, cuyo resguardo interesa a toda la colectividad, por afectar a una pluralidad de sujetos que se encuentren en una misma situación.\n"
+      },
+      "art-005": {
+       "label": "Art. 5",
+       "kind": "art",
+       "text": "# Artículo 5\nRelación de consumo es la relación jurídica que se establece entre quien, a título oneroso, provee un producto o presta un servicio y quien lo adquiere o utiliza como destinatario final.\n"
+      },
+      "art-006": {
+       "label": "Art. 6",
+       "kind": "art",
+       "text": "# Artículo 6\nConstituyen derechos básicos del consumidor:\na) la libre elección del bien que se va a adquirir o del servicio que se va a contratar;\nb) la protección de la vida, la salud y la seguridad contra los riesgos provocados por la provisión de productos y la prestación de servicios considerados nocivos o peligrosos;\nc) la adecuada educación y divulgación sobre las características de los productos y servicios ofertados en el mercado, asegurando a los consumidores la libertad de decidir y la equidad en las contrataciones;\nd) la información clara sobre los diferentes productos y servicios con las correspondientes especificaciones sobre la composición, calidad, precio y riesgos que eventualmente presenten;\ne) la adecuada protección contra la publicidad engañosa, los métodos comerciales coercitivos o desleales, y las cláusulas contractuales abusivas en la provisión de productos y la prestación de servicios;\nf) la efectiva prevención y reparación de los daños patrimoniales y morales o de los intereses difusos ocasionados a los consumidores, ya sean individuales o colectivos;\ng) la constitución de asociaciones de consumidores con el objeto de la defensa y representación de los mismos;\nh) la adecuada y eficaz prestación de los servicios públicos por sus proveedores, sean éstos públicos o privados; e,\ni) recibir el producto o servicio publicitado en el tiempo, cantidad, calidad y precio prometidos.\n"
+      },
+      "art-007": {
+       "label": "Art. 7",
+       "kind": "art",
+       "text": "# Artículo 7\nLos derechos previstos en esta ley no excluyen otros derivados de tratados o convenciones internacionales de los que la República del Paraguay sea signataria, de la legislación interna ordinaria, de reglamentos expedidos por las autoridades administrativas competentes, así como los que deriven de los principios generales del derecho.\nLas disposiciones de esta ley se integran con las normas generales y especiales contenidas en el Código Civil, el Título IV de la Ley del Comerciante y otras normas tanto jurídicas como técnicas que se refieran a la prestación de servicios y suministros de cosas que hayan sido objeto de normalización. En caso de duda se estará a la interpretación más favorable al consumidor.\n"
+      },
+      "art-008": {
+       "label": "Art. 8",
+       "kind": "art",
+       "text": "# Artículo 8\nQuienes produzcan, importen, distribuyan o comercialicen bienes o presten servicios, suministrarán a los consumidores o usuarios, en forma cierta y objetiva, información veraz, eficaz y suficiente sobre las características esenciales de los mismos.\nLa oferta y presentación de los productos o servicios asegurará informaciones correctas, claras, precisas y visibles, escritas en idioma oficial, sobre sus características, cualidades, cantidad, composición, precio, garantía, plazo de validez, origen, dirección del local de reclamo y los riesgos que presenten para la seguridad de los consumidores, en su caso.\n"
+      },
+      "art-009": {
+       "label": "Art. 9",
+       "kind": "art",
+       "text": "# Artículo 9\nLa oferta obliga al proveedor que la emite por todo el plazo de su vigencia. Si ella no indicase plazo para el efecto, se entenderá que es de carácter permanente. Cuando la oferta se realice en día inhábil se interpretará que se prolonga hasta el primer día hábil siguiente. El proveedor podrá revocar anticipadamente la oferta, siempre que lo difunda por medios similares a los empleados para hacerla conocer.\n"
+      },
+      "art-010": {
+       "label": "Art. 10",
+       "kind": "art",
+       "text": "# Artículo 10\nLos precios de productos o servicios, incluidos los impuestos, deberán estar indicados con precisión en la oferta, en la moneda de curso legal en el país.\n"
+      },
+      "art-011": {
+       "label": "Art. 11",
+       "kind": "art",
+       "text": "# Artículo 11\nCuando el proveedor de productos o servicios ofrezca garantía, deberá hacerlo por escrito y para todos los productos idénticos, en idioma oficial y de fácil comprensión, con letra clara y legible, conteniendo como mínimo las siguientes informaciones:\na) identificación de quién ofrece la garantía;\nb) identificación del fabricante o importador del producto o prestador de servicio respectivo;\nc) identificación precisa del producto o servicio, con sus especificaciones técnicas;\nd) condiciones de validez de la garantía, su plazo y cobertura, especificando las partes del producto o servicio que serán cubiertas por la garantía;\ne) domicilio de quienes estén obligados contractualmente a prestar la garantía;\nf) condiciones de preparación de producto o servicio, con especificación del lugar donde se efectivizará la garantía;\ng) costos a cargo del consumidor, si los hubiese; y,\nh) lugar y fecha de provisión del producto de servicio al consumidor.\n"
+      },
+      "art-012": {
+       "label": "Art. 12",
+       "kind": "art",
+       "text": "# Artículo 12\nCuando se provea al público productos con algún defecto, usados o reconstruidos, se deberá indicar de manera precisa y clara tales circunstancias.\n"
+      },
+      "art-013": {
+       "label": "Art. 13",
+       "kind": "art",
+       "text": "# Artículo 13\nLos fabricantes o importadores de bienes asegurarán el regular suministro de componentes, repuestos y servicios técnicos, durante el lapso en que los mismos se fabriquen, armen, importen o distribuyan, y posteriormente durante un período razonable, en función de la durabilidad de los bienes en cuestión, salvo que en la oferta se aclare que el vendedor no se obliga al suministro de aquéllos.\n"
+      },
+      "art-014": {
+       "label": "Art. 14",
+       "kind": "art",
+       "text": "# Artículo 14\nQueda prohibido al proveedor:\na) condicionar la adquisición de un producto o servicio a la de otro producto o servicio, excepto cuando por los usos o costumbres o la naturaleza del producto o servicio, éstos sean ofrecidos en conjunto;\nb) aprovechar la ligereza o ignorancia del consumidor para lograr el consumo de sus productos o servicios;\nc) hacer circular información que desprestigie al consumidor, a causa de las acciones realizadas por éste, en ejercicio de sus derechos establecidos en esta ley;\nd) dejar de señalar el plazo para el cumplimiento de su obligación, o los plazos respectivos cuando fueren de cumplimiento sucesivo;\ne) enviar o entregar al consumidor cualquier producto o proveer cualquier servicio que no haya sido previamente solicitado; y,\nf) discriminar al consumidor por razones de sexo, edad, religión, raza o posición económica, en la provisión de un producto o servicio ofertado al publico en general.\n"
+      },
+      "art-015": {
+       "label": "Art. 15",
+       "kind": "art",
+       "text": "# Artículo 15\nSalvo que por la naturaleza del servicio no se requiera, el proveedor de servicio deberá asegurar en forma clara, correcta y precisa, las siguientes informaciones:\na) nombre y domicilio del proveedor del servicio;\nb) la descripción del servicio a prestar;\nc) la calidad del servicio a prestar;\nd) una descripción de los materiales, implementos y tecnología a emplear;\ne) el precio, incluídos los impuestos, su composición cuando corresponda, y la forma de pago;\nf) plazo de validez del presupuesto y plazo de validez del servicio;\ng) los riesgos que el servicio pueda ocasionar para la salud o seguridad;\nh) alcance y duración en el caso de otorgarse garantía contractual; e,\ni) cualquier otra información que sea esencial para decidir la relación de consumo.\n"
+      },
+      "art-016": {
+       "label": "Art. 16",
+       "kind": "art",
+       "text": "# Artículo 16\nTodo servicio, tarea o empleo material o costo adicional, que se evidencie como necesario durante la prestación del servicio y que por su naturaleza o característica no pudo ser incluido en el presupuesto original, deberá ser comunicado al consumidor antes de su realización o utilización, salvo que el tipo de servicio prestado no pueda sufrir interrupciones sin causar daño al consumidor o sin afectar la calidad del mismo servicio.\n"
+      },
+      "art-017": {
+       "label": "Art. 17",
+       "kind": "art",
+       "text": "# Artículo 17\nLas empresas prestadoras de servicios públicos a domicilio, sean éllas reparticiones del Estado, gobiernos departamentales o municipales, entes autónomos autárquicos o empresas privadas, mixtas o estatales, deberán entregar al usuario o consumidor, constancia escrita de las condiciones de la prestación y de los derechos y obligaciones de ambas partes. Sin perjuicio de ello, deberán mantener tal información a disposición de los usuarios en todas las oficinas de atención al público.\nLa presente ley se aplicará en las cuestiones no previstas en las leyes especiales que regulen la prestación de servicios públicos.\n"
+      },
+      "art-018": {
+       "label": "Art. 18",
+       "kind": "art",
+       "text": "# Artículo 18\nLos entes indicados en el artículo anterior deberán otorgar a los usuarios reciprocidad de trato, con relación a los reintegros o devoluciones, aplicando los mismos criterios que establezcan para cargos por mora.\n"
+      },
+      "art-019": {
+       "label": "Art. 19",
+       "kind": "art",
+       "text": "# Artículo 19\nLos entes que presten servicios públicos deberán habilitar un registro de reclamos, donde quedarán asentadas las presentaciones de los usuarios. Dichos reclamos deberán ser satisfechos en los plazos que establezca la reglamentación de la presente ley.\n"
+      },
+      "art-020": {
+       "label": "Art. 20",
+       "kind": "art",
+       "text": "# Artículo 20\nLos usuarios o consumidores de servicios públicos que se prestan a domicilio y requieren instalaciones específicas, serán informados sobre las condiciones de seguridad de las instalaciones y de los artefactos que las componen.\n"
+      },
+      "art-021": {
+       "label": "Art. 21",
+       "kind": "art",
+       "text": "# Artículo 21\nLa autoridad competente queda facultada a intervenir en la verificación del buen funcionamiento de los instrumentos de medición de energía, combustibles, comunicaciones, agua potable o cualquier otro servicio, cuando existan dudas sobre las lecturas efectuadas por los entes proveedores de los respectivos servicios.\nTanto los instrumentos como las unidades de medición deberán ser los legalmente autorizados. Los entes proveedores garantizarán a los usuarios o consumidores el control individual de los consumos. Las facturas serán entregadas en el domicilio del consumidor o usuario con no menos de diez días de anticipación a la fecha de su vencimiento. En las facturas de los servicios de esta naturaleza deberán consignarse en forma expresa y clara los detalles de consumo, medición y precio de las unidades consumidas.\n"
+      },
+      "art-022": {
+       "label": "Art. 22",
+       "kind": "art",
+       "text": "# Artículo 22\nCuando la prestación del servicio público domiciliario se interrumpa o sufra alteraciones, se presumirá que es por causa imputable a la entidad proveedora. Efectuado el reclamo por el usuario, el ente dispondrá de un plazo máximo de treinta días para demostrar que la interrupción o alteración no le es imputable. En caso contrario, el ente deberá reintegrar el importe total del servicio no prestado dentro de los diez días de vencido el plazo establecido precedentemente.\nEsta disposición no será aplicable cuando el valor del servicio no prestado sea deducido de la factura correspondiente. El usuario podrá formular el reclamo desde la interrupción o alteración del servicio y hasta los quince días posteriores a la fecha de la factura.\nEn todo caso el consumidor o usuario tendrá derecho al suministro correcto e ininterrumpido del servicio, y a demandar por los daños y perjuicios que le irrogue la mala calidad, los defectos o las interrupciones del servicio.\n"
+      },
+      "art-023": {
+       "label": "Art. 23",
+       "kind": "art",
+       "text": "# Artículo 23\nCuando el monto de una factura, tasa o precio del consumo sea notoriamente superior al promedio de cuatro facturaciones anteriores, el consumidor o usuario podrá evitar la interrupción de los servicios públicos o la pérdida de su titularidad, mientras efectúe las reclamaciones administrativas o judiciales, pagando a la entidad proveedora del servicio o depositando a la orden del juzgado interviniente, el monto promedio de las cuatro últimas facturaciones anteriores, en forma regular.\nLa autoridad de aplicación intervendrá en los casos en que los recargos por mora en facturas de servicios públicos pagadas fuera de término fuesen excesivamente elevados con relación a las tasas activas vigentes en el mercado.\nEl proveedor podrá retirar en todo momento los montos depositados judicialmente por el consumidor o usuario, sin que ello implique consentir el reclamo ni reconocer hechos ni derechos.\n"
+      },
+      "art-024": {
+       "label": "Art. 24",
+       "kind": "art",
+       "text": "# Artículo 24\nSe entenderá por contrato de adhesión, aquél cuyas cláusulas han sido aprobadas por la autoridad competente o establecidas unilateralmente por el proveedor de bienes o servicios, sin que el consumidor pueda discutir o modificar substancialmente su contenido al momento de contratar.\n"
+      },
+      "art-025": {
+       "label": "Art. 25",
+       "kind": "art",
+       "text": "# Artículo 25\nTodo contrato de adhesión, presentado en formularios, en serie o mediante cualquier otro procedimiento similar, deberá ser redactado con caracteres legibles a simple vista y en términos claros y comprensibles para el consumidor.\n"
+      },
+      "art-026": {
+       "label": "Art. 26",
+       "kind": "art",
+       "text": "# Artículo 26\nEl consumidor tendrá derecho a retractarse dentro de un plazo de siete días contados desde la firma del contrato o desde la recepción del producto o servicio, cuando el contrato se hubiere celebrado fuera del establecimiento comercial, especialmente si ha sido celebrado por teléfono o en el domicilio del consumidor.\nEn el caso que ejercite oportunamente este derecho, le serán restituidos los valores cancelados, debidamente actualizados, siempre que el servicio o producto no hubiese sido utilizado o sufrido deterioro.\n"
+      },
+      "art-027": {
+       "label": "Art. 27",
+       "kind": "art",
+       "text": "# Artículo 27\nLas cláusulas contractuales serán interpretadas de la manera más favorable al consumidor.\n"
+      },
+      "art-028": {
+       "label": "Art. 28",
+       "kind": "art",
+       "text": "# Artículo 28\nSe considerarán abusivas y conllevan la nulidad de pleno derecho y, por lo tanto, sin que se puedan oponer al consumidor las cláusulas o estipulaciones que:\na) desnaturalicen las obligaciones o que eliminen o restrinjan la responsabilidad por daños;\nb) importen renuncia o restricción de los derechos del consumidor o amplíen los derechos de la otra parte;\nc) contengan cualquier precepto que imponga la inversión de la carga de la prueba en perjuicio del consumidor;\nd) impongan la utilización obligatoria del arbitraje ;\ne) permitan al proveedor la variación unilateral del precio o de otras condiciones de contrato;\nf) violen o infrinjan normas medioambientales;\ng) impliquen renuncia del consumidor al derecho a ser resarcido o reembolsado de cualquier erogación que sea legalmente a cargo del proveedor; y,\nh) impongan condiciones injustas de contratación, exageradamente gravosas para el consumidor, o causen su indefensión.\n"
+      },
+      "art-029": {
+       "label": "Art. 29",
+       "kind": "art",
+       "text": "# Artículo 29\nEn las operaciones de crédito para la adquisición de productos o servicios deberá consignarse, bajo pena de nulidad, cuanto sigue:\na) el precio al contado del bien o servicio en cuestión;\nb) el monto de los intereses, las tasas anuales o mensuales a que éstos se calculan así como la tasa de interés moratorio;\nc) cualquier recargo sobre el precio por comisión, gastos administrativos, tasas, etc.;\nd) el número de pagos a efectuar, así como su periodicidad;\ne) la suma total a pagar por el producto o servicio, la que no podrá superar al precio al contado más los intereses; y,\nf) los derechos y obligaciones de las partes en caso de incumplimiento.\n"
+      },
+      "art-030": {
+       "label": "Art. 30",
+       "kind": "art",
+       "text": "# Artículo 30\nEn toda venta o prestación de servicio a crédito, el consumidor tendrá derecho a pagar anticipadamente la totalidad de lo adeudado. En ambos casos, se procederá a la consiguiente reducción proporcional de los intereses.\n"
+      },
+      "art-031": {
+       "label": "Art. 31",
+       "kind": "art",
+       "text": "# Artículo 31\nTodos los bienes y servicios cuya utilización, por su naturaleza, pueda suponer un riesgo normal y previsible para la vida, seguridad y salud de los consumidores, deberán comercializarse observando los mecanismos, instrucciones y normas necesarios para garantizar la fiabilidad de los mismos.\n"
+      },
+      "art-032": {
+       "label": "Art. 32",
+       "kind": "art",
+       "text": "# Artículo 32\nLos proveedores de bienes y servicios riesgosos para la vida, salud y seguridad deberán informar, en forma ostensible y adecuada, sobre su peligrosidad o nocividad, sin perjuicio de la adopción de otras medidas que pueda tomarse en cada caso concreto.\n"
+      },
+      "art-033": {
+       "label": "Art. 33",
+       "kind": "art",
+       "text": "# Artículo 33\nPara los casos señalados en los artículos 31 y 32 de la presente ley, el proveedor deberá entregar las instrucciones en un manual en idioma oficial, sobre el uso, la instalación y el mantenimiento de dichos bienes y servicios.\n"
+      },
+      "art-034": {
+       "label": "Art. 34",
+       "kind": "art",
+       "text": "# Artículo 34\nLos proveedores de bienes o servicios, que posteriormente a la introducción de los mismos en el mercado, tengan conocimiento de su peligrosidad, deberán comunicar inmediatamente tal circunstancia a las autoridades competentes y a los consumidores, mediante anuncios publicitarios, so pena de ser sancionados de conformidad a lo establecido en la ley.\nSi se descubre que un producto adolece de un defecto grave o constituye un peligro considerable, aun cuando se utilice en forma adecuada, la autoridad de aplicación de la presente ley obligará a los fabricantes o proveedores a retirarlo y reemplazarlo o a modificarlo o substituirlo por otro producto. Si no fuere posible hacerlo en un plazo prudencial, deberán otorgar al consumidor una compensación adecuada.\n"
+      },
+      "art-035": {
+       "label": "Art. 35",
+       "kind": "art",
+       "text": "# Artículo 35\nEstá prohibida cualquier publicidad considerada engañosa. Se entenderá por tal, cualquier modalidad de información, difusión o comunicación de carácter publicitario que sea entera o parcialmente falsa, o que de cualquier otro modo, incluso por omisión, sea capaz de inducir a error al consumidor, cuando se proporcionen datos respecto a la naturaleza, características, calidad, cantidad, propiedades, origen, precio, condiciones de comercialización, técnicas de producción o cualquier otro dato que sea necesario para definir la relación de consumo.\n"
+      },
+      "art-036": {
+       "label": "Art. 36",
+       "kind": "art",
+       "text": "# Artículo 36\nNo será permitida la publicidad comparativa cuando, a través de acciones dolosas o de declaraciones generales e indiscriminadas, se induzca al consumidor a establecer la superioridad de un producto o servicio sobre otro.\n"
+      },
+      "art-037": {
+       "label": "Art. 37",
+       "kind": "art",
+       "text": "# Artículo 37\nQueda prohibida la publicidad abusiva, entendida como aquélla de carácter discriminatorio de cualquier naturaleza, o que incite a la violencia, explote el miedo, se aproveche de la falta de madurez de los niños, infrinja valores medioambientales o sea capaz de inducir al consumidor a comportarse en forma perjudicial o peligrosa para su salud o seguridad.\n"
+      },
+      "art-038": {
+       "label": "Art. 38",
+       "kind": "art",
+       "text": "# Artículo 38\nLa promoción que tenga por objeto el consumo de tabaco, bebidas alcohólicas, medicamentos y bebidas estimulantes, estará sujeta a las limitaciones que impongan las leyes especiales que regulen su producción, venta y publicidad comercial.\n"
+      },
+      "art-039": {
+       "label": "Art. 39",
+       "kind": "art",
+       "text": "# Artículo 39\nEn las controversias que pudieran surgir como consecuencia de lo dispuesto en los artículos precedentes, el anunciante deberá probar la veracidad de las afirmaciones contenidas en el mensaje publicitario.\nPara todos los efectos legales se entenderá como anunciante al proveedor de bienes o servicios que ha encargado la difusión del mensaje publicitario.\n"
+      },
+      "art-040": {
+       "label": "Art. 40",
+       "kind": "art",
+       "text": "# Artículo 40\nEn el ámbito nacional será autoridad de aplicación de la presente ley el Ministerio de Industria y Comercio, y en el ámbito local, las municipalidades; pudiendo ambos actuar en forma concurrente.\n"
+      },
+      "art-041": {
+       "label": "Art. 41",
+       "kind": "art",
+       "text": "# Artículo 41\nEl Ministerio de Industria y Comercio, sin perjuicio de las funciones específicas del mismo, en su carácter de autoridad de aplicación de la presente ley, tendrá las siguientes facultades y atribuciones:\na) mantener un registro nacional de asociación de consumidores;\nb) recibir y dar curso a las inquietudes y denuncias de consumidores;\nc) disponer la realización de inspecciones y pericias vinculadas con la aplicación de esta ley;\nd) solicitar informes y opiniones a entidades públicas y privadas en relación con la materia de esta ley; y,\ne) disponer de oficio o a requerimiento de parte, la celebración de audiencias con la participación de denunciantes, damnificados, presuntos infractores, testigos y peritos, debiendo actuar previamente como conciliador, tratando de avenir a las partes.\nEn el plano local, dentro del marco de la Constitución Nacional, las municipalidades tendrán similares facultades y atribuciones.\n"
+      },
+      "art-042": {
+       "label": "Art. 42",
+       "kind": "art",
+       "text": "# Artículo 42\nPara el ejercicio de las atribuciones establecidas en la presente ley, la autoridad de aplicación podrá solicitar a la justicia ordene el auxilio de la fuerza pública o el allanamiento de domicilio.\n"
+      },
+      "art-043": {
+       "label": "Art. 43",
+       "kind": "art",
+       "text": "# Artículo 43\nLa defensa en juicio de los derechos que esta ley precautela podrá ser ejercida a título individual como a título colectivo. Será ejercida colectivamente cuando se encuentren involucrados intereses o derechos difusos o colectivos.\nTendrán acción el consumidor o usuario, las asociaciones de consumidores que cumplan con los requisitos de los Arts. 45, 46, y 47, la autoridad competente nacional o local y la Fiscalía General de la República.\nLas acciones tendientes al resarcimiento por daños y perjuicios sólo podrán promoverse por los consumidores o usuarios afectados.\n"
+      },
+      "art-044": {
+       "label": "Art. 44",
+       "kind": "art",
+       "text": "# Artículo 44\nPara todos los efectos legales se entenderá por \"intereses difusos\" aquellos intereses supraindividuales, de naturaleza indivisible, de los que sean titulares personas indeterminadas y ligadas al hecho, y por intereses colectivos definidos en el inc. i) del Art. 4º.\n"
+      },
+      "art-045": {
+       "label": "Art. 45",
+       "kind": "art",
+       "text": "# Artículo 45\nSe entenderá por asociación de consumidores, toda organización constituida por personas físicas, que no tenga intereses económicos, comerciales o políticos, y cuyo objeto sea garantizar la protección y la defensa de los consumidores y usuarios y promover la información, la educación, la representación y el respeto de sus derechos.\n"
+      },
+      "art-046": {
+       "label": "Art. 46",
+       "kind": "art",
+       "text": "# Artículo 46\nPara poder actuar como tales en la promoción y defensa de los derechos que esta ley consagra, las asociaciones de consumidores deberán cumplir con los siguientes requisitos :\na) constituirse y estar inscriptas como sociedades sin fines de lucro de acuerdo a las previsiones del Código Civil para este tipo de sociedades;\nb) no participar en actividades político - partidarias;\nc) no recibir donaciones, aportes o contribuciones de empresas comerciales, industriales o proveedoras de servicios, privadas o estatales, nacionales o extranjeras;\nd) no aceptar anuncios de carácter comercial en sus publicaciones; y,\ne) no permitir una explotación comercial selectiva en la información y consejo que ofrezcan al consumidor.\n"
+      },
+      "art-047": {
+       "label": "Art. 47",
+       "kind": "art",
+       "text": "# Artículo 47\nSerán finalidades de las asociaciones de consumidores, entre otras:\na) promover y proteger los derechos de los consumidores;\nb) en las gestiones extrajudiciales y administrativas, apoyar la defensa de los derechos de los consumidores o usuarios afectados, o actuar en forma concurrente con ellos;\nc) promover acciones judiciales tendientes al cumplimiento de lo establecido en esta ley, siempre que no lo hagan los consumidores o usuarios directamente afectados, y siempre que no se demande la indemnización de daños y perjuicios;\nd) recopilar, elaborar, procesar y divulgar información objetiva acerca de los bienes y servicios existentes en el mercado; y,\ne) realizar programas de capacitación, orientación y educación del consumidor.\n"
+      },
+      "art-048": {
+       "label": "Art. 48",
+       "kind": "art",
+       "text": "# Artículo 48\nIncumbe al Estado, las gobernaciones y municipalidades, la formulación de planes de educación para el consumo y su difusión pública, fomentando la creación y el funcionamiento de las asociaciones de consumidores y la participación de la comunidad en ellas.\n"
+      },
+      "art-049": {
+       "label": "Art. 49",
+       "kind": "art",
+       "text": "# Artículo 49\nLa formación del consumidor tenderá, entre otras cosas, a:\na) el conocimiento, la comprensión y adquisición de habilidades que le ayuden a evaluar las alternativas y emplear sus recursos en forma eficiente;\nb) la comprensión y utilización de información sobre temas pertinentes al consumidor;\nc) la prevención de los riesgos que puedan derivarse del consumo de productos o de la utilización de servicios; y,\nd) la estimulación a desempeñar un papel activo que regule, oriente y trasforme el mercado a través de sus decisiones.\n"
+      },
+      "art-050": {
+       "label": "Art. 50",
+       "kind": "art",
+       "text": "# Artículo 50\nEn las operaciones en que los postulantes a consumidores o adjudicatarios se integren en círculos o en sistemas cerrados de aportantes para la adquisición de productos o la obtención de prestaciones o servicios tales como: viajes, uso de hoteles, luego del pago de ciertos aportes o cuotas, o por sorteo, autocancelación o licitación:\n1. las personas o entidades organizadoras, administradoras, promitentes o mandatarias de esos círculos, y los integrantes de sus órganos de dirección y de gerencia, serán solidariamente responsables de la adecuada administración y destino de los fondos recaudados, y, en su caso, de su devolución; del cumplimiento de las adjudicaciones, sorteos, autocancelaciones y licitaciones; de la efectiva entrega de productos o prestación de los servicios en el tiempo, modo, calidad y marca prometidos, y del cumplimiento de las demás prescripciones de este artículo;\n2. en todos los casos los postulantes están facultados para retirarse de esos círculos o sistemas cerrados de aportantes, siempre que consigan otro postulante que los reemplace, el que de pleno derecho será titular de los mismos derechos, cargas y obligaciones que el reemplazado al momento de efectuarse la substitución, la que se efectuará por escrito y sin cargo alguno. Si estando contractualmente facultados para el efecto, las personas o entidades organizadoras, administradoras, promitentes o mandatarias rescinden una operación, o la declaran resuelta o cancelada, quedarán de pleno derecho obligadas a devolver todo lo aportado por el postulante dentro de los quince días de comunicada esa decisión al postulante, con más un interés del 12% (doce por ciento) anual calculado sobre el monto y fecha de cada depósito o entrega del postulante;\n3. no se podrá modificar unilateralmente el monto de los aportes o cuotas ni exigir prestaciones complementarias; y,\n4. serán efectuados en forma pública y con el control de las reparticiones pertinentes, los sorteos, las licitaciones, las autocancelaciones, las adjudicaciones y las entregas de productos. Sus resultados deberán publicarse en un diario de circulación nacional y, en su caso, con la individualización de los postulantes beneficiados.\n"
+      },
+      "art-051": {
+       "label": "Art. 51",
+       "kind": "art",
+       "text": "# Artículo 51\nSin perjuicio de las atribuciones de las reparticiones públicas, de las penalidades determinadas por otras leyes y de la reparación de los daños y perjuicios normadas por la legislación común, los jueces a petición de parte podrán:\n1. prohibir la exhibición, circulación, distribución, transporte o comercialización de productos, que infrinjan disposiciones de esta ley;\n2. ordenar la incautación de productos que infrinjan las disposiciones de esta ley, cuando ellos sean peligrosos o dañinos para la salud;\n3. ordenar el cese de la actividad de las personas o entidades en operaciones o acciones prohibidas en esta ley;\n4. con debida audiencia previa, ordenar la clausura temporal de un establecimiento, negocio o instalación;\n5. aplicar multas conminatorias tendientes al cumplimiento de lo ordenado en sentencias definitivas o en medidas cautelares. Esas multas se graduarán en proporción al caudal económico de quien deba satisfacerlas;\n6. ordenar la publicación de sentencias definitivas o partes de ella, a costa del condenado, en diarios, revistas, en radiodifusoras o teledifusoras;\n7. intimar el cumplimiento o la adecuación a cualquier dispositivo de esta ley y decretar el apercibimiento de aplicar otras sanciones previstas en esta ley o en otras normas jurídicas; y,\n8. dejar sin efecto, las cláusulas dispuestas en los contratos en los términos normados por el artículo 28.\nEn todos los casos las sanciones se aplicarán respetando el derecho de defensa de los afectados por éllas.\n"
+      },
+      "art-052": {
+       "label": "Art. 52",
+       "kind": "art",
+       "text": "# Artículo 52\nA petición de parte los jueces podrán ordenar medidas cautelares tendientes a evitar hechos que importen flagrante violación de lo normado en esta ley, impliquen inminente peligro para la salud o bienestar de los consumidores o usuarios o pueda provocar daños graves a la comunidad; o para hacer cesar esos hechos, todo ello sin perjuicio de las medidas que las reparticiones públicas adopten en el ámbito de sus competencias.\nLos jueces podrán aplicar multas a los litigantes que hubieran solicitado las medidas cautelares de mala fe, ya sea ocultando información, utilizando subterfugios, suministrando información incorrecta o tendenciosa o solicitándolas para exclusivo provecho propio.\n"
+      },
+      "art-053": {
+       "label": "Art. 53",
+       "kind": "art",
+       "text": "# Artículo 53\nLa presente ley entrará en vigencia a los ciento ochenta días de su promulgación. El Poder Ejecutivo reglamentará la presente ley dentro de los noventa días de su promulgación.\n"
+      },
+      "art-054": {
+       "label": "Art. 54",
+       "kind": "art",
+       "text": "# Artículo 54\nComuníquese al Poder Ejecutivo.\n"
+      },
+      "indice": {
+       "label": "Índice de libros, títulos y capítulos",
+       "kind": "index",
+       "text": "# LIBROS, TITULOS Y CAPITULOS\nart-001: CAPITULO I - DISPOSICIONES GENERALES\nart-006: CAPITULO II - DERECHOS BASICOS DEL CONSUMIDOR\nart-008: CAPITULO III - INFORMACION DE OFERTA DE BIENES Y SERVICIOS\nart-017: CAPITULO IV - DE LOS SERVICIOS PUBLICOS\nart-024: CAPITULO V - PROTECCION CONTRACTUAL\nart-029: CAPITULO VI - OPERACIONES DE CREDITO\nart-031: CAPITULO VII - PROTECCION A LA SALUD Y SEGURIDAD\nart-035: CAPITULO VIII - REGULACION DE LA PUBLICIDAD\nart-040: CAPITULO IX - AUTORIDAD DE APLICACIÓN\nart-043: CAPITULO X - DEFENSA EN JUICIO DE LOS DERECHOS DE LOS CONSUMIDORES\nart-045: CAPITULO XI - ASOCIACIONES DE CONSUMIDORES\nart-048: CAPITULO XII - EDUCACION DEL CONSUMIDOR\nart-050: CAPITULO XIII - DE LOS CIRCULOS ADJUDICADORES\nart-051: CAPITULO XIV - DE LAS SANCIONES\nart-053: CAPITULO XV - DISPOSICIONES FINALES\n"
+      },
+      "sancion": {
+       "label": "Sanción",
+       "kind": "closing",
+       "text": "# SANCION\nAprobado el Proyecto de Ley por la Honorable Cámara de Diputados, a dieciocho días del mes de junio del año un mil novecientos noventa y ocho, y por la Honorable Cámara de Senadores, a quince días del mes de setiembre del año un mil novecientos noventa y ocho, quedando sancionado el mismo, de conformidad con lo dispuesto en el Artículo 207, numeral 3 de la Constitución Nacional.\n"
+      }
+     },
+     "credits": {},
+     "note": "The law as enacted, from its BACN page; in force 180 days after its promulgation on 27 October 1998 (art. 53)."
+    },
+    {
+     "from": "2004-01-13",
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/5040/ley-n-2340-amplia-la-ley-n-1334-del-27-de-octubre-de-1998-de-defensa-del-consumidor-y-del-usuario-br",
+     "sha256": "312bedf86aa511fc3ad0364218bccb726fae90d2df011d6196ef4abb3632a1e9",
+     "credits": {
+      "art-058": [
+       "ley-2340-2003"
+      ],
+      "art-059": [
+       "ley-2340-2003"
+      ],
+      "art-053": [
+       "ley-2340-2003"
+      ],
+      "art-054": [
+       "ley-2340-2003"
+      ],
+      "art-055": [
+       "ley-2340-2003"
+      ],
+      "art-056": [
+       "ley-2340-2003"
+      ],
+      "art-057": [
+       "ley-2340-2003"
+      ],
+      "indice": [
+       "ley-2340-2003"
+      ]
+     },
+     "note": "Ley 2340/2003 art. 1 inserts a new Capítulo XV (arts. 53-57, telecommunication services) and art. 3 renumbers the chapter and articles that follow: the former arts. 53 and 54 (Capítulo XV, Disposiciones finales) are arts. 58 and 59 of Capítulo XVI, with unchanged words.",
+     "changes": {
+      "art-053": {
+       "label": "Art. 53",
+       "kind": "art",
+       "text": "# Artículo 53\nDe la Definición de los Servicios de Telecomunicaciones. Entiéndase por Servicios de Telecomunicaciones los definidos y regulados por la Ley N° 642/95 \"De Telecomunicaciones\" y sus reglamentaciones.\n"
+      },
+      "art-054": {
+       "label": "Art. 54",
+       "kind": "art",
+       "text": "# Artículo 54\nDe la Facturación Transparente. Todo usuario de un servicio de telecomunicaciones que acredite su titularidad, tiene derecho a solicitar, cuando la naturaleza del mismo así lo permita, el detalle de la facturación correspondiente a la prestación del servicio, sea cual fuere su modalidad de pago, abonando previamente los costos irrogados. Este derecho se podrá ejercer dentro del plazo de un año, contado a partir de la fecha de recepción de la factura respectiva.\n"
+      },
+      "art-055": {
+       "label": "Art. 55",
+       "kind": "art",
+       "text": "# Artículo 55\nDe la Identificación del Comprador. En la venta de un servicio de telecomunicaciones, el responsable de la comercialización del mismo, ya sea dependiente del propio operador o no, recabará los datos del comprador (nombre, apellido, fecha de nacimiento y número de Cédula de Identidad), y los remitirá al operador para su registro, dentro de los siguientes treinta días de verificado dicho acto. El operador del servicio de telecomunicaciones se limitará a registrar los datos suministrados por el responsable de la comercialización y no asumirá responsabilidad alguna por la veracidad de los mismos. El operador deberá conservar los datos registrados por un plazo mínimo de un año posterior a la cancelación del servicio.\n"
+      },
+      "art-056": {
+       "label": "Art. 56",
+       "kind": "art",
+       "text": "# Artículo 56\nDe la Facturación Justa. Una llamada telefónica podrá ser facturada cuando la misma haya sido completada exitosamente, de conformidad con las definiciones y reglamentaciones establecidas por la Comisión Nacional de Telecomunicaciones.\n"
+      },
+      "art-057": {
+       "label": "Art. 57",
+       "kind": "art",
+       "text": "# Artículo 57\nLos contratos celebrados entre una servidora y un usuario para servicio de cualquier categoría y con plazos definidos se cancelarán a la finalización del mismo sin costo para el usuario.\nLa renovación del mismo será a pedido de parte.\n"
+      },
+      "art-058": {
+       "label": "Art. 58",
+       "kind": "art",
+       "text": "# Artículo 58\nLa presente ley entrará en vigencia a los ciento ochenta días de su promulgación. El Poder Ejecutivo reglamentará la presente ley dentro de los noventa días de su promulgación.\n"
+      },
+      "art-059": {
+       "label": "Art. 59",
+       "kind": "art",
+       "text": "# Artículo 59\nComuníquese al Poder Ejecutivo.\n"
+      },
+      "indice": {
+       "label": "Índice de libros, títulos y capítulos",
+       "kind": "index",
+       "text": "# LIBROS, TITULOS Y CAPITULOS\nart-001: CAPITULO I - DISPOSICIONES GENERALES\nart-006: CAPITULO II - DERECHOS BASICOS DEL CONSUMIDOR\nart-008: CAPITULO III - INFORMACION DE OFERTA DE BIENES Y SERVICIOS\nart-017: CAPITULO IV - DE LOS SERVICIOS PUBLICOS\nart-024: CAPITULO V - PROTECCION CONTRACTUAL\nart-029: CAPITULO VI - OPERACIONES DE CREDITO\nart-031: CAPITULO VII - PROTECCION A LA SALUD Y SEGURIDAD\nart-035: CAPITULO VIII - REGULACION DE LA PUBLICIDAD\nart-040: CAPITULO IX - AUTORIDAD DE APLICACIÓN\nart-043: CAPITULO X - DEFENSA EN JUICIO DE LOS DERECHOS DE LOS CONSUMIDORES\nart-045: CAPITULO XI - ASOCIACIONES DE CONSUMIDORES\nart-048: CAPITULO XII - EDUCACION DEL CONSUMIDOR\nart-050: CAPITULO XIII - DE LOS CIRCULOS ADJUDICADORES\nart-051: CAPITULO XIV - DE LAS SANCIONES\nart-053: CAPITULO XV - DE LOS SERVICIOS DE TELECOMUNICACIONES\nart-058: CAPITULO XVI - DISPOSICIONES FINALES\n"
+      }
+     }
+    },
+    {
+     "from": "2013-08-29",
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4772/ley-n-4974-de-la-secretaria-de-defensa-del-consumidor-y-el-usuario-br",
+     "sha256": "b7a15ca3707ffff164a4f05337dd355b02da31fbe8d080c4d37095e34c0aa8b0",
+     "credits": {
+      "art-040": [
+       "ley-4974-2013"
+      ],
+      "art-041": [
+       "ley-4974-2013"
+      ],
+      "art-042": [
+       "ley-4974-2013"
+      ]
+     },
+     "changes": {}
+    },
+    {
+     "from": "2015-05-06",
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/4415/ley-n-5427-modifica-el-art-culo-28-de-la-ley-n-1-334-98-de-defensa-del-consumidor-y-del-usuario-br",
+     "sha256": "a3fc8426da1c7ce848603dd0986c0afd7c720d5aa0c3a4c95e92a45dcea80394",
+     "credits": {
+      "art-028": [
+       "ley-5427-2015"
+      ]
+     },
+     "changes": {
+      "art-028": {
+       "label": "Art. 28",
+       "kind": "art",
+       "text": "# Artículo 28\nSe considerarán abusivas y conllevan la nulidad de pleno derecho y, por lo tanto, sin que se puedan oponer al consumidor las cláusulas o estipulaciones que:\na) desnaturalicen las obligaciones o que eliminen o restrinjan la responsabilidad por daños;\nb) importen renuncia o restricción de los derechos del consumidor o amplíen los derechos de la otra parte;\nc) contengan cualquier precepto que imponga la inversión de la carga de la prueba en perjuicio del consumidor;\nd) impongan la utilización obligatoria del arbitraje;\ne) permitan al proveedor la variación unilateral del precio o de otras condiciones de contrato;\nf) violen o infrinjan normas medioambientales;\ng) impliquen renuncia del consumidor al derecho a ser resarcido o reembolsado de cualquier erogación que sea legalmente a cargo del proveedor;\nh) impongan condiciones injustas de contratación, exageradamente gravosas para el consumidor, o causen su indefensión;\ni) faculten al proveedor a alterar, modificar o rescindir unilateralmente las condiciones o cláusulas del contrato, salvo los casos contrarios previstos en la ley;\nj) faculten al proveedor para dejar sin efecto una transacción celebrada con el consumidor o usuario, cuando el precio ha sido fijado como publicidad engañosa por el proveedor;\nk) autoricen al proveedor a rescindir o restringir sin aviso la prestación de un servicio;\nl) prorroguen automáticamente el contrato de duración determinada, si el consumidor no se manifiesta en contra; y,\nm) equiparen el silencio del consumidor o usuario como aceptación, salvo los casos contrarios previstos en la Ley.\n"
+      }
+     }
+    },
+    {
+     "from": "2019-09-21",
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9529/ley-n-6366-modifica-la-ley-n-1334-98-de-defensa-del-consumidor-y-del-usuario-y-establece-mayor-claridad-y-transparencia-en-la-informaci-n-sobre-operaciones-de-cr-dito",
+     "sha256": "88ebe9276179a3baa5729225280476c509d83e2b9f0e787ca8e29b26b1b42f3f",
+     "credits": {
+      "art-004": [
+       "ley-6366-2019"
+      ],
+      "art-006": [
+       "ley-6366-2019"
+      ],
+      "art-010": [
+       "ley-6366-2019"
+      ],
+      "art-015": [
+       "ley-6366-2019"
+      ],
+      "art-029": [
+       "ley-6366-2019"
+      ]
+     },
+     "changes": {
+      "art-004": {
+       "label": "Art. 4",
+       "kind": "art",
+       "text": "# Artículo 4\nA los efectos de la presente Ley, se entenderán por:\na) CONSUMIDOR Y USUARIO: a toda persona física o jurídica, nacional o extranjera que adquiera, utilice o disfrute como destinatario final, para la satisfacción de una necesidad personal, familiar o doméstica y cuando no esté ligada intrínsecamente a una actividad económica - comercial, de bienes o servicios de cualquier naturaleza.\nb) PROVEEDOR: a toda persona física o jurídica, nacional o extranjera, pública o privada que desarrolle actividades de producción, fabricación, importación, distribución, comercialización, venta o arrendamiento de bienes o de prestación de servicios a consumidores o usuarios, respectivamente, por los que cobre un precio o tarifa.\nc) PRODUCTOS: a todas las cosas que se consumen con su empleo o uso y las cosas o artefactos de uso personal o familiar que no se extinguen por su uso.\nd) SERVICIOS: a cualquier actividad onerosa suministrada en el mercado, inclusive las de naturaleza bancaria, financiera, de crédito o de seguro, con excepción de las que resultan de las relaciones laborales.\nNo están comprendidos en esta Ley, los servicios de profesionales liberales que requieran para su ejercicio título universitario y matrícula otorgada por la autoridad facultada para ello, pero sí la publicidad que se haga de su ofrecimiento.\ne) ANUNCIANTE: al proveedor de bienes o servicios que ha encargado la difusión pública de un mensaje publicitario o de cualquier tipo de información referida a sus productos o servicios.\nf) ACTOS DE CONSUMO: es todo tipo de acto, propio de las relaciones de consumo, celebrado entre proveedores y consumidores o usuarios, referidos a la producción, distribución, depósito, comercialización, venta o arrendamiento de bienes, muebles o inmuebles o a la contratación de servicios.\ng) CONSUMO SUSTENTABLE: es todo acto de consumo, destinado a satisfacer necesidades humanas, realizado sin socavar, dañar o afectar significativamente la calidad del medio ambiente y su capacidad para dar satisfacción a las necesidades de las generaciones presentes y futuras.\nh) CONTRATO DE ADHESIÓN: es aquél cuyas cláusulas han sido establecidas unilateralmente por el proveedor de bienes o servicios, sin que el consumidor, para celebrarlo, pueda discutir, alterar o modificar substancialmente su contenido.\ni) INTERESES COLECTIVOS: son aquellos intereses supraindividuales, de naturaleza indivisible de los que sean titulares un grupo, categoría o clase de personas, ligadas entre sí o con la parte contraria por una relación jurídica, cuyo resguardo interesa a toda la colectividad, por afectar a una pluralidad de sujetos que se encuentren en una misma situación.\nj) COSTO TOTAL DE CREDITO (CTC): Costo efectivo de un producto o servicio similar sujeto a una financiación, cualquiera fuere su plazo, expresado en términos porcentuales efectivos anuales. Su cálculo incluye la tasa de interés nominal, comisiones, los gastos de servicios y todo otro cargo, independientemente de su denominación, que fueren percibidos por el proveedor, con excepción de impuestos.\nk) OPERACIONES A CRÉDITO: son las operaciones financieras o de compras a crédito para el consumo de bienes o servicios en un plazo determinado.\n"
+      },
+      "art-006": {
+       "label": "Art. 6",
+       "kind": "art",
+       "text": "# Artículo 6\nConstituyen derechos básicos del consumidor:\na) La libre elección del bien que se va a adquirir o del servicio que se va a contratar.\nb) La protección de la vida, la salud y la seguridad contra los riesgos provocados por la provisión de productos y la prestación de servicios considerados nocivos o peligrosos.\nc) La adecuada educación y divulgación sobre las características de los productos y servicios ofertados en el mercado, asegurando a los consumidores la libertad de decidir y la equidad en las contrataciones.\nd) La información clara sobre los diferentes productos y servicios con las correspondientes especificaciones sobre la composición, calidad, precio y riesgos que eventualmente presenten.\ne) La adecuada protección contra la publicidad engañosa, los métodos comerciales coercitivos o desleales, y las cláusulas contractuales abusivas en la provisión de productos y la prestación de servicios.\nf) La efectiva prevención y reparación de los daños patrimoniales y morales o de los intereses difusos ocasionados por los proveedores a los consumidores, ya sean individuales o colectivos, como consecuencia de un incumplimiento debidamente comprobado, de lo establecido en la presente Ley.\ng) La constitución de asociaciones de consumidores con el objeto de la defensa y representación de los mismos.\nh) La adecuada y eficaz prestación de los servicios públicos por sus proveedores, sean estos públicos o privados.\ni) Recibir el producto o servicio publicitado en el tiempo, cantidad, calidad y precio prometidos.\nj) La información y condiciones relacionadas a una eventual cancelación anticipada de crédito, con anterioridad a la formalización de una operación.\nk) La información sobre el Costo Total de Crédito (CTC) en el caso de cualquier bien o servicio sujeto a financiación.\n"
+      },
+      "art-010": {
+       "label": "Art. 10",
+       "kind": "art",
+       "text": "# Artículo 10\nLos precios de productos o servicios, incluidos los impuestos, deberán estar indicados con precisión en la oferta, en la moneda de curso legal en el país. Así mismo, en el caso de las ofertas a ser financiadas a plazos, se deberá incluir la información correspondiente al costo de la financiación efectiva resultante del Costo Total de Crédito (CTC).\n"
+      },
+      "art-015": {
+       "label": "Art. 15",
+       "kind": "art",
+       "text": "# Artículo 15\nSalvo que por la naturaleza del servicio no se requiera, el proveedor de servicio deberá asegurar en forma clara, correcta y precisa, las siguientes informaciones:\na) Nombre y domicilio del proveedor del servicio.\nb) Descripción del servicio a prestar.\nc) La calidad del servicio a prestar.\nd) Una descripción de los materiales, implementos y tecnología a emplear.\ne) El precio, incluidos los impuestos, su composición cuando corresponda, y la forma de pago.\nf) Plazo de validez del presupuesto y plazo de validez del servicio.\ng) Los riesgos que el servicio pueda ocasionar para la salud o seguridad.\nh) Alcance y duración en el caso de otorgarse garantía contractual.\ni) La información sobre el Costo Total de Crédito (CTC).\nj) Cualquier otra información que sea esencial para decidir la relación de consumo.\n"
+      },
+      "art-029": {
+       "label": "Art. 29",
+       "kind": "art",
+       "text": "# Artículo 29\nEn las operaciones de crédito para la adquisición de productos o servicios deberá consignarse, bajo pena de nulidad, cuanto sigue:\na) El precio al contado del bien o servicio en cuestión.\nb) El monto de los intereses, las tasas anuales o mensuales a que éstos se calculan, así como la tasa de interés moratoria.\nc) Recargo sobre el precio por comisión, gastos de servicios, tasas e impuestos.\nd) El número de pagos a efectuar, así como su periodicidad.\ne) La suma total a pagar por el producto o servicio.\nf) Los derechos y obligaciones de las partes en caso de incumplimiento.\ng) El Costo Total de Crédito (CTC).\n"
+      }
+     }
+    },
+    {
+     "from": "2020-11-05",
+     "source_url": "https://www.bacn.gov.py/leyes-paraguayas/9409/ley-n-6624-modifica-el-art-culo-30-de-la-ley-n-1334-1998-de-defensa-del-consumidor-y-del-usuario",
+     "sha256": "81b88d9e56c95215237e2a766a62bcaffd50c0009b92cc4028ad9381092e4e5c",
+     "credits": {
+      "art-030": [
+       "ley-6624-2020"
+      ]
+     },
+     "changes": {
+      "art-030": {
+       "label": "Art. 30",
+       "kind": "art",
+       "text": "# Artículo 30\nEn toda venta o prestación de servicio a crédito, el consumidor tiene derecho a pagar anticipadamente parcial o totalmente lo adeudado. En ambos casos, se procederá a la consiguiente reducción proporcional de los intereses; la reducción proporcional de los intereses consistirá en no considerar los intereses no devengados, en estos casos tampoco podrá ser obstaculizado, limitado, o condicionado al pago de penalización alguna, cualquiera fuere su denominación.\nA los efectos de hacer efectiva la cancelación de la obligación, los intereses a pagarse serán los intereses fraccionarios devengados al momento de la cancelación o anticipo de cuotas parciales o pago de la obligación y sin ningún otro cargo adicional ni penalización. La tasa nominal, en términos anuales o por períodos anuales, deben ser expresados explícitamente en el contrato.\nHecha la comunicación, por parte del consumidor, de su intención de cancelar anticipadamente la operación de crédito, el proveedor deberá expedir, inmediatamente una liquidación clara, detallada y transparente de la deuda tomando en cuenta la fecha de cancelación.\nEl incumplimiento del presente artículo, será considerado como violación a lo que establece la presente ley y sus reglamentaciones.\n"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  "Ley 1334/1998 de Defensa del Consumidor y del Usuario: BACN publishes it only as enacted (promulgated 27 October 1998); it is in force from 1999-04-25, 180 days after promulgation (art. 53), counted as for the Código Aduanero. Later versions replay the amending laws, each from its own BACN page. They were found with the BACN search (\"1334\", \"1334/98\", \"1334/1998\", \"1.334\", \"defensa del consumidor\", \"consumidor y del usuario\"), every hit screened for a modifying formula that names the law: Leyes 2340/2003, 4974/2013, 5427/2015, 6366/2019 and 6624/2020. There is no official consolidated text to check the current text against.",
+  "Ley 1334/1998, Ley 2340/2003: art. 1 \"amplía\" the law \"desde el Capítulo XV\" with a new Capítulo XV (arts. 53-57, telecommunication services) and art. 3 renumbers \"consecuentemente\" the chapters and articles that follow. The former Capítulo XV (art. 53 vigencia, art. 54 comuníquese) therefore becomes Capítulo XVI, arts. 58 and 59, with the same words; indice.md is updated to match. Art. 2 makes arts. 54 and 55 applicable only from the sixth month after Ley 2340 took effect; their text is in force from 2004-01-13 and no typed applicability is recorded. The quoted chapter is printed with one opening and one closing quotation mark; both are removed.",
+  "Ley 1334/1998, Ley 4974/2013 art. 22 repeals arts. 40, 41 and 42 \"en lo atinente al Ministerio de Industria y Comercio\" (the authority the articles name): a partial repeal that strikes no identifiable words. It is a commit with a note and no word change on 2013-08-29, credited to the three articles; their wording is kept.",
+  "Ley 1334/1998, Ley 6624/2020 prints the new art. 30 as \"Articulo 30. …\" without an opening quotation mark and ends it with a closing one; the prefix and the mark are removed. Its art. 2 (\"se aplicará desde el día siguiente de su publicación\") agrees with the default rule: in force 2020-11-05.",
+  "Ley 1334/1998 units: art-NNN headed \"# Artículo N\" (the law prints no epigraphs; the articles added by Ley 2340/2003 open with an epigraph sentence, kept as text). Chapter headings are in indice.md, the closing formula in sancion.md.",
+  "Ley 1334/1998: no line joins were needed."
+ ],
+ "ai_use": [
+  "Defensa del consumidor part: Claude Opus 5.5 (claude-opus-5-5) in Claude Code wrote consumidor/consumidor.py, ran the BACN searches, screened the hits and read the amending laws to write the replay table (which article each law rewrites, adds, renumbers or concerns, and when). No model wrote or changed legal text: every provision is extracted by code from BACN pages."
+ ]
+}

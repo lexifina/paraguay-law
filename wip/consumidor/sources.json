@@ -1,0 +1,11 @@
+{
+ "note": "BACN pages read by consumidor/consumidor.py (Ley 1334/1998 de Defensa del Consumidor y del Usuario and its amending laws), fetched with ../fetch.py: python -X utf8 consumidor/consumidor.py --fetch",
+ "urls": [
+  "https://www.bacn.gov.py/leyes-paraguayas/897/ley-n-1334-de-defensa-del-consumidor-y-del-usuario-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/5040/ley-n-2340-amplia-la-ley-n-1334-del-27-de-octubre-de-1998-de-defensa-del-consumidor-y-del-usuario-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/4772/ley-n-4974-de-la-secretaria-de-defensa-del-consumidor-y-el-usuario-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/4415/ley-n-5427-modifica-el-art-culo-28-de-la-ley-n-1-334-98-de-defensa-del-consumidor-y-del-usuario-br",
+  "https://www.bacn.gov.py/leyes-paraguayas/9529/ley-n-6366-modifica-la-ley-n-1334-98-de-defensa-del-consumidor-y-del-usuario-y-establece-mayor-claridad-y-transparencia-en-la-informaci-n-sobre-operaciones-de-cr-dito",
+  "https://www.bacn.gov.py/leyes-paraguayas/9409/ley-n-6624-modifica-el-art-culo-30-de-la-ley-n-1334-1998-de-defensa-del-consumidor-y-del-usuario"
+ ]
+}
