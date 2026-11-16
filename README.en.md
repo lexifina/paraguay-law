@@ -61,6 +61,7 @@ Each change is credited to the law that made it, at an address that cannot exist
 - BACN keeps no earlier versions, so every earlier version is a replay: the enacted text plus each amending law found with BACN's own search, applied from that law's text. The replay stops with an error if a law rewrites or repeals an article not in force.
 - The current Constitution equals BACN's page in every provision but art. 120, where BACN still prints the 1992 wording; art. 120 follows the signed original of the Enmienda.
 - History is append-only: no merge commits on `main`, no commit dates that go backwards, nothing dated in the future, and every commit's trailers parse.
+- [vulnerabilities/](vulnerabilities/README.en.md): possible drafting mistakes in Paraguayan law, found by global-law's detectors and checked by hand.
 
 ## What it does not show
 

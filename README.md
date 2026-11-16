@@ -61,6 +61,7 @@ Cada cambio se atribuye a la ley que lo hizo, con una dirección que no puede ex
 - La BACN no conserva versiones anteriores, por lo que cada versión anterior es una reconstrucción: el texto sancionado más cada ley modificatoria encontrada con el propio buscador de la BACN, aplicada a partir del texto de esa ley. La reconstrucción se detiene con un error si una ley sustituye o deroga un artículo que no está vigente.
 - La Constitución vigente es igual a la página de la BACN en todas sus disposiciones salvo el art. 120, donde la BACN todavía imprime la redacción de 1992; el art. 120 sigue el original firmado de la Enmienda.
 - El historial solo crece por adición: no hay commits de fusión (merge) en `main`, ni fechas de commit que retrocedan, ni nada con fecha futura, y los trailers de todos los commits se pueden analizar.
+- [vulnerabilities/](vulnerabilities/): posibles errores de técnica legislativa en el derecho paraguayo, hallados por los detectores de global-law y comprobados a mano.
 
 ## Lo que no muestra
 
