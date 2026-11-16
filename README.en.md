@@ -83,6 +83,10 @@ See [`LICENSE`](LICENSE). The legal texts are official texts of the Republic of 
 
 No AI model wrote, translated or corrected legal text, and none runs at build time. Claude Code running Claude Opus 5.5 wrote the scripts, found the amending laws with BACN's search and read them to write the replay table (which article each law rewrites or repeals, and when); see [`REPRODUCE.md`](REPRODUCE.md).
 
+## Visualisations
+
+- [visualisations/](visualisations/README.en.md): charts drawn from this repository. Not drawn yet.
+
 ## More
 
 From [lexifina/global-law](https://github.com/lexifina/global-law):
