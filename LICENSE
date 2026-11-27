@@ -14,3 +14,5 @@ comes from that act as BACN publishes it. BACN does not endorse this repository.
 Lexifina's own contributions (the arrangement of the history, the commit messages, the tables and the tools) are
 dedicated to the public domain under CC0 1.0 Universal:
 https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Laws in `leyes/`: official legal texts published by the Biblioteca y Archivo Central del Congreso Nacional (bacn.gov.py); the source states no licence.

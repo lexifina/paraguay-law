@@ -777,3 +777,7 @@ Model use at data-build time:
 - LAPP part: Claude Opus 5.5 (claude-opus-5-5) in Claude Code wrote Lexifina's code, ran the BACN searches, screened the hits and read the amending laws to write the replay table (which article each law rewrites or repeals, and from when). No model wrote or changed legal text: every provision is extracted by code from BACN pages.
 - LRF part: Claude Opus 5.5 (claude-opus-5-5) in Claude Code wrote Lexifina's code, ran the BACN searches, screened the hits and read the amending laws to write the replay table (which article each law rewrites or repeals, and from when). No model wrote or changed legal text: every provision is extracted by code from BACN pages.
 - LAFE part: Claude Opus 5.5 (claude-opus-5-5) in Claude Code wrote Lexifina's code, ran the BACN searches, screened the hits and read the amending laws to write the replay table (which article each law rewrites or repeals, and from when). No model wrote or changed legal text: every provision is extracted by code from BACN pages.
+
+## Leyes as enacted (`leyes/`)
+
+Source: BACN law pages listed in https://www.bacn.gov.py/sitemap.xml, one commit per law; the in-force day is the law's own clause or, without one, the day after publication (Código Civil art. 1, laws published from 1987).
